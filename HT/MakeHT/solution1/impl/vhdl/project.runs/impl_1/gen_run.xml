@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1534847987">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="MakeHT.drc"/>
+  <File Type="BG-BGN" Name="MakeHT.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="MakeHT.sysdef"/>
+  <File Type="BITSTR-MMI" Name="MakeHT.mmi"/>
+  <File Type="BITSTR-BMM" Name="MakeHT_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="MakeHT.nky"/>
+  <File Type="BITSTR-RBT" Name="MakeHT.rbt"/>
+  <File Type="BITSTR-MSK" Name="MakeHT.msk"/>
+  <File Type="BG-BIN" Name="MakeHT.bin"/>
+  <File Type="BG-BIT" Name="MakeHT.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MakeHT_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MakeHT_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MakeHT_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MakeHT_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MakeHT_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="MakeHT_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="MakeHT_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MakeHT_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="MakeHT_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MakeHT_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MakeHT_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="MakeHT_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="MakeHT_power_routed.rpx"/>
+  <File Type="PLACE-IO" Name="MakeHT_io_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="MakeHT_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="MakeHT_placed.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="MakeHT_utilization_placed.pb"/>
+  <File Type="PHYSOPT-TIMING" Name="MakeHT_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-DRC" Name="MakeHT_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="MakeHT_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="MakeHT_utilization_placed.rpt"/>
+  <File Type="OPT-TIMING" Name="MakeHT_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MakeHT.hwdef"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MakeHT_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PA-DCP" Name="MakeHT.dcp"/>
+  <File Type="OPT-DCP" Name="MakeHT_opt.dcp"/>
+  <File Type="PLACE-CLK" Name="MakeHT_clock_utilization_placed.rpt"/>
+  <File Type="RDI-RDI" Name="MakeHT.vdi"/>
+  <File Type="PLACE-TIMING" Name="MakeHT_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="MakeHT_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="MakeHT_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MakeHT_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MakeHT_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="MakeHT_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MakeHT_incremental_reuse_placed.rpt"/>
+  <File Type="PA-TCL" Name="MakeHT.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MakeHT_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="MakeHT_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="MakeHT_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MakeHT_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MakeHT_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MakeHT_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MakeHT_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MakeHT_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MakeHT_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MakeHT_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MakeHT_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="MakeHT_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MakeHT_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="MakeHT_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_0.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_5.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_9.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_10.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_11.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_12.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT_rgnETLUT_13.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MakeHT.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MakeHT"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/MakeHT.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

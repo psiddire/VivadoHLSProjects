@@ -1,0 +1,115 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Aug 21 12:41:22 2018
+| Host         : pcminn34.cern.ch running 64-bit Scientific Linux CERN SLC release 6.10 (Carbon)
+| Command      : report_control_sets -verbose -file MakeHT_control_sets_placed.rpt
+| Design       : MakeHT
+| Device       : xc7vx690t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    48 |
+| Unused register locations in slices containing registers |    83 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               7 |            5 |
+| Yes          | No                    | No                     |           10593 |         3288 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              27 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------+-----------------------+------------------+----------------+
+| Clock Signal |         Enable Signal         |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------+-------------------------------+-----------------------+------------------+----------------+
+|  ap_clk      |                               |                       |                2 |              2 |
+|  ap_clk      |                               | ap_rst                |                5 |              7 |
+|  ap_clk      | ap_CS_fsm_pp0_stage5          | ap_rst                |                2 |             11 |
+|  ap_clk      | rgnHT_2_3_reg_282700          |                       |                3 |             12 |
+|  ap_clk      | hfHT_2_3_reg_288900           |                       |                3 |             12 |
+|  ap_clk      | rgnHT_2_7_reg_292400          |                       |                4 |             13 |
+|  ap_clk      | hfHT_2_7_reg_298800           |                       |                4 |             13 |
+|  ap_clk      | hfHT_2_10_reg_308900          |                       |                4 |             14 |
+|  ap_clk      | rgnHT_2_10_reg_302500         |                       |                4 |             14 |
+|  ap_clk      | rgnHT_2_14_reg_312600         |                       |                4 |             14 |
+|  ap_clk      | hfHT_2_14_reg_319000          |                       |                4 |             14 |
+|  ap_clk      | hfHT_2_30_reg_336600          |                       |                4 |             15 |
+|  ap_clk      | rgnHT_2_22_reg_332800         |                       |                4 |             15 |
+|  ap_clk      | rgnHT_2_26_reg_336300         |                       |                4 |             15 |
+|  ap_clk      | rgnHT_2_18_reg_322700         |                       |                4 |             15 |
+|  ap_clk      | hfHT_2_18_reg_329100          |                       |                4 |             15 |
+|  ap_clk      | hfHT_2_22_reg_335000          |                       |                4 |             15 |
+|  ap_clk      | hfHT_2_26_reg_336400          |                       |                4 |             15 |
+|  ap_clk      | rgnHT_2_30_reg_336500         |                       |                4 |             15 |
+|  ap_clk      | hfHT_2_46_reg_337400          |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_50_reg_337500         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_54_reg_337700         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_58_reg_337900         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_62_reg_338100         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_46_reg_337300         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_42_reg_337100         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_38_reg_336900         |                       |                4 |             16 |
+|  ap_clk      | rgnHT_2_34_reg_336700         |                       |                4 |             16 |
+|  ap_clk      | hfHT_2_50_reg_337600          |                       |                4 |             16 |
+|  ap_clk      | hfHT_2_54_reg_337800          |                       |                4 |             16 |
+|  ap_clk      | hfHT_2_58_reg_338000          |                       |                4 |             16 |
+|  ap_clk      | hfHT_2_62_reg_338200          |                       |                4 |             16 |
+|  ap_clk      | hfHT_2_34_reg_336800          |                       |                4 |             16 |
+|  ap_clk      | hfHT_2_38_reg_337000          |                       |                4 |             16 |
+|  ap_clk      | ap_CS_fsm_pp0_stage1          | p_hfHT_1_79_reg_34355 |                4 |             16 |
+|  ap_clk      | hfHT_2_42_reg_337200          |                       |                4 |             16 |
+|  ap_clk      | ce05                          |                       |              230 |            580 |
+|  ap_clk      | ap_CS_fsm_pp0_stage1          |                       |              246 |            626 |
+|  ap_clk      | ap_ready                      |                       |              216 |            660 |
+|  ap_clk      | ce02                          |                       |              217 |            660 |
+|  ap_clk      | ce03                          |                       |              218 |            660 |
+|  ap_clk      | ce04                          |                       |              241 |            660 |
+|  ap_clk      | hfETLUT_0_load_15_reg_335050  |                       |              219 |            660 |
+|  ap_clk      | ap_CS_fsm_pp0_stage2          |                       |              460 |           1319 |
+|  ap_clk      | ap_CS_fsm_pp0_stage3          |                       |              447 |           1662 |
+|  ap_clk      | ap_enable_reg_pp0_iter0_preg0 |                       |              432 |           1740 |
+|  ap_clk      | ap_CS_fsm_pp0_stage4          |                       |              433 |           1782 |
+|  ap_clk      | ap_CS_fsm_pp0_stage5          |                       |              418 |           1786 |
++--------------+-------------------------------+-----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 7      |                     1 |
+| 11     |                     1 |
+| 12     |                     2 |
+| 13     |                     2 |
+| 14     |                     4 |
+| 15     |                     8 |
+| 16+    |                    29 |
++--------+-----------------------+
+
+

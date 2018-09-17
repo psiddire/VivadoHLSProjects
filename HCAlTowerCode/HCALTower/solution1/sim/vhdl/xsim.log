@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Aug 20 17:34:23 2018
+# Process ID: 5460
+# Current directory: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/TowerPeaks/xsim_script.tcl}
+# Log file: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/sim/vhdl/xsim.log
+# Journal file: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/sim/vhdl/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/TowerPeaks/xsim_script.tcl
+# xsim {TowerPeaks} -autoloadwcfg -tclbatch {TowerPeaks.tcl}
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source TowerPeaks.tcl
+## run all
+Note: simulation done!
+Time: 285 ns  Iteration: 1  Process: /apatb_TowerPeaks_top/generate_sim_done_proc  File: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/sim/vhdl/TowerPeaks.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 285 ns  Iteration: 1  Process: /apatb_TowerPeaks_top/generate_sim_done_proc  File: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/sim/vhdl/TowerPeaks.autotb.vhd
+$finish called at time : 285 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Aug 20 17:34:28 2018...

@@ -1,0 +1,1283 @@
+<InterfaceSummary>
+<RtlPorts>
+<name>towerET_0_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_0_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_0_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_0_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_1_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_1_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_1_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_1_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_2_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_2_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_2_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_2_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_3_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_3_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_3_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_3_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_4_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_4_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_4_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_4_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_5_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_5_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_5_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_5_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_6_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_6_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_6_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_6_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_7_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_7_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_7_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_7_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_8_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_8_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_8_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_8_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_9_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_9_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_9_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_9_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_10_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_10_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_10_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_10_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_11_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_11_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_11_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_11_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_12_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_12_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_12_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_12_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_13_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_13_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_13_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_13_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_14_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_14_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_14_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_14_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_15_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_15_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_15_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_15_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_16_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_16_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_16_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>towerET_16_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_4</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_5</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_6</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_7</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_8</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_9</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_10</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_11</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_12</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_13</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_14</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_15</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_16</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_17</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_18</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_19</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_20</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_21</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_22</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_23</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_24</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_25</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_26</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_27</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_28</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerPhi_29</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_0</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_1</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_2</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_3</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_4</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_5</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_6</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_7</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_8</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_9</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_10</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_11</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_12</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_13</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_14</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_15</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_16</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_17</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_18</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_19</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_20</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_21</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_22</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_23</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_24</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_25</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_26</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_27</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_28</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>TowerEta_29</name>
+<CType>
+<TypeName>unsigned short</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+</InterfaceSummary>
+

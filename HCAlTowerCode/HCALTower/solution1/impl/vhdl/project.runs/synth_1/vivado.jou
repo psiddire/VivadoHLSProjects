@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Aug 20 17:36:53 2018
+# Process ID: 5764
+# Current directory: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/impl/vhdl/project.runs/synth_1
+# Command line: vivado -log TowerPeaks.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TowerPeaks.tcl
+# Log file: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/impl/vhdl/project.runs/synth_1/TowerPeaks.vds
+# Journal file: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HCAlTowerCode/HCALTower/solution1/impl/vhdl/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source TowerPeaks.tcl -notrace

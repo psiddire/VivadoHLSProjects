@@ -1,0 +1,134 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_MakeHT.cpp
+   Compiling TestMakeHT.cpp_pre.cpp.tb.cpp
+   Compiling MakeHT.cc_pre.cc.tb.cc
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-322] Starting VHDL simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+Using: #define uint10_t uint16_t
+Test succeeded
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_MakeHT_top -prj MakeHT.prj --initfile /opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s MakeHT 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity apatb_MakeHT_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_0_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_1_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_2_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_3_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_3
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_4_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_4
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_5_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_5
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_6_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_6
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_7_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_7
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_8_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_8
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_9_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_9
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_10.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_10_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_10
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_11_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_11
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_12_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_12
+INFO: [VRFC 10-163] Analyzing VHDL file "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT_rgnETLUT_13.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_13_rom
+INFO: [VRFC 10-307] analyzing entity MakeHT_rgnETLUT_13
+Starting static elaboration
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/xcohdnobkup4/fengc/exp/HEAD/data/vhdl/src/ieee_2008/numeric_std-body.vhdl:3476]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_0_rom [makeht_rgnetlut_0_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_0 [makeht_rgnetlut_0_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_1_rom [makeht_rgnetlut_1_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_1 [makeht_rgnetlut_1_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_2_rom [makeht_rgnetlut_2_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_2 [makeht_rgnetlut_2_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_3_rom [makeht_rgnetlut_3_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_3 [makeht_rgnetlut_3_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_4_rom [makeht_rgnetlut_4_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_4 [makeht_rgnetlut_4_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_5_rom [makeht_rgnetlut_5_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_5 [makeht_rgnetlut_5_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_6_rom [makeht_rgnetlut_6_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_6 [makeht_rgnetlut_6_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_7_rom [makeht_rgnetlut_7_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_7 [makeht_rgnetlut_7_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_8_rom [makeht_rgnetlut_8_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_8 [makeht_rgnetlut_8_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_9_rom [makeht_rgnetlut_9_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_9 [makeht_rgnetlut_9_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_10_rom [makeht_rgnetlut_10_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_10 [makeht_rgnetlut_10_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_11_rom [makeht_rgnetlut_11_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_11 [makeht_rgnetlut_11_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_12_rom [makeht_rgnetlut_12_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_12 [makeht_rgnetlut_12_default]
+Compiling architecture rtl of entity xil_defaultlib.MakeHT_rgnETLUT_13_rom [makeht_rgnetlut_13_rom_default]
+Compiling architecture arch of entity xil_defaultlib.MakeHT_rgnETLUT_13 [makeht_rgnetlut_13_default]
+Compiling architecture behav of entity xil_defaultlib.MakeHT [makeht_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_makeht_top
+Built simulation snapshot MakeHT
+
+****** xsim v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/MakeHT/xsim_script.tcl
+# xsim {MakeHT} -autoloadwcfg -tclbatch {MakeHT.tcl}
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source MakeHT.tcl
+## run all
+Note: simulation done!
+Time: 11115 ns  Iteration: 1  Process: /apatb_MakeHT_top/generate_sim_done_proc  File: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 11115 ns  Iteration: 1  Process: /apatb_MakeHT_top/generate_sim_done_proc  File: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/sim/vhdl/MakeHT.autotb.vhd
+$finish called at time : 11115 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Aug 21 12:36:01 2018...
+Using: #define uint10_t uint16_t
+Test succeeded
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

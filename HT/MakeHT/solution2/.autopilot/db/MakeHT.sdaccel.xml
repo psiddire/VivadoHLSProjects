@@ -1,0 +1,514 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'MakeHT'" level="0">
+<item name = "Date">Wed Aug 22 18:04:34 2018
+</item>
+<item name = "Version">2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)</item>
+<item name = "Project">MakeHT</item>
+<item name = "Solution">solution2</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">8.69</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">79, 79, 80, 80, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Block_codeRepl84651_s_fu_862">Block_codeRepl84651_s, 79, 79, 79, 79, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, -, -</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">22, -, 2997, 27663</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, -, -</column>
+<specialColumn name="Available">2940, 3600, 866400, 433200</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 6</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Block_codeRepl84651_U0">Block_codeRepl84651_s, 22, 0, 2997, 27663</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="rgnET_0">in, 16, ap_none, rgnET_0, pointer</column>
+<column name="rgnET_1">in, 16, ap_none, rgnET_1, pointer</column>
+<column name="rgnET_2">in, 16, ap_none, rgnET_2, pointer</column>
+<column name="rgnET_3">in, 16, ap_none, rgnET_3, pointer</column>
+<column name="rgnET_4">in, 16, ap_none, rgnET_4, pointer</column>
+<column name="rgnET_5">in, 16, ap_none, rgnET_5, pointer</column>
+<column name="rgnET_6">in, 16, ap_none, rgnET_6, pointer</column>
+<column name="rgnET_7">in, 16, ap_none, rgnET_7, pointer</column>
+<column name="rgnET_8">in, 16, ap_none, rgnET_8, pointer</column>
+<column name="rgnET_9">in, 16, ap_none, rgnET_9, pointer</column>
+<column name="rgnET_10">in, 16, ap_none, rgnET_10, pointer</column>
+<column name="rgnET_11">in, 16, ap_none, rgnET_11, pointer</column>
+<column name="rgnET_12">in, 16, ap_none, rgnET_12, pointer</column>
+<column name="rgnET_13">in, 16, ap_none, rgnET_13, pointer</column>
+<column name="rgnET_14">in, 16, ap_none, rgnET_14, pointer</column>
+<column name="rgnET_15">in, 16, ap_none, rgnET_15, pointer</column>
+<column name="rgnET_16">in, 16, ap_none, rgnET_16, pointer</column>
+<column name="rgnET_17">in, 16, ap_none, rgnET_17, pointer</column>
+<column name="rgnET_18">in, 16, ap_none, rgnET_18, pointer</column>
+<column name="rgnET_19">in, 16, ap_none, rgnET_19, pointer</column>
+<column name="rgnET_20">in, 16, ap_none, rgnET_20, pointer</column>
+<column name="rgnET_21">in, 16, ap_none, rgnET_21, pointer</column>
+<column name="rgnET_22">in, 16, ap_none, rgnET_22, pointer</column>
+<column name="rgnET_23">in, 16, ap_none, rgnET_23, pointer</column>
+<column name="rgnET_24">in, 16, ap_none, rgnET_24, pointer</column>
+<column name="rgnET_25">in, 16, ap_none, rgnET_25, pointer</column>
+<column name="rgnET_26">in, 16, ap_none, rgnET_26, pointer</column>
+<column name="rgnET_27">in, 16, ap_none, rgnET_27, pointer</column>
+<column name="rgnET_28">in, 16, ap_none, rgnET_28, pointer</column>
+<column name="rgnET_29">in, 16, ap_none, rgnET_29, pointer</column>
+<column name="rgnET_30">in, 16, ap_none, rgnET_30, pointer</column>
+<column name="rgnET_31">in, 16, ap_none, rgnET_31, pointer</column>
+<column name="rgnET_32">in, 16, ap_none, rgnET_32, pointer</column>
+<column name="rgnET_33">in, 16, ap_none, rgnET_33, pointer</column>
+<column name="rgnET_34">in, 16, ap_none, rgnET_34, pointer</column>
+<column name="rgnET_35">in, 16, ap_none, rgnET_35, pointer</column>
+<column name="rgnET_36">in, 16, ap_none, rgnET_36, pointer</column>
+<column name="rgnET_37">in, 16, ap_none, rgnET_37, pointer</column>
+<column name="rgnET_38">in, 16, ap_none, rgnET_38, pointer</column>
+<column name="rgnET_39">in, 16, ap_none, rgnET_39, pointer</column>
+<column name="rgnET_40">in, 16, ap_none, rgnET_40, pointer</column>
+<column name="rgnET_41">in, 16, ap_none, rgnET_41, pointer</column>
+<column name="rgnET_42">in, 16, ap_none, rgnET_42, pointer</column>
+<column name="rgnET_43">in, 16, ap_none, rgnET_43, pointer</column>
+<column name="rgnET_44">in, 16, ap_none, rgnET_44, pointer</column>
+<column name="rgnET_45">in, 16, ap_none, rgnET_45, pointer</column>
+<column name="rgnET_46">in, 16, ap_none, rgnET_46, pointer</column>
+<column name="rgnET_47">in, 16, ap_none, rgnET_47, pointer</column>
+<column name="rgnET_48">in, 16, ap_none, rgnET_48, pointer</column>
+<column name="rgnET_49">in, 16, ap_none, rgnET_49, pointer</column>
+<column name="rgnET_50">in, 16, ap_none, rgnET_50, pointer</column>
+<column name="rgnET_51">in, 16, ap_none, rgnET_51, pointer</column>
+<column name="rgnET_52">in, 16, ap_none, rgnET_52, pointer</column>
+<column name="rgnET_53">in, 16, ap_none, rgnET_53, pointer</column>
+<column name="rgnET_54">in, 16, ap_none, rgnET_54, pointer</column>
+<column name="rgnET_55">in, 16, ap_none, rgnET_55, pointer</column>
+<column name="rgnET_56">in, 16, ap_none, rgnET_56, pointer</column>
+<column name="rgnET_57">in, 16, ap_none, rgnET_57, pointer</column>
+<column name="rgnET_58">in, 16, ap_none, rgnET_58, pointer</column>
+<column name="rgnET_59">in, 16, ap_none, rgnET_59, pointer</column>
+<column name="rgnET_60">in, 16, ap_none, rgnET_60, pointer</column>
+<column name="rgnET_61">in, 16, ap_none, rgnET_61, pointer</column>
+<column name="rgnET_62">in, 16, ap_none, rgnET_62, pointer</column>
+<column name="rgnET_63">in, 16, ap_none, rgnET_63, pointer</column>
+<column name="rgnET_64">in, 16, ap_none, rgnET_64, pointer</column>
+<column name="rgnET_65">in, 16, ap_none, rgnET_65, pointer</column>
+<column name="rgnET_66">in, 16, ap_none, rgnET_66, pointer</column>
+<column name="rgnET_67">in, 16, ap_none, rgnET_67, pointer</column>
+<column name="rgnET_68">in, 16, ap_none, rgnET_68, pointer</column>
+<column name="rgnET_69">in, 16, ap_none, rgnET_69, pointer</column>
+<column name="rgnET_70">in, 16, ap_none, rgnET_70, pointer</column>
+<column name="rgnET_71">in, 16, ap_none, rgnET_71, pointer</column>
+<column name="rgnET_72">in, 16, ap_none, rgnET_72, pointer</column>
+<column name="rgnET_73">in, 16, ap_none, rgnET_73, pointer</column>
+<column name="rgnET_74">in, 16, ap_none, rgnET_74, pointer</column>
+<column name="rgnET_75">in, 16, ap_none, rgnET_75, pointer</column>
+<column name="rgnET_76">in, 16, ap_none, rgnET_76, pointer</column>
+<column name="rgnET_77">in, 16, ap_none, rgnET_77, pointer</column>
+<column name="rgnET_78">in, 16, ap_none, rgnET_78, pointer</column>
+<column name="rgnET_79">in, 16, ap_none, rgnET_79, pointer</column>
+<column name="rgnET_80">in, 16, ap_none, rgnET_80, pointer</column>
+<column name="rgnET_81">in, 16, ap_none, rgnET_81, pointer</column>
+<column name="rgnET_82">in, 16, ap_none, rgnET_82, pointer</column>
+<column name="rgnET_83">in, 16, ap_none, rgnET_83, pointer</column>
+<column name="rgnET_84">in, 16, ap_none, rgnET_84, pointer</column>
+<column name="rgnET_85">in, 16, ap_none, rgnET_85, pointer</column>
+<column name="rgnET_86">in, 16, ap_none, rgnET_86, pointer</column>
+<column name="rgnET_87">in, 16, ap_none, rgnET_87, pointer</column>
+<column name="rgnET_88">in, 16, ap_none, rgnET_88, pointer</column>
+<column name="rgnET_89">in, 16, ap_none, rgnET_89, pointer</column>
+<column name="rgnET_90">in, 16, ap_none, rgnET_90, pointer</column>
+<column name="rgnET_91">in, 16, ap_none, rgnET_91, pointer</column>
+<column name="rgnET_92">in, 16, ap_none, rgnET_92, pointer</column>
+<column name="rgnET_93">in, 16, ap_none, rgnET_93, pointer</column>
+<column name="rgnET_94">in, 16, ap_none, rgnET_94, pointer</column>
+<column name="rgnET_95">in, 16, ap_none, rgnET_95, pointer</column>
+<column name="rgnET_96">in, 16, ap_none, rgnET_96, pointer</column>
+<column name="rgnET_97">in, 16, ap_none, rgnET_97, pointer</column>
+<column name="rgnET_98">in, 16, ap_none, rgnET_98, pointer</column>
+<column name="rgnET_99">in, 16, ap_none, rgnET_99, pointer</column>
+<column name="rgnET_100">in, 16, ap_none, rgnET_100, pointer</column>
+<column name="rgnET_101">in, 16, ap_none, rgnET_101, pointer</column>
+<column name="rgnET_102">in, 16, ap_none, rgnET_102, pointer</column>
+<column name="rgnET_103">in, 16, ap_none, rgnET_103, pointer</column>
+<column name="rgnET_104">in, 16, ap_none, rgnET_104, pointer</column>
+<column name="rgnET_105">in, 16, ap_none, rgnET_105, pointer</column>
+<column name="rgnET_106">in, 16, ap_none, rgnET_106, pointer</column>
+<column name="rgnET_107">in, 16, ap_none, rgnET_107, pointer</column>
+<column name="rgnET_108">in, 16, ap_none, rgnET_108, pointer</column>
+<column name="rgnET_109">in, 16, ap_none, rgnET_109, pointer</column>
+<column name="rgnET_110">in, 16, ap_none, rgnET_110, pointer</column>
+<column name="rgnET_111">in, 16, ap_none, rgnET_111, pointer</column>
+<column name="rgnET_112">in, 16, ap_none, rgnET_112, pointer</column>
+<column name="rgnET_113">in, 16, ap_none, rgnET_113, pointer</column>
+<column name="rgnET_114">in, 16, ap_none, rgnET_114, pointer</column>
+<column name="rgnET_115">in, 16, ap_none, rgnET_115, pointer</column>
+<column name="rgnET_116">in, 16, ap_none, rgnET_116, pointer</column>
+<column name="rgnET_117">in, 16, ap_none, rgnET_117, pointer</column>
+<column name="rgnET_118">in, 16, ap_none, rgnET_118, pointer</column>
+<column name="rgnET_119">in, 16, ap_none, rgnET_119, pointer</column>
+<column name="rgnET_120">in, 16, ap_none, rgnET_120, pointer</column>
+<column name="rgnET_121">in, 16, ap_none, rgnET_121, pointer</column>
+<column name="rgnET_122">in, 16, ap_none, rgnET_122, pointer</column>
+<column name="rgnET_123">in, 16, ap_none, rgnET_123, pointer</column>
+<column name="rgnET_124">in, 16, ap_none, rgnET_124, pointer</column>
+<column name="rgnET_125">in, 16, ap_none, rgnET_125, pointer</column>
+<column name="rgnET_126">in, 16, ap_none, rgnET_126, pointer</column>
+<column name="rgnET_127">in, 16, ap_none, rgnET_127, pointer</column>
+<column name="rgnET_128">in, 16, ap_none, rgnET_128, pointer</column>
+<column name="rgnET_129">in, 16, ap_none, rgnET_129, pointer</column>
+<column name="rgnET_130">in, 16, ap_none, rgnET_130, pointer</column>
+<column name="rgnET_131">in, 16, ap_none, rgnET_131, pointer</column>
+<column name="rgnET_132">in, 16, ap_none, rgnET_132, pointer</column>
+<column name="rgnET_133">in, 16, ap_none, rgnET_133, pointer</column>
+<column name="rgnET_134">in, 16, ap_none, rgnET_134, pointer</column>
+<column name="rgnET_135">in, 16, ap_none, rgnET_135, pointer</column>
+<column name="rgnET_136">in, 16, ap_none, rgnET_136, pointer</column>
+<column name="rgnET_137">in, 16, ap_none, rgnET_137, pointer</column>
+<column name="rgnET_138">in, 16, ap_none, rgnET_138, pointer</column>
+<column name="rgnET_139">in, 16, ap_none, rgnET_139, pointer</column>
+<column name="rgnET_140">in, 16, ap_none, rgnET_140, pointer</column>
+<column name="rgnET_141">in, 16, ap_none, rgnET_141, pointer</column>
+<column name="rgnET_142">in, 16, ap_none, rgnET_142, pointer</column>
+<column name="rgnET_143">in, 16, ap_none, rgnET_143, pointer</column>
+<column name="rgnET_144">in, 16, ap_none, rgnET_144, pointer</column>
+<column name="rgnET_145">in, 16, ap_none, rgnET_145, pointer</column>
+<column name="rgnET_146">in, 16, ap_none, rgnET_146, pointer</column>
+<column name="rgnET_147">in, 16, ap_none, rgnET_147, pointer</column>
+<column name="rgnET_148">in, 16, ap_none, rgnET_148, pointer</column>
+<column name="rgnET_149">in, 16, ap_none, rgnET_149, pointer</column>
+<column name="rgnET_150">in, 16, ap_none, rgnET_150, pointer</column>
+<column name="rgnET_151">in, 16, ap_none, rgnET_151, pointer</column>
+<column name="rgnET_152">in, 16, ap_none, rgnET_152, pointer</column>
+<column name="rgnET_153">in, 16, ap_none, rgnET_153, pointer</column>
+<column name="rgnET_154">in, 16, ap_none, rgnET_154, pointer</column>
+<column name="rgnET_155">in, 16, ap_none, rgnET_155, pointer</column>
+<column name="rgnET_156">in, 16, ap_none, rgnET_156, pointer</column>
+<column name="rgnET_157">in, 16, ap_none, rgnET_157, pointer</column>
+<column name="rgnET_158">in, 16, ap_none, rgnET_158, pointer</column>
+<column name="rgnET_159">in, 16, ap_none, rgnET_159, pointer</column>
+<column name="rgnET_160">in, 16, ap_none, rgnET_160, pointer</column>
+<column name="rgnET_161">in, 16, ap_none, rgnET_161, pointer</column>
+<column name="rgnET_162">in, 16, ap_none, rgnET_162, pointer</column>
+<column name="rgnET_163">in, 16, ap_none, rgnET_163, pointer</column>
+<column name="rgnET_164">in, 16, ap_none, rgnET_164, pointer</column>
+<column name="rgnET_165">in, 16, ap_none, rgnET_165, pointer</column>
+<column name="rgnET_166">in, 16, ap_none, rgnET_166, pointer</column>
+<column name="rgnET_167">in, 16, ap_none, rgnET_167, pointer</column>
+<column name="rgnET_168">in, 16, ap_none, rgnET_168, pointer</column>
+<column name="rgnET_169">in, 16, ap_none, rgnET_169, pointer</column>
+<column name="rgnET_170">in, 16, ap_none, rgnET_170, pointer</column>
+<column name="rgnET_171">in, 16, ap_none, rgnET_171, pointer</column>
+<column name="rgnET_172">in, 16, ap_none, rgnET_172, pointer</column>
+<column name="rgnET_173">in, 16, ap_none, rgnET_173, pointer</column>
+<column name="rgnET_174">in, 16, ap_none, rgnET_174, pointer</column>
+<column name="rgnET_175">in, 16, ap_none, rgnET_175, pointer</column>
+<column name="rgnET_176">in, 16, ap_none, rgnET_176, pointer</column>
+<column name="rgnET_177">in, 16, ap_none, rgnET_177, pointer</column>
+<column name="rgnET_178">in, 16, ap_none, rgnET_178, pointer</column>
+<column name="rgnET_179">in, 16, ap_none, rgnET_179, pointer</column>
+<column name="rgnET_180">in, 16, ap_none, rgnET_180, pointer</column>
+<column name="rgnET_181">in, 16, ap_none, rgnET_181, pointer</column>
+<column name="rgnET_182">in, 16, ap_none, rgnET_182, pointer</column>
+<column name="rgnET_183">in, 16, ap_none, rgnET_183, pointer</column>
+<column name="rgnET_184">in, 16, ap_none, rgnET_184, pointer</column>
+<column name="rgnET_185">in, 16, ap_none, rgnET_185, pointer</column>
+<column name="rgnET_186">in, 16, ap_none, rgnET_186, pointer</column>
+<column name="rgnET_187">in, 16, ap_none, rgnET_187, pointer</column>
+<column name="rgnET_188">in, 16, ap_none, rgnET_188, pointer</column>
+<column name="rgnET_189">in, 16, ap_none, rgnET_189, pointer</column>
+<column name="rgnET_190">in, 16, ap_none, rgnET_190, pointer</column>
+<column name="rgnET_191">in, 16, ap_none, rgnET_191, pointer</column>
+<column name="rgnET_192">in, 16, ap_none, rgnET_192, pointer</column>
+<column name="rgnET_193">in, 16, ap_none, rgnET_193, pointer</column>
+<column name="rgnET_194">in, 16, ap_none, rgnET_194, pointer</column>
+<column name="rgnET_195">in, 16, ap_none, rgnET_195, pointer</column>
+<column name="rgnET_196">in, 16, ap_none, rgnET_196, pointer</column>
+<column name="rgnET_197">in, 16, ap_none, rgnET_197, pointer</column>
+<column name="rgnET_198">in, 16, ap_none, rgnET_198, pointer</column>
+<column name="rgnET_199">in, 16, ap_none, rgnET_199, pointer</column>
+<column name="rgnET_200">in, 16, ap_none, rgnET_200, pointer</column>
+<column name="rgnET_201">in, 16, ap_none, rgnET_201, pointer</column>
+<column name="rgnET_202">in, 16, ap_none, rgnET_202, pointer</column>
+<column name="rgnET_203">in, 16, ap_none, rgnET_203, pointer</column>
+<column name="rgnET_204">in, 16, ap_none, rgnET_204, pointer</column>
+<column name="rgnET_205">in, 16, ap_none, rgnET_205, pointer</column>
+<column name="rgnET_206">in, 16, ap_none, rgnET_206, pointer</column>
+<column name="rgnET_207">in, 16, ap_none, rgnET_207, pointer</column>
+<column name="rgnET_208">in, 16, ap_none, rgnET_208, pointer</column>
+<column name="rgnET_209">in, 16, ap_none, rgnET_209, pointer</column>
+<column name="rgnET_210">in, 16, ap_none, rgnET_210, pointer</column>
+<column name="rgnET_211">in, 16, ap_none, rgnET_211, pointer</column>
+<column name="rgnET_212">in, 16, ap_none, rgnET_212, pointer</column>
+<column name="rgnET_213">in, 16, ap_none, rgnET_213, pointer</column>
+<column name="rgnET_214">in, 16, ap_none, rgnET_214, pointer</column>
+<column name="rgnET_215">in, 16, ap_none, rgnET_215, pointer</column>
+<column name="rgnET_216">in, 16, ap_none, rgnET_216, pointer</column>
+<column name="rgnET_217">in, 16, ap_none, rgnET_217, pointer</column>
+<column name="rgnET_218">in, 16, ap_none, rgnET_218, pointer</column>
+<column name="rgnET_219">in, 16, ap_none, rgnET_219, pointer</column>
+<column name="rgnET_220">in, 16, ap_none, rgnET_220, pointer</column>
+<column name="rgnET_221">in, 16, ap_none, rgnET_221, pointer</column>
+<column name="rgnET_222">in, 16, ap_none, rgnET_222, pointer</column>
+<column name="rgnET_223">in, 16, ap_none, rgnET_223, pointer</column>
+<column name="rgnET_224">in, 16, ap_none, rgnET_224, pointer</column>
+<column name="rgnET_225">in, 16, ap_none, rgnET_225, pointer</column>
+<column name="rgnET_226">in, 16, ap_none, rgnET_226, pointer</column>
+<column name="rgnET_227">in, 16, ap_none, rgnET_227, pointer</column>
+<column name="rgnET_228">in, 16, ap_none, rgnET_228, pointer</column>
+<column name="rgnET_229">in, 16, ap_none, rgnET_229, pointer</column>
+<column name="rgnET_230">in, 16, ap_none, rgnET_230, pointer</column>
+<column name="rgnET_231">in, 16, ap_none, rgnET_231, pointer</column>
+<column name="rgnET_232">in, 16, ap_none, rgnET_232, pointer</column>
+<column name="rgnET_233">in, 16, ap_none, rgnET_233, pointer</column>
+<column name="rgnET_234">in, 16, ap_none, rgnET_234, pointer</column>
+<column name="rgnET_235">in, 16, ap_none, rgnET_235, pointer</column>
+<column name="rgnET_236">in, 16, ap_none, rgnET_236, pointer</column>
+<column name="rgnET_237">in, 16, ap_none, rgnET_237, pointer</column>
+<column name="rgnET_238">in, 16, ap_none, rgnET_238, pointer</column>
+<column name="rgnET_239">in, 16, ap_none, rgnET_239, pointer</column>
+<column name="rgnET_240">in, 16, ap_none, rgnET_240, pointer</column>
+<column name="rgnET_241">in, 16, ap_none, rgnET_241, pointer</column>
+<column name="rgnET_242">in, 16, ap_none, rgnET_242, pointer</column>
+<column name="rgnET_243">in, 16, ap_none, rgnET_243, pointer</column>
+<column name="rgnET_244">in, 16, ap_none, rgnET_244, pointer</column>
+<column name="rgnET_245">in, 16, ap_none, rgnET_245, pointer</column>
+<column name="rgnET_246">in, 16, ap_none, rgnET_246, pointer</column>
+<column name="rgnET_247">in, 16, ap_none, rgnET_247, pointer</column>
+<column name="rgnET_248">in, 16, ap_none, rgnET_248, pointer</column>
+<column name="rgnET_249">in, 16, ap_none, rgnET_249, pointer</column>
+<column name="rgnET_250">in, 16, ap_none, rgnET_250, pointer</column>
+<column name="rgnET_251">in, 16, ap_none, rgnET_251, pointer</column>
+<column name="hfET_0">in, 16, ap_none, hfET_0, pointer</column>
+<column name="hfET_1">in, 16, ap_none, hfET_1, pointer</column>
+<column name="hfET_2">in, 16, ap_none, hfET_2, pointer</column>
+<column name="hfET_3">in, 16, ap_none, hfET_3, pointer</column>
+<column name="hfET_4">in, 16, ap_none, hfET_4, pointer</column>
+<column name="hfET_5">in, 16, ap_none, hfET_5, pointer</column>
+<column name="hfET_6">in, 16, ap_none, hfET_6, pointer</column>
+<column name="hfET_7">in, 16, ap_none, hfET_7, pointer</column>
+<column name="hfET_8">in, 16, ap_none, hfET_8, pointer</column>
+<column name="hfET_9">in, 16, ap_none, hfET_9, pointer</column>
+<column name="hfET_10">in, 16, ap_none, hfET_10, pointer</column>
+<column name="hfET_11">in, 16, ap_none, hfET_11, pointer</column>
+<column name="hfET_12">in, 16, ap_none, hfET_12, pointer</column>
+<column name="hfET_13">in, 16, ap_none, hfET_13, pointer</column>
+<column name="hfET_14">in, 16, ap_none, hfET_14, pointer</column>
+<column name="hfET_15">in, 16, ap_none, hfET_15, pointer</column>
+<column name="hfET_16">in, 16, ap_none, hfET_16, pointer</column>
+<column name="hfET_17">in, 16, ap_none, hfET_17, pointer</column>
+<column name="hfET_18">in, 16, ap_none, hfET_18, pointer</column>
+<column name="hfET_19">in, 16, ap_none, hfET_19, pointer</column>
+<column name="hfET_20">in, 16, ap_none, hfET_20, pointer</column>
+<column name="hfET_21">in, 16, ap_none, hfET_21, pointer</column>
+<column name="hfET_22">in, 16, ap_none, hfET_22, pointer</column>
+<column name="hfET_23">in, 16, ap_none, hfET_23, pointer</column>
+<column name="hfET_24">in, 16, ap_none, hfET_24, pointer</column>
+<column name="hfET_25">in, 16, ap_none, hfET_25, pointer</column>
+<column name="hfET_26">in, 16, ap_none, hfET_26, pointer</column>
+<column name="hfET_27">in, 16, ap_none, hfET_27, pointer</column>
+<column name="hfET_28">in, 16, ap_none, hfET_28, pointer</column>
+<column name="hfET_29">in, 16, ap_none, hfET_29, pointer</column>
+<column name="hfET_30">in, 16, ap_none, hfET_30, pointer</column>
+<column name="hfET_31">in, 16, ap_none, hfET_31, pointer</column>
+<column name="hfET_32">in, 16, ap_none, hfET_32, pointer</column>
+<column name="hfET_33">in, 16, ap_none, hfET_33, pointer</column>
+<column name="hfET_34">in, 16, ap_none, hfET_34, pointer</column>
+<column name="hfET_35">in, 16, ap_none, hfET_35, pointer</column>
+<column name="hfET_36">in, 16, ap_none, hfET_36, pointer</column>
+<column name="hfET_37">in, 16, ap_none, hfET_37, pointer</column>
+<column name="hfET_38">in, 16, ap_none, hfET_38, pointer</column>
+<column name="hfET_39">in, 16, ap_none, hfET_39, pointer</column>
+<column name="hfET_40">in, 16, ap_none, hfET_40, pointer</column>
+<column name="hfET_41">in, 16, ap_none, hfET_41, pointer</column>
+<column name="hfET_42">in, 16, ap_none, hfET_42, pointer</column>
+<column name="hfET_43">in, 16, ap_none, hfET_43, pointer</column>
+<column name="hfET_44">in, 16, ap_none, hfET_44, pointer</column>
+<column name="hfET_45">in, 16, ap_none, hfET_45, pointer</column>
+<column name="hfET_46">in, 16, ap_none, hfET_46, pointer</column>
+<column name="hfET_47">in, 16, ap_none, hfET_47, pointer</column>
+<column name="hfET_48">in, 16, ap_none, hfET_48, pointer</column>
+<column name="hfET_49">in, 16, ap_none, hfET_49, pointer</column>
+<column name="hfET_50">in, 16, ap_none, hfET_50, pointer</column>
+<column name="hfET_51">in, 16, ap_none, hfET_51, pointer</column>
+<column name="hfET_52">in, 16, ap_none, hfET_52, pointer</column>
+<column name="hfET_53">in, 16, ap_none, hfET_53, pointer</column>
+<column name="hfET_54">in, 16, ap_none, hfET_54, pointer</column>
+<column name="hfET_55">in, 16, ap_none, hfET_55, pointer</column>
+<column name="hfET_56">in, 16, ap_none, hfET_56, pointer</column>
+<column name="hfET_57">in, 16, ap_none, hfET_57, pointer</column>
+<column name="hfET_58">in, 16, ap_none, hfET_58, pointer</column>
+<column name="hfET_59">in, 16, ap_none, hfET_59, pointer</column>
+<column name="hfET_60">in, 16, ap_none, hfET_60, pointer</column>
+<column name="hfET_61">in, 16, ap_none, hfET_61, pointer</column>
+<column name="hfET_62">in, 16, ap_none, hfET_62, pointer</column>
+<column name="hfET_63">in, 16, ap_none, hfET_63, pointer</column>
+<column name="hfET_64">in, 16, ap_none, hfET_64, pointer</column>
+<column name="hfET_65">in, 16, ap_none, hfET_65, pointer</column>
+<column name="hfET_66">in, 16, ap_none, hfET_66, pointer</column>
+<column name="hfET_67">in, 16, ap_none, hfET_67, pointer</column>
+<column name="hfET_68">in, 16, ap_none, hfET_68, pointer</column>
+<column name="hfET_69">in, 16, ap_none, hfET_69, pointer</column>
+<column name="hfET_70">in, 16, ap_none, hfET_70, pointer</column>
+<column name="hfET_71">in, 16, ap_none, hfET_71, pointer</column>
+<column name="hfET_72">in, 16, ap_none, hfET_72, pointer</column>
+<column name="hfET_73">in, 16, ap_none, hfET_73, pointer</column>
+<column name="hfET_74">in, 16, ap_none, hfET_74, pointer</column>
+<column name="hfET_75">in, 16, ap_none, hfET_75, pointer</column>
+<column name="hfET_76">in, 16, ap_none, hfET_76, pointer</column>
+<column name="hfET_77">in, 16, ap_none, hfET_77, pointer</column>
+<column name="hfET_78">in, 16, ap_none, hfET_78, pointer</column>
+<column name="hfET_79">in, 16, ap_none, hfET_79, pointer</column>
+<column name="hfET_80">in, 16, ap_none, hfET_80, pointer</column>
+<column name="hfET_81">in, 16, ap_none, hfET_81, pointer</column>
+<column name="hfET_82">in, 16, ap_none, hfET_82, pointer</column>
+<column name="hfET_83">in, 16, ap_none, hfET_83, pointer</column>
+<column name="hfET_84">in, 16, ap_none, hfET_84, pointer</column>
+<column name="hfET_85">in, 16, ap_none, hfET_85, pointer</column>
+<column name="hfET_86">in, 16, ap_none, hfET_86, pointer</column>
+<column name="hfET_87">in, 16, ap_none, hfET_87, pointer</column>
+<column name="hfET_88">in, 16, ap_none, hfET_88, pointer</column>
+<column name="hfET_89">in, 16, ap_none, hfET_89, pointer</column>
+<column name="hfET_90">in, 16, ap_none, hfET_90, pointer</column>
+<column name="hfET_91">in, 16, ap_none, hfET_91, pointer</column>
+<column name="hfET_92">in, 16, ap_none, hfET_92, pointer</column>
+<column name="hfET_93">in, 16, ap_none, hfET_93, pointer</column>
+<column name="hfET_94">in, 16, ap_none, hfET_94, pointer</column>
+<column name="hfET_95">in, 16, ap_none, hfET_95, pointer</column>
+<column name="hfET_96">in, 16, ap_none, hfET_96, pointer</column>
+<column name="hfET_97">in, 16, ap_none, hfET_97, pointer</column>
+<column name="hfET_98">in, 16, ap_none, hfET_98, pointer</column>
+<column name="hfET_99">in, 16, ap_none, hfET_99, pointer</column>
+<column name="hfET_100">in, 16, ap_none, hfET_100, pointer</column>
+<column name="hfET_101">in, 16, ap_none, hfET_101, pointer</column>
+<column name="hfET_102">in, 16, ap_none, hfET_102, pointer</column>
+<column name="hfET_103">in, 16, ap_none, hfET_103, pointer</column>
+<column name="hfET_104">in, 16, ap_none, hfET_104, pointer</column>
+<column name="hfET_105">in, 16, ap_none, hfET_105, pointer</column>
+<column name="hfET_106">in, 16, ap_none, hfET_106, pointer</column>
+<column name="hfET_107">in, 16, ap_none, hfET_107, pointer</column>
+<column name="hfET_108">in, 16, ap_none, hfET_108, pointer</column>
+<column name="hfET_109">in, 16, ap_none, hfET_109, pointer</column>
+<column name="hfET_110">in, 16, ap_none, hfET_110, pointer</column>
+<column name="hfET_111">in, 16, ap_none, hfET_111, pointer</column>
+<column name="hfET_112">in, 16, ap_none, hfET_112, pointer</column>
+<column name="hfET_113">in, 16, ap_none, hfET_113, pointer</column>
+<column name="hfET_114">in, 16, ap_none, hfET_114, pointer</column>
+<column name="hfET_115">in, 16, ap_none, hfET_115, pointer</column>
+<column name="hfET_116">in, 16, ap_none, hfET_116, pointer</column>
+<column name="hfET_117">in, 16, ap_none, hfET_117, pointer</column>
+<column name="hfET_118">in, 16, ap_none, hfET_118, pointer</column>
+<column name="hfET_119">in, 16, ap_none, hfET_119, pointer</column>
+<column name="hfET_120">in, 16, ap_none, hfET_120, pointer</column>
+<column name="hfET_121">in, 16, ap_none, hfET_121, pointer</column>
+<column name="hfET_122">in, 16, ap_none, hfET_122, pointer</column>
+<column name="hfET_123">in, 16, ap_none, hfET_123, pointer</column>
+<column name="hfET_124">in, 16, ap_none, hfET_124, pointer</column>
+<column name="hfET_125">in, 16, ap_none, hfET_125, pointer</column>
+<column name="hfET_126">in, 16, ap_none, hfET_126, pointer</column>
+<column name="hfET_127">in, 16, ap_none, hfET_127, pointer</column>
+<column name="hfET_128">in, 16, ap_none, hfET_128, pointer</column>
+<column name="hfET_129">in, 16, ap_none, hfET_129, pointer</column>
+<column name="hfET_130">in, 16, ap_none, hfET_130, pointer</column>
+<column name="hfET_131">in, 16, ap_none, hfET_131, pointer</column>
+<column name="hfET_132">in, 16, ap_none, hfET_132, pointer</column>
+<column name="hfET_133">in, 16, ap_none, hfET_133, pointer</column>
+<column name="hfET_134">in, 16, ap_none, hfET_134, pointer</column>
+<column name="hfET_135">in, 16, ap_none, hfET_135, pointer</column>
+<column name="hfET_136">in, 16, ap_none, hfET_136, pointer</column>
+<column name="hfET_137">in, 16, ap_none, hfET_137, pointer</column>
+<column name="hfET_138">in, 16, ap_none, hfET_138, pointer</column>
+<column name="hfET_139">in, 16, ap_none, hfET_139, pointer</column>
+<column name="hfET_140">in, 16, ap_none, hfET_140, pointer</column>
+<column name="hfET_141">in, 16, ap_none, hfET_141, pointer</column>
+<column name="hfET_142">in, 16, ap_none, hfET_142, pointer</column>
+<column name="hfET_143">in, 16, ap_none, hfET_143, pointer</column>
+<column name="HT_0">out, 16, ap_none, HT_0, pointer</column>
+<column name="HT_1">out, 16, ap_none, HT_1, pointer</column>
+<column name="HT_2">out, 16, ap_none, HT_2, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, MakeHT, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, MakeHT, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, MakeHT, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, MakeHT, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, MakeHT, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, MakeHT, return value</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">8.43</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="">call, 8.43, 8.43, -, -, -, -, -, -, -, -, -, Block_codeRepl84651_, -</column>
+</table>
+</item>
+</section>
+</profile>

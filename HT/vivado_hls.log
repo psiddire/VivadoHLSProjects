@@ -1,0 +1,40 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.4/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'psiddire' on host 'pcminn34.cern.ch' (Linux_x86_64 version 2.6.32-754.2.1.el6.x86_64) on Mon Sep 17 15:23:52 CEST 2018
+INFO: [HLS 200-10] On os "Scientific Linux CERN SLC release 6.10 (Carbon)"
+INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT'
+INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT'.
+INFO: [HLS 200-10] Adding design file 'MakeHT.cc' to the project
+INFO: [HLS 200-10] Adding test bench file 'TestMakeHT.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution4'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7vx690tffg1927-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.25ns.
+INFO: [HLS 200-10] Analyzing design file 'MakeHT.cc' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 319.164 ; gain = 16.715 ; free physical = 619 ; free virtual = 33556
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 319.164 ; gain = 16.715 ; free physical = 644 ; free virtual = 33582
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 319.207 ; gain = 16.758 ; free physical = 640 ; free virtual = 33579
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 319.207 ; gain = 16.758 ; free physical = 642 ; free virtual = 33580
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'MakeHT' (MakeHT.cc:5).
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (MakeHT.cc:16) in function 'MakeHT' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (MakeHT.cc:24) in function 'MakeHT' completely.
+INFO: [XFORM 203-102] Partitioning array 'rgnETLUT' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'hfETLUT' in dimension 2 automatically.
+INFO: [XFORM 203-101] Partitioning array 'rgnET' (MakeHT.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'hfET' (MakeHT.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HT' (MakeHT.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (MakeHT.cc:37:1) in function 'MakeHT'... converting 789 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 588 ; free virtual = 33530
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 593 ; free virtual = 33538
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MakeHT' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'MakeHT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'MakeHT'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 6, Final II: 6, Depth: 146.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 238.75 seconds; current allocated memory: 0.203 MB.

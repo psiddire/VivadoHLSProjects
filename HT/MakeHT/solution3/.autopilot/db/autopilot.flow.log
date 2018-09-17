@@ -1,0 +1,944 @@
+@I [HLS-0] Workspace /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3 opened at Wed Aug 22 18:09:01 CEST 2018
+@I [HLS-100] Execute     config_clock -quiet -name default -period 10 -default=false 
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command     config_clock returned 0; 0 sec.
+@I [HLS-100] Execute     open_platform DefaultPlatform 
+@I [HLS-100] Command     open_platform returned 0; 0 sec.
+@I [HLS-100] Execute     import_lib /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7 
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx.lib 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/xilinx_interface.lib 
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/plb46.lib 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/fsl.lib 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/axi4.lib 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/maxi.lib 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/saxilite.lib 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/dsp48.lib 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/xfir.lib 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/xfft.lib 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/dds_compiler.lib 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.01 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_old.lib 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_vivado.lib 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx.hlp 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/target_info.tcl 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/maxi.hlp 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/saxilite.hlp 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/dsp48.hlp 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/dsp48e1.hlp 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       get_default_platform 
+@I [HLS-100] Command       get_default_platform returned 0; 0 sec.
+@I [HLS-100] Execute       config_chip_info -quiet -resource  {SLICE 91050 } {LUT 364200 } {FF 728400 } {DSP48E 1260} {BRAM 1590}  
+@I [HLS-100] Command       config_chip_info returned 0; 0 sec.
+@I [HLS-100] Execute       config_chip_info -quiet -speed medium 
+@I [HLS-100] Command       config_chip_info returned 0; 0 sec.
+@I [HLS-100] Command     import_lib returned 0; 0.01 sec.
+@I [HLS-100] Execute     source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7.gen 
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/virtex.gen 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx.gen 
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/plb46.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/fsl.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/axi4.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/nativeAXI4.gen 
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/saxilite.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/maxi.gen 
+@I [HLS-100] Command             ap_source returned 0; 0.01 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.01 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+@I [HLS-100] Command           ap_source returned 0; 0.01 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/util.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/dds_compiler.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/xfft.gen 
+@I [HLS-100] Command           ap_source returned 0; 0.06 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/xfir.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.08 sec.
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/dsp48.gen 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.08 sec.
+@I [HLS-100] Command     ap_source returned 0; 0.08 sec.
+@I [HLS-100] Execute     open_platform DefaultPlatform 
+@I [HLS-100] Command     open_platform returned 0; 0 sec.
+@I [HLS-100] Execute     import_lib /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7_fpv6 
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_hp.lib 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx.hlp 
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/target_info.tcl 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/maxi.hlp 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/saxilite.hlp 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/dsp48.hlp 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7_hp.hlp 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command     import_lib returned 0; 0.01 sec.
+@I [HLS-100] Execute     source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7_fpv6.gen 
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command     ap_source returned 0; 0 sec.
+@I [HLS-100] Execute     set_part xc7vx690tffg1927-2 
+@I [HLS-100] Execute       add_library xilinx/virtex7/virtex7:xc7vx690t:ffg1927:-2 
+@I [HLS-100] Execute         get_default_platform 
+@I [HLS-100] Command         get_default_platform returned 0; 0 sec.
+@I [HLS-100] Execute         license_isbetapart xc7vx690t 
+@I [HLS-100] Command         license_isbetapart returned 1; 0 sec.
+@I [HLS-100] Execute         get_default_platform 
+@I [HLS-100] Command         get_default_platform returned 0; 0 sec.
+@I [HLS-100] Execute         config_chip_info -quiet -resource  {SLICE 108300} {LUT 433200 } {FF 866400 } {DSP48E 3600} {BRAM 2940}  
+@I [HLS-100] Command         config_chip_info returned 0; 0 sec.
+@I [HLS-100] Execute         config_chip_info -quiet -speed medium 
+@I [HLS-100] Command         config_chip_info returned 0; 0 sec.
+@I [HLS-100] Command       add_library returned 0; 0.07 sec.
+@I [HLS-100] Execute       add_library xilinx/virtex7/virtex7_fpv6 
+@I [HLS-100] Execute         get_default_platform 
+@I [HLS-100] Command         get_default_platform returned 0; 0 sec.
+@I [HLS-100] Command       add_library returned 0; 0.04 sec.
+@I [HLS-10] Setting target device to 'xc7vx690tffg1927-2'
+@I [HLS-100] Command     set_part returned 0; 0.12 sec.
+@I [HLS-100] Execute     get_default_platform 
+@I [HLS-100] Command     get_default_platform returned 0; 0 sec.
+@I [HLS-100] Execute     config_chip_info -quiet -resource  {SLICE 108300} {LUT 433200 } {FF 866400 } {DSP48E 3600} {BRAM 2940}  
+@I [HLS-100] Command     config_chip_info returned 0; 0 sec.
+@I [HLS-100] Execute     config_chip_info -quiet -speed medium 
+@I [HLS-100] Command     config_chip_info returned 0; 0 sec.
+@I [HLS-100] Command   open_solution returned 0; 0.4 sec.
+@I [HLS-100] Execute   set_part xc7vx690tffg1927-2 
+@I [HLS-100] Execute     add_library xilinx/virtex7/virtex7:xc7vx690t:ffg1927:-2 
+@I [HLS-100] Execute       get_default_platform 
+@I [HLS-100] Command       get_default_platform returned 0; 0 sec.
+@I [HLS-100] Execute       license_isbetapart xc7vx690t 
+@I [HLS-100] Command       license_isbetapart returned 1; 0 sec.
+@I [HLS-100] Execute       get_default_platform 
+@I [HLS-100] Command       get_default_platform returned 0; 0 sec.
+@I [HLS-100] Execute       config_chip_info -quiet -resource  {SLICE 108300} {LUT 433200 } {FF 866400 } {DSP48E 3600} {BRAM 2940}  
+@I [HLS-100] Command       config_chip_info returned 0; 0 sec.
+@I [HLS-100] Execute       config_chip_info -quiet -speed medium 
+@I [HLS-100] Command       config_chip_info returned 0; 0 sec.
+@I [HLS-100] Command     add_library returned 0; 0.06 sec.
+@I [HLS-100] Execute     add_library xilinx/virtex7/virtex7_fpv6 
+@I [HLS-100] Execute       get_default_platform 
+@I [HLS-100] Command       get_default_platform returned 0; 0 sec.
+@I [HLS-100] Command     add_library returned 0; 0.02 sec.
+@I [HLS-100] Command   set_part returned 0; 0.08 sec.
+@I [HLS-100] Execute   create_clock -period 10 -name default 
+@I [HLS-100] Command   create_clock returned 0; 0.02 sec.
+@I [HLS-100] Execute   csynth_design 
+@I [HLS-100] Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 
+@I [HLS-10] Analyzing design file 'MakeHT.cc' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] Handling MakeHT.cc as C++
+@I [HLS-0] Syntax Checking before pre-processing...
+@I [HLS-100] Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -Wno-attributes -Wno-gcc-compat   -I "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/systemc/include" -I "/opt/Xilinx/Vivado_HLS/2016.4/include" -I "/opt/Xilinx/Vivado_HLS/2016.4/include/ap_sysc" -fexceptions -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot" -include etc/autopilot_ssdm_op.h "MakeHT.cc"  -o "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.00.o" 
+@I [HLS-100] Command       clang returned 0; 0.16 sec.
+@I [HLS-100] Execute       is_encrypted /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.00.o 
+@I [HLS-100] Command       is_encrypted returned 0; 0 sec.
+@I [HLS-0] Source preprocessing
+@I [HLS-100] Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "MakeHT.cc"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -Wno-attributes -Wno-gcc-compat -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc" 
+@I [HLS-100] Command       clang returned 0; 0.15 sec.
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Execute       list_core -type functional_unit 
+@I [HLS-100] Command       list_core returned 0; 0 sec.
+@I [HLS-0] CDT Preprocessing...
+@I [HLS-0] Marker-Pragma convertor: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc.ap-line.cc /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc.ap-line.cc.CXX 1
+@I [HLS-0] Converting Markers to Pragmas...
+@I [HLS-100] Execute       cdt  "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc.ap-line.cc"  -m "MakeHT" -o "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc.ap-cdt.cc" --pp --directive /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/solution3.directive --source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT.cc --error /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db --ca --es --gf --pd --p2d /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db --sd --scff /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/.systemc_flag --ad 
+@I [HLS-100] Command       cdt returned 0; 0.87 sec.
+@I [HLS-0] Marker-Pragma convertor: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pp.0.cc.ap-cdt.cc /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pragma.0.cc /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pragma.0.cc.ap-line.CXX 0
+@I [HLS-0] Converting Pragmas to Markers...
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/pragma.status.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-0] Pragma Handling...
+@I [HLS-0] Source preprocessing
+@I [HLS-100] Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pragma.1.cc"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -Wno-attributes -Wno-gcc-compat -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pragma.2.cc" 
+@I [HLS-100] Command       clang returned 0; 0.21 sec.
+@I [HLS-0] Processing labels
+@I [HLS-100] Execute       clang  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.pragma.2.cc"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2016.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.g.bc" 
+@I [HLS-100] Command       clang returned 0; 0.18 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/ve_warning.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/pragma.status.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 319.164 ; gain = 16.715 ; free physical = 2473 ; free virtual = 34434
+@I [HLS-0] Linking Release ...
+@I [HLS-100] Execute       llvm-ld /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.bc -disable-opt -L/opt/Xilinx/Vivado_HLS/2016.4/lnx64/lib -lm_basic -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o 
+@I [HLS-100] Command       llvm-ld returned 0; 0.15 sec.
+@I [HLS-100] Execute       disassemble /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o 
+@I [HLS-100] Execute         is_encrypted /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.bc 
+@I [HLS-100] Command         is_encrypted returned 0; 0 sec.
+@I [HLS-100] Command       disassemble returned 0; 0.14 sec.
+@I [HLS-0] Disassemble time: 0 seconds per iteration
+@I [HLS-0] Linking Debug ...
+@I [HLS-100] Execute       llvm-ld /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.g.bc -disable-opt -L/opt/Xilinx/Vivado_HLS/2016.4/lnx64/lib -lm_basic -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g 
+@I [HLS-100] Command       llvm-ld returned 0; 0.13 sec.
+@I [HLS-100] Execute       disassemble /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g 
+@I [HLS-100] Execute         is_encrypted /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.bc 
+@I [HLS-100] Command         is_encrypted returned 0; 0 sec.
+@I [HLS-100] Command       disassemble returned 0; 0.15 sec.
+@I [HLS-0] Disassemble time: 0 seconds per iteration
+@I [HLS-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 319.164 ; gain = 16.715 ; free physical = 2472 ; free virtual = 34433
+@I [HLS-100] Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+@I [HLS-100] Execute         cleanup_all_models 
+@I [HLS-100] Command         cleanup_all_models returned 0; 0 sec.
+@I [HLS-10] Starting code transformations ...
+@I [HLS-100] Execute         transform -promote-dbg-pointer /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.pp.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.pp.0.bc -f 
+@I [HLS-100] Command         transform returned 0; 0.06 sec.
+@I [HLS-100] Execute         llvm-ld /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx/Vivado_HLS/2016.4/lnx64/lib -lfloatconversion -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.0 
+@I [HLS-100] Command         llvm-ld returned 0; 0.17 sec.
+@I [HLS-0] Running Standard Transforms...
+@I [HLS-100] Execute         transform -hls -share-std-xform -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top MakeHT -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -promote-dbg-pointer -norm-name /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.0.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.1.bc -f -phase std-opt 
+@I [HLS-100] Command         transform returned 0; 0.07 sec.
+@I [HLS-100] Execute         disassemble /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.1 /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.1 
+@I [HLS-100] Execute           is_encrypted /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.1.bc 
+@I [HLS-100] Command           is_encrypted returned 0; 0 sec.
+@I [HLS-100] Command         disassemble returned 0; 0.13 sec.
+@I [HLS-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 319.207 ; gain = 16.758 ; free physical = 2469 ; free virtual = 34432
+@I [HLS-10] Checking synthesizability ...
+@I [HLS-0] Checking Synthesizability 1/2..
+@I [HLS-100] Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.1.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.2.prechk.bc -f 
+@I [HLS-100] Command         transform returned 0; 0.08 sec.
+@I [HLS-0] Checking Synthesizability 2/2..
+@I [HLS-100] Execute         transform -syn-check /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.2.prechk.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.2.bc -f -phase syn-check 
+@I [HLS-100] Command         transform returned 0; 0.05 sec.
+@I [HLS-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 319.207 ; gain = 16.758 ; free physical = 2469 ; free virtual = 34432
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.g.1.bc to /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.1.bc
+@I [HLS-0] Presyn 1...
+@I [HLS-100] Execute         transform -hls -tmp /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -simplifycfg -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.1.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.1.tmp.bc -f 
+@I [XFORM-502] Unrolling all loops for pipelining in function 'MakeHT' (MakeHT.cc:5).
+@I [XFORM-501] Unrolling loop 'Loop-1' (MakeHT.cc:16) in function 'MakeHT' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2' (MakeHT.cc:24) in function 'MakeHT' completely.
+@I [XFORM-102] Partitioning array 'rgnETLUT' in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'hfETLUT' in dimension 2 automatically.
+@I [XFORM-101] Partitioning array 'rgnET' (MakeHT.cc:5) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hfET' (MakeHT.cc:5) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'HT' (MakeHT.cc:5) in dimension 1 completely.
+@I [HLS-100] Command         transform returned 0; 4.56 sec.
+@I [HLS-0] Presyn 2...
+@I [HLS-100] Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.1.tmp.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.2.bc -f -phase presyn 
+@I [XFORM-401] Performing if-conversion on hyperblock to (MakeHT.cc:37:1) in function 'MakeHT'... converting 789 basic blocks.
+@I [HLS-100] Command         transform returned 0; 1.8 sec.
+@I [HLS-100] Execute         disassemble /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.2 /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.2 
+@I [HLS-100] Execute           is_encrypted /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.2.bc 
+@I [HLS-100] Command           is_encrypted returned 0; 0 sec.
+@I [HLS-100] Command         disassemble returned 0; 0.31 sec.
+@I [HLS-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 2412 ; free virtual = 34378
+@I [HLS-0] Building ssdm...
+@I [HLS-100] Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -interface-preproc -interface-gen -deadargelim -directive-preproc -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -read-loop-dep -dce -bitwidth -loop-dep -norm-name -legalize -cdfg-build /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.2.bc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+@I [HLS-100] Command         transform returned 0; 31.66 sec.
+@I [HLS-100] Execute         disassemble /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.3 /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.3 
+@I [HLS-100] Execute           is_encrypted /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.o.3.bc 
+@I [HLS-100] Command           is_encrypted returned 0; 0 sec.
+@I [HLS-100] Command         disassemble returned 0; 0.31 sec.
+@I [HLS-111] Finished Architecture Synthesis Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 2417 ; free virtual = 34386
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command       opt_and_import_c returned 0; 39.58 sec.
+@I [HLS-100] Command     elaborate returned 0; 42.28 sec.
+@I [HLS-100] Execute     autosyn 
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'MakeHT' ...
+@I [HLS-100] Execute       ap_set_top_model MakeHT 
+@I [HLS-100] Command       ap_set_top_model returned 0; 0 sec.
+@I [HLS-100] Execute       get_model_list MakeHT -filter all-wo-channel -topdown 
+@I [HLS-100] Command       get_model_list returned 0; 0 sec.
+@I [HLS-100] Execute       preproc_iomode -model MakeHT 
+@I [HLS-100] Command       preproc_iomode returned 0; 0 sec.
+@I [HLS-100] Execute       get_model_list MakeHT -filter all-wo-channel 
+@I [HLS-100] Command       get_model_list returned 0; 0 sec.
+@I [HLS-0] Model list for configure: MakeHT
+@I [HLS-0] Configuring Module : MakeHT ...
+@I [HLS-100] Execute       set_default_model MakeHT 
+@I [HLS-100] Command       set_default_model returned 0; 0 sec.
+@I [HLS-100] Execute       apply_spec_resource_limit MakeHT 
+@I [HLS-100] Command       apply_spec_resource_limit returned 0; 0.01 sec.
+@I [HLS-0] Model list for preprocess: MakeHT
+@I [HLS-0] Preprocessing Module: MakeHT ...
+@I [HLS-100] Execute       set_default_model MakeHT 
+@I [HLS-100] Command       set_default_model returned 0; 0 sec.
+@I [HLS-100] Execute       cdfg_preprocess -model MakeHT 
+@I [HLS-100] Command       cdfg_preprocess returned 0; 0.79 sec.
+@I [HLS-100] Execute       rtl_gen_preprocess MakeHT 
+@I [HLS-100] Command       rtl_gen_preprocess returned 0; 0 sec.
+@I [HLS-0] Model list for synthesis: MakeHT
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Implementing module 'MakeHT' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-100] Execute       set_default_model MakeHT 
+@I [HLS-100] Command       set_default_model returned 0; 0 sec.
+@I [HLS-100] Execute       schedule -model MakeHT 
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'MakeHT'.
+@I [SCHED-61] Pipelining result: Target II: 6, Final II: 6, Depth: 80.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command       schedule returned 0; 195.49 sec.
+@I [HLS-111]  Elapsed time: 239.37 seconds; current allocated memory: 0.203 MB.
+@I [HLS-100] Execute       report -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.verbose.sched.rpt -verbose -f 
+@I [HLS-100] Command       report returned 0; 2.65 sec.
+@I [HLS-100] Execute       db_write -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.sched.adb -f 
+@I [HLS-100] Command       db_write returned 0; 2.58 sec.
+@I [HLS-0] Finish scheduling MakeHT.
+@I [HLS-100] Execute       set_default_model MakeHT 
+@I [HLS-100] Command       set_default_model returned 0; 0 sec.
+@I [HLS-100] Execute       bind -model MakeHT 
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=MakeHT
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command       bind returned 0; 3.39 sec.
+@I [HLS-111]  Elapsed time: 8.62 seconds; current allocated memory: 0.203 MB.
+@I [HLS-100] Execute       report -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.verbose.bind.rpt -verbose -f 
+@I [HLS-100] Command       report returned 0; 3.82 sec.
+@I [HLS-100] Execute       db_write -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.bind.adb -f 
+@I [HLS-100] Command       db_write returned 0; 2.71 sec.
+@I [HLS-0] Finish binding MakeHT.
+@I [HLS-100] Execute       get_model_list MakeHT -filter all-wo-channel 
+@I [HLS-100] Command       get_model_list returned 0; 0 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Execute       rtl_gen_preprocess MakeHT 
+@I [HLS-100] Command       rtl_gen_preprocess returned 0; 0 sec.
+@I [HLS-0] Model list for RTL generation: MakeHT
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'MakeHT' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-100] Execute       create_rtl_model MakeHT -vendor xilinx -mg_file /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.compgen.tcl 
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_0' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_1' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_2' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_3' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_4' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_5' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_6' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_7' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_8' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_9' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_10' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_11' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_12' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_13' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_14' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_15' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_16' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_17' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_18' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_19' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_20' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_21' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_22' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_23' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_24' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_25' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_26' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_27' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_28' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_29' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_30' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_31' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_32' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_33' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_34' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_35' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_36' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_37' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_38' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_39' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_40' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_41' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_42' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_43' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_44' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_45' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_46' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_47' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_48' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_49' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_50' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_51' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_52' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_53' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_54' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_55' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_56' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_57' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_58' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_59' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_60' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_61' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_62' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_63' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_64' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_65' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_66' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_67' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_68' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_69' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_70' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_71' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_72' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_73' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_74' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_75' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_76' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_77' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_78' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_79' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_80' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_81' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_82' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_83' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_84' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_85' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_86' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_87' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_88' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_89' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_90' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_91' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_92' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_93' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_94' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_95' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_96' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_97' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_98' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_99' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_100' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_101' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_102' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_103' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_104' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_105' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_106' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_107' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_108' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_109' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_110' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_111' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_112' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_113' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_114' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_115' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_116' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_117' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_118' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_119' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_120' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_121' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_122' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_123' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_124' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_125' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_126' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_127' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_128' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_129' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_130' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_131' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_132' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_133' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_134' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_135' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_136' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_137' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_138' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_139' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_140' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_141' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_142' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_143' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_144' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_145' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_146' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_147' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_148' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_149' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_150' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_151' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_152' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_153' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_154' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_155' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_156' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_157' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_158' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_159' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_160' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_161' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_162' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_163' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_164' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_165' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_166' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_167' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_168' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_169' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_170' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_171' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_172' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_173' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_174' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_175' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_176' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_177' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_178' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_179' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_180' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_181' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_182' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_183' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_184' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_185' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_186' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_187' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_188' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_189' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_190' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_191' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_192' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_193' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_194' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_195' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_196' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_197' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_198' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_199' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_200' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_201' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_202' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_203' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_204' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_205' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_206' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_207' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_208' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_209' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_210' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_211' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_212' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_213' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_214' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_215' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_216' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_217' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_218' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_219' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_220' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_221' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_222' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_223' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_224' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_225' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_226' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_227' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_228' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_229' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_230' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_231' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_232' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_233' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_234' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_235' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_236' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_237' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_238' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_239' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_240' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_241' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_242' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_243' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_244' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_245' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_246' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_247' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_248' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_249' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_250' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/rgnET_251' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_0' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_1' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_2' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_3' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_4' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_5' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_6' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_7' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_8' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_9' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_10' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_11' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_12' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_13' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_14' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_15' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_16' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_17' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_18' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_19' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_20' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_21' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_22' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_23' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_24' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_25' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_26' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_27' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_28' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_29' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_30' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_31' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_32' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_33' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_34' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_35' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_36' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_37' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_38' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_39' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_40' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_41' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_42' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_43' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_44' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_45' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_46' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_47' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_48' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_49' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_50' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_51' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_52' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_53' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_54' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_55' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_56' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_57' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_58' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_59' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_60' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_61' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_62' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_63' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_64' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_65' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_66' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_67' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_68' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_69' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_70' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_71' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_72' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_73' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_74' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_75' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_76' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_77' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_78' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_79' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_80' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_81' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_82' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_83' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_84' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_85' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_86' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_87' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_88' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_89' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_90' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_91' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_92' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_93' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_94' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_95' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_96' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_97' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_98' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_99' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_100' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_101' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_102' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_103' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_104' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_105' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_106' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_107' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_108' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_109' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_110' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_111' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_112' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_113' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_114' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_115' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_116' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_117' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_118' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_119' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_120' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_121' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_122' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_123' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_124' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_125' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_126' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_127' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_128' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_129' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_130' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_131' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_132' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_133' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_134' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_135' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_136' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_137' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_138' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_139' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_140' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_141' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_142' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/hfET_143' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/HT_0' to 'ap_none'.
+@W [RTGEN-101] Port 'HT_0' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/HT_1' to 'ap_none'.
+@W [RTGEN-101] Port 'HT_1' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'MakeHT/HT_2' to 'ap_none'.
+@W [RTGEN-101] Port 'HT_2' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on function 'MakeHT' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'MakeHT'.
+@I [HLS-100] Command       create_rtl_model returned 0; 2.22 sec.
+@I [HLS-111]  Elapsed time: 8.76 seconds; current allocated memory: 0.203 MB.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.rtl_wrap.cfg.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       gen_rtl MakeHT -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/syn/systemc/MakeHT -synmodules MakeHT 
+@I [HLS-100] Command       gen_rtl returned 0; 0.21 sec.
+@I [HLS-100] Execute       gen_rtl MakeHT -istop -style xilinx -f -lang vhdl -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/syn/vhdl/MakeHT 
+@I [HLS-100] Command       gen_rtl returned 0; 1.41 sec.
+@I [HLS-100] Execute       gen_rtl MakeHT -istop -style xilinx -f -lang vlog -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/syn/verilog/MakeHT 
+@I [HLS-100] Command       gen_rtl returned 0; 0.77 sec.
+@I [HLS-100] Execute       export_constraint_db -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.constraint.tcl -f -tool general 
+@I [HLS-100] Command       export_constraint_db returned 0; 0 sec.
+@I [HLS-100] Execute       report -model MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.design.xml -verbose -f -dv 
+@I [HLS-100] Command       report returned 0; 1.34 sec.
+@I [HLS-100] Execute       report -model MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.sdaccel.xml -verbose -f -sdaccel 
+@I [HLS-100] Command       report returned 0; 2.13 sec.
+@I [HLS-100] Execute       gen_tb_info MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT -p /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db 
+@I [HLS-100] Command       gen_tb_info returned 0; 0.02 sec.
+@I [HLS-100] Execute       report -model MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/syn/report/MakeHT_csynth.rpt -f 
+@I [HLS-100] Command       report returned 0; 0.73 sec.
+@I [HLS-100] Execute       report -model MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/syn/report/MakeHT_csynth.xml -f -x 
+@I [HLS-100] Command       report returned 0; 0.67 sec.
+@I [HLS-100] Execute       report -model MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.verbose.rpt -verbose -f 
+@I [HLS-100] Command       report returned 0; 4.56 sec.
+@I [HLS-100] Execute       db_write -model MakeHT -o /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.adb -f 
+@I [HLS-100] Command       db_write returned 0; 3.35 sec.
+@I [HLS-100] Execute       sc_get_clocks MakeHT 
+@I [HLS-100] Command       sc_get_clocks returned 0; 0 sec.
+@I [HLS-100] Execute       sc_get_portdomain MakeHT 
+@I [HLS-100] Command       sc_get_portdomain returned 0; 0 sec.
+@I [HLS-0] Model list for RTL component generation: MakeHT
+@I [HLS-0] Handling components in module [MakeHT] ... 
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.compgen.tcl 
+@I [HLS-0] Found component MakeHT_rgnETLUT_0.
+@I [HLS-0] Append model MakeHT_rgnETLUT_0
+@I [HLS-0] Found component MakeHT_rgnETLUT_1.
+@I [HLS-0] Append model MakeHT_rgnETLUT_1
+@I [HLS-0] Found component MakeHT_rgnETLUT_2.
+@I [HLS-0] Append model MakeHT_rgnETLUT_2
+@I [HLS-0] Found component MakeHT_rgnETLUT_3.
+@I [HLS-0] Append model MakeHT_rgnETLUT_3
+@I [HLS-0] Found component MakeHT_rgnETLUT_4.
+@I [HLS-0] Append model MakeHT_rgnETLUT_4
+@I [HLS-0] Found component MakeHT_rgnETLUT_5.
+@I [HLS-0] Append model MakeHT_rgnETLUT_5
+@I [HLS-0] Found component MakeHT_rgnETLUT_6.
+@I [HLS-0] Append model MakeHT_rgnETLUT_6
+@I [HLS-0] Found component MakeHT_rgnETLUT_7.
+@I [HLS-0] Append model MakeHT_rgnETLUT_7
+@I [HLS-0] Found component MakeHT_rgnETLUT_8.
+@I [HLS-0] Append model MakeHT_rgnETLUT_8
+@I [HLS-0] Found component MakeHT_rgnETLUT_9.
+@I [HLS-0] Append model MakeHT_rgnETLUT_9
+@I [HLS-0] Found component MakeHT_rgnETLUT_10.
+@I [HLS-0] Append model MakeHT_rgnETLUT_10
+@I [HLS-0] Found component MakeHT_rgnETLUT_11.
+@I [HLS-0] Append model MakeHT_rgnETLUT_11
+@I [HLS-0] Found component MakeHT_rgnETLUT_12.
+@I [HLS-0] Append model MakeHT_rgnETLUT_12
+@I [HLS-0] Found component MakeHT_rgnETLUT_13.
+@I [HLS-0] Append model MakeHT_rgnETLUT_13
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-0] Append model MakeHT
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: MakeHT_rgnETLUT_0 MakeHT_rgnETLUT_1 MakeHT_rgnETLUT_2 MakeHT_rgnETLUT_3 MakeHT_rgnETLUT_4 MakeHT_rgnETLUT_5 MakeHT_rgnETLUT_6 MakeHT_rgnETLUT_7 MakeHT_rgnETLUT_8 MakeHT_rgnETLUT_9 MakeHT_rgnETLUT_10 MakeHT_rgnETLUT_11 MakeHT_rgnETLUT_12 MakeHT_rgnETLUT_13 MakeHT
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_0
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_1
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_2
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_3
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_4
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_5
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_6
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_7
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_8
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_9
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_10
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_11
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_12
+@I [HLS-0] To file: write model MakeHT_rgnETLUT_13
+@I [HLS-0] To file: write model MakeHT
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Execute       export_ssdm /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/a.export.ll 
+@I [HLS-100] Command       export_ssdm returned 0; 0.02 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/generic/autopilot/common.gen 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/generic/autopilot/APCoreGen.gen 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/generic/autopilot/op.gen 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/generic/autopilot/op_simcore.gen 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/generic/autopilot/interface.gen 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7.gen 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/virtex.gen 
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx.gen 
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/plb46.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/fsl.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/axi4.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/nativeAXI4.gen 
+@I [HLS-100] Execute               source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/saxilite.gen 
+@I [HLS-100] Command               ap_source returned 0; 0.01 sec.
+@I [HLS-100] Execute               source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/maxi.gen 
+@I [HLS-100] Command               ap_source returned 0; 0 sec.
+@I [HLS-100] Command             ap_source returned 0; 0.01 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+@I [HLS-100] Command             ap_source returned 0; 0.01 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/util.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/dds_compiler.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/xfft.gen 
+@I [HLS-100] Command             ap_source returned 0; 0.06 sec.
+@I [HLS-100] Execute             source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/ip/xfir.gen 
+@I [HLS-100] Command             ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.08 sec.
+@I [HLS-100] Execute           source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/dsp48.gen 
+@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.08 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.08 sec.
+@I [HLS-100] Execute       source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/virtex7/virtex7_fpv6.gen 
+@I [HLS-100] Execute         source /opt/Xilinx/Vivado_HLS/2016.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Execute       source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution3/.autopilot/db/MakeHT.compgen.tcl 
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_0_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_1_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_2_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_3_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_4_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_5_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_6_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_7_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_8_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_9_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_10_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_11_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_12_rom' using block ROMs.
+@I [RTMG-279] Implementing memory 'MakeHT_rgnETLUT_13_rom' using block ROMs.
+@I [HLS-100] Command       ap_source returned 0; 0.93 sec.
+@I [HLS-111] Finished generating all RTL models Time (s): cpu = 00:04:22 ; elapsed = 00:04:40 . Memory (MB): peak = 655.164 ; gain = 352.715 ; free physical = 2086 ; free virtual = 34180
+@I [SYSC-301] Generating SystemC RTL for MakeHT.
+@I [VHDL-304] Generating VHDL RTL for MakeHT.
+@I [VLOG-307] Generating Verilog RTL for MakeHT.
+@I [HLS-100] Command     autosyn returned 0; 236.85 sec.
+@I [HLS-100] Command   csynth_design returned 0; 279.13 sec.
+@I [HLS-100] Command ap_source returned 0; 279.72 sec.
+@I [HLS-100] Execute cleanup_all 
+@I [HLS-100] Command cleanup_all returned 0; 0.07 sec.

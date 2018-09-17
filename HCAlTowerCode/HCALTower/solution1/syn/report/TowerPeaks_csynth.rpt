@@ -1,0 +1,746 @@
+
+
+================================================================
+== Vivado HLS Report for 'TowerPeaks'
+================================================================
+* Date:           Mon Aug 20 17:22:34 2018
+
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
+* Project:        HCALTower
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690tffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   10|   10|    6|    6| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------+------------------+-----+-----+-----+-----+----------+
+        |                              |                  |  Latency  |  Interval | Pipeline |
+        |           Instance           |      Module      | min | max | min | max |   Type   |
+        +------------------------------+------------------+-----+-----+-----+-----+----------+
+        |grp_bitonic4_fu_1134          |bitonic4          |    4|    4|    5|    5| function |
+        |grp_getTowerPeaks3x4_fu_1228  |getTowerPeaks3x4  |    2|    2|    3|    3| function |
+        |grp_getTowerPeaks3x4_fu_1256  |getTowerPeaks3x4  |    2|    2|    3|    3| function |
+        |grp_getTowerPeaks3x4_fu_1284  |getTowerPeaks3x4  |    2|    2|    3|    3| function |
+        +------------------------------+------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|    2055|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|    6932|   43318|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|     582|
+|Register         |        -|      -|    2270|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|    9202|   45955|
++-----------------+---------+-------+--------+--------+
+|Available        |     2940|   3600|  866400|  433200|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       1|      10|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------+----------------------+---------+-------+------+-------+
+    |           Instance           |        Module        | BRAM_18K| DSP48E|  FF  |  LUT  |
+    +------------------------------+----------------------+---------+-------+------+-------+
+    |TowerPeaks_mux_68bkb_U459     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U460     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U461     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U462     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U463     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U464     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U465     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U466     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U467     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U468     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U469     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U470     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U471     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U472     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U473     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U474     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U475     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U476     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U477     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U478     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U479     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U480     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U481     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U482     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U483     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U484     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U485     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U486     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U487     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |TowerPeaks_mux_68bkb_U488     |TowerPeaks_mux_68bkb  |        0|      0|     0|    544|
+    |grp_bitonic4_fu_1134          |bitonic4              |        0|      0|  5582|  20806|
+    |grp_getTowerPeaks3x4_fu_1228  |getTowerPeaks3x4      |        0|      0|   450|   2064|
+    |grp_getTowerPeaks3x4_fu_1256  |getTowerPeaks3x4      |        0|      0|   450|   2064|
+    |grp_getTowerPeaks3x4_fu_1284  |getTowerPeaks3x4      |        0|      0|   450|   2064|
+    +------------------------------+----------------------+---------+-------+------+-------+
+    |Total                         |                      |        0|      0|  6932|  43318|
+    +------------------------------+----------------------+---------+-------+------+-------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------------------+----------+-------+---+----+------------+------------+
+    |               Variable Name               | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------------+----------+-------+---+----+------------+------------+
+    |ClusterEta2_10_fu_1738_p2                  |     +    |      0|  0|  16|           3|          16|
+    |ClusterEta2_11_2_fu_1733_p2                |     +    |      0|  0|  16|           3|          16|
+    |ClusterEta2_12_fu_1748_p2                  |     +    |      0|  0|  16|           3|          16|
+    |ClusterEta2_13_2_fu_1743_p2                |     +    |      0|  0|  16|           3|          16|
+    |ClusterEta2_14_fu_1758_p2                  |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_15_2_fu_1753_p2                |     +    |      0|  0|  16|           3|          16|
+    |ClusterEta2_16_fu_1768_p2                  |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_17_2_fu_1763_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_18_fu_1778_p2                  |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_19_2_fu_1773_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_20_fu_1788_p2                  |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_21_2_fu_1783_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_22_fu_1798_p2                  |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_23_2_fu_1793_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_24_3_fu_1808_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_25_2_fu_1803_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_26_3_fu_1818_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_27_2_fu_1813_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_28_3_fu_1828_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_29_2_fu_1823_p2                |     +    |      0|  0|  16|           4|          16|
+    |ClusterEta2_4_fu_1708_p2                   |     +    |      0|  0|  16|           2|          16|
+    |ClusterEta2_6_fu_1718_p2                   |     +    |      0|  0|  16|           2|          16|
+    |ClusterEta2_7_2_fu_1713_p2                 |     +    |      0|  0|  16|           2|          16|
+    |ClusterEta2_8_fu_1728_p2                   |     +    |      0|  0|  16|           2|          16|
+    |ClusterEta2_9_2_fu_1723_p2                 |     +    |      0|  0|  16|           2|          16|
+    |Tower_1_Eta_load_10_s_fu_2663_p2           |     +    |      0|  0|   5|           3|           5|
+    |Tower_1_Eta_load_11_s_fu_2749_p2           |     +    |      0|  0|   5|           3|           5|
+    |Tower_1_Eta_load_12_s_fu_2835_p2           |     +    |      0|  0|   5|           3|           5|
+    |Tower_1_Eta_load_13_s_fu_2921_p2           |     +    |      0|  0|   5|           3|           5|
+    |Tower_1_Eta_load_14_s_fu_3007_p2           |     +    |      0|  0|   5|           3|           5|
+    |Tower_1_Eta_load_15_s_fu_3093_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_16_s_fu_3179_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_17_s_fu_3265_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_18_s_fu_3351_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_19_s_fu_3437_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_20_s_fu_3523_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_21_s_fu_3609_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_22_s_fu_3695_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_23_s_fu_3781_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_24_s_fu_3867_p2           |     +    |      0|  0|   5|           4|           5|
+    |Tower_1_Eta_load_5_t_fu_2233_p2            |     +    |      0|  0|   5|           2|           5|
+    |Tower_1_Eta_load_6_t_fu_2319_p2            |     +    |      0|  0|   5|           2|           5|
+    |Tower_1_Eta_load_7_t_fu_2405_p2            |     +    |      0|  0|   5|           2|           5|
+    |Tower_1_Eta_load_8_t_fu_2491_p2            |     +    |      0|  0|   5|           2|           5|
+    |Tower_1_Eta_load_9_t_fu_2577_p2            |     +    |      0|  0|   5|           2|           5|
+    |tmp_371_t_fu_3953_p2                       |     +    |      0|  0|   5|           4|           5|
+    |tmp_372_t_fu_4039_p2                       |     +    |      0|  0|   5|           4|           5|
+    |tmp_373_t_fu_4125_p2                       |     +    |      0|  0|   5|           4|           5|
+    |tmp_374_t_fu_4211_p2                       |     +    |      0|  0|   5|           4|           5|
+    |tmp_375_t_fu_4297_p2                       |     +    |      0|  0|   5|           4|           5|
+    |tmp_389_1_fu_4487_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_389_2_fu_4597_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_389_3_fu_4709_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_389_4_fu_4821_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_389_5_fu_4933_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_389_6_fu_5045_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_389_7_fu_5157_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_394_1_fu_4541_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_394_2_fu_4653_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_394_3_fu_4765_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_394_4_fu_4877_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_394_5_fu_4989_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_394_6_fu_5101_p2                       |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_68_fu_4383_p2                          |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_69_fu_4435_p2                          |   icmp   |      0|  0|   6|          16|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_0_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_10_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_11_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_12_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_13_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_14_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_15_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_16_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_17_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_18_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_19_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_1_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_20_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_21_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_22_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_23_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_24_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_25_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_26_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_27_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_28_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_29_s  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_2_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_3_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_4_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_5_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_6_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_7_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_8_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterDeposits_9_r   |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_0_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_10_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_11_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_12_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_13_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_14_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_15_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_16_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_17_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_18_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_19_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_1_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_20_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_21_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_22_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_23_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_24_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_25_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_26_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_27_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_28_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_29_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_2_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_3_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_4_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_5_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_6_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_7_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_8_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterEta_9_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_0_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_10_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_11_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_12_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_13_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_14_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_15_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_16_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_17_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_18_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_19_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_1_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_20_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_21_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_22_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_23_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_24_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_25_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_26_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_27_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_28_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_29_read    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_2_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_3_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_4_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_5_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_6_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_7_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_8_read     |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic4_fu_1134_ClusterPhi_9_read     |  select  |      0|  0|  16|           1|          16|
+    +-------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                      |          |      0|  0|2055|         500|        2205|
+    +-------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                      | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                        |   1|          7|    1|          7|
+    |ap_enable_reg_pp0_iter0                          |   1|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                          |   1|          2|    1|          2|
+    |grp_getTowerPeaks3x4_fu_1228_ap_start            |   1|          2|    1|          2|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_0_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_0_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_0_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_0_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_1_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_1_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_1_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_1_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_2_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_2_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_2_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1228_towerETRegions_2_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_ap_start            |   1|          2|    1|          2|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_0_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_0_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_0_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_0_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_1_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_1_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_1_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_1_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_2_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_2_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_2_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1256_towerETRegions_2_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_ap_start            |   1|          2|    1|          2|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_0_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_0_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_0_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_0_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_1_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_1_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_1_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_1_3  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_2_0  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_2_1  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_2_2  |  16|          3|   16|         48|
+    |grp_getTowerPeaks3x4_fu_1284_towerETRegions_2_3  |  16|          3|   16|         48|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                            | 582|        125|  582|       1745|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+----+----+-----+-----------+
+    |                     Name                     | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------+----+----+-----+-----------+
+    |ClusterEta2_0_reg_6779                        |  16|   0|   16|          0|
+    |ClusterEta2_1_2_reg_6773                      |  16|   0|   16|          0|
+    |ClusterEta2_2_reg_6791                        |  16|   0|   16|          0|
+    |ClusterEta2_3_2_reg_6785                      |  16|   0|   16|          0|
+    |ClusterEta2_5_2_reg_6797                      |  16|   0|   16|          0|
+    |ClusterPhi2_0_reg_6809                        |  16|   0|   16|          0|
+    |ClusterPhi2_10_reg_6944                       |  16|   0|   16|          0|
+    |ClusterPhi2_11_2_reg_6938                     |  16|   0|   16|          0|
+    |ClusterPhi2_12_reg_6956                       |  16|   0|   16|          0|
+    |ClusterPhi2_13_2_reg_6950                     |  16|   0|   16|          0|
+    |ClusterPhi2_14_reg_8238                       |  16|   0|   16|          0|
+    |ClusterPhi2_15_2_reg_6962                     |  16|   0|   16|          0|
+    |ClusterPhi2_16_reg_8250                       |  16|   0|   16|          0|
+    |ClusterPhi2_17_2_reg_8244                     |  16|   0|   16|          0|
+    |ClusterPhi2_18_reg_8262                       |  16|   0|   16|          0|
+    |ClusterPhi2_19_2_reg_8256                     |  16|   0|   16|          0|
+    |ClusterPhi2_1_2_reg_6803                      |  16|   0|   16|          0|
+    |ClusterPhi2_20_reg_8324                       |  16|   0|   16|          0|
+    |ClusterPhi2_21_2_reg_8318                     |  16|   0|   16|          0|
+    |ClusterPhi2_22_reg_8336                       |  16|   0|   16|          0|
+    |ClusterPhi2_23_2_reg_8330                     |  16|   0|   16|          0|
+    |ClusterPhi2_24_reg_8398                       |  16|   0|   16|          0|
+    |ClusterPhi2_25_2_reg_8342                     |  16|   0|   16|          0|
+    |ClusterPhi2_26_reg_8410                       |  16|   0|   16|          0|
+    |ClusterPhi2_27_2_reg_8404                     |  16|   0|   16|          0|
+    |ClusterPhi2_28_reg_8422                       |  16|   0|   16|          0|
+    |ClusterPhi2_29_2_reg_8416                     |  16|   0|   16|          0|
+    |ClusterPhi2_2_reg_6821                        |  16|   0|   16|          0|
+    |ClusterPhi2_3_2_reg_6815                      |  16|   0|   16|          0|
+    |ClusterPhi2_4_reg_6858                        |  16|   0|   16|          0|
+    |ClusterPhi2_5_2_reg_6827                      |  16|   0|   16|          0|
+    |ClusterPhi2_6_reg_6870                        |  16|   0|   16|          0|
+    |ClusterPhi2_7_2_reg_6864                      |  16|   0|   16|          0|
+    |ClusterPhi2_8_reg_6882                        |  16|   0|   16|          0|
+    |ClusterPhi2_9_2_reg_6876                      |  16|   0|   16|          0|
+    |ap_CS_fsm                                     |   6|   0|    6|          0|
+    |ap_enable_reg_pp0_iter0_preg                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                       |   1|   0|    1|          0|
+    |ap_reg_grp_bitonic4_fu_1134_ap_start          |   1|   0|    1|          0|
+    |ap_reg_grp_getTowerPeaks3x4_fu_1228_ap_start  |   1|   0|    1|          0|
+    |ap_reg_grp_getTowerPeaks3x4_fu_1256_ap_start  |   1|   0|    1|          0|
+    |ap_reg_grp_getTowerPeaks3x4_fu_1284_ap_start  |   1|   0|    1|          0|
+    |regionEta_0_1_reg_6913                        |  16|   0|   16|          0|
+    |regionEta_0_2_reg_8213                        |  16|   0|   16|          0|
+    |regionEta_0_3_reg_8293                        |  16|   0|   16|          0|
+    |regionEta_0_4_reg_8373                        |  16|   0|   16|          0|
+    |regionEta_0_reg_6833                          |  16|   0|   16|          0|
+    |regionEta_1_1_reg_6918                        |  16|   0|   16|          0|
+    |regionEta_1_2_reg_8218                        |  16|   0|   16|          0|
+    |regionEta_1_3_reg_8298                        |  16|   0|   16|          0|
+    |regionEta_1_4_reg_8378                        |  16|   0|   16|          0|
+    |regionEta_1_reg_6838                          |  16|   0|   16|          0|
+    |regionEta_2_1_reg_6923                        |  16|   0|   16|          0|
+    |regionEta_2_2_reg_8223                        |  16|   0|   16|          0|
+    |regionEta_2_3_reg_8303                        |  16|   0|   16|          0|
+    |regionEta_2_4_reg_8383                        |  16|   0|   16|          0|
+    |regionEta_2_reg_6843                          |  16|   0|   16|          0|
+    |regionEta_3_1_reg_6928                        |  16|   0|   16|          0|
+    |regionEta_3_2_reg_8228                        |  16|   0|   16|          0|
+    |regionEta_3_3_reg_8308                        |  16|   0|   16|          0|
+    |regionEta_3_4_reg_8388                        |  16|   0|   16|          0|
+    |regionEta_3_reg_6848                          |  16|   0|   16|          0|
+    |regionEta_4_1_reg_6933                        |  16|   0|   16|          0|
+    |regionEta_4_2_reg_8233                        |  16|   0|   16|          0|
+    |regionEta_4_3_reg_8313                        |  16|   0|   16|          0|
+    |regionEta_4_4_reg_8393                        |  16|   0|   16|          0|
+    |regionEta_4_reg_6853                          |  16|   0|   16|          0|
+    |regions_0_0_1_reg_5933                        |  16|   0|   16|          0|
+    |regions_0_0_2_reg_6353                        |  16|   0|   16|          0|
+    |regions_0_0_3_reg_7093                        |  16|   0|   16|          0|
+    |regions_0_0_4_reg_7513                        |  16|   0|   16|          0|
+    |regions_0_0_5_reg_7933                        |  16|   0|   16|          0|
+    |regions_0_0_reg_5513                          |  16|   0|   16|          0|
+    |regions_0_1_1_reg_5968                        |  16|   0|   16|          0|
+    |regions_0_1_2_reg_6388                        |  16|   0|   16|          0|
+    |regions_0_1_3_reg_7128                        |  16|   0|   16|          0|
+    |regions_0_1_4_reg_7548                        |  16|   0|   16|          0|
+    |regions_0_1_5_reg_7968                        |  16|   0|   16|          0|
+    |regions_0_1_reg_5548                          |  16|   0|   16|          0|
+    |regions_0_2_1_reg_6003                        |  16|   0|   16|          0|
+    |regions_0_2_2_reg_6423                        |  16|   0|   16|          0|
+    |regions_0_2_3_reg_7163                        |  16|   0|   16|          0|
+    |regions_0_2_4_reg_7583                        |  16|   0|   16|          0|
+    |regions_0_2_5_reg_8003                        |  16|   0|   16|          0|
+    |regions_0_2_reg_5583                          |  16|   0|   16|          0|
+    |regions_0_3_1_reg_6038                        |  16|   0|   16|          0|
+    |regions_0_3_2_reg_6458                        |  16|   0|   16|          0|
+    |regions_0_3_3_reg_7198                        |  16|   0|   16|          0|
+    |regions_0_3_4_reg_7618                        |  16|   0|   16|          0|
+    |regions_0_3_5_reg_8038                        |  16|   0|   16|          0|
+    |regions_0_3_reg_5618                          |  16|   0|   16|          0|
+    |regions_1_0_1_reg_6073                        |  16|   0|   16|          0|
+    |regions_1_0_2_reg_6493                        |  16|   0|   16|          0|
+    |regions_1_0_3_reg_7233                        |  16|   0|   16|          0|
+    |regions_1_0_4_reg_7653                        |  16|   0|   16|          0|
+    |regions_1_0_5_reg_8073                        |  16|   0|   16|          0|
+    |regions_1_0_reg_5653                          |  16|   0|   16|          0|
+    |regions_1_1_1_reg_6108                        |  16|   0|   16|          0|
+    |regions_1_1_2_reg_6528                        |  16|   0|   16|          0|
+    |regions_1_1_3_reg_7268                        |  16|   0|   16|          0|
+    |regions_1_1_4_reg_7688                        |  16|   0|   16|          0|
+    |regions_1_1_5_reg_8108                        |  16|   0|   16|          0|
+    |regions_1_1_reg_5688                          |  16|   0|   16|          0|
+    |regions_1_2_1_reg_6143                        |  16|   0|   16|          0|
+    |regions_1_2_2_reg_6563                        |  16|   0|   16|          0|
+    |regions_1_2_3_reg_7303                        |  16|   0|   16|          0|
+    |regions_1_2_4_reg_7723                        |  16|   0|   16|          0|
+    |regions_1_2_5_reg_8143                        |  16|   0|   16|          0|
+    |regions_1_2_reg_5723                          |  16|   0|   16|          0|
+    |regions_1_3_1_reg_6178                        |  16|   0|   16|          0|
+    |regions_1_3_2_reg_6598                        |  16|   0|   16|          0|
+    |regions_1_3_3_reg_7338                        |  16|   0|   16|          0|
+    |regions_1_3_4_reg_7758                        |  16|   0|   16|          0|
+    |regions_1_3_5_reg_8178                        |  16|   0|   16|          0|
+    |regions_1_3_reg_5758                          |  16|   0|   16|          0|
+    |regions_2_0_1_reg_6213                        |  16|   0|   16|          0|
+    |regions_2_0_2_reg_6633                        |  16|   0|   16|          0|
+    |regions_2_0_3_reg_7373                        |  16|   0|   16|          0|
+    |regions_2_0_4_reg_7793                        |  16|   0|   16|          0|
+    |regions_2_0_reg_5793                          |  16|   0|   16|          0|
+    |regions_2_1_1_reg_6248                        |  16|   0|   16|          0|
+    |regions_2_1_2_reg_6668                        |  16|   0|   16|          0|
+    |regions_2_1_3_reg_7408                        |  16|   0|   16|          0|
+    |regions_2_1_4_reg_7828                        |  16|   0|   16|          0|
+    |regions_2_1_reg_5828                          |  16|   0|   16|          0|
+    |regions_2_2_1_reg_6283                        |  16|   0|   16|          0|
+    |regions_2_2_2_reg_6703                        |  16|   0|   16|          0|
+    |regions_2_2_3_reg_7443                        |  16|   0|   16|          0|
+    |regions_2_2_4_reg_7863                        |  16|   0|   16|          0|
+    |regions_2_2_reg_5863                          |  16|   0|   16|          0|
+    |regions_2_3_1_reg_6318                        |  16|   0|   16|          0|
+    |regions_2_3_2_reg_6738                        |  16|   0|   16|          0|
+    |regions_2_3_3_reg_7478                        |  16|   0|   16|          0|
+    |regions_2_3_4_reg_7898                        |  16|   0|   16|          0|
+    |regions_2_3_reg_5898                          |  16|   0|   16|          0|
+    |tmp_10_reg_6973                               |   5|   0|    5|          0|
+    |tmp_11_reg_6978                               |   5|   0|    5|          0|
+    |tmp_12_reg_6983                               |   5|   0|    5|          0|
+    |tmp_13_reg_6988                               |   5|   0|    5|          0|
+    |tmp_14_reg_8268                               |   5|   0|    5|          0|
+    |tmp_15_reg_8273                               |   5|   0|    5|          0|
+    |tmp_16_reg_8278                               |   5|   0|    5|          0|
+    |tmp_17_reg_8283                               |   5|   0|    5|          0|
+    |tmp_18_reg_8288                               |   5|   0|    5|          0|
+    |tmp_19_reg_8348                               |   5|   0|    5|          0|
+    |tmp_20_reg_8353                               |   5|   0|    5|          0|
+    |tmp_21_reg_8358                               |   5|   0|    5|          0|
+    |tmp_22_reg_8363                               |   5|   0|    5|          0|
+    |tmp_23_reg_8368                               |   5|   0|    5|          0|
+    |tmp_24_reg_8428                               |   5|   0|    5|          0|
+    |tmp_25_reg_8433                               |   5|   0|    5|          0|
+    |tmp_26_reg_8438                               |   5|   0|    5|          0|
+    |tmp_27_reg_8443                               |   5|   0|    5|          0|
+    |tmp_28_reg_8448                               |   5|   0|    5|          0|
+    |tmp_30_reg_6993                               |   5|   0|    5|          0|
+    |tmp_31_reg_6998                               |   2|   0|    2|          0|
+    |tmp_32_reg_7003                               |   5|   0|    5|          0|
+    |tmp_33_reg_7008                               |   2|   0|    2|          0|
+    |tmp_34_reg_7013                               |   5|   0|    5|          0|
+    |tmp_36_reg_7018                               |   2|   0|    2|          0|
+    |tmp_37_reg_7023                               |   5|   0|    5|          0|
+    |tmp_38_reg_7028                               |   2|   0|    2|          0|
+    |tmp_39_reg_7033                               |   5|   0|    5|          0|
+    |tmp_40_reg_7038                               |   2|   0|    2|          0|
+    |tmp_5_reg_6893                                |   5|   0|    5|          0|
+    |tmp_6_reg_6898                                |   5|   0|    5|          0|
+    |tmp_70_reg_7043                               |   2|   0|    2|          0|
+    |tmp_71_reg_7048                               |   2|   0|    2|          0|
+    |tmp_72_reg_7053                               |   2|   0|    2|          0|
+    |tmp_73_reg_7058                               |   2|   0|    2|          0|
+    |tmp_74_reg_7063                               |   2|   0|    2|          0|
+    |tmp_75_reg_7068                               |   2|   0|    2|          0|
+    |tmp_76_reg_7073                               |   2|   0|    2|          0|
+    |tmp_77_reg_7078                               |   2|   0|    2|          0|
+    |tmp_78_reg_7083                               |   2|   0|    2|          0|
+    |tmp_79_reg_7088                               |   2|   0|    2|          0|
+    |tmp_7_reg_6903                                |   5|   0|    5|          0|
+    |tmp_80_reg_8453                               |   2|   0|    2|          0|
+    |tmp_81_reg_8458                               |   2|   0|    2|          0|
+    |tmp_82_reg_8463                               |   2|   0|    2|          0|
+    |tmp_83_reg_8468                               |   2|   0|    2|          0|
+    |tmp_84_reg_8473                               |   2|   0|    2|          0|
+    |tmp_85_reg_8478                               |   2|   0|    2|          0|
+    |tmp_86_reg_8483                               |   2|   0|    2|          0|
+    |tmp_87_reg_8488                               |   2|   0|    2|          0|
+    |tmp_88_reg_8493                               |   2|   0|    2|          0|
+    |tmp_89_reg_8498                               |   2|   0|    2|          0|
+    |tmp_8_reg_6908                                |   5|   0|    5|          0|
+    |tmp_90_reg_8503                               |   2|   0|    2|          0|
+    |tmp_91_reg_8508                               |   2|   0|    2|          0|
+    |tmp_92_reg_8513                               |   2|   0|    2|          0|
+    |tmp_93_reg_8518                               |   2|   0|    2|          0|
+    |tmp_94_reg_8523                               |   2|   0|    2|          0|
+    |tmp_9_reg_6968                                |   5|   0|    5|          0|
+    |tmp_reg_6888                                  |   5|   0|    5|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+    |Total                                         |2270|   0| 2270|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++--------------------+-----+-----+------------+--------------+--------------+
+|ap_clk              |  in |    1| ap_ctrl_hs |  TowerPeaks  | return value |
+|ap_rst              |  in |    1| ap_ctrl_hs |  TowerPeaks  | return value |
+|ap_start            |  in |    1| ap_ctrl_hs |  TowerPeaks  | return value |
+|ap_done             | out |    1| ap_ctrl_hs |  TowerPeaks  | return value |
+|ap_idle             | out |    1| ap_ctrl_hs |  TowerPeaks  | return value |
+|ap_ready            | out |    1| ap_ctrl_hs |  TowerPeaks  | return value |
+|towerET_0_0         |  in |   16|   ap_none  |  towerET_0_0 |    pointer   |
+|towerET_0_1         |  in |   16|   ap_none  |  towerET_0_1 |    pointer   |
+|towerET_0_2         |  in |   16|   ap_none  |  towerET_0_2 |    pointer   |
+|towerET_0_3         |  in |   16|   ap_none  |  towerET_0_3 |    pointer   |
+|towerET_1_0         |  in |   16|   ap_none  |  towerET_1_0 |    pointer   |
+|towerET_1_1         |  in |   16|   ap_none  |  towerET_1_1 |    pointer   |
+|towerET_1_2         |  in |   16|   ap_none  |  towerET_1_2 |    pointer   |
+|towerET_1_3         |  in |   16|   ap_none  |  towerET_1_3 |    pointer   |
+|towerET_2_0         |  in |   16|   ap_none  |  towerET_2_0 |    pointer   |
+|towerET_2_1         |  in |   16|   ap_none  |  towerET_2_1 |    pointer   |
+|towerET_2_2         |  in |   16|   ap_none  |  towerET_2_2 |    pointer   |
+|towerET_2_3         |  in |   16|   ap_none  |  towerET_2_3 |    pointer   |
+|towerET_3_0         |  in |   16|   ap_none  |  towerET_3_0 |    pointer   |
+|towerET_3_1         |  in |   16|   ap_none  |  towerET_3_1 |    pointer   |
+|towerET_3_2         |  in |   16|   ap_none  |  towerET_3_2 |    pointer   |
+|towerET_3_3         |  in |   16|   ap_none  |  towerET_3_3 |    pointer   |
+|towerET_4_0         |  in |   16|   ap_none  |  towerET_4_0 |    pointer   |
+|towerET_4_1         |  in |   16|   ap_none  |  towerET_4_1 |    pointer   |
+|towerET_4_2         |  in |   16|   ap_none  |  towerET_4_2 |    pointer   |
+|towerET_4_3         |  in |   16|   ap_none  |  towerET_4_3 |    pointer   |
+|towerET_5_0         |  in |   16|   ap_none  |  towerET_5_0 |    pointer   |
+|towerET_5_1         |  in |   16|   ap_none  |  towerET_5_1 |    pointer   |
+|towerET_5_2         |  in |   16|   ap_none  |  towerET_5_2 |    pointer   |
+|towerET_5_3         |  in |   16|   ap_none  |  towerET_5_3 |    pointer   |
+|towerET_6_0         |  in |   16|   ap_none  |  towerET_6_0 |    pointer   |
+|towerET_6_1         |  in |   16|   ap_none  |  towerET_6_1 |    pointer   |
+|towerET_6_2         |  in |   16|   ap_none  |  towerET_6_2 |    pointer   |
+|towerET_6_3         |  in |   16|   ap_none  |  towerET_6_3 |    pointer   |
+|towerET_7_0         |  in |   16|   ap_none  |  towerET_7_0 |    pointer   |
+|towerET_7_1         |  in |   16|   ap_none  |  towerET_7_1 |    pointer   |
+|towerET_7_2         |  in |   16|   ap_none  |  towerET_7_2 |    pointer   |
+|towerET_7_3         |  in |   16|   ap_none  |  towerET_7_3 |    pointer   |
+|towerET_8_0         |  in |   16|   ap_none  |  towerET_8_0 |    pointer   |
+|towerET_8_1         |  in |   16|   ap_none  |  towerET_8_1 |    pointer   |
+|towerET_8_2         |  in |   16|   ap_none  |  towerET_8_2 |    pointer   |
+|towerET_8_3         |  in |   16|   ap_none  |  towerET_8_3 |    pointer   |
+|towerET_9_0         |  in |   16|   ap_none  |  towerET_9_0 |    pointer   |
+|towerET_9_1         |  in |   16|   ap_none  |  towerET_9_1 |    pointer   |
+|towerET_9_2         |  in |   16|   ap_none  |  towerET_9_2 |    pointer   |
+|towerET_9_3         |  in |   16|   ap_none  |  towerET_9_3 |    pointer   |
+|towerET_10_0        |  in |   16|   ap_none  | towerET_10_0 |    pointer   |
+|towerET_10_1        |  in |   16|   ap_none  | towerET_10_1 |    pointer   |
+|towerET_10_2        |  in |   16|   ap_none  | towerET_10_2 |    pointer   |
+|towerET_10_3        |  in |   16|   ap_none  | towerET_10_3 |    pointer   |
+|towerET_11_0        |  in |   16|   ap_none  | towerET_11_0 |    pointer   |
+|towerET_11_1        |  in |   16|   ap_none  | towerET_11_1 |    pointer   |
+|towerET_11_2        |  in |   16|   ap_none  | towerET_11_2 |    pointer   |
+|towerET_11_3        |  in |   16|   ap_none  | towerET_11_3 |    pointer   |
+|towerET_12_0        |  in |   16|   ap_none  | towerET_12_0 |    pointer   |
+|towerET_12_1        |  in |   16|   ap_none  | towerET_12_1 |    pointer   |
+|towerET_12_2        |  in |   16|   ap_none  | towerET_12_2 |    pointer   |
+|towerET_12_3        |  in |   16|   ap_none  | towerET_12_3 |    pointer   |
+|towerET_13_0        |  in |   16|   ap_none  | towerET_13_0 |    pointer   |
+|towerET_13_1        |  in |   16|   ap_none  | towerET_13_1 |    pointer   |
+|towerET_13_2        |  in |   16|   ap_none  | towerET_13_2 |    pointer   |
+|towerET_13_3        |  in |   16|   ap_none  | towerET_13_3 |    pointer   |
+|towerET_14_0        |  in |   16|   ap_none  | towerET_14_0 |    pointer   |
+|towerET_14_1        |  in |   16|   ap_none  | towerET_14_1 |    pointer   |
+|towerET_14_2        |  in |   16|   ap_none  | towerET_14_2 |    pointer   |
+|towerET_14_3        |  in |   16|   ap_none  | towerET_14_3 |    pointer   |
+|towerET_15_0        |  in |   16|   ap_none  | towerET_15_0 |    pointer   |
+|towerET_15_1        |  in |   16|   ap_none  | towerET_15_1 |    pointer   |
+|towerET_15_2        |  in |   16|   ap_none  | towerET_15_2 |    pointer   |
+|towerET_15_3        |  in |   16|   ap_none  | towerET_15_3 |    pointer   |
+|towerET_16_0        |  in |   16|   ap_none  | towerET_16_0 |    pointer   |
+|towerET_16_1        |  in |   16|   ap_none  | towerET_16_1 |    pointer   |
+|towerET_16_2        |  in |   16|   ap_none  | towerET_16_2 |    pointer   |
+|towerET_16_3        |  in |   16|   ap_none  | towerET_16_3 |    pointer   |
+|TowerPhi_0          | out |   16|   ap_vld   |  TowerPhi_0  |    pointer   |
+|TowerPhi_0_ap_vld   | out |    1|   ap_vld   |  TowerPhi_0  |    pointer   |
+|TowerPhi_1          | out |   16|   ap_vld   |  TowerPhi_1  |    pointer   |
+|TowerPhi_1_ap_vld   | out |    1|   ap_vld   |  TowerPhi_1  |    pointer   |
+|TowerPhi_2          | out |   16|   ap_vld   |  TowerPhi_2  |    pointer   |
+|TowerPhi_2_ap_vld   | out |    1|   ap_vld   |  TowerPhi_2  |    pointer   |
+|TowerPhi_3          | out |   16|   ap_vld   |  TowerPhi_3  |    pointer   |
+|TowerPhi_3_ap_vld   | out |    1|   ap_vld   |  TowerPhi_3  |    pointer   |
+|TowerPhi_4          | out |   16|   ap_vld   |  TowerPhi_4  |    pointer   |
+|TowerPhi_4_ap_vld   | out |    1|   ap_vld   |  TowerPhi_4  |    pointer   |
+|TowerPhi_5          | out |   16|   ap_vld   |  TowerPhi_5  |    pointer   |
+|TowerPhi_5_ap_vld   | out |    1|   ap_vld   |  TowerPhi_5  |    pointer   |
+|TowerPhi_6          | out |   16|   ap_vld   |  TowerPhi_6  |    pointer   |
+|TowerPhi_6_ap_vld   | out |    1|   ap_vld   |  TowerPhi_6  |    pointer   |
+|TowerPhi_7          | out |   16|   ap_vld   |  TowerPhi_7  |    pointer   |
+|TowerPhi_7_ap_vld   | out |    1|   ap_vld   |  TowerPhi_7  |    pointer   |
+|TowerPhi_8          | out |   16|   ap_vld   |  TowerPhi_8  |    pointer   |
+|TowerPhi_8_ap_vld   | out |    1|   ap_vld   |  TowerPhi_8  |    pointer   |
+|TowerPhi_9          | out |   16|   ap_vld   |  TowerPhi_9  |    pointer   |
+|TowerPhi_9_ap_vld   | out |    1|   ap_vld   |  TowerPhi_9  |    pointer   |
+|TowerPhi_10         | out |   16|   ap_vld   |  TowerPhi_10 |    pointer   |
+|TowerPhi_10_ap_vld  | out |    1|   ap_vld   |  TowerPhi_10 |    pointer   |
+|TowerPhi_11         | out |   16|   ap_vld   |  TowerPhi_11 |    pointer   |
+|TowerPhi_11_ap_vld  | out |    1|   ap_vld   |  TowerPhi_11 |    pointer   |
+|TowerPhi_12         | out |   16|   ap_vld   |  TowerPhi_12 |    pointer   |
+|TowerPhi_12_ap_vld  | out |    1|   ap_vld   |  TowerPhi_12 |    pointer   |
+|TowerPhi_13         | out |   16|   ap_vld   |  TowerPhi_13 |    pointer   |
+|TowerPhi_13_ap_vld  | out |    1|   ap_vld   |  TowerPhi_13 |    pointer   |
+|TowerPhi_14         | out |   16|   ap_vld   |  TowerPhi_14 |    pointer   |
+|TowerPhi_14_ap_vld  | out |    1|   ap_vld   |  TowerPhi_14 |    pointer   |
+|TowerPhi_15         | out |   16|   ap_vld   |  TowerPhi_15 |    pointer   |
+|TowerPhi_15_ap_vld  | out |    1|   ap_vld   |  TowerPhi_15 |    pointer   |
+|TowerPhi_16         | out |   16|   ap_vld   |  TowerPhi_16 |    pointer   |
+|TowerPhi_16_ap_vld  | out |    1|   ap_vld   |  TowerPhi_16 |    pointer   |
+|TowerPhi_17         | out |   16|   ap_vld   |  TowerPhi_17 |    pointer   |
+|TowerPhi_17_ap_vld  | out |    1|   ap_vld   |  TowerPhi_17 |    pointer   |
+|TowerPhi_18         | out |   16|   ap_vld   |  TowerPhi_18 |    pointer   |
+|TowerPhi_18_ap_vld  | out |    1|   ap_vld   |  TowerPhi_18 |    pointer   |
+|TowerPhi_19         | out |   16|   ap_vld   |  TowerPhi_19 |    pointer   |
+|TowerPhi_19_ap_vld  | out |    1|   ap_vld   |  TowerPhi_19 |    pointer   |
+|TowerPhi_20         | out |   16|   ap_vld   |  TowerPhi_20 |    pointer   |
+|TowerPhi_20_ap_vld  | out |    1|   ap_vld   |  TowerPhi_20 |    pointer   |
+|TowerPhi_21         | out |   16|   ap_vld   |  TowerPhi_21 |    pointer   |
+|TowerPhi_21_ap_vld  | out |    1|   ap_vld   |  TowerPhi_21 |    pointer   |
+|TowerPhi_22         | out |   16|   ap_vld   |  TowerPhi_22 |    pointer   |
+|TowerPhi_22_ap_vld  | out |    1|   ap_vld   |  TowerPhi_22 |    pointer   |
+|TowerPhi_23         | out |   16|   ap_vld   |  TowerPhi_23 |    pointer   |
+|TowerPhi_23_ap_vld  | out |    1|   ap_vld   |  TowerPhi_23 |    pointer   |
+|TowerPhi_24         | out |   16|   ap_vld   |  TowerPhi_24 |    pointer   |
+|TowerPhi_24_ap_vld  | out |    1|   ap_vld   |  TowerPhi_24 |    pointer   |
+|TowerPhi_25         | out |   16|   ap_vld   |  TowerPhi_25 |    pointer   |
+|TowerPhi_25_ap_vld  | out |    1|   ap_vld   |  TowerPhi_25 |    pointer   |
+|TowerPhi_26         | out |   16|   ap_vld   |  TowerPhi_26 |    pointer   |
+|TowerPhi_26_ap_vld  | out |    1|   ap_vld   |  TowerPhi_26 |    pointer   |
+|TowerPhi_27         | out |   16|   ap_vld   |  TowerPhi_27 |    pointer   |
+|TowerPhi_27_ap_vld  | out |    1|   ap_vld   |  TowerPhi_27 |    pointer   |
+|TowerPhi_28         | out |   16|   ap_vld   |  TowerPhi_28 |    pointer   |
+|TowerPhi_28_ap_vld  | out |    1|   ap_vld   |  TowerPhi_28 |    pointer   |
+|TowerPhi_29         | out |   16|   ap_vld   |  TowerPhi_29 |    pointer   |
+|TowerPhi_29_ap_vld  | out |    1|   ap_vld   |  TowerPhi_29 |    pointer   |
+|TowerEta_0          | out |   16|   ap_vld   |  TowerEta_0  |    pointer   |
+|TowerEta_0_ap_vld   | out |    1|   ap_vld   |  TowerEta_0  |    pointer   |
+|TowerEta_1          | out |   16|   ap_vld   |  TowerEta_1  |    pointer   |
+|TowerEta_1_ap_vld   | out |    1|   ap_vld   |  TowerEta_1  |    pointer   |
+|TowerEta_2          | out |   16|   ap_vld   |  TowerEta_2  |    pointer   |
+|TowerEta_2_ap_vld   | out |    1|   ap_vld   |  TowerEta_2  |    pointer   |
+|TowerEta_3          | out |   16|   ap_vld   |  TowerEta_3  |    pointer   |
+|TowerEta_3_ap_vld   | out |    1|   ap_vld   |  TowerEta_3  |    pointer   |
+|TowerEta_4          | out |   16|   ap_vld   |  TowerEta_4  |    pointer   |
+|TowerEta_4_ap_vld   | out |    1|   ap_vld   |  TowerEta_4  |    pointer   |
+|TowerEta_5          | out |   16|   ap_vld   |  TowerEta_5  |    pointer   |
+|TowerEta_5_ap_vld   | out |    1|   ap_vld   |  TowerEta_5  |    pointer   |
+|TowerEta_6          | out |   16|   ap_vld   |  TowerEta_6  |    pointer   |
+|TowerEta_6_ap_vld   | out |    1|   ap_vld   |  TowerEta_6  |    pointer   |
+|TowerEta_7          | out |   16|   ap_vld   |  TowerEta_7  |    pointer   |
+|TowerEta_7_ap_vld   | out |    1|   ap_vld   |  TowerEta_7  |    pointer   |
+|TowerEta_8          | out |   16|   ap_vld   |  TowerEta_8  |    pointer   |
+|TowerEta_8_ap_vld   | out |    1|   ap_vld   |  TowerEta_8  |    pointer   |
+|TowerEta_9          | out |   16|   ap_vld   |  TowerEta_9  |    pointer   |
+|TowerEta_9_ap_vld   | out |    1|   ap_vld   |  TowerEta_9  |    pointer   |
+|TowerEta_10         | out |   16|   ap_vld   |  TowerEta_10 |    pointer   |
+|TowerEta_10_ap_vld  | out |    1|   ap_vld   |  TowerEta_10 |    pointer   |
+|TowerEta_11         | out |   16|   ap_vld   |  TowerEta_11 |    pointer   |
+|TowerEta_11_ap_vld  | out |    1|   ap_vld   |  TowerEta_11 |    pointer   |
+|TowerEta_12         | out |   16|   ap_vld   |  TowerEta_12 |    pointer   |
+|TowerEta_12_ap_vld  | out |    1|   ap_vld   |  TowerEta_12 |    pointer   |
+|TowerEta_13         | out |   16|   ap_vld   |  TowerEta_13 |    pointer   |
+|TowerEta_13_ap_vld  | out |    1|   ap_vld   |  TowerEta_13 |    pointer   |
+|TowerEta_14         | out |   16|   ap_vld   |  TowerEta_14 |    pointer   |
+|TowerEta_14_ap_vld  | out |    1|   ap_vld   |  TowerEta_14 |    pointer   |
+|TowerEta_15         | out |   16|   ap_vld   |  TowerEta_15 |    pointer   |
+|TowerEta_15_ap_vld  | out |    1|   ap_vld   |  TowerEta_15 |    pointer   |
+|TowerEta_16         | out |   16|   ap_vld   |  TowerEta_16 |    pointer   |
+|TowerEta_16_ap_vld  | out |    1|   ap_vld   |  TowerEta_16 |    pointer   |
+|TowerEta_17         | out |   16|   ap_vld   |  TowerEta_17 |    pointer   |
+|TowerEta_17_ap_vld  | out |    1|   ap_vld   |  TowerEta_17 |    pointer   |
+|TowerEta_18         | out |   16|   ap_vld   |  TowerEta_18 |    pointer   |
+|TowerEta_18_ap_vld  | out |    1|   ap_vld   |  TowerEta_18 |    pointer   |
+|TowerEta_19         | out |   16|   ap_vld   |  TowerEta_19 |    pointer   |
+|TowerEta_19_ap_vld  | out |    1|   ap_vld   |  TowerEta_19 |    pointer   |
+|TowerEta_20         | out |   16|   ap_vld   |  TowerEta_20 |    pointer   |
+|TowerEta_20_ap_vld  | out |    1|   ap_vld   |  TowerEta_20 |    pointer   |
+|TowerEta_21         | out |   16|   ap_vld   |  TowerEta_21 |    pointer   |
+|TowerEta_21_ap_vld  | out |    1|   ap_vld   |  TowerEta_21 |    pointer   |
+|TowerEta_22         | out |   16|   ap_vld   |  TowerEta_22 |    pointer   |
+|TowerEta_22_ap_vld  | out |    1|   ap_vld   |  TowerEta_22 |    pointer   |
+|TowerEta_23         | out |   16|   ap_vld   |  TowerEta_23 |    pointer   |
+|TowerEta_23_ap_vld  | out |    1|   ap_vld   |  TowerEta_23 |    pointer   |
+|TowerEta_24         | out |   16|   ap_vld   |  TowerEta_24 |    pointer   |
+|TowerEta_24_ap_vld  | out |    1|   ap_vld   |  TowerEta_24 |    pointer   |
+|TowerEta_25         | out |   16|   ap_vld   |  TowerEta_25 |    pointer   |
+|TowerEta_25_ap_vld  | out |    1|   ap_vld   |  TowerEta_25 |    pointer   |
+|TowerEta_26         | out |   16|   ap_vld   |  TowerEta_26 |    pointer   |
+|TowerEta_26_ap_vld  | out |    1|   ap_vld   |  TowerEta_26 |    pointer   |
+|TowerEta_27         | out |   16|   ap_vld   |  TowerEta_27 |    pointer   |
+|TowerEta_27_ap_vld  | out |    1|   ap_vld   |  TowerEta_27 |    pointer   |
+|TowerEta_28         | out |   16|   ap_vld   |  TowerEta_28 |    pointer   |
+|TowerEta_28_ap_vld  | out |    1|   ap_vld   |  TowerEta_28 |    pointer   |
+|TowerEta_29         | out |   16|   ap_vld   |  TowerEta_29 |    pointer   |
+|TowerEta_29_ap_vld  | out |    1|   ap_vld   |  TowerEta_29 |    pointer   |
++--------------------+-----+-----+------------+--------------+--------------+
+

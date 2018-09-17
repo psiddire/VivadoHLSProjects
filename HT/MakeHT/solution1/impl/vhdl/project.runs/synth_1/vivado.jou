@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Aug 21 12:37:20 2018
+# Process ID: 31700
+# Current directory: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/impl/vhdl/project.runs/synth_1
+# Command line: vivado -log MakeHT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MakeHT.tcl
+# Log file: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/impl/vhdl/project.runs/synth_1/MakeHT.vds
+# Journal file: /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution1/impl/vhdl/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source MakeHT.tcl -notrace

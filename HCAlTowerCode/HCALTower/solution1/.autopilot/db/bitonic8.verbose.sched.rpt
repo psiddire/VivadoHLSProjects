@@ -1,0 +1,1367 @@
+
+
+================================================================
+== Vivado HLS Report for 'bitonic8'
+================================================================
+* Date:           Mon Aug 20 17:22:17 2018
+
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
+* Project:        HCALTower
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690tffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.59|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    3|    3|    4|    4| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 1
+  Pipeline-0: II = 4, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 6.01ns
+ST_1: ClusterPhi_31_read_1 (95)  [1/1] 0.00ns
+._crit_edge.0:0  %ClusterPhi_31_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_31_read)
+
+ST_1: ClusterPhi_30_read_1 (96)  [1/1] 0.00ns
+._crit_edge.0:1  %ClusterPhi_30_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_30_read)
+
+ST_1: ClusterPhi_29_read_1 (97)  [1/1] 0.00ns
+._crit_edge.0:2  %ClusterPhi_29_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_29_read)
+
+ST_1: ClusterPhi_28_read_1 (98)  [1/1] 0.00ns
+._crit_edge.0:3  %ClusterPhi_28_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_28_read)
+
+ST_1: ClusterPhi_27_read_1 (99)  [1/1] 0.00ns
+._crit_edge.0:4  %ClusterPhi_27_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_27_read)
+
+ST_1: ClusterPhi_26_read_1 (100)  [1/1] 0.00ns
+._crit_edge.0:5  %ClusterPhi_26_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_26_read)
+
+ST_1: ClusterPhi_25_read_1 (101)  [1/1] 0.00ns
+._crit_edge.0:6  %ClusterPhi_25_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_25_read)
+
+ST_1: ClusterPhi_24_read_1 (102)  [1/1] 0.00ns
+._crit_edge.0:7  %ClusterPhi_24_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_24_read)
+
+ST_1: ClusterPhi_23_read_1 (103)  [1/1] 0.00ns
+._crit_edge.0:8  %ClusterPhi_23_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_23_read)
+
+ST_1: ClusterPhi_22_read_1 (104)  [1/1] 0.00ns
+._crit_edge.0:9  %ClusterPhi_22_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_22_read)
+
+ST_1: ClusterPhi_21_read_1 (105)  [1/1] 0.00ns
+._crit_edge.0:10  %ClusterPhi_21_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_21_read)
+
+ST_1: ClusterPhi_20_read_1 (106)  [1/1] 0.00ns
+._crit_edge.0:11  %ClusterPhi_20_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_20_read)
+
+ST_1: ClusterPhi_19_read_1 (107)  [1/1] 0.00ns
+._crit_edge.0:12  %ClusterPhi_19_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_19_read)
+
+ST_1: ClusterPhi_18_read_1 (108)  [1/1] 0.00ns
+._crit_edge.0:13  %ClusterPhi_18_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_18_read)
+
+ST_1: ClusterPhi_17_read_1 (109)  [1/1] 0.00ns
+._crit_edge.0:14  %ClusterPhi_17_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_17_read)
+
+ST_1: ClusterPhi_16_read_1 (110)  [1/1] 0.00ns
+._crit_edge.0:15  %ClusterPhi_16_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_16_read)
+
+ST_1: ClusterPhi_15_read_1 (111)  [1/1] 0.00ns
+._crit_edge.0:16  %ClusterPhi_15_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_15_read)
+
+ST_1: ClusterPhi_14_read_1 (112)  [1/1] 0.00ns
+._crit_edge.0:17  %ClusterPhi_14_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_14_read)
+
+ST_1: ClusterPhi_13_read_1 (113)  [1/1] 0.00ns
+._crit_edge.0:18  %ClusterPhi_13_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_13_read)
+
+ST_1: ClusterPhi_12_read_1 (114)  [1/1] 0.00ns
+._crit_edge.0:19  %ClusterPhi_12_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_12_read)
+
+ST_1: ClusterPhi_11_read_1 (115)  [1/1] 0.00ns
+._crit_edge.0:20  %ClusterPhi_11_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_11_read)
+
+ST_1: ClusterPhi_10_read_1 (116)  [1/1] 0.00ns
+._crit_edge.0:21  %ClusterPhi_10_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_10_read)
+
+ST_1: ClusterPhi_9_read_1 (117)  [1/1] 0.00ns
+._crit_edge.0:22  %ClusterPhi_9_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_9_read)
+
+ST_1: ClusterPhi_8_read_1 (118)  [1/1] 0.00ns
+._crit_edge.0:23  %ClusterPhi_8_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_8_read)
+
+ST_1: ClusterPhi_7_read_1 (119)  [1/1] 0.00ns
+._crit_edge.0:24  %ClusterPhi_7_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_7_read)
+
+ST_1: ClusterPhi_6_read_1 (120)  [1/1] 0.00ns
+._crit_edge.0:25  %ClusterPhi_6_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_6_read)
+
+ST_1: ClusterPhi_5_read_1 (121)  [1/1] 0.00ns
+._crit_edge.0:26  %ClusterPhi_5_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_5_read)
+
+ST_1: ClusterPhi_4_read_1 (122)  [1/1] 0.00ns
+._crit_edge.0:27  %ClusterPhi_4_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_4_read)
+
+ST_1: ClusterPhi_3_read_1 (123)  [1/1] 0.00ns
+._crit_edge.0:28  %ClusterPhi_3_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_3_read)
+
+ST_1: ClusterPhi_2_read_1 (124)  [1/1] 0.00ns
+._crit_edge.0:29  %ClusterPhi_2_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_2_read)
+
+ST_1: ClusterPhi_1_read_1 (125)  [1/1] 0.00ns
+._crit_edge.0:30  %ClusterPhi_1_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_1_read)
+
+ST_1: ClusterPhi_0_read_1 (126)  [1/1] 0.00ns
+._crit_edge.0:31  %ClusterPhi_0_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterPhi_0_read)
+
+ST_1: ClusterEta_31_read_1 (127)  [1/1] 0.00ns
+._crit_edge.0:32  %ClusterEta_31_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_31_read)
+
+ST_1: ClusterEta_30_read_1 (128)  [1/1] 0.00ns
+._crit_edge.0:33  %ClusterEta_30_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_30_read)
+
+ST_1: ClusterEta_29_read_1 (129)  [1/1] 0.00ns
+._crit_edge.0:34  %ClusterEta_29_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_29_read)
+
+ST_1: ClusterEta_28_read_1 (130)  [1/1] 0.00ns
+._crit_edge.0:35  %ClusterEta_28_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_28_read)
+
+ST_1: ClusterEta_27_read_1 (131)  [1/1] 0.00ns
+._crit_edge.0:36  %ClusterEta_27_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_27_read)
+
+ST_1: ClusterEta_26_read_1 (132)  [1/1] 0.00ns
+._crit_edge.0:37  %ClusterEta_26_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_26_read)
+
+ST_1: ClusterEta_25_read_1 (133)  [1/1] 0.00ns
+._crit_edge.0:38  %ClusterEta_25_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_25_read)
+
+ST_1: ClusterEta_24_read_1 (134)  [1/1] 0.00ns
+._crit_edge.0:39  %ClusterEta_24_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_24_read)
+
+ST_1: ClusterEta_23_read_1 (135)  [1/1] 0.00ns
+._crit_edge.0:40  %ClusterEta_23_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_23_read)
+
+ST_1: ClusterEta_22_read_1 (136)  [1/1] 0.00ns
+._crit_edge.0:41  %ClusterEta_22_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_22_read)
+
+ST_1: ClusterEta_21_read_1 (137)  [1/1] 0.00ns
+._crit_edge.0:42  %ClusterEta_21_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_21_read)
+
+ST_1: ClusterEta_20_read_1 (138)  [1/1] 0.00ns
+._crit_edge.0:43  %ClusterEta_20_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_20_read)
+
+ST_1: ClusterEta_19_read_1 (139)  [1/1] 0.00ns
+._crit_edge.0:44  %ClusterEta_19_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_19_read)
+
+ST_1: ClusterEta_18_read_1 (140)  [1/1] 0.00ns
+._crit_edge.0:45  %ClusterEta_18_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_18_read)
+
+ST_1: ClusterEta_17_read_1 (141)  [1/1] 0.00ns
+._crit_edge.0:46  %ClusterEta_17_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_17_read)
+
+ST_1: ClusterEta_16_read_1 (142)  [1/1] 0.00ns
+._crit_edge.0:47  %ClusterEta_16_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_16_read)
+
+ST_1: ClusterEta_15_read_1 (143)  [1/1] 0.00ns
+._crit_edge.0:48  %ClusterEta_15_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_15_read)
+
+ST_1: ClusterEta_14_read_1 (144)  [1/1] 0.00ns
+._crit_edge.0:49  %ClusterEta_14_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_14_read)
+
+ST_1: ClusterEta_13_read_1 (145)  [1/1] 0.00ns
+._crit_edge.0:50  %ClusterEta_13_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_13_read)
+
+ST_1: ClusterEta_12_read_1 (146)  [1/1] 0.00ns
+._crit_edge.0:51  %ClusterEta_12_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_12_read)
+
+ST_1: ClusterEta_11_read_1 (147)  [1/1] 0.00ns
+._crit_edge.0:52  %ClusterEta_11_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_11_read)
+
+ST_1: ClusterEta_10_read_1 (148)  [1/1] 0.00ns
+._crit_edge.0:53  %ClusterEta_10_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_10_read)
+
+ST_1: ClusterEta_9_read_1 (149)  [1/1] 0.00ns
+._crit_edge.0:54  %ClusterEta_9_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_9_read)
+
+ST_1: ClusterEta_8_read_1 (150)  [1/1] 0.00ns
+._crit_edge.0:55  %ClusterEta_8_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_8_read)
+
+ST_1: ClusterEta_7_read_1 (151)  [1/1] 0.00ns
+._crit_edge.0:56  %ClusterEta_7_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_7_read)
+
+ST_1: ClusterEta_6_read_1 (152)  [1/1] 0.00ns
+._crit_edge.0:57  %ClusterEta_6_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_6_read)
+
+ST_1: ClusterEta_5_read_1 (153)  [1/1] 0.00ns
+._crit_edge.0:58  %ClusterEta_5_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_5_read)
+
+ST_1: ClusterEta_4_read_1 (154)  [1/1] 0.00ns
+._crit_edge.0:59  %ClusterEta_4_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_4_read)
+
+ST_1: ClusterEta_3_read_1 (155)  [1/1] 0.00ns
+._crit_edge.0:60  %ClusterEta_3_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_3_read)
+
+ST_1: ClusterEta_2_read_1 (156)  [1/1] 0.00ns
+._crit_edge.0:61  %ClusterEta_2_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_2_read)
+
+ST_1: ClusterEta_1_read_1 (157)  [1/1] 0.00ns
+._crit_edge.0:62  %ClusterEta_1_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_1_read)
+
+ST_1: ClusterEta_0_read_1 (158)  [1/1] 0.00ns
+._crit_edge.0:63  %ClusterEta_0_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterEta_0_read)
+
+ST_1: ClusterDeposits_31_1 (159)  [1/1] 0.00ns
+._crit_edge.0:64  %ClusterDeposits_31_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_31_s)
+
+ST_1: ClusterDeposits_30_1 (160)  [1/1] 0.00ns
+._crit_edge.0:65  %ClusterDeposits_30_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_30_s)
+
+ST_1: ClusterDeposits_27_1 (161)  [1/1] 0.00ns
+._crit_edge.0:66  %ClusterDeposits_27_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_27_s)
+
+ST_1: ClusterDeposits_26_1 (162)  [1/1] 0.00ns
+._crit_edge.0:67  %ClusterDeposits_26_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_26_s)
+
+ST_1: ClusterDeposits_25_1 (163)  [1/1] 0.00ns
+._crit_edge.0:68  %ClusterDeposits_25_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_25_s)
+
+ST_1: ClusterDeposits_24_1 (164)  [1/1] 0.00ns
+._crit_edge.0:69  %ClusterDeposits_24_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_24_s)
+
+ST_1: ClusterDeposits_23_1 (165)  [1/1] 0.00ns
+._crit_edge.0:70  %ClusterDeposits_23_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_23_s)
+
+ST_1: ClusterDeposits_22_1 (166)  [1/1] 0.00ns
+._crit_edge.0:71  %ClusterDeposits_22_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_22_s)
+
+ST_1: ClusterDeposits_21_1 (167)  [1/1] 0.00ns
+._crit_edge.0:72  %ClusterDeposits_21_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_21_s)
+
+ST_1: ClusterDeposits_20_1 (168)  [1/1] 0.00ns
+._crit_edge.0:73  %ClusterDeposits_20_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_20_s)
+
+ST_1: ClusterDeposits_19_1 (169)  [1/1] 0.00ns
+._crit_edge.0:74  %ClusterDeposits_19_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_19_s)
+
+ST_1: ClusterDeposits_18_1 (170)  [1/1] 0.00ns
+._crit_edge.0:75  %ClusterDeposits_18_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_18_s)
+
+ST_1: ClusterDeposits_17_1 (171)  [1/1] 0.00ns
+._crit_edge.0:76  %ClusterDeposits_17_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_17_s)
+
+ST_1: ClusterDeposits_16_1 (172)  [1/1] 0.00ns
+._crit_edge.0:77  %ClusterDeposits_16_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_16_s)
+
+ST_1: ClusterDeposits_15_1 (173)  [1/1] 0.00ns
+._crit_edge.0:78  %ClusterDeposits_15_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_15_s)
+
+ST_1: ClusterDeposits_14_1 (174)  [1/1] 0.00ns
+._crit_edge.0:79  %ClusterDeposits_14_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_14_s)
+
+ST_1: ClusterDeposits_13_1 (175)  [1/1] 0.00ns
+._crit_edge.0:80  %ClusterDeposits_13_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_13_s)
+
+ST_1: ClusterDeposits_12_1 (176)  [1/1] 0.00ns
+._crit_edge.0:81  %ClusterDeposits_12_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_12_s)
+
+ST_1: ClusterDeposits_11_1 (177)  [1/1] 0.00ns
+._crit_edge.0:82  %ClusterDeposits_11_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_11_s)
+
+ST_1: ClusterDeposits_10_1 (178)  [1/1] 0.00ns
+._crit_edge.0:83  %ClusterDeposits_10_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_10_s)
+
+ST_1: ClusterDeposits_9_r_1 (179)  [1/1] 0.00ns
+._crit_edge.0:84  %ClusterDeposits_9_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_9_r)
+
+ST_1: ClusterDeposits_8_r_1 (180)  [1/1] 0.00ns
+._crit_edge.0:85  %ClusterDeposits_8_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_8_r)
+
+ST_1: ClusterDeposits_7_r_1 (181)  [1/1] 0.00ns
+._crit_edge.0:86  %ClusterDeposits_7_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_7_r)
+
+ST_1: ClusterDeposits_6_r_1 (182)  [1/1] 0.00ns
+._crit_edge.0:87  %ClusterDeposits_6_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_6_r)
+
+ST_1: ClusterDeposits_5_r_1 (183)  [1/1] 0.00ns
+._crit_edge.0:88  %ClusterDeposits_5_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_5_r)
+
+ST_1: ClusterDeposits_4_r_1 (184)  [1/1] 0.00ns
+._crit_edge.0:89  %ClusterDeposits_4_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_4_r)
+
+ST_1: ClusterDeposits_3_r_1 (185)  [1/1] 0.00ns
+._crit_edge.0:90  %ClusterDeposits_3_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_3_r)
+
+ST_1: ClusterDeposits_2_r_1 (186)  [1/1] 0.00ns
+._crit_edge.0:91  %ClusterDeposits_2_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_2_r)
+
+ST_1: ClusterDeposits_1_r_1 (187)  [1/1] 0.00ns
+._crit_edge.0:92  %ClusterDeposits_1_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_1_r)
+
+ST_1: ClusterDeposits_0_r_1 (188)  [1/1] 0.00ns
+._crit_edge.0:93  %ClusterDeposits_0_r_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %ClusterDeposits_0_r)
+
+ST_1: tmp_s (189)  [1/1] 1.29ns  loc: HCALTower.cpp:754
+._crit_edge.0:94  %tmp_s = icmp ult i16 %ClusterDeposits_0_r_1, %ClusterDeposits_4_r_1
+
+ST_1: p_read4_read (190)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:95  %p_read4_read = select i1 %tmp_s, i16 %ClusterDeposits_4_r_1, i16 %ClusterDeposits_0_r_1
+
+ST_1: p_read_read4 (191)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:96  %p_read_read4 = select i1 %tmp_s, i16 %ClusterDeposits_0_r_1, i16 %ClusterDeposits_4_r_1
+
+ST_1: p_read36_read (192)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:97  %p_read36_read = select i1 %tmp_s, i16 %ClusterEta_4_read_1, i16 %ClusterEta_0_read_1
+
+ST_1: p_read32_read (193)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:98  %p_read32_read = select i1 %tmp_s, i16 %ClusterEta_0_read_1, i16 %ClusterEta_4_read_1
+
+ST_1: p_read68_read (194)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:99  %p_read68_read = select i1 %tmp_s, i16 %ClusterPhi_4_read_1, i16 %ClusterPhi_0_read_1
+
+ST_1: p_read64_read (195)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:100  %p_read64_read = select i1 %tmp_s, i16 %ClusterPhi_0_read_1, i16 %ClusterPhi_4_read_1
+
+ST_1: tmp_114_1 (196)  [1/1] 1.29ns  loc: HCALTower.cpp:754
+._crit_edge.0:101  %tmp_114_1 = icmp ult i16 %ClusterDeposits_1_r_1, %ClusterDeposits_5_r_1
+
+ST_1: p_read5_read1 (197)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:102  %p_read5_read1 = select i1 %tmp_114_1, i16 %ClusterDeposits_5_r_1, i16 %ClusterDeposits_1_r_1
+
+ST_1: p_read1_read5 (198)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:103  %p_read1_read5 = select i1 %tmp_114_1, i16 %ClusterDeposits_1_r_1, i16 %ClusterDeposits_5_r_1
+
+ST_1: p_read37_read (199)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:104  %p_read37_read = select i1 %tmp_114_1, i16 %ClusterEta_5_read_1, i16 %ClusterEta_1_read_1
+
+ST_1: p_read33_read (200)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:105  %p_read33_read = select i1 %tmp_114_1, i16 %ClusterEta_1_read_1, i16 %ClusterEta_5_read_1
+
+ST_1: p_read69_read (201)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:106  %p_read69_read = select i1 %tmp_114_1, i16 %ClusterPhi_5_read_1, i16 %ClusterPhi_1_read_1
+
+ST_1: p_read65_read (202)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:107  %p_read65_read = select i1 %tmp_114_1, i16 %ClusterPhi_1_read_1, i16 %ClusterPhi_5_read_1
+
+ST_1: tmp_114_2 (203)  [1/1] 1.29ns  loc: HCALTower.cpp:754
+._crit_edge.0:108  %tmp_114_2 = icmp ult i16 %ClusterDeposits_2_r_1, %ClusterDeposits_6_r_1
+
+ST_1: p_read6_read2 (204)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:109  %p_read6_read2 = select i1 %tmp_114_2, i16 %ClusterDeposits_6_r_1, i16 %ClusterDeposits_2_r_1
+
+ST_1: p_read2_read6 (205)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:110  %p_read2_read6 = select i1 %tmp_114_2, i16 %ClusterDeposits_2_r_1, i16 %ClusterDeposits_6_r_1
+
+ST_1: p_read38_read (206)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:111  %p_read38_read = select i1 %tmp_114_2, i16 %ClusterEta_6_read_1, i16 %ClusterEta_2_read_1
+
+ST_1: p_read34_read (207)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:112  %p_read34_read = select i1 %tmp_114_2, i16 %ClusterEta_2_read_1, i16 %ClusterEta_6_read_1
+
+ST_1: p_read70_read (208)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:113  %p_read70_read = select i1 %tmp_114_2, i16 %ClusterPhi_6_read_1, i16 %ClusterPhi_2_read_1
+
+ST_1: p_read66_read (209)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:114  %p_read66_read = select i1 %tmp_114_2, i16 %ClusterPhi_2_read_1, i16 %ClusterPhi_6_read_1
+
+ST_1: tmp_114_3 (210)  [1/1] 1.29ns  loc: HCALTower.cpp:754
+._crit_edge.0:115  %tmp_114_3 = icmp ult i16 %ClusterDeposits_3_r_1, %ClusterDeposits_7_r_1
+
+ST_1: p_read7_read3 (211)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:116  %p_read7_read3 = select i1 %tmp_114_3, i16 %ClusterDeposits_7_r_1, i16 %ClusterDeposits_3_r_1
+
+ST_1: p_read3_read7 (212)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:117  %p_read3_read7 = select i1 %tmp_114_3, i16 %ClusterDeposits_3_r_1, i16 %ClusterDeposits_7_r_1
+
+ST_1: p_read39_read (213)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:118  %p_read39_read = select i1 %tmp_114_3, i16 %ClusterEta_7_read_1, i16 %ClusterEta_3_read_1
+
+ST_1: p_read35_read (214)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:119  %p_read35_read = select i1 %tmp_114_3, i16 %ClusterEta_3_read_1, i16 %ClusterEta_7_read_1
+
+ST_1: p_read71_read (215)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:120  %p_read71_read = select i1 %tmp_114_3, i16 %ClusterPhi_7_read_1, i16 %ClusterPhi_3_read_1
+
+ST_1: p_read67_read (216)  [1/1] 0.71ns  loc: HCALTower.cpp:754
+._crit_edge.0:121  %p_read67_read = select i1 %tmp_114_3, i16 %ClusterPhi_3_read_1, i16 %ClusterPhi_7_read_1
+
+ST_1: tmp_1 (217)  [1/1] 1.29ns  loc: HCALTower.cpp:770
+._crit_edge.0:122  %tmp_1 = icmp ugt i16 %ClusterDeposits_8_r_1, %ClusterDeposits_12_1
+
+ST_1: p_read12_read8 (218)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:123  %p_read12_read8 = select i1 %tmp_1, i16 %ClusterDeposits_12_1, i16 %ClusterDeposits_8_r_1
+
+ST_1: p_read8_read (219)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:124  %p_read8_read = select i1 %tmp_1, i16 %ClusterDeposits_8_r_1, i16 %ClusterDeposits_12_1
+
+ST_1: p_read44_read (220)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:125  %p_read44_read = select i1 %tmp_1, i16 %ClusterEta_12_read_1, i16 %ClusterEta_8_read_1
+
+ST_1: p_read40_read (221)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:126  %p_read40_read = select i1 %tmp_1, i16 %ClusterEta_8_read_1, i16 %ClusterEta_12_read_1
+
+ST_1: p_read76_read (222)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:127  %p_read76_read = select i1 %tmp_1, i16 %ClusterPhi_12_read_1, i16 %ClusterPhi_8_read_1
+
+ST_1: p_read72_read (223)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:128  %p_read72_read = select i1 %tmp_1, i16 %ClusterPhi_8_read_1, i16 %ClusterPhi_12_read_1
+
+ST_1: tmp_118_1 (224)  [1/1] 1.29ns  loc: HCALTower.cpp:770
+._crit_edge.0:129  %tmp_118_1 = icmp ugt i16 %ClusterDeposits_9_r_1, %ClusterDeposits_13_1
+
+ST_1: p_read13_read9 (225)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:130  %p_read13_read9 = select i1 %tmp_118_1, i16 %ClusterDeposits_13_1, i16 %ClusterDeposits_9_r_1
+
+ST_1: p_read9_read (226)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:131  %p_read9_read = select i1 %tmp_118_1, i16 %ClusterDeposits_9_r_1, i16 %ClusterDeposits_13_1
+
+ST_1: p_read45_read (227)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:132  %p_read45_read = select i1 %tmp_118_1, i16 %ClusterEta_13_read_1, i16 %ClusterEta_9_read_1
+
+ST_1: p_read41_read (228)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:133  %p_read41_read = select i1 %tmp_118_1, i16 %ClusterEta_9_read_1, i16 %ClusterEta_13_read_1
+
+ST_1: p_read77_read (229)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:134  %p_read77_read = select i1 %tmp_118_1, i16 %ClusterPhi_13_read_1, i16 %ClusterPhi_9_read_1
+
+ST_1: p_read73_read (230)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:135  %p_read73_read = select i1 %tmp_118_1, i16 %ClusterPhi_9_read_1, i16 %ClusterPhi_13_read_1
+
+ST_1: tmp_118_2 (231)  [1/1] 1.29ns  loc: HCALTower.cpp:770
+._crit_edge.0:136  %tmp_118_2 = icmp ugt i16 %ClusterDeposits_10_1, %ClusterDeposits_14_1
+
+ST_1: p_read14_read (232)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:137  %p_read14_read = select i1 %tmp_118_2, i16 %ClusterDeposits_14_1, i16 %ClusterDeposits_10_1
+
+ST_1: p_read10_read (233)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:138  %p_read10_read = select i1 %tmp_118_2, i16 %ClusterDeposits_10_1, i16 %ClusterDeposits_14_1
+
+ST_1: p_read46_read (234)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:139  %p_read46_read = select i1 %tmp_118_2, i16 %ClusterEta_14_read_1, i16 %ClusterEta_10_read_1
+
+ST_1: p_read42_read (235)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:140  %p_read42_read = select i1 %tmp_118_2, i16 %ClusterEta_10_read_1, i16 %ClusterEta_14_read_1
+
+ST_1: p_read78_read (236)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:141  %p_read78_read = select i1 %tmp_118_2, i16 %ClusterPhi_14_read_1, i16 %ClusterPhi_10_read_1
+
+ST_1: p_read74_read (237)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:142  %p_read74_read = select i1 %tmp_118_2, i16 %ClusterPhi_10_read_1, i16 %ClusterPhi_14_read_1
+
+ST_1: tmp_118_3 (238)  [1/1] 1.29ns  loc: HCALTower.cpp:770
+._crit_edge.0:143  %tmp_118_3 = icmp ugt i16 %ClusterDeposits_11_1, %ClusterDeposits_15_1
+
+ST_1: p_read15_read (239)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:144  %p_read15_read = select i1 %tmp_118_3, i16 %ClusterDeposits_15_1, i16 %ClusterDeposits_11_1
+
+ST_1: p_read11_read (240)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:145  %p_read11_read = select i1 %tmp_118_3, i16 %ClusterDeposits_11_1, i16 %ClusterDeposits_15_1
+
+ST_1: p_read47_read (241)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:146  %p_read47_read = select i1 %tmp_118_3, i16 %ClusterEta_15_read_1, i16 %ClusterEta_11_read_1
+
+ST_1: p_read43_read (242)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:147  %p_read43_read = select i1 %tmp_118_3, i16 %ClusterEta_11_read_1, i16 %ClusterEta_15_read_1
+
+ST_1: p_read79_read (243)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:148  %p_read79_read = select i1 %tmp_118_3, i16 %ClusterPhi_15_read_1, i16 %ClusterPhi_11_read_1
+
+ST_1: p_read75_read (244)  [1/1] 0.71ns  loc: HCALTower.cpp:770
+._crit_edge.0:149  %p_read75_read = select i1 %tmp_118_3, i16 %ClusterPhi_11_read_1, i16 %ClusterPhi_15_read_1
+
+ST_1: tmp_2 (245)  [1/1] 1.29ns  loc: HCALTower.cpp:786
+._crit_edge.0:150  %tmp_2 = icmp ult i16 %ClusterDeposits_16_1, %ClusterDeposits_20_1
+
+ST_1: p_read20_read (246)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:151  %p_read20_read = select i1 %tmp_2, i16 %ClusterDeposits_20_1, i16 %ClusterDeposits_16_1
+
+ST_1: p_read16_read (247)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:152  %p_read16_read = select i1 %tmp_2, i16 %ClusterDeposits_16_1, i16 %ClusterDeposits_20_1
+
+ST_1: p_read52_read (248)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:153  %p_read52_read = select i1 %tmp_2, i16 %ClusterEta_20_read_1, i16 %ClusterEta_16_read_1
+
+ST_1: p_read48_read (249)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:154  %p_read48_read = select i1 %tmp_2, i16 %ClusterEta_16_read_1, i16 %ClusterEta_20_read_1
+
+ST_1: p_read84_read (250)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:155  %p_read84_read = select i1 %tmp_2, i16 %ClusterPhi_20_read_1, i16 %ClusterPhi_16_read_1
+
+ST_1: p_read80_read (251)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:156  %p_read80_read = select i1 %tmp_2, i16 %ClusterPhi_16_read_1, i16 %ClusterPhi_20_read_1
+
+ST_1: tmp_122_1 (252)  [1/1] 1.29ns  loc: HCALTower.cpp:786
+._crit_edge.0:157  %tmp_122_1 = icmp ult i16 %ClusterDeposits_17_1, %ClusterDeposits_21_1
+
+ST_1: p_read21_read (253)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:158  %p_read21_read = select i1 %tmp_122_1, i16 %ClusterDeposits_21_1, i16 %ClusterDeposits_17_1
+
+ST_1: p_read17_read (254)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:159  %p_read17_read = select i1 %tmp_122_1, i16 %ClusterDeposits_17_1, i16 %ClusterDeposits_21_1
+
+ST_1: p_read53_read (255)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:160  %p_read53_read = select i1 %tmp_122_1, i16 %ClusterEta_21_read_1, i16 %ClusterEta_17_read_1
+
+ST_1: p_read49_read (256)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:161  %p_read49_read = select i1 %tmp_122_1, i16 %ClusterEta_17_read_1, i16 %ClusterEta_21_read_1
+
+ST_1: p_read85_read (257)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:162  %p_read85_read = select i1 %tmp_122_1, i16 %ClusterPhi_21_read_1, i16 %ClusterPhi_17_read_1
+
+ST_1: p_read81_read (258)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:163  %p_read81_read = select i1 %tmp_122_1, i16 %ClusterPhi_17_read_1, i16 %ClusterPhi_21_read_1
+
+ST_1: tmp_122_2 (259)  [1/1] 1.29ns  loc: HCALTower.cpp:786
+._crit_edge.0:164  %tmp_122_2 = icmp ult i16 %ClusterDeposits_18_1, %ClusterDeposits_22_1
+
+ST_1: p_read22_read (260)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:165  %p_read22_read = select i1 %tmp_122_2, i16 %ClusterDeposits_22_1, i16 %ClusterDeposits_18_1
+
+ST_1: p_read18_read (261)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:166  %p_read18_read = select i1 %tmp_122_2, i16 %ClusterDeposits_18_1, i16 %ClusterDeposits_22_1
+
+ST_1: p_read54_read (262)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:167  %p_read54_read = select i1 %tmp_122_2, i16 %ClusterEta_22_read_1, i16 %ClusterEta_18_read_1
+
+ST_1: p_read50_read (263)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:168  %p_read50_read = select i1 %tmp_122_2, i16 %ClusterEta_18_read_1, i16 %ClusterEta_22_read_1
+
+ST_1: p_read86_read (264)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:169  %p_read86_read = select i1 %tmp_122_2, i16 %ClusterPhi_22_read_1, i16 %ClusterPhi_18_read_1
+
+ST_1: p_read82_read (265)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:170  %p_read82_read = select i1 %tmp_122_2, i16 %ClusterPhi_18_read_1, i16 %ClusterPhi_22_read_1
+
+ST_1: tmp_122_3 (266)  [1/1] 1.29ns  loc: HCALTower.cpp:786
+._crit_edge.0:171  %tmp_122_3 = icmp ult i16 %ClusterDeposits_19_1, %ClusterDeposits_23_1
+
+ST_1: p_read23_read (267)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:172  %p_read23_read = select i1 %tmp_122_3, i16 %ClusterDeposits_23_1, i16 %ClusterDeposits_19_1
+
+ST_1: p_read19_read (268)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:173  %p_read19_read = select i1 %tmp_122_3, i16 %ClusterDeposits_19_1, i16 %ClusterDeposits_23_1
+
+ST_1: p_read55_read (269)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:174  %p_read55_read = select i1 %tmp_122_3, i16 %ClusterEta_23_read_1, i16 %ClusterEta_19_read_1
+
+ST_1: p_read51_read (270)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:175  %p_read51_read = select i1 %tmp_122_3, i16 %ClusterEta_19_read_1, i16 %ClusterEta_23_read_1
+
+ST_1: p_read87_read (271)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:176  %p_read87_read = select i1 %tmp_122_3, i16 %ClusterPhi_23_read_1, i16 %ClusterPhi_19_read_1
+
+ST_1: p_read83_read (272)  [1/1] 0.71ns  loc: HCALTower.cpp:786
+._crit_edge.0:177  %p_read83_read = select i1 %tmp_122_3, i16 %ClusterPhi_19_read_1, i16 %ClusterPhi_23_read_1
+
+ST_1: tmp_3 (273)  [1/1] 1.29ns  loc: HCALTower.cpp:802
+._crit_edge.0:178  %tmp_3 = icmp ne i16 %ClusterDeposits_24_1, 0
+
+ST_1: p_read60_read (274)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:179  %p_read60_read = select i1 %tmp_3, i16 %ClusterEta_28_read_1, i16 %ClusterEta_24_read_1
+
+ST_1: p_read56_read (275)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:180  %p_read56_read = select i1 %tmp_3, i16 %ClusterEta_24_read_1, i16 %ClusterEta_28_read_1
+
+ST_1: p_read92_read (276)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:181  %p_read92_read = select i1 %tmp_3, i16 %ClusterPhi_28_read_1, i16 %ClusterPhi_24_read_1
+
+ST_1: p_read88_read (277)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:182  %p_read88_read = select i1 %tmp_3, i16 %ClusterPhi_24_read_1, i16 %ClusterPhi_28_read_1
+
+ST_1: tmp_126_1 (278)  [1/1] 1.29ns  loc: HCALTower.cpp:802
+._crit_edge.0:183  %tmp_126_1 = icmp ne i16 %ClusterDeposits_25_1, 0
+
+ST_1: p_read61_read (279)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:184  %p_read61_read = select i1 %tmp_126_1, i16 %ClusterEta_29_read_1, i16 %ClusterEta_25_read_1
+
+ST_1: p_read57_read (280)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:185  %p_read57_read = select i1 %tmp_126_1, i16 %ClusterEta_25_read_1, i16 %ClusterEta_29_read_1
+
+ST_1: p_read93_read (281)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:186  %p_read93_read = select i1 %tmp_126_1, i16 %ClusterPhi_29_read_1, i16 %ClusterPhi_25_read_1
+
+ST_1: p_read89_read (282)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:187  %p_read89_read = select i1 %tmp_126_1, i16 %ClusterPhi_25_read_1, i16 %ClusterPhi_29_read_1
+
+ST_1: tmp_126_2 (283)  [1/1] 1.29ns  loc: HCALTower.cpp:802
+._crit_edge.0:188  %tmp_126_2 = icmp ugt i16 %ClusterDeposits_26_1, %ClusterDeposits_30_1
+
+ST_1: p_read30_read (284)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:189  %p_read30_read = select i1 %tmp_126_2, i16 %ClusterDeposits_30_1, i16 %ClusterDeposits_26_1
+
+ST_1: p_read26_read (285)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:190  %p_read26_read = select i1 %tmp_126_2, i16 %ClusterDeposits_26_1, i16 %ClusterDeposits_30_1
+
+ST_1: p_read62_read (286)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:191  %p_read62_read = select i1 %tmp_126_2, i16 %ClusterEta_30_read_1, i16 %ClusterEta_26_read_1
+
+ST_1: p_read58_read (287)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:192  %p_read58_read = select i1 %tmp_126_2, i16 %ClusterEta_26_read_1, i16 %ClusterEta_30_read_1
+
+ST_1: p_read94_read (288)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:193  %p_read94_read = select i1 %tmp_126_2, i16 %ClusterPhi_30_read_1, i16 %ClusterPhi_26_read_1
+
+ST_1: p_read90_read (289)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:194  %p_read90_read = select i1 %tmp_126_2, i16 %ClusterPhi_26_read_1, i16 %ClusterPhi_30_read_1
+
+ST_1: tmp_126_3 (290)  [1/1] 1.29ns  loc: HCALTower.cpp:802
+._crit_edge.0:195  %tmp_126_3 = icmp ugt i16 %ClusterDeposits_27_1, %ClusterDeposits_31_1
+
+ST_1: p_read31_read (291)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:196  %p_read31_read = select i1 %tmp_126_3, i16 %ClusterDeposits_31_1, i16 %ClusterDeposits_27_1
+
+ST_1: p_read27_read (292)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:197  %p_read27_read = select i1 %tmp_126_3, i16 %ClusterDeposits_27_1, i16 %ClusterDeposits_31_1
+
+ST_1: p_read63_read (293)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:198  %p_read63_read = select i1 %tmp_126_3, i16 %ClusterEta_31_read_1, i16 %ClusterEta_27_read_1
+
+ST_1: p_read59_read (294)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:199  %p_read59_read = select i1 %tmp_126_3, i16 %ClusterEta_27_read_1, i16 %ClusterEta_31_read_1
+
+ST_1: p_read95_read (295)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:200  %p_read95_read = select i1 %tmp_126_3, i16 %ClusterPhi_31_read_1, i16 %ClusterPhi_27_read_1
+
+ST_1: p_read91_read (296)  [1/1] 0.71ns  loc: HCALTower.cpp:802
+._crit_edge.0:201  %p_read91_read = select i1 %tmp_126_3, i16 %ClusterPhi_27_read_1, i16 %ClusterPhi_31_read_1
+
+ST_1: tmp_4 (297)  [1/1] 1.29ns  loc: HCALTower.cpp:820
+._crit_edge.0:202  %tmp_4 = icmp ult i16 %p_read4_read, %p_read6_read2
+
+ST_1: ClusterDeposits2_0_C (298)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:203  %ClusterDeposits2_0_C = select i1 %tmp_4, i16 %p_read6_read2, i16 %p_read4_read
+
+ST_1: ClusterDeposits_0_Cl (299)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:204  %ClusterDeposits_0_Cl = select i1 %tmp_4, i16 %p_read4_read, i16 %p_read6_read2
+
+ST_1: ClusterEta33_0_Clust (300)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:205  %ClusterEta33_0_Clust = select i1 %tmp_4, i16 %p_read38_read, i16 %p_read36_read
+
+ST_1: ClusterEta_0_Cluster (301)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:206  %ClusterEta_0_Cluster = select i1 %tmp_4, i16 %p_read36_read, i16 %p_read38_read
+
+ST_1: ClusterPhi64_0_Clust (302)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:207  %ClusterPhi64_0_Clust = select i1 %tmp_4, i16 %p_read70_read, i16 %p_read68_read
+
+ST_1: ClusterPhi_0_Cluster (303)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:208  %ClusterPhi_0_Cluster = select i1 %tmp_4, i16 %p_read68_read, i16 %p_read70_read
+
+ST_1: tmp_5 (304)  [1/1] 1.29ns  loc: HCALTower.cpp:832
+._crit_edge.0:209  %tmp_5 = icmp ult i16 %p_read5_read1, %p_read7_read3
+
+ST_1: ClusterDeposits3_0_C (305)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:210  %ClusterDeposits3_0_C = select i1 %tmp_5, i16 %p_read7_read3, i16 %p_read5_read1
+
+ST_1: ClusterDeposits12_0_s (306)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:211  %ClusterDeposits12_0_s = select i1 %tmp_5, i16 %p_read5_read1, i16 %p_read7_read3
+
+ST_1: ClusterEta34_0_Clust (307)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:212  %ClusterEta34_0_Clust = select i1 %tmp_5, i16 %p_read39_read, i16 %p_read37_read
+
+ST_1: ClusterEta32_0_Clust (308)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:213  %ClusterEta32_0_Clust = select i1 %tmp_5, i16 %p_read37_read, i16 %p_read39_read
+
+ST_1: ClusterPhi65_0_Clust (309)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:214  %ClusterPhi65_0_Clust = select i1 %tmp_5, i16 %p_read71_read, i16 %p_read69_read
+
+ST_1: ClusterPhi63_0_Clust (310)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:215  %ClusterPhi63_0_Clust = select i1 %tmp_5, i16 %p_read69_read, i16 %p_read71_read
+
+ST_1: tmp_131_1 (311)  [1/1] 1.29ns  loc: HCALTower.cpp:820
+._crit_edge.0:216  %tmp_131_1 = icmp ult i16 %p_read_read4, %p_read2_read6
+
+ST_1: ClusterDeposits6_0_C (312)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:217  %ClusterDeposits6_0_C = select i1 %tmp_131_1, i16 %p_read2_read6, i16 %p_read_read4
+
+ST_1: ClusterDeposits4_0_C (313)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:218  %ClusterDeposits4_0_C = select i1 %tmp_131_1, i16 %p_read_read4, i16 %p_read2_read6
+
+ST_1: ClusterEta3743_0_Clu (314)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:219  %ClusterEta3743_0_Clu = select i1 %tmp_131_1, i16 %p_read34_read, i16 %p_read32_read
+
+ST_1: ClusterEta35_0_Clust (315)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:220  %ClusterEta35_0_Clust = select i1 %tmp_131_1, i16 %p_read32_read, i16 %p_read34_read
+
+ST_1: ClusterPhi68_0_Clust (316)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:221  %ClusterPhi68_0_Clust = select i1 %tmp_131_1, i16 %p_read66_read, i16 %p_read64_read
+
+ST_1: ClusterPhi66_0_Clust (317)  [1/1] 0.71ns  loc: HCALTower.cpp:820
+._crit_edge.0:222  %ClusterPhi66_0_Clust = select i1 %tmp_131_1, i16 %p_read64_read, i16 %p_read66_read
+
+ST_1: tmp_136_1 (318)  [1/1] 1.29ns  loc: HCALTower.cpp:832
+._crit_edge.0:223  %tmp_136_1 = icmp ult i16 %p_read1_read5, %p_read3_read7
+
+ST_1: ClusterDeposits7_0_C (319)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:224  %ClusterDeposits7_0_C = select i1 %tmp_136_1, i16 %p_read3_read7, i16 %p_read1_read5
+
+ST_1: ClusterDeposits5_0_C (320)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:225  %ClusterDeposits5_0_C = select i1 %tmp_136_1, i16 %p_read1_read5, i16 %p_read3_read7
+
+ST_1: ClusterEta38_0_Clust (321)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:226  %ClusterEta38_0_Clust = select i1 %tmp_136_1, i16 %p_read35_read, i16 %p_read33_read
+
+ST_1: ClusterEta36_0_Clust (322)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:227  %ClusterEta36_0_Clust = select i1 %tmp_136_1, i16 %p_read33_read, i16 %p_read35_read
+
+ST_1: ClusterPhi69_0_Clust (323)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:228  %ClusterPhi69_0_Clust = select i1 %tmp_136_1, i16 %p_read67_read, i16 %p_read65_read
+
+ST_1: ClusterPhi67_0_Clust (324)  [1/1] 0.71ns  loc: HCALTower.cpp:832
+._crit_edge.0:229  %ClusterPhi67_0_Clust = select i1 %tmp_136_1, i16 %p_read65_read, i16 %p_read67_read
+
+ST_1: tmp_6 (325)  [1/1] 1.29ns  loc: HCALTower.cpp:848
+._crit_edge.0:230  %tmp_6 = icmp ugt i16 %p_read12_read8, %p_read14_read
+
+ST_1: ClusterDeposits10_0_s (326)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:231  %ClusterDeposits10_0_s = select i1 %tmp_6, i16 %p_read14_read, i16 %p_read12_read8
+
+ST_1: ClusterDeposits8_0_C (327)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:232  %ClusterDeposits8_0_C = select i1 %tmp_6, i16 %p_read12_read8, i16 %p_read14_read
+
+ST_1: ClusterEta41_0_Clust (328)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:233  %ClusterEta41_0_Clust = select i1 %tmp_6, i16 %p_read46_read, i16 %p_read44_read
+
+ST_1: ClusterEta39_0_Clust (329)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:234  %ClusterEta39_0_Clust = select i1 %tmp_6, i16 %p_read44_read, i16 %p_read46_read
+
+ST_1: ClusterPhi72_0_Clust (330)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:235  %ClusterPhi72_0_Clust = select i1 %tmp_6, i16 %p_read78_read, i16 %p_read76_read
+
+ST_1: ClusterPhi7078_0_Clu (331)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:236  %ClusterPhi7078_0_Clu = select i1 %tmp_6, i16 %p_read76_read, i16 %p_read78_read
+
+ST_1: tmp_7 (332)  [1/1] 1.29ns  loc: HCALTower.cpp:860
+._crit_edge.0:237  %tmp_7 = icmp ugt i16 %p_read13_read9, %p_read15_read
+
+ST_1: ClusterDeposits11_0_s (333)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:238  %ClusterDeposits11_0_s = select i1 %tmp_7, i16 %p_read15_read, i16 %p_read13_read9
+
+ST_1: ClusterDeposits9_0_C (334)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:239  %ClusterDeposits9_0_C = select i1 %tmp_7, i16 %p_read13_read9, i16 %p_read15_read
+
+ST_1: ClusterEta42_0_Clust (335)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:240  %ClusterEta42_0_Clust = select i1 %tmp_7, i16 %p_read47_read, i16 %p_read45_read
+
+ST_1: ClusterEta40_0_Clust (336)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:241  %ClusterEta40_0_Clust = select i1 %tmp_7, i16 %p_read45_read, i16 %p_read47_read
+
+ST_1: ClusterPhi73_0_Clust (337)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:242  %ClusterPhi73_0_Clust = select i1 %tmp_7, i16 %p_read79_read, i16 %p_read77_read
+
+ST_1: ClusterPhi71_0_Clust (338)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:243  %ClusterPhi71_0_Clust = select i1 %tmp_7, i16 %p_read77_read, i16 %p_read79_read
+
+ST_1: tmp_141_1 (339)  [1/1] 1.29ns  loc: HCALTower.cpp:848
+._crit_edge.0:244  %tmp_141_1 = icmp ugt i16 %p_read8_read, %p_read10_read
+
+ST_1: ClusterDeposits14_0_s (340)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:245  %ClusterDeposits14_0_s = select i1 %tmp_141_1, i16 %p_read10_read, i16 %p_read8_read
+
+ST_1: ClusterDeposits1214_s (341)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:246  %ClusterDeposits1214_s = select i1 %tmp_141_1, i16 %p_read8_read, i16 %p_read10_read
+
+ST_1: ClusterEta45_0_Clust (342)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:247  %ClusterEta45_0_Clust = select i1 %tmp_141_1, i16 %p_read42_read, i16 %p_read40_read
+
+ST_1: ClusterEta43_0_Clust (343)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:248  %ClusterEta43_0_Clust = select i1 %tmp_141_1, i16 %p_read40_read, i16 %p_read42_read
+
+ST_1: ClusterPhi76_0_Clust (344)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:249  %ClusterPhi76_0_Clust = select i1 %tmp_141_1, i16 %p_read74_read, i16 %p_read72_read
+
+ST_1: ClusterPhi74_0_Clust (345)  [1/1] 0.71ns  loc: HCALTower.cpp:848
+._crit_edge.0:250  %ClusterPhi74_0_Clust = select i1 %tmp_141_1, i16 %p_read72_read, i16 %p_read74_read
+
+ST_1: tmp_146_1 (346)  [1/1] 1.29ns  loc: HCALTower.cpp:860
+._crit_edge.0:251  %tmp_146_1 = icmp ugt i16 %p_read9_read, %p_read11_read
+
+ST_1: ClusterDeposits15_0_s (347)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:252  %ClusterDeposits15_0_s = select i1 %tmp_146_1, i16 %p_read11_read, i16 %p_read9_read
+
+ST_1: ClusterDeposits1316_s (348)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:253  %ClusterDeposits1316_s = select i1 %tmp_146_1, i16 %p_read9_read, i16 %p_read11_read
+
+ST_1: ClusterEta46_0_Clust (349)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:254  %ClusterEta46_0_Clust = select i1 %tmp_146_1, i16 %p_read43_read, i16 %p_read41_read
+
+ST_1: ClusterEta44_0_Clust (350)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:255  %ClusterEta44_0_Clust = select i1 %tmp_146_1, i16 %p_read41_read, i16 %p_read43_read
+
+ST_1: ClusterPhi77_0_Clust (351)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:256  %ClusterPhi77_0_Clust = select i1 %tmp_146_1, i16 %p_read75_read, i16 %p_read73_read
+
+ST_1: ClusterPhi75_0_Clust (352)  [1/1] 0.71ns  loc: HCALTower.cpp:860
+._crit_edge.0:257  %ClusterPhi75_0_Clust = select i1 %tmp_146_1, i16 %p_read73_read, i16 %p_read75_read
+
+ST_1: tmp_8 (353)  [1/1] 1.29ns  loc: HCALTower.cpp:876
+._crit_edge.0:258  %tmp_8 = icmp ult i16 %p_read20_read, %p_read22_read
+
+ST_1: ClusterDeposits18_0_s (354)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:259  %ClusterDeposits18_0_s = select i1 %tmp_8, i16 %p_read22_read, i16 %p_read20_read
+
+ST_1: ClusterDeposits16_0_s (355)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:260  %ClusterDeposits16_0_s = select i1 %tmp_8, i16 %p_read20_read, i16 %p_read22_read
+
+ST_1: ClusterEta49_0_Clust (356)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:261  %ClusterEta49_0_Clust = select i1 %tmp_8, i16 %p_read54_read, i16 %p_read52_read
+
+ST_1: ClusterEta47_0_Clust (357)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:262  %ClusterEta47_0_Clust = select i1 %tmp_8, i16 %p_read52_read, i16 %p_read54_read
+
+ST_1: ClusterPhi80_0_Clust (358)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:263  %ClusterPhi80_0_Clust = select i1 %tmp_8, i16 %p_read86_read, i16 %p_read84_read
+
+ST_1: ClusterPhi78_0_Clust (359)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:264  %ClusterPhi78_0_Clust = select i1 %tmp_8, i16 %p_read84_read, i16 %p_read86_read
+
+ST_1: tmp_9 (360)  [1/1] 1.29ns  loc: HCALTower.cpp:888
+._crit_edge.0:265  %tmp_9 = icmp ult i16 %p_read21_read, %p_read23_read
+
+ST_1: ClusterDeposits19_0_s (361)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:266  %ClusterDeposits19_0_s = select i1 %tmp_9, i16 %p_read23_read, i16 %p_read21_read
+
+ST_1: ClusterDeposits17_0_s (362)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:267  %ClusterDeposits17_0_s = select i1 %tmp_9, i16 %p_read21_read, i16 %p_read23_read
+
+ST_1: ClusterEta50_0_Clust (363)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:268  %ClusterEta50_0_Clust = select i1 %tmp_9, i16 %p_read55_read, i16 %p_read53_read
+
+ST_1: ClusterEta48_0_Clust (364)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:269  %ClusterEta48_0_Clust = select i1 %tmp_9, i16 %p_read53_read, i16 %p_read55_read
+
+ST_1: ClusterPhi81_0_Clust (365)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:270  %ClusterPhi81_0_Clust = select i1 %tmp_9, i16 %p_read87_read, i16 %p_read85_read
+
+ST_1: ClusterPhi79_0_Clust (366)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:271  %ClusterPhi79_0_Clust = select i1 %tmp_9, i16 %p_read85_read, i16 %p_read87_read
+
+ST_1: tmp_151_1 (367)  [1/1] 1.29ns  loc: HCALTower.cpp:876
+._crit_edge.0:272  %tmp_151_1 = icmp ult i16 %p_read16_read, %p_read18_read
+
+ST_1: ClusterDeposits22_0_s (368)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:273  %ClusterDeposits22_0_s = select i1 %tmp_151_1, i16 %p_read18_read, i16 %p_read16_read
+
+ST_1: ClusterDeposits20_0_s (369)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:274  %ClusterDeposits20_0_s = select i1 %tmp_151_1, i16 %p_read16_read, i16 %p_read18_read
+
+ST_1: ClusterEta53_0_Clust (370)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:275  %ClusterEta53_0_Clust = select i1 %tmp_151_1, i16 %p_read50_read, i16 %p_read48_read
+
+ST_1: ClusterEta51_0_Clust (371)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:276  %ClusterEta51_0_Clust = select i1 %tmp_151_1, i16 %p_read48_read, i16 %p_read50_read
+
+ST_1: ClusterPhi84_0_Clust (372)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:277  %ClusterPhi84_0_Clust = select i1 %tmp_151_1, i16 %p_read82_read, i16 %p_read80_read
+
+ST_1: ClusterPhi82_0_Clust (373)  [1/1] 0.71ns  loc: HCALTower.cpp:876
+._crit_edge.0:278  %ClusterPhi82_0_Clust = select i1 %tmp_151_1, i16 %p_read80_read, i16 %p_read82_read
+
+ST_1: tmp_156_1 (374)  [1/1] 1.29ns  loc: HCALTower.cpp:888
+._crit_edge.0:279  %tmp_156_1 = icmp ult i16 %p_read17_read, %p_read19_read
+
+ST_1: ClusterDeposits23_0_s (375)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:280  %ClusterDeposits23_0_s = select i1 %tmp_156_1, i16 %p_read19_read, i16 %p_read17_read
+
+ST_1: ClusterDeposits21_0_s (376)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:281  %ClusterDeposits21_0_s = select i1 %tmp_156_1, i16 %p_read17_read, i16 %p_read19_read
+
+ST_1: ClusterEta54_0_Clust (377)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:282  %ClusterEta54_0_Clust = select i1 %tmp_156_1, i16 %p_read51_read, i16 %p_read49_read
+
+ST_1: ClusterEta52_0_Clust (378)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:283  %ClusterEta52_0_Clust = select i1 %tmp_156_1, i16 %p_read49_read, i16 %p_read51_read
+
+ST_1: ClusterPhi85_0_Clust (379)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:284  %ClusterPhi85_0_Clust = select i1 %tmp_156_1, i16 %p_read83_read, i16 %p_read81_read
+
+ST_1: ClusterPhi83_0_Clust (380)  [1/1] 0.71ns  loc: HCALTower.cpp:888
+._crit_edge.0:285  %ClusterPhi83_0_Clust = select i1 %tmp_156_1, i16 %p_read81_read, i16 %p_read83_read
+
+ST_1: tmp_161_1 (381)  [1/1] 1.29ns  loc: HCALTower.cpp:904
+._crit_edge.0:286  %tmp_161_1 = icmp ult i16 %p_read26_read, %ClusterDeposits_24_1
+
+ST_1: ClusterDeposits30_0_s (382)  [1/1] 0.71ns  loc: HCALTower.cpp:904
+._crit_edge.0:287  %ClusterDeposits30_0_s = select i1 %tmp_161_1, i16 %p_read26_read, i16 %ClusterDeposits_24_1
+
+ST_1: ClusterDeposits28_0_s (383)  [1/1] 0.71ns  loc: HCALTower.cpp:904
+._crit_edge.0:288  %ClusterDeposits28_0_s = select i1 %tmp_161_1, i16 %ClusterDeposits_24_1, i16 %p_read26_read
+
+ST_1: ClusterEta61_0_Clust (384)  [1/1] 0.71ns  loc: HCALTower.cpp:904
+._crit_edge.0:289  %ClusterEta61_0_Clust = select i1 %tmp_161_1, i16 %p_read58_read, i16 %p_read56_read
+
+ST_1: ClusterEta59_0_Clust (385)  [1/1] 0.71ns  loc: HCALTower.cpp:904
+._crit_edge.0:290  %ClusterEta59_0_Clust = select i1 %tmp_161_1, i16 %p_read56_read, i16 %p_read58_read
+
+ST_1: ClusterPhi92_0_Clust (386)  [1/1] 0.71ns  loc: HCALTower.cpp:904
+._crit_edge.0:291  %ClusterPhi92_0_Clust = select i1 %tmp_161_1, i16 %p_read90_read, i16 %p_read88_read
+
+ST_1: ClusterPhi90_0_Clust (387)  [1/1] 0.71ns  loc: HCALTower.cpp:904
+._crit_edge.0:292  %ClusterPhi90_0_Clust = select i1 %tmp_161_1, i16 %p_read88_read, i16 %p_read90_read
+
+ST_1: tmp_166_1 (388)  [1/1] 1.29ns  loc: HCALTower.cpp:917
+._crit_edge.0:293  %tmp_166_1 = icmp ult i16 %p_read27_read, %ClusterDeposits_25_1
+
+ST_1: ClusterDeposits31_0_s (389)  [1/1] 0.71ns  loc: HCALTower.cpp:917
+._crit_edge.0:294  %ClusterDeposits31_0_s = select i1 %tmp_166_1, i16 %p_read27_read, i16 %ClusterDeposits_25_1
+
+ST_1: ClusterDeposits29_0_s (390)  [1/1] 0.71ns  loc: HCALTower.cpp:917
+._crit_edge.0:295  %ClusterDeposits29_0_s = select i1 %tmp_166_1, i16 %ClusterDeposits_25_1, i16 %p_read27_read
+
+ST_1: ClusterEta62_0_Clust (391)  [1/1] 0.71ns  loc: HCALTower.cpp:917
+._crit_edge.0:296  %ClusterEta62_0_Clust = select i1 %tmp_166_1, i16 %p_read59_read, i16 %p_read57_read
+
+ST_1: ClusterEta60_0_Clust (392)  [1/1] 0.71ns  loc: HCALTower.cpp:917
+._crit_edge.0:297  %ClusterEta60_0_Clust = select i1 %tmp_166_1, i16 %p_read57_read, i16 %p_read59_read
+
+ST_1: ClusterPhi93_0_Clust (393)  [1/1] 0.71ns  loc: HCALTower.cpp:917
+._crit_edge.0:298  %ClusterPhi93_0_Clust = select i1 %tmp_166_1, i16 %p_read91_read, i16 %p_read89_read
+
+ST_1: ClusterPhi91_0_Clust (394)  [1/1] 0.71ns  loc: HCALTower.cpp:917
+._crit_edge.0:299  %ClusterPhi91_0_Clust = select i1 %tmp_166_1, i16 %p_read89_read, i16 %p_read91_read
+
+ST_1: tmp_10 (395)  [1/1] 1.29ns  loc: HCALTower.cpp:936
+._crit_edge.0:300  %tmp_10 = icmp ult i16 %ClusterDeposits2_0_C, %ClusterDeposits3_0_C
+
+ST_1: ClusterDeposits12_1_s (396)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:301  %ClusterDeposits12_1_s = select i1 %tmp_10, i16 %ClusterDeposits3_0_C, i16 %ClusterDeposits2_0_C
+
+ST_1: ClusterDeposits_1_Cl (397)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:302  %ClusterDeposits_1_Cl = select i1 %tmp_10, i16 %ClusterDeposits2_0_C, i16 %ClusterDeposits3_0_C
+
+ST_1: ClusterEta32_1_Clust (398)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:303  %ClusterEta32_1_Clust = select i1 %tmp_10, i16 %ClusterEta34_0_Clust, i16 %ClusterEta33_0_Clust
+
+ST_1: ClusterEta_1_Cluster (399)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:304  %ClusterEta_1_Cluster = select i1 %tmp_10, i16 %ClusterEta33_0_Clust, i16 %ClusterEta34_0_Clust
+
+ST_1: ClusterPhi63_1_Clust (400)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:305  %ClusterPhi63_1_Clust = select i1 %tmp_10, i16 %ClusterPhi65_0_Clust, i16 %ClusterPhi64_0_Clust
+
+ST_1: ClusterPhi_1_Cluster (401)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:306  %ClusterPhi_1_Cluster = select i1 %tmp_10, i16 %ClusterPhi64_0_Clust, i16 %ClusterPhi65_0_Clust
+
+ST_1: tmp_171_1 (402)  [1/1] 1.29ns  loc: HCALTower.cpp:936
+._crit_edge.0:307  %tmp_171_1 = icmp ult i16 %ClusterDeposits_0_Cl, %ClusterDeposits12_0_s
+
+ST_1: ClusterDeposits3_1_C (403)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:308  %ClusterDeposits3_1_C = select i1 %tmp_171_1, i16 %ClusterDeposits12_0_s, i16 %ClusterDeposits_0_Cl
+
+ST_1: ClusterDeposits2_1_C (404)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:309  %ClusterDeposits2_1_C = select i1 %tmp_171_1, i16 %ClusterDeposits_0_Cl, i16 %ClusterDeposits12_0_s
+
+ST_1: ClusterEta34_1_Clust (405)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:310  %ClusterEta34_1_Clust = select i1 %tmp_171_1, i16 %ClusterEta32_0_Clust, i16 %ClusterEta_0_Cluster
+
+ST_1: ClusterEta33_1_Clust (406)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:311  %ClusterEta33_1_Clust = select i1 %tmp_171_1, i16 %ClusterEta_0_Cluster, i16 %ClusterEta32_0_Clust
+
+ST_1: ClusterPhi65_1_Clust (407)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:312  %ClusterPhi65_1_Clust = select i1 %tmp_171_1, i16 %ClusterPhi63_0_Clust, i16 %ClusterPhi_0_Cluster
+
+ST_1: ClusterPhi64_1_Clust (408)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:313  %ClusterPhi64_1_Clust = select i1 %tmp_171_1, i16 %ClusterPhi_0_Cluster, i16 %ClusterPhi63_0_Clust
+
+ST_1: tmp_171_2 (409)  [1/1] 1.29ns  loc: HCALTower.cpp:936
+._crit_edge.0:314  %tmp_171_2 = icmp ult i16 %ClusterDeposits6_0_C, %ClusterDeposits7_0_C
+
+ST_1: ClusterDeposits5_1_C (410)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:315  %ClusterDeposits5_1_C = select i1 %tmp_171_2, i16 %ClusterDeposits7_0_C, i16 %ClusterDeposits6_0_C
+
+ST_1: ClusterDeposits4_1_C (411)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:316  %ClusterDeposits4_1_C = select i1 %tmp_171_2, i16 %ClusterDeposits6_0_C, i16 %ClusterDeposits7_0_C
+
+ST_1: ClusterEta36_1_Clust (412)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:317  %ClusterEta36_1_Clust = select i1 %tmp_171_2, i16 %ClusterEta38_0_Clust, i16 %ClusterEta3743_0_Clu
+
+ST_1: ClusterEta35_1_Clust (413)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:318  %ClusterEta35_1_Clust = select i1 %tmp_171_2, i16 %ClusterEta3743_0_Clu, i16 %ClusterEta38_0_Clust
+
+ST_1: ClusterPhi67_1_Clust (414)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:319  %ClusterPhi67_1_Clust = select i1 %tmp_171_2, i16 %ClusterPhi69_0_Clust, i16 %ClusterPhi68_0_Clust
+
+ST_1: ClusterPhi66_1_Clust (415)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:320  %ClusterPhi66_1_Clust = select i1 %tmp_171_2, i16 %ClusterPhi68_0_Clust, i16 %ClusterPhi69_0_Clust
+
+ST_1: tmp_171_3 (416)  [1/1] 1.29ns  loc: HCALTower.cpp:936
+._crit_edge.0:321  %tmp_171_3 = icmp ult i16 %ClusterDeposits4_0_C, %ClusterDeposits5_0_C
+
+ST_1: ClusterDeposits7_1_C (417)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:322  %ClusterDeposits7_1_C = select i1 %tmp_171_3, i16 %ClusterDeposits5_0_C, i16 %ClusterDeposits4_0_C
+
+ST_1: ClusterDeposits6_1_C (418)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:323  %ClusterDeposits6_1_C = select i1 %tmp_171_3, i16 %ClusterDeposits4_0_C, i16 %ClusterDeposits5_0_C
+
+ST_1: ClusterEta38_1_Clust (419)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:324  %ClusterEta38_1_Clust = select i1 %tmp_171_3, i16 %ClusterEta36_0_Clust, i16 %ClusterEta35_0_Clust
+
+ST_1: ClusterEta3743_1_Clu (420)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:325  %ClusterEta3743_1_Clu = select i1 %tmp_171_3, i16 %ClusterEta35_0_Clust, i16 %ClusterEta36_0_Clust
+
+ST_1: ClusterPhi69_1_Clust (421)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:326  %ClusterPhi69_1_Clust = select i1 %tmp_171_3, i16 %ClusterPhi67_0_Clust, i16 %ClusterPhi66_0_Clust
+
+ST_1: ClusterPhi68_1_Clust (422)  [1/1] 0.71ns  loc: HCALTower.cpp:936
+._crit_edge.0:327  %ClusterPhi68_1_Clust = select i1 %tmp_171_3, i16 %ClusterPhi66_0_Clust, i16 %ClusterPhi67_0_Clust
+
+ST_1: tmp_11 (423)  [1/1] 1.29ns  loc: HCALTower.cpp:952
+._crit_edge.0:328  %tmp_11 = icmp ugt i16 %ClusterDeposits10_0_s, %ClusterDeposits11_0_s
+
+ST_1: ClusterDeposits9_1_C (424)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:329  %ClusterDeposits9_1_C = select i1 %tmp_11, i16 %ClusterDeposits11_0_s, i16 %ClusterDeposits10_0_s
+
+ST_1: ClusterDeposits8_1_C (425)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:330  %ClusterDeposits8_1_C = select i1 %tmp_11, i16 %ClusterDeposits10_0_s, i16 %ClusterDeposits11_0_s
+
+ST_1: ClusterEta40_1_Clust (426)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:331  %ClusterEta40_1_Clust = select i1 %tmp_11, i16 %ClusterEta42_0_Clust, i16 %ClusterEta41_0_Clust
+
+ST_1: ClusterEta39_1_Clust (427)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:332  %ClusterEta39_1_Clust = select i1 %tmp_11, i16 %ClusterEta41_0_Clust, i16 %ClusterEta42_0_Clust
+
+ST_1: ClusterPhi71_1_Clust (428)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:333  %ClusterPhi71_1_Clust = select i1 %tmp_11, i16 %ClusterPhi73_0_Clust, i16 %ClusterPhi72_0_Clust
+
+ST_1: ClusterPhi7078_1_Clu (429)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:334  %ClusterPhi7078_1_Clu = select i1 %tmp_11, i16 %ClusterPhi72_0_Clust, i16 %ClusterPhi73_0_Clust
+
+ST_1: tmp_176_1 (430)  [1/1] 1.29ns  loc: HCALTower.cpp:952
+._crit_edge.0:335  %tmp_176_1 = icmp ugt i16 %ClusterDeposits8_0_C, %ClusterDeposits9_0_C
+
+ST_1: ClusterDeposits11_1_s (431)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:336  %ClusterDeposits11_1_s = select i1 %tmp_176_1, i16 %ClusterDeposits9_0_C, i16 %ClusterDeposits8_0_C
+
+ST_1: ClusterDeposits10_1_s (432)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:337  %ClusterDeposits10_1_s = select i1 %tmp_176_1, i16 %ClusterDeposits8_0_C, i16 %ClusterDeposits9_0_C
+
+ST_1: ClusterEta42_1_Clust (433)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:338  %ClusterEta42_1_Clust = select i1 %tmp_176_1, i16 %ClusterEta40_0_Clust, i16 %ClusterEta39_0_Clust
+
+ST_1: ClusterEta41_1_Clust (434)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:339  %ClusterEta41_1_Clust = select i1 %tmp_176_1, i16 %ClusterEta39_0_Clust, i16 %ClusterEta40_0_Clust
+
+ST_1: ClusterPhi73_1_Clust (435)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:340  %ClusterPhi73_1_Clust = select i1 %tmp_176_1, i16 %ClusterPhi71_0_Clust, i16 %ClusterPhi7078_0_Clu
+
+ST_1: ClusterPhi72_1_Clust (436)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:341  %ClusterPhi72_1_Clust = select i1 %tmp_176_1, i16 %ClusterPhi7078_0_Clu, i16 %ClusterPhi71_0_Clust
+
+ST_1: tmp_176_2 (437)  [1/1] 1.29ns  loc: HCALTower.cpp:952
+._crit_edge.0:342  %tmp_176_2 = icmp ugt i16 %ClusterDeposits14_0_s, %ClusterDeposits15_0_s
+
+ST_1: ClusterDeposits1316_1 (438)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:343  %ClusterDeposits1316_1 = select i1 %tmp_176_2, i16 %ClusterDeposits15_0_s, i16 %ClusterDeposits14_0_s
+
+ST_1: ClusterDeposits1214_1 (439)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:344  %ClusterDeposits1214_1 = select i1 %tmp_176_2, i16 %ClusterDeposits14_0_s, i16 %ClusterDeposits15_0_s
+
+ST_1: ClusterEta44_1_Clust (440)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:345  %ClusterEta44_1_Clust = select i1 %tmp_176_2, i16 %ClusterEta46_0_Clust, i16 %ClusterEta45_0_Clust
+
+ST_1: ClusterEta43_1_Clust (441)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:346  %ClusterEta43_1_Clust = select i1 %tmp_176_2, i16 %ClusterEta45_0_Clust, i16 %ClusterEta46_0_Clust
+
+ST_1: ClusterPhi75_1_Clust (442)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:347  %ClusterPhi75_1_Clust = select i1 %tmp_176_2, i16 %ClusterPhi77_0_Clust, i16 %ClusterPhi76_0_Clust
+
+ST_1: ClusterPhi74_1_Clust (443)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:348  %ClusterPhi74_1_Clust = select i1 %tmp_176_2, i16 %ClusterPhi76_0_Clust, i16 %ClusterPhi77_0_Clust
+
+ST_1: tmp_176_3 (444)  [1/1] 1.29ns  loc: HCALTower.cpp:952
+._crit_edge.0:349  %tmp_176_3 = icmp ugt i16 %ClusterDeposits1214_s, %ClusterDeposits1316_s
+
+ST_1: ClusterDeposits15_1_s (445)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:350  %ClusterDeposits15_1_s = select i1 %tmp_176_3, i16 %ClusterDeposits1316_s, i16 %ClusterDeposits1214_s
+
+ST_1: ClusterDeposits14_1_s (446)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:351  %ClusterDeposits14_1_s = select i1 %tmp_176_3, i16 %ClusterDeposits1214_s, i16 %ClusterDeposits1316_s
+
+ST_1: ClusterEta46_1_Clust (447)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:352  %ClusterEta46_1_Clust = select i1 %tmp_176_3, i16 %ClusterEta44_0_Clust, i16 %ClusterEta43_0_Clust
+
+ST_1: ClusterEta45_1_Clust (448)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:353  %ClusterEta45_1_Clust = select i1 %tmp_176_3, i16 %ClusterEta43_0_Clust, i16 %ClusterEta44_0_Clust
+
+ST_1: ClusterPhi77_1_Clust (449)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:354  %ClusterPhi77_1_Clust = select i1 %tmp_176_3, i16 %ClusterPhi75_0_Clust, i16 %ClusterPhi74_0_Clust
+
+ST_1: ClusterPhi76_1_Clust (450)  [1/1] 0.71ns  loc: HCALTower.cpp:952
+._crit_edge.0:355  %ClusterPhi76_1_Clust = select i1 %tmp_176_3, i16 %ClusterPhi74_0_Clust, i16 %ClusterPhi75_0_Clust
+
+ST_1: tmp_12 (451)  [1/1] 1.29ns  loc: HCALTower.cpp:968
+._crit_edge.0:356  %tmp_12 = icmp ult i16 %ClusterDeposits18_0_s, %ClusterDeposits19_0_s
+
+ST_1: ClusterDeposits17_1_s (452)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:357  %ClusterDeposits17_1_s = select i1 %tmp_12, i16 %ClusterDeposits19_0_s, i16 %ClusterDeposits18_0_s
+
+ST_1: ClusterDeposits16_1_s (453)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:358  %ClusterDeposits16_1_s = select i1 %tmp_12, i16 %ClusterDeposits18_0_s, i16 %ClusterDeposits19_0_s
+
+ST_1: ClusterEta48_1_Clust (454)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:359  %ClusterEta48_1_Clust = select i1 %tmp_12, i16 %ClusterEta50_0_Clust, i16 %ClusterEta49_0_Clust
+
+ST_1: ClusterEta47_1_Clust (455)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:360  %ClusterEta47_1_Clust = select i1 %tmp_12, i16 %ClusterEta49_0_Clust, i16 %ClusterEta50_0_Clust
+
+ST_1: ClusterPhi79_1_Clust (456)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:361  %ClusterPhi79_1_Clust = select i1 %tmp_12, i16 %ClusterPhi81_0_Clust, i16 %ClusterPhi80_0_Clust
+
+ST_1: ClusterPhi78_1_Clust (457)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:362  %ClusterPhi78_1_Clust = select i1 %tmp_12, i16 %ClusterPhi80_0_Clust, i16 %ClusterPhi81_0_Clust
+
+ST_1: tmp_181_1 (458)  [1/1] 1.29ns  loc: HCALTower.cpp:968
+._crit_edge.0:363  %tmp_181_1 = icmp ult i16 %ClusterDeposits16_0_s, %ClusterDeposits17_0_s
+
+ST_1: ClusterDeposits19_1_s (459)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:364  %ClusterDeposits19_1_s = select i1 %tmp_181_1, i16 %ClusterDeposits17_0_s, i16 %ClusterDeposits16_0_s
+
+ST_1: ClusterDeposits18_1_s (460)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:365  %ClusterDeposits18_1_s = select i1 %tmp_181_1, i16 %ClusterDeposits16_0_s, i16 %ClusterDeposits17_0_s
+
+ST_1: ClusterEta50_1_Clust (461)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:366  %ClusterEta50_1_Clust = select i1 %tmp_181_1, i16 %ClusterEta48_0_Clust, i16 %ClusterEta47_0_Clust
+
+ST_1: ClusterEta49_1_Clust (462)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:367  %ClusterEta49_1_Clust = select i1 %tmp_181_1, i16 %ClusterEta47_0_Clust, i16 %ClusterEta48_0_Clust
+
+ST_1: ClusterPhi81_1_Clust (463)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:368  %ClusterPhi81_1_Clust = select i1 %tmp_181_1, i16 %ClusterPhi79_0_Clust, i16 %ClusterPhi78_0_Clust
+
+ST_1: ClusterPhi80_1_Clust (464)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:369  %ClusterPhi80_1_Clust = select i1 %tmp_181_1, i16 %ClusterPhi78_0_Clust, i16 %ClusterPhi79_0_Clust
+
+ST_1: tmp_181_2 (465)  [1/1] 1.29ns  loc: HCALTower.cpp:968
+._crit_edge.0:370  %tmp_181_2 = icmp ult i16 %ClusterDeposits22_0_s, %ClusterDeposits23_0_s
+
+ST_1: ClusterDeposits21_1_s (466)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:371  %ClusterDeposits21_1_s = select i1 %tmp_181_2, i16 %ClusterDeposits23_0_s, i16 %ClusterDeposits22_0_s
+
+ST_1: ClusterDeposits20_1_s (467)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:372  %ClusterDeposits20_1_s = select i1 %tmp_181_2, i16 %ClusterDeposits22_0_s, i16 %ClusterDeposits23_0_s
+
+ST_1: ClusterEta52_1_Clust (468)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:373  %ClusterEta52_1_Clust = select i1 %tmp_181_2, i16 %ClusterEta54_0_Clust, i16 %ClusterEta53_0_Clust
+
+ST_1: ClusterEta51_1_Clust (469)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:374  %ClusterEta51_1_Clust = select i1 %tmp_181_2, i16 %ClusterEta53_0_Clust, i16 %ClusterEta54_0_Clust
+
+ST_1: ClusterPhi83_1_Clust (470)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:375  %ClusterPhi83_1_Clust = select i1 %tmp_181_2, i16 %ClusterPhi85_0_Clust, i16 %ClusterPhi84_0_Clust
+
+ST_1: ClusterPhi82_1_Clust (471)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:376  %ClusterPhi82_1_Clust = select i1 %tmp_181_2, i16 %ClusterPhi84_0_Clust, i16 %ClusterPhi85_0_Clust
+
+ST_1: tmp_181_3 (472)  [1/1] 1.29ns  loc: HCALTower.cpp:968
+._crit_edge.0:377  %tmp_181_3 = icmp ult i16 %ClusterDeposits20_0_s, %ClusterDeposits21_0_s
+
+ST_1: ClusterDeposits23_1_s (473)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:378  %ClusterDeposits23_1_s = select i1 %tmp_181_3, i16 %ClusterDeposits21_0_s, i16 %ClusterDeposits20_0_s
+
+ST_1: ClusterDeposits22_1_s (474)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:379  %ClusterDeposits22_1_s = select i1 %tmp_181_3, i16 %ClusterDeposits20_0_s, i16 %ClusterDeposits21_0_s
+
+ST_1: ClusterEta54_1_Clust (475)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:380  %ClusterEta54_1_Clust = select i1 %tmp_181_3, i16 %ClusterEta52_0_Clust, i16 %ClusterEta51_0_Clust
+
+ST_1: ClusterEta53_1_Clust (476)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:381  %ClusterEta53_1_Clust = select i1 %tmp_181_3, i16 %ClusterEta51_0_Clust, i16 %ClusterEta52_0_Clust
+
+ST_1: ClusterPhi85_1_Clust (477)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:382  %ClusterPhi85_1_Clust = select i1 %tmp_181_3, i16 %ClusterPhi83_0_Clust, i16 %ClusterPhi82_0_Clust
+
+ST_1: ClusterPhi84_1_Clust (478)  [1/1] 0.71ns  loc: HCALTower.cpp:968
+._crit_edge.0:383  %ClusterPhi84_1_Clust = select i1 %tmp_181_3, i16 %ClusterPhi82_0_Clust, i16 %ClusterPhi83_0_Clust
+
+ST_1: tmp_186_1 (479)  [1/1] 1.29ns  loc: HCALTower.cpp:984
+._crit_edge.0:384  %tmp_186_1 = icmp ugt i16 %p_read30_read, %p_read31_read
+
+ST_1: ClusterDeposits27_1_s (480)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:385  %ClusterDeposits27_1_s = select i1 %tmp_186_1, i16 %p_read31_read, i16 %p_read30_read
+
+ST_1: ClusterDeposits26_1_s (481)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:386  %ClusterDeposits26_1_s = select i1 %tmp_186_1, i16 %p_read30_read, i16 %p_read31_read
+
+ST_1: ClusterEta58_1_Clust (482)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:387  %ClusterEta58_1_Clust = select i1 %tmp_186_1, i16 %p_read63_read, i16 %p_read62_read
+
+ST_1: ClusterEta57_1_Clust (483)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:388  %ClusterEta57_1_Clust = select i1 %tmp_186_1, i16 %p_read62_read, i16 %p_read63_read
+
+ST_1: ClusterPhi89_1_Clust (484)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:389  %ClusterPhi89_1_Clust = select i1 %tmp_186_1, i16 %p_read95_read, i16 %p_read94_read
+
+ST_1: ClusterPhi88_1_Clust (485)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:390  %ClusterPhi88_1_Clust = select i1 %tmp_186_1, i16 %p_read94_read, i16 %p_read95_read
+
+ST_1: tmp_186_2 (486)  [1/1] 1.29ns  loc: HCALTower.cpp:984
+._crit_edge.0:391  %tmp_186_2 = icmp ugt i16 %ClusterDeposits30_0_s, %ClusterDeposits31_0_s
+
+ST_1: ClusterDeposits29_1_s (487)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:392  %ClusterDeposits29_1_s = select i1 %tmp_186_2, i16 %ClusterDeposits31_0_s, i16 %ClusterDeposits30_0_s
+
+ST_1: ClusterDeposits28_1_s (488)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:393  %ClusterDeposits28_1_s = select i1 %tmp_186_2, i16 %ClusterDeposits30_0_s, i16 %ClusterDeposits31_0_s
+
+ST_1: ClusterEta60_1_Clust (489)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:394  %ClusterEta60_1_Clust = select i1 %tmp_186_2, i16 %ClusterEta62_0_Clust, i16 %ClusterEta61_0_Clust
+
+ST_1: ClusterEta59_1_Clust (490)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:395  %ClusterEta59_1_Clust = select i1 %tmp_186_2, i16 %ClusterEta61_0_Clust, i16 %ClusterEta62_0_Clust
+
+ST_1: ClusterPhi91_1_Clust (491)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:396  %ClusterPhi91_1_Clust = select i1 %tmp_186_2, i16 %ClusterPhi93_0_Clust, i16 %ClusterPhi92_0_Clust
+
+ST_1: ClusterPhi90_1_Clust (492)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:397  %ClusterPhi90_1_Clust = select i1 %tmp_186_2, i16 %ClusterPhi92_0_Clust, i16 %ClusterPhi93_0_Clust
+
+ST_1: tmp_186_3 (493)  [1/1] 1.29ns  loc: HCALTower.cpp:984
+._crit_edge.0:398  %tmp_186_3 = icmp ugt i16 %ClusterDeposits28_0_s, %ClusterDeposits29_0_s
+
+ST_1: ClusterDeposits31_1_s (494)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:399  %ClusterDeposits31_1_s = select i1 %tmp_186_3, i16 %ClusterDeposits29_0_s, i16 %ClusterDeposits28_0_s
+
+ST_1: ClusterDeposits30_1_s (495)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:400  %ClusterDeposits30_1_s = select i1 %tmp_186_3, i16 %ClusterDeposits28_0_s, i16 %ClusterDeposits29_0_s
+
+ST_1: ClusterEta62_1_Clust (496)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:401  %ClusterEta62_1_Clust = select i1 %tmp_186_3, i16 %ClusterEta60_0_Clust, i16 %ClusterEta59_0_Clust
+
+ST_1: ClusterEta61_1_Clust (497)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:402  %ClusterEta61_1_Clust = select i1 %tmp_186_3, i16 %ClusterEta59_0_Clust, i16 %ClusterEta60_0_Clust
+
+ST_1: ClusterPhi93_1_Clust (498)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:403  %ClusterPhi93_1_Clust = select i1 %tmp_186_3, i16 %ClusterPhi91_0_Clust, i16 %ClusterPhi90_0_Clust
+
+ST_1: ClusterPhi92_1_Clust (499)  [1/1] 0.71ns  loc: HCALTower.cpp:984
+._crit_edge.0:404  %ClusterPhi92_1_Clust = select i1 %tmp_186_3, i16 %ClusterPhi90_0_Clust, i16 %ClusterPhi91_0_Clust
+
+
+ <State 2>: 8.01ns
+ST_2: call_ret (500)  [3/3] 8.01ns  loc: HCALTower.cpp:998
+._crit_edge.0:405  %call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic16(i16 %ClusterDeposits12_1_s, i16 %ClusterDeposits_1_Cl, i16 %ClusterDeposits3_1_C, i16 %ClusterDeposits2_1_C, i16 %ClusterDeposits5_1_C, i16 %ClusterDeposits4_1_C, i16 %ClusterDeposits7_1_C, i16 %ClusterDeposits6_1_C, i16 %ClusterDeposits9_1_C, i16 %ClusterDeposits8_1_C, i16 %ClusterDeposits11_1_s, i16 %ClusterDeposits10_1_s, i16 %ClusterDeposits1316_1, i16 %ClusterDeposits1214_1, i16 %ClusterDeposits15_1_s, i16 %ClusterDeposits14_1_s, i16 %ClusterDeposits17_1_s, i16 %ClusterDeposits16_1_s, i16 %ClusterDeposits19_1_s, i16 %ClusterDeposits18_1_s, i16 %ClusterDeposits21_1_s, i16 %ClusterDeposits20_1_s, i16 %ClusterDeposits23_1_s, i16 %ClusterDeposits22_1_s, i16 %ClusterDeposits27_1_s, i16 %ClusterDeposits26_1_s, i16 %ClusterDeposits29_1_s, i16 %ClusterDeposits28_1_s, i16 %ClusterDeposits31_1_s, i16 %ClusterDeposits30_1_s, i16 %ClusterEta32_1_Clust, i16 %ClusterEta_1_Cluster, i16 %ClusterEta34_1_Clust, i16 %ClusterEta33_1_Clust, i16 %ClusterEta36_1_Clust, i16 %ClusterEta35_1_Clust, i16 %ClusterEta38_1_Clust, i16 %ClusterEta3743_1_Clu, i16 %ClusterEta40_1_Clust, i16 %ClusterEta39_1_Clust, i16 %ClusterEta42_1_Clust, i16 %ClusterEta41_1_Clust, i16 %ClusterEta44_1_Clust, i16 %ClusterEta43_1_Clust, i16 %ClusterEta46_1_Clust, i16 %ClusterEta45_1_Clust, i16 %ClusterEta48_1_Clust, i16 %ClusterEta47_1_Clust, i16 %ClusterEta50_1_Clust, i16 %ClusterEta49_1_Clust, i16 %ClusterEta52_1_Clust, i16 %ClusterEta51_1_Clust, i16 %ClusterEta54_1_Clust, i16 %ClusterEta53_1_Clust, i16 %p_read60_read, i16 %p_read61_read, i16 %ClusterEta58_1_Clust, i16 %ClusterEta57_1_Clust, i16 %ClusterEta60_1_Clust, i16 %ClusterEta59_1_Clust, i16 %ClusterEta62_1_Clust, i16 %ClusterEta61_1_Clust, i16 %ClusterPhi63_1_Clust, i16 %ClusterPhi_1_Cluster, i16 %ClusterPhi65_1_Clust, i16 %ClusterPhi64_1_Clust, i16 %ClusterPhi67_1_Clust, i16 %ClusterPhi66_1_Clust, i16 %ClusterPhi69_1_Clust, i16 %ClusterPhi68_1_Clust, i16 %ClusterPhi71_1_Clust, i16 %ClusterPhi7078_1_Clu, i16 %ClusterPhi73_1_Clust, i16 %ClusterPhi72_1_Clust, i16 %ClusterPhi75_1_Clust, i16 %ClusterPhi74_1_Clust, i16 %ClusterPhi77_1_Clust, i16 %ClusterPhi76_1_Clust, i16 %ClusterPhi79_1_Clust, i16 %ClusterPhi78_1_Clust, i16 %ClusterPhi81_1_Clust, i16 %ClusterPhi80_1_Clust, i16 %ClusterPhi83_1_Clust, i16 %ClusterPhi82_1_Clust, i16 %ClusterPhi85_1_Clust, i16 %ClusterPhi84_1_Clust, i16 %p_read92_read, i16 %p_read93_read, i16 %ClusterPhi89_1_Clust, i16 %ClusterPhi88_1_Clust, i16 %ClusterPhi91_1_Clust, i16 %ClusterPhi90_1_Clust, i16 %ClusterPhi93_1_Clust, i16 %ClusterPhi92_1_Clust)
+
+
+ <State 3>: 8.59ns
+ST_3: call_ret (500)  [2/3] 8.59ns  loc: HCALTower.cpp:998
+._crit_edge.0:405  %call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic16(i16 %ClusterDeposits12_1_s, i16 %ClusterDeposits_1_Cl, i16 %ClusterDeposits3_1_C, i16 %ClusterDeposits2_1_C, i16 %ClusterDeposits5_1_C, i16 %ClusterDeposits4_1_C, i16 %ClusterDeposits7_1_C, i16 %ClusterDeposits6_1_C, i16 %ClusterDeposits9_1_C, i16 %ClusterDeposits8_1_C, i16 %ClusterDeposits11_1_s, i16 %ClusterDeposits10_1_s, i16 %ClusterDeposits1316_1, i16 %ClusterDeposits1214_1, i16 %ClusterDeposits15_1_s, i16 %ClusterDeposits14_1_s, i16 %ClusterDeposits17_1_s, i16 %ClusterDeposits16_1_s, i16 %ClusterDeposits19_1_s, i16 %ClusterDeposits18_1_s, i16 %ClusterDeposits21_1_s, i16 %ClusterDeposits20_1_s, i16 %ClusterDeposits23_1_s, i16 %ClusterDeposits22_1_s, i16 %ClusterDeposits27_1_s, i16 %ClusterDeposits26_1_s, i16 %ClusterDeposits29_1_s, i16 %ClusterDeposits28_1_s, i16 %ClusterDeposits31_1_s, i16 %ClusterDeposits30_1_s, i16 %ClusterEta32_1_Clust, i16 %ClusterEta_1_Cluster, i16 %ClusterEta34_1_Clust, i16 %ClusterEta33_1_Clust, i16 %ClusterEta36_1_Clust, i16 %ClusterEta35_1_Clust, i16 %ClusterEta38_1_Clust, i16 %ClusterEta3743_1_Clu, i16 %ClusterEta40_1_Clust, i16 %ClusterEta39_1_Clust, i16 %ClusterEta42_1_Clust, i16 %ClusterEta41_1_Clust, i16 %ClusterEta44_1_Clust, i16 %ClusterEta43_1_Clust, i16 %ClusterEta46_1_Clust, i16 %ClusterEta45_1_Clust, i16 %ClusterEta48_1_Clust, i16 %ClusterEta47_1_Clust, i16 %ClusterEta50_1_Clust, i16 %ClusterEta49_1_Clust, i16 %ClusterEta52_1_Clust, i16 %ClusterEta51_1_Clust, i16 %ClusterEta54_1_Clust, i16 %ClusterEta53_1_Clust, i16 %p_read60_read, i16 %p_read61_read, i16 %ClusterEta58_1_Clust, i16 %ClusterEta57_1_Clust, i16 %ClusterEta60_1_Clust, i16 %ClusterEta59_1_Clust, i16 %ClusterEta62_1_Clust, i16 %ClusterEta61_1_Clust, i16 %ClusterPhi63_1_Clust, i16 %ClusterPhi_1_Cluster, i16 %ClusterPhi65_1_Clust, i16 %ClusterPhi64_1_Clust, i16 %ClusterPhi67_1_Clust, i16 %ClusterPhi66_1_Clust, i16 %ClusterPhi69_1_Clust, i16 %ClusterPhi68_1_Clust, i16 %ClusterPhi71_1_Clust, i16 %ClusterPhi7078_1_Clu, i16 %ClusterPhi73_1_Clust, i16 %ClusterPhi72_1_Clust, i16 %ClusterPhi75_1_Clust, i16 %ClusterPhi74_1_Clust, i16 %ClusterPhi77_1_Clust, i16 %ClusterPhi76_1_Clust, i16 %ClusterPhi79_1_Clust, i16 %ClusterPhi78_1_Clust, i16 %ClusterPhi81_1_Clust, i16 %ClusterPhi80_1_Clust, i16 %ClusterPhi83_1_Clust, i16 %ClusterPhi82_1_Clust, i16 %ClusterPhi85_1_Clust, i16 %ClusterPhi84_1_Clust, i16 %p_read92_read, i16 %p_read93_read, i16 %ClusterPhi89_1_Clust, i16 %ClusterPhi88_1_Clust, i16 %ClusterPhi91_1_Clust, i16 %ClusterPhi90_1_Clust, i16 %ClusterPhi93_1_Clust, i16 %ClusterPhi92_1_Clust)
+
+
+ <State 4>: 3.55ns
+ST_4: call_ret (500)  [1/3] 3.55ns  loc: HCALTower.cpp:998
+._crit_edge.0:405  %call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic16(i16 %ClusterDeposits12_1_s, i16 %ClusterDeposits_1_Cl, i16 %ClusterDeposits3_1_C, i16 %ClusterDeposits2_1_C, i16 %ClusterDeposits5_1_C, i16 %ClusterDeposits4_1_C, i16 %ClusterDeposits7_1_C, i16 %ClusterDeposits6_1_C, i16 %ClusterDeposits9_1_C, i16 %ClusterDeposits8_1_C, i16 %ClusterDeposits11_1_s, i16 %ClusterDeposits10_1_s, i16 %ClusterDeposits1316_1, i16 %ClusterDeposits1214_1, i16 %ClusterDeposits15_1_s, i16 %ClusterDeposits14_1_s, i16 %ClusterDeposits17_1_s, i16 %ClusterDeposits16_1_s, i16 %ClusterDeposits19_1_s, i16 %ClusterDeposits18_1_s, i16 %ClusterDeposits21_1_s, i16 %ClusterDeposits20_1_s, i16 %ClusterDeposits23_1_s, i16 %ClusterDeposits22_1_s, i16 %ClusterDeposits27_1_s, i16 %ClusterDeposits26_1_s, i16 %ClusterDeposits29_1_s, i16 %ClusterDeposits28_1_s, i16 %ClusterDeposits31_1_s, i16 %ClusterDeposits30_1_s, i16 %ClusterEta32_1_Clust, i16 %ClusterEta_1_Cluster, i16 %ClusterEta34_1_Clust, i16 %ClusterEta33_1_Clust, i16 %ClusterEta36_1_Clust, i16 %ClusterEta35_1_Clust, i16 %ClusterEta38_1_Clust, i16 %ClusterEta3743_1_Clu, i16 %ClusterEta40_1_Clust, i16 %ClusterEta39_1_Clust, i16 %ClusterEta42_1_Clust, i16 %ClusterEta41_1_Clust, i16 %ClusterEta44_1_Clust, i16 %ClusterEta43_1_Clust, i16 %ClusterEta46_1_Clust, i16 %ClusterEta45_1_Clust, i16 %ClusterEta48_1_Clust, i16 %ClusterEta47_1_Clust, i16 %ClusterEta50_1_Clust, i16 %ClusterEta49_1_Clust, i16 %ClusterEta52_1_Clust, i16 %ClusterEta51_1_Clust, i16 %ClusterEta54_1_Clust, i16 %ClusterEta53_1_Clust, i16 %p_read60_read, i16 %p_read61_read, i16 %ClusterEta58_1_Clust, i16 %ClusterEta57_1_Clust, i16 %ClusterEta60_1_Clust, i16 %ClusterEta59_1_Clust, i16 %ClusterEta62_1_Clust, i16 %ClusterEta61_1_Clust, i16 %ClusterPhi63_1_Clust, i16 %ClusterPhi_1_Cluster, i16 %ClusterPhi65_1_Clust, i16 %ClusterPhi64_1_Clust, i16 %ClusterPhi67_1_Clust, i16 %ClusterPhi66_1_Clust, i16 %ClusterPhi69_1_Clust, i16 %ClusterPhi68_1_Clust, i16 %ClusterPhi71_1_Clust, i16 %ClusterPhi7078_1_Clu, i16 %ClusterPhi73_1_Clust, i16 %ClusterPhi72_1_Clust, i16 %ClusterPhi75_1_Clust, i16 %ClusterPhi74_1_Clust, i16 %ClusterPhi77_1_Clust, i16 %ClusterPhi76_1_Clust, i16 %ClusterPhi79_1_Clust, i16 %ClusterPhi78_1_Clust, i16 %ClusterPhi81_1_Clust, i16 %ClusterPhi80_1_Clust, i16 %ClusterPhi83_1_Clust, i16 %ClusterPhi82_1_Clust, i16 %ClusterPhi85_1_Clust, i16 %ClusterPhi84_1_Clust, i16 %p_read92_read, i16 %p_read93_read, i16 %ClusterPhi89_1_Clust, i16 %ClusterPhi88_1_Clust, i16 %ClusterPhi91_1_Clust, i16 %ClusterPhi90_1_Clust, i16 %ClusterPhi93_1_Clust, i16 %ClusterPhi92_1_Clust)
+
+ST_4: StgValue_413 (501)  [1/1] 0.00ns  loc: HCALTower.cpp:998
+._crit_edge.0:406  ret { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 6.01ns
+The critical path consists of the following:
+	wire read on port 'ClusterDeposits_31_s' [159]  (0 ns)
+	'icmp' operation ('tmp_126_3', HCALTower.cpp:802) [290]  (1.29 ns)
+	'select' operation ('p_read27_read', HCALTower.cpp:802) [292]  (0.71 ns)
+	'icmp' operation ('tmp_166_1', HCALTower.cpp:917) [388]  (1.29 ns)
+	'select' operation ('ClusterDeposits31_0_s', HCALTower.cpp:917) [389]  (0.71 ns)
+	'icmp' operation ('tmp_186_2', HCALTower.cpp:984) [486]  (1.29 ns)
+	'select' operation ('ClusterDeposits29_1_s', HCALTower.cpp:984) [487]  (0.71 ns)
+
+ <State 2>: 8.01ns
+The critical path consists of the following:
+	'call' operation ('call_ret', HCALTower.cpp:998) to 'bitonic16' [500]  (8.01 ns)
+
+ <State 3>: 8.59ns
+The critical path consists of the following:
+	'call' operation ('call_ret', HCALTower.cpp:998) to 'bitonic16' [500]  (8.59 ns)
+
+ <State 4>: 3.55ns
+The critical path consists of the following:
+	'call' operation ('call_ret', HCALTower.cpp:998) to 'bitonic16' [500]  (3.55 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

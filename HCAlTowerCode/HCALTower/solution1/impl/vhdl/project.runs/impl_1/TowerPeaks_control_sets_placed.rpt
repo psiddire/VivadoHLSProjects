@@ -1,0 +1,79 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Mon Aug 20 17:42:11 2018
+| Host         : pcminn34.cern.ch running 64-bit Scientific Linux CERN SLC release 6.10 (Carbon)
+| Command      : report_control_sets -verbose -file TowerPeaks_control_sets_placed.rpt
+| Design       : TowerPeaks
+| Device       : xc7vx690t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              43 |           17 |
+| Yes          | No                    | No                     |            4933 |         1692 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+| Clock Signal |                                                   Enable Signal                                                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------+-------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  ap_clk      |                                                                                                                   |                  |                5 |              8 |
+|  ap_clk      |                                                                                                                   | ap_rst           |               17 |             43 |
+|  ap_clk      | ap_ready                                                                                                          |                  |               20 |             58 |
+|  ap_clk      | ap_reg_grp_getTowerPeaks3x4_fu_1228_ap_start0                                                                     |                  |               20 |             58 |
+|  ap_clk      | ap_CS_fsm_pp0_stage2                                                                                              |                  |               41 |             60 |
+|  ap_clk      | ap_CS_fsm_pp0_stage5                                                                                              |                  |               45 |             60 |
+|  ap_clk      | grp_getTowerPeaks3x4_fu_1228/Cluster_1_Deposits_0_reg_10290                                                       |                  |               93 |            204 |
+|  ap_clk      | grp_getTowerPeaks3x4_fu_1256/Cluster_1_Deposits_0_reg_10290                                                       |                  |               93 |            204 |
+|  ap_clk      | grp_getTowerPeaks3x4_fu_1284/Cluster_1_Deposits_0_reg_10290                                                       |                  |               85 |            204 |
+|  ap_clk      | grp_getTowerPeaks3x4_fu_1228/grp_bitonic_1_8_fu_120/Cluster_1_Deposits12_2_reg_13080                              |                  |               55 |            240 |
+|  ap_clk      | grp_getTowerPeaks3x4_fu_1256/grp_bitonic_1_8_fu_120/Cluster_1_Deposits12_2_reg_13080                              |                  |               64 |            240 |
+|  ap_clk      | grp_getTowerPeaks3x4_fu_1284/grp_bitonic_1_8_fu_120/Cluster_1_Deposits12_2_reg_13080                              |                  |               54 |            240 |
+|  ap_clk      | grp_bitonic4_fu_1134/grp_bitonic8_fu_726/grp_bitonic16_fu_758/grp_bitonic32_fu_760/ap_port_reg_ClusterEta_0_read0 |                  |              182 |            285 |
+|  ap_clk      | ap_CS_fsm_pp0_stage3                                                                                              |                  |              203 |            512 |
+|  ap_clk      | ap_enable_reg_pp0_iter0_preg0                                                                                     |                  |              222 |            576 |
+|  ap_clk      | grp_bitonic4_fu_1134/ClusterDeposits_0_r_2_reg_25820                                                              |                  |              223 |            648 |
+|  ap_clk      | grp_bitonic4_fu_1134/grp_bitonic8_fu_726/ClusterDeposits10_1_s_reg_34290                                          |                  |              143 |            656 |
+|  ap_clk      | grp_bitonic4_fu_1134/grp_bitonic8_fu_726/grp_bitonic16_fu_758/ClusterDeposits10_2_s_reg_42310                     |                  |              149 |            688 |
++--------------+-------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 8      |                     1 |
+| 16+    |                    17 |
++--------+-----------------------+
+
+

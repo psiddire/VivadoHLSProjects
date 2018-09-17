@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/HT/MakeHT/solution2/.autopilot/db/a.g.0.bc ${1+"$@"}

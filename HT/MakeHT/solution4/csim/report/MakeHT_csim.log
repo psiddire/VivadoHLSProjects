@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../TestMakeHT.cpp in debug mode
+   Compiling ../../../../MakeHT.cc in debug mode
+   Generating csim.exe
+Using: #define uint10_t uint16_t
+Test succeeded
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

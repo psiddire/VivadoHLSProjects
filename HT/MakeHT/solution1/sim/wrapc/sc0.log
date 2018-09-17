@@ -1,0 +1,5 @@
+   Build using "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_MakeHT.cpp
+   Compiling TestMakeHT.cpp_pre.cpp.tb.cpp
+   Compiling MakeHT.cc_pre.cc.tb.cc
+   Generating cosim.tv.exe

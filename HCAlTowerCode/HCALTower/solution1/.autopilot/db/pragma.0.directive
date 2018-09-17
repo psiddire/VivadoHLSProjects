@@ -1,0 +1,370 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="bitonic_1_16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic_1_4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic32" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic16" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic8" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitonic4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="PIPELINE">
+<option name="II" value="6"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="Cluster_1_Deposits"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="Cluster_1_Eta"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="Cluster_1_Phi"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="cEta"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="cPhi"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="towerETRegions"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="getTowerPeaks3x4" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="PIPELINE">
+<option name="II" value="6"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="towerET"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="TowerEta"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="TowerPhi"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="regions"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="regionEta"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="regionPhi"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="Tower_1_Eta"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="Tower_1_Phi"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="ClusterDeposits2"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="ClusterEta2"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="ClusterPhi2"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="TowerPeaks" label="">
+<pragma name="UNROLL"/>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

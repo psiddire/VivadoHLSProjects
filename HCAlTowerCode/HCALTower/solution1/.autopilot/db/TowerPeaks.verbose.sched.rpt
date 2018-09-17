@@ -1,0 +1,2235 @@
+
+
+================================================================
+== Vivado HLS Report for 'TowerPeaks'
+================================================================
+* Date:           Mon Aug 20 17:22:20 2018
+
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
+* Project:        HCALTower
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690tffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   10|   10|    6|    6| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 6, depth = 11
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 11
+* Pipeline: 1
+  Pipeline-0: II = 6, D = 11, States = { 1 2 3 4 5 6 7 8 9 10 11 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+* FSM state operations: 
+
+ <State 1>: 4.36ns
+ST_1: regions_0_0 (259)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:130  %regions_0_0 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_0_0)
+
+ST_1: regions_0_1 (260)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:131  %regions_0_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_0_1)
+
+ST_1: regions_0_2 (261)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:132  %regions_0_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_0_2)
+
+ST_1: regions_0_3 (262)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:133  %regions_0_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_0_3)
+
+ST_1: regions_1_0 (263)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:134  %regions_1_0 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_1_0)
+
+ST_1: regions_1_1 (264)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:135  %regions_1_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_1_1)
+
+ST_1: regions_1_2 (265)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:136  %regions_1_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_1_2)
+
+ST_1: regions_1_3 (266)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:137  %regions_1_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_1_3)
+
+ST_1: regions_2_0 (267)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:138  %regions_2_0 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_2_0)
+
+ST_1: regions_2_1 (268)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:139  %regions_2_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_2_1)
+
+ST_1: regions_2_2 (269)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:140  %regions_2_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_2_2)
+
+ST_1: regions_2_3 (270)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:141  %regions_2_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_2_3)
+
+ST_1: call_ret1 (271)  [3/3] 4.36ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:142  %call_ret1 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3)
+
+ST_1: regions_0_0_1 (282)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:153  %regions_0_0_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_3_0)
+
+ST_1: regions_0_1_1 (283)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:154  %regions_0_1_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_3_1)
+
+ST_1: regions_0_2_1 (284)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:155  %regions_0_2_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_3_2)
+
+ST_1: regions_0_3_1 (285)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:156  %regions_0_3_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_3_3)
+
+ST_1: regions_1_0_1 (286)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:157  %regions_1_0_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_4_0)
+
+ST_1: regions_1_1_1 (287)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:158  %regions_1_1_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_4_1)
+
+ST_1: regions_1_2_1 (288)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:159  %regions_1_2_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_4_2)
+
+ST_1: regions_1_3_1 (289)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:160  %regions_1_3_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_4_3)
+
+ST_1: regions_2_0_1 (290)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:161  %regions_2_0_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_5_0)
+
+ST_1: regions_2_1_1 (291)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:162  %regions_2_1_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_5_1)
+
+ST_1: regions_2_2_1 (292)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:163  %regions_2_2_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_5_2)
+
+ST_1: regions_2_3_1 (293)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:164  %regions_2_3_1 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_5_3)
+
+ST_1: call_ret2 (294)  [3/3] 4.36ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:165  %call_ret2 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1)
+
+ST_1: regions_0_0_2 (315)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:186  %regions_0_0_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_6_0)
+
+ST_1: regions_0_1_2 (316)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:187  %regions_0_1_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_6_1)
+
+ST_1: regions_0_2_2 (317)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:188  %regions_0_2_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_6_2)
+
+ST_1: regions_0_3_2 (318)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:189  %regions_0_3_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_6_3)
+
+ST_1: regions_1_0_2 (319)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:190  %regions_1_0_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_7_0)
+
+ST_1: regions_1_1_2 (320)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:191  %regions_1_1_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_7_1)
+
+ST_1: regions_1_2_2 (321)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:192  %regions_1_2_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_7_2)
+
+ST_1: regions_1_3_2 (322)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:193  %regions_1_3_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_7_3)
+
+ST_1: regions_2_0_2 (323)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:194  %regions_2_0_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_8_0)
+
+ST_1: regions_2_1_2 (324)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:195  %regions_2_1_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_8_1)
+
+ST_1: regions_2_2_2 (325)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:196  %regions_2_2_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_8_2)
+
+ST_1: regions_2_3_2 (326)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:197  %regions_2_3_2 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_8_3)
+
+ST_1: call_ret3 (327)  [3/3] 4.36ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:198  %call_ret3 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2)
+
+
+ <State 2>: 8.75ns
+ST_2: call_ret1 (271)  [2/3] 8.75ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:142  %call_ret1 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3)
+
+ST_2: call_ret2 (294)  [2/3] 8.75ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:165  %call_ret2 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1)
+
+ST_2: call_ret3 (327)  [2/3] 8.75ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:198  %call_ret3 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2)
+
+
+ <State 3>: 7.30ns
+ST_3: call_ret1 (271)  [1/3] 7.30ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:142  %call_ret1 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3)
+
+ST_3: ClusterEta2_1_2 (272)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:143  %ClusterEta2_1_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 0
+
+ST_3: ClusterEta2_0 (273)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:144  %ClusterEta2_0 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 1
+
+ST_3: ClusterEta2_3_2 (274)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:145  %ClusterEta2_3_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 2
+
+ST_3: ClusterEta2_2 (275)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:146  %ClusterEta2_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 3
+
+ST_3: ClusterEta2_5_2 (276)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:147  %ClusterEta2_5_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 4
+
+ST_3: ClusterPhi2_1_2 (277)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:148  %ClusterPhi2_1_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 5
+
+ST_3: ClusterPhi2_0 (278)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:149  %ClusterPhi2_0 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 6
+
+ST_3: ClusterPhi2_3_2 (279)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:150  %ClusterPhi2_3_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 7
+
+ST_3: ClusterPhi2_2 (280)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:151  %ClusterPhi2_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 8
+
+ST_3: ClusterPhi2_5_2 (281)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:152  %ClusterPhi2_5_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 9
+
+ST_3: call_ret2 (294)  [1/3] 7.30ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:165  %call_ret2 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1)
+
+ST_3: regionEta_0 (295)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:166  %regionEta_0 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 0
+
+ST_3: regionEta_1 (296)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:167  %regionEta_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 1
+
+ST_3: regionEta_2 (297)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:168  %regionEta_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 2
+
+ST_3: regionEta_3 (298)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:169  %regionEta_3 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 3
+
+ST_3: regionEta_4 (299)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:170  %regionEta_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 4
+
+ST_3: ClusterPhi2_4 (300)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:171  %ClusterPhi2_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 5
+
+ST_3: ClusterPhi2_7_2 (301)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:172  %ClusterPhi2_7_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 6
+
+ST_3: ClusterPhi2_6 (302)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:173  %ClusterPhi2_6 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 7
+
+ST_3: ClusterPhi2_9_2 (303)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:174  %ClusterPhi2_9_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 8
+
+ST_3: ClusterPhi2_8 (304)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:175  %ClusterPhi2_8 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret2, 9
+
+ST_3: tmp (305)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:176  %tmp = trunc i16 %regionEta_0 to i5
+
+ST_3: tmp_5 (307)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:178  %tmp_5 = trunc i16 %regionEta_1 to i5
+
+ST_3: tmp_6 (309)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:180  %tmp_6 = trunc i16 %regionEta_2 to i5
+
+ST_3: tmp_7 (311)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:182  %tmp_7 = trunc i16 %regionEta_3 to i5
+
+ST_3: tmp_8 (313)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:184  %tmp_8 = trunc i16 %regionEta_4 to i5
+
+ST_3: call_ret3 (327)  [1/3] 7.30ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:198  %call_ret3 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2)
+
+ST_3: regionEta_0_1 (328)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:199  %regionEta_0_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 0
+
+ST_3: regionEta_1_1 (329)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:200  %regionEta_1_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 1
+
+ST_3: regionEta_2_1 (330)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:201  %regionEta_2_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 2
+
+ST_3: regionEta_3_1 (331)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:202  %regionEta_3_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 3
+
+ST_3: regionEta_4_1 (332)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:203  %regionEta_4_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 4
+
+ST_3: ClusterPhi2_11_2 (333)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:204  %ClusterPhi2_11_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 5
+
+ST_3: ClusterPhi2_10 (334)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:205  %ClusterPhi2_10 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 6
+
+ST_3: ClusterPhi2_13_2 (335)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:206  %ClusterPhi2_13_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 7
+
+ST_3: ClusterPhi2_12 (336)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:207  %ClusterPhi2_12 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 8
+
+ST_3: ClusterPhi2_15_2 (337)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:208  %ClusterPhi2_15_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 9
+
+ST_3: tmp_9 (338)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:209  %tmp_9 = trunc i16 %regionEta_0_1 to i5
+
+ST_3: tmp_10 (340)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:211  %tmp_10 = trunc i16 %regionEta_1_1 to i5
+
+ST_3: tmp_11 (342)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:213  %tmp_11 = trunc i16 %regionEta_2_1 to i5
+
+ST_3: tmp_12 (344)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:215  %tmp_12 = trunc i16 %regionEta_3_1 to i5
+
+ST_3: tmp_13 (346)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:217  %tmp_13 = trunc i16 %regionEta_4_1 to i5
+
+ST_3: tmp_30 (443)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:314  %tmp_30 = trunc i16 %ClusterEta2_1_2 to i5
+
+ST_3: tmp_31 (444)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:315  %tmp_31 = trunc i16 %ClusterPhi2_1_2 to i2
+
+ST_3: tmp_32 (447)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:318  %tmp_32 = trunc i16 %ClusterEta2_0 to i5
+
+ST_3: tmp_33 (448)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:319  %tmp_33 = trunc i16 %ClusterPhi2_0 to i2
+
+ST_3: tmp_34 (451)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:322  %tmp_34 = trunc i16 %ClusterEta2_3_2 to i5
+
+ST_3: tmp_36 (452)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:323  %tmp_36 = trunc i16 %ClusterPhi2_3_2 to i2
+
+ST_3: tmp_37 (455)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:326  %tmp_37 = trunc i16 %ClusterEta2_2 to i5
+
+ST_3: tmp_38 (456)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:327  %tmp_38 = trunc i16 %ClusterPhi2_2 to i2
+
+ST_3: tmp_39 (459)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:330  %tmp_39 = trunc i16 %ClusterEta2_5_2 to i5
+
+ST_3: tmp_40 (460)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:331  %tmp_40 = trunc i16 %ClusterPhi2_5_2 to i2
+
+ST_3: tmp_70 (464)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:335  %tmp_70 = trunc i16 %ClusterPhi2_4 to i2
+
+ST_3: tmp_71 (468)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:339  %tmp_71 = trunc i16 %ClusterPhi2_7_2 to i2
+
+ST_3: tmp_72 (472)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:343  %tmp_72 = trunc i16 %ClusterPhi2_6 to i2
+
+ST_3: tmp_73 (476)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:347  %tmp_73 = trunc i16 %ClusterPhi2_9_2 to i2
+
+ST_3: tmp_74 (480)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:351  %tmp_74 = trunc i16 %ClusterPhi2_8 to i2
+
+ST_3: tmp_75 (484)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:355  %tmp_75 = trunc i16 %ClusterPhi2_11_2 to i2
+
+ST_3: tmp_76 (488)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:359  %tmp_76 = trunc i16 %ClusterPhi2_10 to i2
+
+ST_3: tmp_77 (492)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:363  %tmp_77 = trunc i16 %ClusterPhi2_13_2 to i2
+
+ST_3: tmp_78 (496)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:367  %tmp_78 = trunc i16 %ClusterPhi2_12 to i2
+
+ST_3: tmp_79 (500)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:371  %tmp_79 = trunc i16 %ClusterPhi2_15_2 to i2
+
+
+ <State 4>: 4.36ns
+ST_4: regions_0_0_3 (348)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:219  %regions_0_0_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_9_0)
+
+ST_4: regions_0_1_3 (349)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:220  %regions_0_1_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_9_1)
+
+ST_4: regions_0_2_3 (350)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:221  %regions_0_2_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_9_2)
+
+ST_4: regions_0_3_3 (351)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:222  %regions_0_3_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_9_3)
+
+ST_4: regions_1_0_3 (352)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:223  %regions_1_0_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_10_0)
+
+ST_4: regions_1_1_3 (353)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:224  %regions_1_1_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_10_1)
+
+ST_4: regions_1_2_3 (354)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:225  %regions_1_2_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_10_2)
+
+ST_4: regions_1_3_3 (355)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:226  %regions_1_3_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_10_3)
+
+ST_4: regions_2_0_3 (356)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:227  %regions_2_0_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_11_0)
+
+ST_4: regions_2_1_3 (357)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:228  %regions_2_1_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_11_1)
+
+ST_4: regions_2_2_3 (358)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:229  %regions_2_2_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_11_2)
+
+ST_4: regions_2_3_3 (359)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:230  %regions_2_3_3 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_11_3)
+
+ST_4: call_ret4 (360)  [3/3] 4.36ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:231  %call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3)
+
+ST_4: regions_0_0_4 (381)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:252  %regions_0_0_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_12_0)
+
+ST_4: regions_0_1_4 (382)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:253  %regions_0_1_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_12_1)
+
+ST_4: regions_0_2_4 (383)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:254  %regions_0_2_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_12_2)
+
+ST_4: regions_0_3_4 (384)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:255  %regions_0_3_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_12_3)
+
+ST_4: regions_1_0_4 (385)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:256  %regions_1_0_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_13_0)
+
+ST_4: regions_1_1_4 (386)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:257  %regions_1_1_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_13_1)
+
+ST_4: regions_1_2_4 (387)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:258  %regions_1_2_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_13_2)
+
+ST_4: regions_1_3_4 (388)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:259  %regions_1_3_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_13_3)
+
+ST_4: regions_2_0_4 (389)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:260  %regions_2_0_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_14_0)
+
+ST_4: regions_2_1_4 (390)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:261  %regions_2_1_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_14_1)
+
+ST_4: regions_2_2_4 (391)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:262  %regions_2_2_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_14_2)
+
+ST_4: regions_2_3_4 (392)  [1/1] 0.00ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:263  %regions_2_3_4 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_14_3)
+
+ST_4: call_ret (393)  [3/3] 4.36ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:264  %call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4)
+
+ST_4: regions_0_0_5 (414)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:285  %regions_0_0_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_15_0)
+
+ST_4: regions_0_1_5 (415)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:286  %regions_0_1_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_15_1)
+
+ST_4: regions_0_2_5 (416)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:287  %regions_0_2_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_15_2)
+
+ST_4: regions_0_3_5 (417)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:288  %regions_0_3_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_15_3)
+
+ST_4: regions_1_0_5 (418)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:289  %regions_1_0_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_16_0)
+
+ST_4: regions_1_1_5 (419)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:290  %regions_1_1_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_16_1)
+
+ST_4: regions_1_2_5 (420)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:291  %regions_1_2_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_16_2)
+
+ST_4: regions_1_3_5 (421)  [1/1] 0.00ns  loc: HCALTower.cpp:1406
+.preheader14.preheader:292  %regions_1_3_5 = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %towerET_16_3)
+
+ST_4: call_ret5 (422)  [3/3] 4.36ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:293  %call_ret5 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i16 0, i16 0, i16 0, i16 0)
+
+
+ <State 5>: 8.75ns
+ST_5: call_ret4 (360)  [2/3] 8.75ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:231  %call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3)
+
+ST_5: call_ret (393)  [2/3] 8.75ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:264  %call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4)
+
+ST_5: call_ret5 (422)  [2/3] 8.75ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:293  %call_ret5 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i16 0, i16 0, i16 0, i16 0)
+
+
+ <State 6>: 7.30ns
+ST_6: call_ret4 (360)  [1/3] 7.30ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:231  %call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3)
+
+ST_6: regionEta_0_2 (361)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:232  %regionEta_0_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 0
+
+ST_6: regionEta_1_2 (362)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:233  %regionEta_1_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 1
+
+ST_6: regionEta_2_2 (363)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:234  %regionEta_2_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 2
+
+ST_6: regionEta_3_2 (364)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:235  %regionEta_3_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 3
+
+ST_6: regionEta_4_2 (365)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:236  %regionEta_4_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 4
+
+ST_6: ClusterPhi2_14 (366)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:237  %ClusterPhi2_14 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 5
+
+ST_6: ClusterPhi2_17_2 (367)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:238  %ClusterPhi2_17_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 6
+
+ST_6: ClusterPhi2_16 (368)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:239  %ClusterPhi2_16 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 7
+
+ST_6: ClusterPhi2_19_2 (369)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:240  %ClusterPhi2_19_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 8
+
+ST_6: ClusterPhi2_18 (370)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:241  %ClusterPhi2_18 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 9
+
+ST_6: tmp_14 (371)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:242  %tmp_14 = trunc i16 %regionEta_0_2 to i5
+
+ST_6: tmp_15 (373)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:244  %tmp_15 = trunc i16 %regionEta_1_2 to i5
+
+ST_6: tmp_16 (375)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:246  %tmp_16 = trunc i16 %regionEta_2_2 to i5
+
+ST_6: tmp_17 (377)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:248  %tmp_17 = trunc i16 %regionEta_3_2 to i5
+
+ST_6: tmp_18 (379)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:250  %tmp_18 = trunc i16 %regionEta_4_2 to i5
+
+ST_6: call_ret (393)  [1/3] 7.30ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:264  %call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4)
+
+ST_6: regionEta_0_3 (394)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:265  %regionEta_0_3 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 0
+
+ST_6: regionEta_1_3 (395)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:266  %regionEta_1_3 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 1
+
+ST_6: regionEta_2_3 (396)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:267  %regionEta_2_3 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 2
+
+ST_6: regionEta_3_3 (397)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:268  %regionEta_3_3 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 3
+
+ST_6: regionEta_4_3 (398)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:269  %regionEta_4_3 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 4
+
+ST_6: ClusterPhi2_21_2 (399)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:270  %ClusterPhi2_21_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 5
+
+ST_6: ClusterPhi2_20 (400)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:271  %ClusterPhi2_20 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 6
+
+ST_6: ClusterPhi2_23_2 (401)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:272  %ClusterPhi2_23_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 7
+
+ST_6: ClusterPhi2_22 (402)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:273  %ClusterPhi2_22 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 8
+
+ST_6: ClusterPhi2_25_2 (403)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:274  %ClusterPhi2_25_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 9
+
+ST_6: tmp_19 (404)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:275  %tmp_19 = trunc i16 %regionEta_0_3 to i5
+
+ST_6: tmp_20 (406)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:277  %tmp_20 = trunc i16 %regionEta_1_3 to i5
+
+ST_6: tmp_21 (408)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:279  %tmp_21 = trunc i16 %regionEta_2_3 to i5
+
+ST_6: tmp_22 (410)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:281  %tmp_22 = trunc i16 %regionEta_3_3 to i5
+
+ST_6: tmp_23 (412)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:283  %tmp_23 = trunc i16 %regionEta_4_3 to i5
+
+ST_6: call_ret5 (422)  [1/3] 7.30ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:293  %call_ret5 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @getTowerPeaks3x4(i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i16 0, i16 0, i16 0, i16 0)
+
+ST_6: regionEta_0_4 (423)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:294  %regionEta_0_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 0
+
+ST_6: regionEta_1_4 (424)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:295  %regionEta_1_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 1
+
+ST_6: regionEta_2_4 (425)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:296  %regionEta_2_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 2
+
+ST_6: regionEta_3_4 (426)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:297  %regionEta_3_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 3
+
+ST_6: regionEta_4_4 (427)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:298  %regionEta_4_4 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 4
+
+ST_6: ClusterPhi2_24 (428)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:299  %ClusterPhi2_24 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 5
+
+ST_6: ClusterPhi2_27_2 (429)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:300  %ClusterPhi2_27_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 6
+
+ST_6: ClusterPhi2_26 (430)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:301  %ClusterPhi2_26 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 7
+
+ST_6: ClusterPhi2_29_2 (431)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:302  %ClusterPhi2_29_2 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 8
+
+ST_6: ClusterPhi2_28 (432)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:303  %ClusterPhi2_28 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret5, 9
+
+ST_6: tmp_24 (433)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:304  %tmp_24 = trunc i16 %regionEta_0_4 to i5
+
+ST_6: tmp_25 (435)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:306  %tmp_25 = trunc i16 %regionEta_1_4 to i5
+
+ST_6: tmp_26 (437)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:308  %tmp_26 = trunc i16 %regionEta_2_4 to i5
+
+ST_6: tmp_27 (439)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:310  %tmp_27 = trunc i16 %regionEta_3_4 to i5
+
+ST_6: tmp_28 (441)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:312  %tmp_28 = trunc i16 %regionEta_4_4 to i5
+
+ST_6: tmp_80 (504)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:375  %tmp_80 = trunc i16 %ClusterPhi2_14 to i2
+
+ST_6: tmp_81 (508)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:379  %tmp_81 = trunc i16 %ClusterPhi2_17_2 to i2
+
+ST_6: tmp_82 (512)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:383  %tmp_82 = trunc i16 %ClusterPhi2_16 to i2
+
+ST_6: tmp_83 (516)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:387  %tmp_83 = trunc i16 %ClusterPhi2_19_2 to i2
+
+ST_6: tmp_84 (520)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:391  %tmp_84 = trunc i16 %ClusterPhi2_18 to i2
+
+ST_6: tmp_85 (524)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:395  %tmp_85 = trunc i16 %ClusterPhi2_21_2 to i2
+
+ST_6: tmp_86 (528)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:399  %tmp_86 = trunc i16 %ClusterPhi2_20 to i2
+
+ST_6: tmp_87 (532)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:403  %tmp_87 = trunc i16 %ClusterPhi2_23_2 to i2
+
+ST_6: tmp_88 (536)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:407  %tmp_88 = trunc i16 %ClusterPhi2_22 to i2
+
+ST_6: tmp_89 (540)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:411  %tmp_89 = trunc i16 %ClusterPhi2_25_2 to i2
+
+ST_6: tmp_90 (544)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:415  %tmp_90 = trunc i16 %ClusterPhi2_24 to i2
+
+ST_6: tmp_91 (548)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:419  %tmp_91 = trunc i16 %ClusterPhi2_27_2 to i2
+
+ST_6: tmp_92 (552)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:423  %tmp_92 = trunc i16 %ClusterPhi2_26 to i2
+
+ST_6: tmp_93 (556)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:427  %tmp_93 = trunc i16 %ClusterPhi2_29_2 to i2
+
+ST_6: tmp_94 (560)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:431  %tmp_94 = trunc i16 %ClusterPhi2_28 to i2
+
+
+ <State 7>: 8.18ns
+ST_7: ClusterEta2_4 (306)  [1/1] 1.39ns  loc: HCALTower.cpp:1388
+.preheader14.preheader:177  %ClusterEta2_4 = add i16 3, %regionEta_0
+
+ST_7: ClusterEta2_7_2 (308)  [1/1] 1.39ns  loc: HCALTower.cpp:1389
+.preheader14.preheader:179  %ClusterEta2_7_2 = add i16 3, %regionEta_1
+
+ST_7: ClusterEta2_6 (310)  [1/1] 1.39ns  loc: HCALTower.cpp:1390
+.preheader14.preheader:181  %ClusterEta2_6 = add i16 3, %regionEta_2
+
+ST_7: ClusterEta2_9_2 (312)  [1/1] 1.39ns  loc: HCALTower.cpp:1391
+.preheader14.preheader:183  %ClusterEta2_9_2 = add i16 3, %regionEta_3
+
+ST_7: ClusterEta2_8 (314)  [1/1] 1.39ns  loc: HCALTower.cpp:1392
+.preheader14.preheader:185  %ClusterEta2_8 = add i16 3, %regionEta_4
+
+ST_7: ClusterEta2_11_2 (339)  [1/1] 1.39ns  loc: HCALTower.cpp:1388
+.preheader14.preheader:210  %ClusterEta2_11_2 = add i16 6, %regionEta_0_1
+
+ST_7: ClusterEta2_10 (341)  [1/1] 1.39ns  loc: HCALTower.cpp:1389
+.preheader14.preheader:212  %ClusterEta2_10 = add i16 6, %regionEta_1_1
+
+ST_7: ClusterEta2_13_2 (343)  [1/1] 1.39ns  loc: HCALTower.cpp:1390
+.preheader14.preheader:214  %ClusterEta2_13_2 = add i16 6, %regionEta_2_1
+
+ST_7: ClusterEta2_12 (345)  [1/1] 1.39ns  loc: HCALTower.cpp:1391
+.preheader14.preheader:216  %ClusterEta2_12 = add i16 6, %regionEta_3_1
+
+ST_7: ClusterEta2_15_2 (347)  [1/1] 1.39ns  loc: HCALTower.cpp:1392
+.preheader14.preheader:218  %ClusterEta2_15_2 = add i16 6, %regionEta_4_1
+
+ST_7: ClusterEta2_14 (372)  [1/1] 1.39ns  loc: HCALTower.cpp:1388
+.preheader14.preheader:243  %ClusterEta2_14 = add i16 9, %regionEta_0_2
+
+ST_7: ClusterEta2_17_2 (374)  [1/1] 1.39ns  loc: HCALTower.cpp:1389
+.preheader14.preheader:245  %ClusterEta2_17_2 = add i16 9, %regionEta_1_2
+
+ST_7: ClusterEta2_16 (376)  [1/1] 1.39ns  loc: HCALTower.cpp:1390
+.preheader14.preheader:247  %ClusterEta2_16 = add i16 9, %regionEta_2_2
+
+ST_7: ClusterEta2_19_2 (378)  [1/1] 1.39ns  loc: HCALTower.cpp:1391
+.preheader14.preheader:249  %ClusterEta2_19_2 = add i16 9, %regionEta_3_2
+
+ST_7: ClusterEta2_18 (380)  [1/1] 1.39ns  loc: HCALTower.cpp:1392
+.preheader14.preheader:251  %ClusterEta2_18 = add i16 9, %regionEta_4_2
+
+ST_7: ClusterEta2_21_2 (405)  [1/1] 1.39ns  loc: HCALTower.cpp:1388
+.preheader14.preheader:276  %ClusterEta2_21_2 = add i16 12, %regionEta_0_3
+
+ST_7: ClusterEta2_20 (407)  [1/1] 1.39ns  loc: HCALTower.cpp:1389
+.preheader14.preheader:278  %ClusterEta2_20 = add i16 12, %regionEta_1_3
+
+ST_7: ClusterEta2_23_2 (409)  [1/1] 1.39ns  loc: HCALTower.cpp:1390
+.preheader14.preheader:280  %ClusterEta2_23_2 = add i16 12, %regionEta_2_3
+
+ST_7: ClusterEta2_22 (411)  [1/1] 1.39ns  loc: HCALTower.cpp:1391
+.preheader14.preheader:282  %ClusterEta2_22 = add i16 12, %regionEta_3_3
+
+ST_7: ClusterEta2_25_2 (413)  [1/1] 1.39ns  loc: HCALTower.cpp:1392
+.preheader14.preheader:284  %ClusterEta2_25_2 = add i16 12, %regionEta_4_3
+
+ST_7: ClusterEta2_24_3 (434)  [1/1] 1.39ns  loc: HCALTower.cpp:1414
+.preheader14.preheader:305  %ClusterEta2_24_3 = add i16 15, %regionEta_0_4
+
+ST_7: ClusterEta2_27_2 (436)  [1/1] 1.39ns  loc: HCALTower.cpp:1415
+.preheader14.preheader:307  %ClusterEta2_27_2 = add i16 15, %regionEta_1_4
+
+ST_7: ClusterEta2_26_3 (438)  [1/1] 1.39ns  loc: HCALTower.cpp:1416
+.preheader14.preheader:309  %ClusterEta2_26_3 = add i16 15, %regionEta_2_4
+
+ST_7: ClusterEta2_29_2 (440)  [1/1] 1.39ns  loc: HCALTower.cpp:1417
+.preheader14.preheader:311  %ClusterEta2_29_2 = add i16 15, %regionEta_3_4
+
+ST_7: ClusterEta2_28_3 (442)  [1/1] 1.39ns  loc: HCALTower.cpp:1418
+.preheader14.preheader:313  %ClusterEta2_28_3 = add i16 15, %regionEta_4_4
+
+ST_7: tmp_29 (445)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:316  %tmp_29 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_30, i2 %tmp_31)
+
+ST_7: ClusterDeposits2_1_1 (446)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:317  %ClusterDeposits2_1_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_29)
+
+ST_7: tmp_35 (449)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:320  %tmp_35 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_32, i2 %tmp_33)
+
+ST_7: ClusterDeposits2_0 (450)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:321  %ClusterDeposits2_0 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_35)
+
+ST_7: tmp_41 (453)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:324  %tmp_41 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_34, i2 %tmp_36)
+
+ST_7: ClusterDeposits2_3_1 (454)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:325  %ClusterDeposits2_3_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_41)
+
+ST_7: tmp_42 (457)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:328  %tmp_42 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_37, i2 %tmp_38)
+
+ST_7: ClusterDeposits2_2 (458)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:329  %ClusterDeposits2_2 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_42)
+
+ST_7: tmp_43 (461)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:332  %tmp_43 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_39, i2 %tmp_40)
+
+ST_7: ClusterDeposits2_5_1 (462)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:333  %ClusterDeposits2_5_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_43)
+
+ST_7: Tower_1_Eta_load_5_t (463)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:334  %Tower_1_Eta_load_5_t = add i5 3, %tmp
+
+ST_7: tmp_s (465)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:336  %tmp_s = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_5_t, i2 %tmp_70)
+
+ST_7: ClusterDeposits2_4 (466)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:337  %ClusterDeposits2_4 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_s)
+
+ST_7: Tower_1_Eta_load_6_t (467)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:338  %Tower_1_Eta_load_6_t = add i5 3, %tmp_5
+
+ST_7: tmp_44 (469)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:340  %tmp_44 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_6_t, i2 %tmp_71)
+
+ST_7: ClusterDeposits2_7_1 (470)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:341  %ClusterDeposits2_7_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_44)
+
+ST_7: Tower_1_Eta_load_7_t (471)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:342  %Tower_1_Eta_load_7_t = add i5 3, %tmp_6
+
+ST_7: tmp_45 (473)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:344  %tmp_45 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_7_t, i2 %tmp_72)
+
+ST_7: ClusterDeposits2_6 (474)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:345  %ClusterDeposits2_6 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_45)
+
+ST_7: Tower_1_Eta_load_8_t (475)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:346  %Tower_1_Eta_load_8_t = add i5 3, %tmp_7
+
+ST_7: tmp_46 (477)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:348  %tmp_46 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_8_t, i2 %tmp_73)
+
+ST_7: ClusterDeposits2_9_1 (478)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:349  %ClusterDeposits2_9_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_46)
+
+ST_7: Tower_1_Eta_load_9_t (479)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:350  %Tower_1_Eta_load_9_t = add i5 3, %tmp_8
+
+ST_7: tmp_47 (481)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:352  %tmp_47 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_9_t, i2 %tmp_74)
+
+ST_7: ClusterDeposits2_8 (482)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:353  %ClusterDeposits2_8 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_47)
+
+ST_7: Tower_1_Eta_load_10_s (483)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:354  %Tower_1_Eta_load_10_s = add i5 6, %tmp_9
+
+ST_7: tmp_48 (485)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:356  %tmp_48 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_10_s, i2 %tmp_75)
+
+ST_7: ClusterDeposits2_11_1 (486)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:357  %ClusterDeposits2_11_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_48)
+
+ST_7: Tower_1_Eta_load_11_s (487)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:358  %Tower_1_Eta_load_11_s = add i5 6, %tmp_10
+
+ST_7: tmp_49 (489)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:360  %tmp_49 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_11_s, i2 %tmp_76)
+
+ST_7: ClusterDeposits2_10 (490)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:361  %ClusterDeposits2_10 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_49)
+
+ST_7: Tower_1_Eta_load_12_s (491)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:362  %Tower_1_Eta_load_12_s = add i5 6, %tmp_11
+
+ST_7: tmp_50 (493)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:364  %tmp_50 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_12_s, i2 %tmp_77)
+
+ST_7: ClusterDeposits2_13_1 (494)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:365  %ClusterDeposits2_13_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_50)
+
+ST_7: Tower_1_Eta_load_13_s (495)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:366  %Tower_1_Eta_load_13_s = add i5 6, %tmp_12
+
+ST_7: tmp_51 (497)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:368  %tmp_51 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_13_s, i2 %tmp_78)
+
+ST_7: ClusterDeposits2_12 (498)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:369  %ClusterDeposits2_12 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_51)
+
+ST_7: Tower_1_Eta_load_14_s (499)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:370  %Tower_1_Eta_load_14_s = add i5 6, %tmp_13
+
+ST_7: tmp_52 (501)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:372  %tmp_52 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_14_s, i2 %tmp_79)
+
+ST_7: ClusterDeposits2_15_1 (502)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:373  %ClusterDeposits2_15_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_52)
+
+ST_7: Tower_1_Eta_load_15_s (503)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:374  %Tower_1_Eta_load_15_s = add i5 9, %tmp_14
+
+ST_7: tmp_53 (505)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:376  %tmp_53 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_15_s, i2 %tmp_80)
+
+ST_7: ClusterDeposits2_14 (506)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:377  %ClusterDeposits2_14 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_53)
+
+ST_7: Tower_1_Eta_load_16_s (507)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:378  %Tower_1_Eta_load_16_s = add i5 9, %tmp_15
+
+ST_7: tmp_54 (509)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:380  %tmp_54 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_16_s, i2 %tmp_81)
+
+ST_7: ClusterDeposits2_17_1 (510)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:381  %ClusterDeposits2_17_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_54)
+
+ST_7: Tower_1_Eta_load_17_s (511)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:382  %Tower_1_Eta_load_17_s = add i5 9, %tmp_16
+
+ST_7: tmp_55 (513)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:384  %tmp_55 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_17_s, i2 %tmp_82)
+
+ST_7: ClusterDeposits2_16 (514)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:385  %ClusterDeposits2_16 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_55)
+
+ST_7: Tower_1_Eta_load_18_s (515)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:386  %Tower_1_Eta_load_18_s = add i5 9, %tmp_17
+
+ST_7: tmp_56 (517)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:388  %tmp_56 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_18_s, i2 %tmp_83)
+
+ST_7: ClusterDeposits2_19_1 (518)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:389  %ClusterDeposits2_19_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_56)
+
+ST_7: Tower_1_Eta_load_19_s (519)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:390  %Tower_1_Eta_load_19_s = add i5 9, %tmp_18
+
+ST_7: tmp_57 (521)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:392  %tmp_57 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_19_s, i2 %tmp_84)
+
+ST_7: ClusterDeposits2_18 (522)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:393  %ClusterDeposits2_18 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_57)
+
+ST_7: Tower_1_Eta_load_20_s (523)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:394  %Tower_1_Eta_load_20_s = add i5 12, %tmp_19
+
+ST_7: tmp_58 (525)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:396  %tmp_58 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_20_s, i2 %tmp_85)
+
+ST_7: ClusterDeposits2_21_1 (526)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:397  %ClusterDeposits2_21_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_58)
+
+ST_7: Tower_1_Eta_load_21_s (527)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:398  %Tower_1_Eta_load_21_s = add i5 12, %tmp_20
+
+ST_7: tmp_59 (529)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:400  %tmp_59 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_21_s, i2 %tmp_86)
+
+ST_7: ClusterDeposits2_20 (530)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:401  %ClusterDeposits2_20 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_59)
+
+ST_7: Tower_1_Eta_load_22_s (531)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:402  %Tower_1_Eta_load_22_s = add i5 12, %tmp_21
+
+ST_7: tmp_60 (533)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:404  %tmp_60 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_22_s, i2 %tmp_87)
+
+ST_7: ClusterDeposits2_23_1 (534)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:405  %ClusterDeposits2_23_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_60)
+
+ST_7: Tower_1_Eta_load_23_s (535)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:406  %Tower_1_Eta_load_23_s = add i5 12, %tmp_22
+
+ST_7: tmp_61 (537)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:408  %tmp_61 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_23_s, i2 %tmp_88)
+
+ST_7: ClusterDeposits2_22 (538)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:409  %ClusterDeposits2_22 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_61)
+
+ST_7: Tower_1_Eta_load_24_s (539)  [1/1] 1.27ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:410  %Tower_1_Eta_load_24_s = add i5 12, %tmp_23
+
+ST_7: tmp_62 (541)  [1/1] 0.00ns  loc: HCALTower.cpp:1387
+.preheader14.preheader:412  %tmp_62 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %Tower_1_Eta_load_24_s, i2 %tmp_89)
+
+ST_7: ClusterDeposits2_25_1 (542)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:413  %ClusterDeposits2_25_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_62)
+
+ST_7: tmp_371_t (543)  [1/1] 1.27ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:414  %tmp_371_t = add i5 15, %tmp_24
+
+ST_7: tmp_63 (545)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:416  %tmp_63 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_371_t, i2 %tmp_90)
+
+ST_7: ClusterDeposits2_24 (546)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:417  %ClusterDeposits2_24 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_63)
+
+ST_7: tmp_372_t (547)  [1/1] 1.27ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:418  %tmp_372_t = add i5 15, %tmp_25
+
+ST_7: tmp_64 (549)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:420  %tmp_64 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_372_t, i2 %tmp_91)
+
+ST_7: ClusterDeposits2_27_1 (550)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:421  %ClusterDeposits2_27_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_64)
+
+ST_7: tmp_373_t (551)  [1/1] 1.27ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:422  %tmp_373_t = add i5 15, %tmp_26
+
+ST_7: tmp_65 (553)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:424  %tmp_65 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_373_t, i2 %tmp_92)
+
+ST_7: ClusterDeposits2_26 (554)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:425  %ClusterDeposits2_26 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_65)
+
+ST_7: tmp_374_t (555)  [1/1] 1.27ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:426  %tmp_374_t = add i5 15, %tmp_27
+
+ST_7: tmp_66 (557)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:428  %tmp_66 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_374_t, i2 %tmp_93)
+
+ST_7: ClusterDeposits2_29_1 (558)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:429  %ClusterDeposits2_29_1 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_66)
+
+ST_7: tmp_375_t (559)  [1/1] 1.27ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:430  %tmp_375_t = add i5 15, %tmp_28
+
+ST_7: tmp_67 (561)  [1/1] 0.00ns  loc: HCALTower.cpp:1413
+.preheader14.preheader:432  %tmp_67 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %tmp_375_t, i2 %tmp_94)
+
+ST_7: ClusterDeposits2_28 (562)  [1/1] 2.20ns  loc: HCALTower.cpp:1383
+.preheader14.preheader:433  %ClusterDeposits2_28 = call i16 @_ssdm_op_Mux.ap_auto.68i16.i7(i16 %regions_0_0, i16 %regions_0_1, i16 %regions_0_2, i16 %regions_0_3, i16 %regions_1_0, i16 %regions_1_1, i16 %regions_1_2, i16 %regions_1_3, i16 %regions_2_0, i16 %regions_2_1, i16 %regions_2_2, i16 %regions_2_3, i16 %regions_0_0_1, i16 %regions_0_1_1, i16 %regions_0_2_1, i16 %regions_0_3_1, i16 %regions_1_0_1, i16 %regions_1_1_1, i16 %regions_1_2_1, i16 %regions_1_3_1, i16 %regions_2_0_1, i16 %regions_2_1_1, i16 %regions_2_2_1, i16 %regions_2_3_1, i16 %regions_0_0_2, i16 %regions_0_1_2, i16 %regions_0_2_2, i16 %regions_0_3_2, i16 %regions_1_0_2, i16 %regions_1_1_2, i16 %regions_1_2_2, i16 %regions_1_3_2, i16 %regions_2_0_2, i16 %regions_2_1_2, i16 %regions_2_2_2, i16 %regions_2_3_2, i16 %regions_0_0_3, i16 %regions_0_1_3, i16 %regions_0_2_3, i16 %regions_0_3_3, i16 %regions_1_0_3, i16 %regions_1_1_3, i16 %regions_1_2_3, i16 %regions_1_3_3, i16 %regions_2_0_3, i16 %regions_2_1_3, i16 %regions_2_2_3, i16 %regions_2_3_3, i16 %regions_0_0_4, i16 %regions_0_1_4, i16 %regions_0_2_4, i16 %regions_0_3_4, i16 %regions_1_0_4, i16 %regions_1_1_4, i16 %regions_1_2_4, i16 %regions_1_3_4, i16 %regions_2_0_4, i16 %regions_2_1_4, i16 %regions_2_2_4, i16 %regions_2_3_4, i16 %regions_0_0_5, i16 %regions_0_1_5, i16 %regions_0_2_5, i16 %regions_0_3_5, i16 %regions_1_0_5, i16 %regions_1_1_5, i16 %regions_1_2_5, i16 %regions_1_3_5, i7 %tmp_67)
+
+ST_7: tmp_68 (563)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:434  %tmp_68 = icmp ugt i16 %ClusterDeposits2_1_1, %ClusterDeposits2_0
+
+ST_7: Tower_1_Phi_0_0_Towe (564)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:435  %Tower_1_Phi_0_0_Towe = select i1 %tmp_68, i16 %ClusterPhi2_1_2, i16 %ClusterPhi2_0
+
+ST_7: Tower_1_Phi_1_0_Towe (565)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:436  %Tower_1_Phi_1_0_Towe = select i1 %tmp_68, i16 %ClusterPhi2_0, i16 %ClusterPhi2_1_2
+
+ST_7: Tower_1_Eta_0_0_Towe (566)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:437  %Tower_1_Eta_0_0_Towe = select i1 %tmp_68, i16 %ClusterEta2_1_2, i16 %ClusterEta2_0
+
+ST_7: Tower_1_Eta_1_0_Towe (567)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:438  %Tower_1_Eta_1_0_Towe = select i1 %tmp_68, i16 %ClusterEta2_0, i16 %ClusterEta2_1_2
+
+ST_7: p_s (568)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:439  %p_s = select i1 %tmp_68, i16 %ClusterDeposits2_0, i16 %ClusterDeposits2_1_1
+
+ST_7: p_1 (569)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:440  %p_1 = select i1 %tmp_68, i16 %ClusterDeposits2_1_1, i16 %ClusterDeposits2_0
+
+ST_7: tmp_69 (570)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:441  %tmp_69 = icmp ult i16 %ClusterDeposits2_3_1, %ClusterDeposits2_2
+
+ST_7: Tower_1_Phi_2_0_Towe (571)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:442  %Tower_1_Phi_2_0_Towe = select i1 %tmp_69, i16 %ClusterPhi2_3_2, i16 %ClusterPhi2_2
+
+ST_7: Tower_1_Phi_3_0_Towe (572)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:443  %Tower_1_Phi_3_0_Towe = select i1 %tmp_69, i16 %ClusterPhi2_2, i16 %ClusterPhi2_3_2
+
+ST_7: Tower_1_Eta_2_0_Towe (573)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:444  %Tower_1_Eta_2_0_Towe = select i1 %tmp_69, i16 %ClusterEta2_3_2, i16 %ClusterEta2_2
+
+ST_7: Tower_1_Eta_3_0_Towe (574)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:445  %Tower_1_Eta_3_0_Towe = select i1 %tmp_69, i16 %ClusterEta2_2, i16 %ClusterEta2_3_2
+
+ST_7: p_2 (575)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:446  %p_2 = select i1 %tmp_69, i16 %ClusterDeposits2_2, i16 %ClusterDeposits2_3_1
+
+ST_7: p_3 (576)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:447  %p_3 = select i1 %tmp_69, i16 %ClusterDeposits2_3_1, i16 %ClusterDeposits2_2
+
+ST_7: tmp_389_1 (577)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:448  %tmp_389_1 = icmp ugt i16 %ClusterDeposits2_5_1, %ClusterDeposits2_4
+
+ST_7: Tower_1_Phi_4_0_Towe (578)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:449  %Tower_1_Phi_4_0_Towe = select i1 %tmp_389_1, i16 %ClusterPhi2_5_2, i16 %ClusterPhi2_4
+
+ST_7: Tower_1_Phi_5_0_Towe (579)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:450  %Tower_1_Phi_5_0_Towe = select i1 %tmp_389_1, i16 %ClusterPhi2_4, i16 %ClusterPhi2_5_2
+
+ST_7: Tower_1_Eta_4_0_Towe (580)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:451  %Tower_1_Eta_4_0_Towe = select i1 %tmp_389_1, i16 %ClusterEta2_5_2, i16 %ClusterEta2_4
+
+ST_7: Tower_1_Eta_5_0_Towe (581)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:452  %Tower_1_Eta_5_0_Towe = select i1 %tmp_389_1, i16 %ClusterEta2_4, i16 %ClusterEta2_5_2
+
+ST_7: p_4 (582)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:453  %p_4 = select i1 %tmp_389_1, i16 %ClusterDeposits2_4, i16 %ClusterDeposits2_5_1
+
+ST_7: p_5 (583)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:454  %p_5 = select i1 %tmp_389_1, i16 %ClusterDeposits2_5_1, i16 %ClusterDeposits2_4
+
+ST_7: tmp_394_1 (584)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:455  %tmp_394_1 = icmp ult i16 %ClusterDeposits2_7_1, %ClusterDeposits2_6
+
+ST_7: Tower_1_Phi_6_0_Towe (585)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:456  %Tower_1_Phi_6_0_Towe = select i1 %tmp_394_1, i16 %ClusterPhi2_7_2, i16 %ClusterPhi2_6
+
+ST_7: Tower_1_Phi_7_0_Towe (586)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:457  %Tower_1_Phi_7_0_Towe = select i1 %tmp_394_1, i16 %ClusterPhi2_6, i16 %ClusterPhi2_7_2
+
+ST_7: Tower_1_Eta_6_0_Towe (587)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:458  %Tower_1_Eta_6_0_Towe = select i1 %tmp_394_1, i16 %ClusterEta2_7_2, i16 %ClusterEta2_6
+
+ST_7: Tower_1_Eta_7_0_Towe (588)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:459  %Tower_1_Eta_7_0_Towe = select i1 %tmp_394_1, i16 %ClusterEta2_6, i16 %ClusterEta2_7_2
+
+ST_7: p_6 (589)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:460  %p_6 = select i1 %tmp_394_1, i16 %ClusterDeposits2_6, i16 %ClusterDeposits2_7_1
+
+ST_7: p_7 (590)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:461  %p_7 = select i1 %tmp_394_1, i16 %ClusterDeposits2_7_1, i16 %ClusterDeposits2_6
+
+ST_7: tmp_389_2 (591)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:462  %tmp_389_2 = icmp ugt i16 %ClusterDeposits2_9_1, %ClusterDeposits2_8
+
+ST_7: Tower_1_Phi_8_0_Towe (592)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:463  %Tower_1_Phi_8_0_Towe = select i1 %tmp_389_2, i16 %ClusterPhi2_9_2, i16 %ClusterPhi2_8
+
+ST_7: Tower_1_Phi_9_0_Towe (593)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:464  %Tower_1_Phi_9_0_Towe = select i1 %tmp_389_2, i16 %ClusterPhi2_8, i16 %ClusterPhi2_9_2
+
+ST_7: Tower_1_Eta_8_0_Towe (594)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:465  %Tower_1_Eta_8_0_Towe = select i1 %tmp_389_2, i16 %ClusterEta2_9_2, i16 %ClusterEta2_8
+
+ST_7: Tower_1_Eta_9_0_Towe (595)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:466  %Tower_1_Eta_9_0_Towe = select i1 %tmp_389_2, i16 %ClusterEta2_8, i16 %ClusterEta2_9_2
+
+ST_7: p_8 (596)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:467  %p_8 = select i1 %tmp_389_2, i16 %ClusterDeposits2_8, i16 %ClusterDeposits2_9_1
+
+ST_7: p_9 (597)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:468  %p_9 = select i1 %tmp_389_2, i16 %ClusterDeposits2_9_1, i16 %ClusterDeposits2_8
+
+ST_7: tmp_394_2 (598)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:469  %tmp_394_2 = icmp ult i16 %ClusterDeposits2_11_1, %ClusterDeposits2_10
+
+ST_7: Tower_1_Phi_10_0_Tow (599)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:470  %Tower_1_Phi_10_0_Tow = select i1 %tmp_394_2, i16 %ClusterPhi2_11_2, i16 %ClusterPhi2_10
+
+ST_7: Tower_1_Phi_11_0_Tow (600)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:471  %Tower_1_Phi_11_0_Tow = select i1 %tmp_394_2, i16 %ClusterPhi2_10, i16 %ClusterPhi2_11_2
+
+ST_7: Tower_1_Eta_10_0_Tow (601)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:472  %Tower_1_Eta_10_0_Tow = select i1 %tmp_394_2, i16 %ClusterEta2_11_2, i16 %ClusterEta2_10
+
+ST_7: Tower_1_Eta_11_0_Tow (602)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:473  %Tower_1_Eta_11_0_Tow = select i1 %tmp_394_2, i16 %ClusterEta2_10, i16 %ClusterEta2_11_2
+
+ST_7: p_10 (603)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:474  %p_10 = select i1 %tmp_394_2, i16 %ClusterDeposits2_10, i16 %ClusterDeposits2_11_1
+
+ST_7: p_11 (604)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:475  %p_11 = select i1 %tmp_394_2, i16 %ClusterDeposits2_11_1, i16 %ClusterDeposits2_10
+
+ST_7: tmp_389_3 (605)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:476  %tmp_389_3 = icmp ugt i16 %ClusterDeposits2_13_1, %ClusterDeposits2_12
+
+ST_7: Tower_1_Phi_12_0_Tow (606)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:477  %Tower_1_Phi_12_0_Tow = select i1 %tmp_389_3, i16 %ClusterPhi2_13_2, i16 %ClusterPhi2_12
+
+ST_7: Tower_1_Phi_13_0_Tow (607)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:478  %Tower_1_Phi_13_0_Tow = select i1 %tmp_389_3, i16 %ClusterPhi2_12, i16 %ClusterPhi2_13_2
+
+ST_7: Tower_1_Eta_12_0_Tow (608)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:479  %Tower_1_Eta_12_0_Tow = select i1 %tmp_389_3, i16 %ClusterEta2_13_2, i16 %ClusterEta2_12
+
+ST_7: Tower_1_Eta_13_0_Tow (609)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:480  %Tower_1_Eta_13_0_Tow = select i1 %tmp_389_3, i16 %ClusterEta2_12, i16 %ClusterEta2_13_2
+
+ST_7: p_12 (610)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:481  %p_12 = select i1 %tmp_389_3, i16 %ClusterDeposits2_12, i16 %ClusterDeposits2_13_1
+
+ST_7: p_13 (611)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:482  %p_13 = select i1 %tmp_389_3, i16 %ClusterDeposits2_13_1, i16 %ClusterDeposits2_12
+
+ST_7: tmp_394_3 (612)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:483  %tmp_394_3 = icmp ult i16 %ClusterDeposits2_15_1, %ClusterDeposits2_14
+
+ST_7: Tower_1_Phi_14_0_Tow (613)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:484  %Tower_1_Phi_14_0_Tow = select i1 %tmp_394_3, i16 %ClusterPhi2_15_2, i16 %ClusterPhi2_14
+
+ST_7: Tower_1_Phi_15_0_Tow (614)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:485  %Tower_1_Phi_15_0_Tow = select i1 %tmp_394_3, i16 %ClusterPhi2_14, i16 %ClusterPhi2_15_2
+
+ST_7: Tower_1_Eta_14_0_Tow (615)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:486  %Tower_1_Eta_14_0_Tow = select i1 %tmp_394_3, i16 %ClusterEta2_15_2, i16 %ClusterEta2_14
+
+ST_7: Tower_1_Eta_15_0_Tow (616)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:487  %Tower_1_Eta_15_0_Tow = select i1 %tmp_394_3, i16 %ClusterEta2_14, i16 %ClusterEta2_15_2
+
+ST_7: p_14 (617)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:488  %p_14 = select i1 %tmp_394_3, i16 %ClusterDeposits2_14, i16 %ClusterDeposits2_15_1
+
+ST_7: p_15 (618)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:489  %p_15 = select i1 %tmp_394_3, i16 %ClusterDeposits2_15_1, i16 %ClusterDeposits2_14
+
+ST_7: tmp_389_4 (619)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:490  %tmp_389_4 = icmp ugt i16 %ClusterDeposits2_17_1, %ClusterDeposits2_16
+
+ST_7: Tower_1_Phi_16_0_Tow (620)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:491  %Tower_1_Phi_16_0_Tow = select i1 %tmp_389_4, i16 %ClusterPhi2_17_2, i16 %ClusterPhi2_16
+
+ST_7: Tower_1_Phi_17_0_Tow (621)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:492  %Tower_1_Phi_17_0_Tow = select i1 %tmp_389_4, i16 %ClusterPhi2_16, i16 %ClusterPhi2_17_2
+
+ST_7: Tower_1_Eta_16_0_Tow (622)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:493  %Tower_1_Eta_16_0_Tow = select i1 %tmp_389_4, i16 %ClusterEta2_17_2, i16 %ClusterEta2_16
+
+ST_7: Tower_1_Eta_17_0_Tow (623)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:494  %Tower_1_Eta_17_0_Tow = select i1 %tmp_389_4, i16 %ClusterEta2_16, i16 %ClusterEta2_17_2
+
+ST_7: p_16 (624)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:495  %p_16 = select i1 %tmp_389_4, i16 %ClusterDeposits2_16, i16 %ClusterDeposits2_17_1
+
+ST_7: p_17 (625)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:496  %p_17 = select i1 %tmp_389_4, i16 %ClusterDeposits2_17_1, i16 %ClusterDeposits2_16
+
+ST_7: tmp_394_4 (626)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:497  %tmp_394_4 = icmp ult i16 %ClusterDeposits2_19_1, %ClusterDeposits2_18
+
+ST_7: Tower_1_Phi_18_0_Tow (627)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:498  %Tower_1_Phi_18_0_Tow = select i1 %tmp_394_4, i16 %ClusterPhi2_19_2, i16 %ClusterPhi2_18
+
+ST_7: Tower_1_Phi_19_0_Tow (628)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:499  %Tower_1_Phi_19_0_Tow = select i1 %tmp_394_4, i16 %ClusterPhi2_18, i16 %ClusterPhi2_19_2
+
+ST_7: Tower_1_Eta_18_0_Tow (629)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:500  %Tower_1_Eta_18_0_Tow = select i1 %tmp_394_4, i16 %ClusterEta2_19_2, i16 %ClusterEta2_18
+
+ST_7: Tower_1_Eta_19_0_Tow (630)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:501  %Tower_1_Eta_19_0_Tow = select i1 %tmp_394_4, i16 %ClusterEta2_18, i16 %ClusterEta2_19_2
+
+ST_7: p_18 (631)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:502  %p_18 = select i1 %tmp_394_4, i16 %ClusterDeposits2_18, i16 %ClusterDeposits2_19_1
+
+ST_7: p_19 (632)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:503  %p_19 = select i1 %tmp_394_4, i16 %ClusterDeposits2_19_1, i16 %ClusterDeposits2_18
+
+ST_7: tmp_389_5 (633)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:504  %tmp_389_5 = icmp ugt i16 %ClusterDeposits2_21_1, %ClusterDeposits2_20
+
+ST_7: Tower_1_Phi_20_0_Tow (634)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:505  %Tower_1_Phi_20_0_Tow = select i1 %tmp_389_5, i16 %ClusterPhi2_21_2, i16 %ClusterPhi2_20
+
+ST_7: Tower_1_Phi_21_0_Tow (635)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:506  %Tower_1_Phi_21_0_Tow = select i1 %tmp_389_5, i16 %ClusterPhi2_20, i16 %ClusterPhi2_21_2
+
+ST_7: Tower_1_Eta_20_0_Tow (636)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:507  %Tower_1_Eta_20_0_Tow = select i1 %tmp_389_5, i16 %ClusterEta2_21_2, i16 %ClusterEta2_20
+
+ST_7: Tower_1_Eta_21_0_Tow (637)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:508  %Tower_1_Eta_21_0_Tow = select i1 %tmp_389_5, i16 %ClusterEta2_20, i16 %ClusterEta2_21_2
+
+ST_7: p_20 (638)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:509  %p_20 = select i1 %tmp_389_5, i16 %ClusterDeposits2_20, i16 %ClusterDeposits2_21_1
+
+ST_7: p_21 (639)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:510  %p_21 = select i1 %tmp_389_5, i16 %ClusterDeposits2_21_1, i16 %ClusterDeposits2_20
+
+ST_7: tmp_394_5 (640)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:511  %tmp_394_5 = icmp ult i16 %ClusterDeposits2_23_1, %ClusterDeposits2_22
+
+ST_7: Tower_1_Phi_22_0_Tow (641)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:512  %Tower_1_Phi_22_0_Tow = select i1 %tmp_394_5, i16 %ClusterPhi2_23_2, i16 %ClusterPhi2_22
+
+ST_7: Tower_1_Phi_23_0_Tow (642)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:513  %Tower_1_Phi_23_0_Tow = select i1 %tmp_394_5, i16 %ClusterPhi2_22, i16 %ClusterPhi2_23_2
+
+ST_7: Tower_1_Eta_22_0_Tow (643)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:514  %Tower_1_Eta_22_0_Tow = select i1 %tmp_394_5, i16 %ClusterEta2_23_2, i16 %ClusterEta2_22
+
+ST_7: Tower_1_Eta_23_0_Tow (644)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:515  %Tower_1_Eta_23_0_Tow = select i1 %tmp_394_5, i16 %ClusterEta2_22, i16 %ClusterEta2_23_2
+
+ST_7: p_22 (645)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:516  %p_22 = select i1 %tmp_394_5, i16 %ClusterDeposits2_22, i16 %ClusterDeposits2_23_1
+
+ST_7: p_23 (646)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:517  %p_23 = select i1 %tmp_394_5, i16 %ClusterDeposits2_23_1, i16 %ClusterDeposits2_22
+
+ST_7: tmp_389_6 (647)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:518  %tmp_389_6 = icmp ugt i16 %ClusterDeposits2_25_1, %ClusterDeposits2_24
+
+ST_7: Tower_1_Phi_24_0_reg (648)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:519  %Tower_1_Phi_24_0_reg = select i1 %tmp_389_6, i16 %ClusterPhi2_25_2, i16 %ClusterPhi2_24
+
+ST_7: regionPhi_0_assign_1 (649)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:520  %regionPhi_0_assign_1 = select i1 %tmp_389_6, i16 %ClusterPhi2_24, i16 %ClusterPhi2_25_2
+
+ST_7: Tower_1_Eta_24_0_tmp (650)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:521  %Tower_1_Eta_24_0_tmp = select i1 %tmp_389_6, i16 %ClusterEta2_25_2, i16 %ClusterEta2_24_3
+
+ST_7: tmp_371_Tower_1_Eta_s (651)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:522  %tmp_371_Tower_1_Eta_s = select i1 %tmp_389_6, i16 %ClusterEta2_24_3, i16 %ClusterEta2_25_2
+
+ST_7: p_24 (652)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:523  %p_24 = select i1 %tmp_389_6, i16 %ClusterDeposits2_24, i16 %ClusterDeposits2_25_1
+
+ST_7: p_25 (653)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:524  %p_25 = select i1 %tmp_389_6, i16 %ClusterDeposits2_25_1, i16 %ClusterDeposits2_24
+
+ST_7: tmp_394_6 (654)  [1/1] 1.29ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:525  %tmp_394_6 = icmp ult i16 %ClusterDeposits2_27_1, %ClusterDeposits2_26
+
+ST_7: regionPhi_1_assign_6 (655)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:526  %regionPhi_1_assign_6 = select i1 %tmp_394_6, i16 %ClusterPhi2_27_2, i16 %ClusterPhi2_26
+
+ST_7: regionPhi_2_assign_6 (656)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:527  %regionPhi_2_assign_6 = select i1 %tmp_394_6, i16 %ClusterPhi2_26, i16 %ClusterPhi2_27_2
+
+ST_7: tmp_372_tmp_s (657)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:528  %tmp_372_tmp_s = select i1 %tmp_394_6, i16 %ClusterEta2_27_2, i16 %ClusterEta2_26_3
+
+ST_7: tmp_373_tmp_s (658)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:529  %tmp_373_tmp_s = select i1 %tmp_394_6, i16 %ClusterEta2_26_3, i16 %ClusterEta2_27_2
+
+ST_7: p_26 (659)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:530  %p_26 = select i1 %tmp_394_6, i16 %ClusterDeposits2_26, i16 %ClusterDeposits2_27_1
+
+ST_7: p_27 (660)  [1/1] 0.71ns  loc: HCALTower.cpp:1461
+.preheader14.preheader:531  %p_27 = select i1 %tmp_394_6, i16 %ClusterDeposits2_27_1, i16 %ClusterDeposits2_26
+
+ST_7: tmp_389_7 (661)  [1/1] 1.29ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:532  %tmp_389_7 = icmp ugt i16 %ClusterDeposits2_29_1, %ClusterDeposits2_28
+
+ST_7: regionPhi_3_assign_6 (662)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:533  %regionPhi_3_assign_6 = select i1 %tmp_389_7, i16 %ClusterPhi2_29_2, i16 %ClusterPhi2_28
+
+ST_7: regionPhi_4_assign_6 (663)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:534  %regionPhi_4_assign_6 = select i1 %tmp_389_7, i16 %ClusterPhi2_28, i16 %ClusterPhi2_29_2
+
+ST_7: tmp_374_tmp_s (664)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:535  %tmp_374_tmp_s = select i1 %tmp_389_7, i16 %ClusterEta2_29_2, i16 %ClusterEta2_28_3
+
+ST_7: tmp_375_tmp_s (665)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:536  %tmp_375_tmp_s = select i1 %tmp_389_7, i16 %ClusterEta2_28_3, i16 %ClusterEta2_29_2
+
+ST_7: p_28 (666)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:537  %p_28 = select i1 %tmp_389_7, i16 %ClusterDeposits2_29_1, i16 %ClusterDeposits2_28
+
+ST_7: p_29 (667)  [1/1] 0.71ns  loc: HCALTower.cpp:1449
+.preheader14.preheader:538  %p_29 = select i1 %tmp_389_7, i16 %ClusterDeposits2_28, i16 %ClusterDeposits2_29_1
+
+ST_7: call_ret6 (668)  [5/5] 2.71ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:539  %call_ret6 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic4(i16 %p_s, i16 %p_1, i16 %p_2, i16 %p_3, i16 %p_4, i16 %p_5, i16 %p_6, i16 %p_7, i16 %p_8, i16 %p_9, i16 %p_10, i16 %p_11, i16 %p_12, i16 %p_13, i16 %p_14, i16 %p_15, i16 %p_16, i16 %p_17, i16 %p_18, i16 %p_19, i16 %p_20, i16 %p_21, i16 %p_22, i16 %p_23, i16 %p_24, i16 %p_25, i16 %p_26, i16 %p_27, i16 %p_29, i16 %p_28, i16 %Tower_1_Eta_1_0_Towe, i16 %Tower_1_Eta_0_0_Towe, i16 %Tower_1_Eta_3_0_Towe, i16 %Tower_1_Eta_2_0_Towe, i16 %Tower_1_Eta_5_0_Towe, i16 %Tower_1_Eta_4_0_Towe, i16 %Tower_1_Eta_7_0_Towe, i16 %Tower_1_Eta_6_0_Towe, i16 %Tower_1_Eta_9_0_Towe, i16 %Tower_1_Eta_8_0_Towe, i16 %Tower_1_Eta_11_0_Tow, i16 %Tower_1_Eta_10_0_Tow, i16 %Tower_1_Eta_13_0_Tow, i16 %Tower_1_Eta_12_0_Tow, i16 %Tower_1_Eta_15_0_Tow, i16 %Tower_1_Eta_14_0_Tow, i16 %Tower_1_Eta_17_0_Tow, i16 %Tower_1_Eta_16_0_Tow, i16 %Tower_1_Eta_19_0_Tow, i16 %Tower_1_Eta_18_0_Tow, i16 %Tower_1_Eta_21_0_Tow, i16 %Tower_1_Eta_20_0_Tow, i16 %Tower_1_Eta_23_0_Tow, i16 %Tower_1_Eta_22_0_Tow, i16 %tmp_371_Tower_1_Eta_s, i16 %Tower_1_Eta_24_0_tmp, i16 %tmp_373_tmp_s, i16 %tmp_372_tmp_s, i16 %tmp_375_tmp_s, i16 %tmp_374_tmp_s, i16 %Tower_1_Phi_1_0_Towe, i16 %Tower_1_Phi_0_0_Towe, i16 %Tower_1_Phi_3_0_Towe, i16 %Tower_1_Phi_2_0_Towe, i16 %Tower_1_Phi_5_0_Towe, i16 %Tower_1_Phi_4_0_Towe, i16 %Tower_1_Phi_7_0_Towe, i16 %Tower_1_Phi_6_0_Towe, i16 %Tower_1_Phi_9_0_Towe, i16 %Tower_1_Phi_8_0_Towe, i16 %Tower_1_Phi_11_0_Tow, i16 %Tower_1_Phi_10_0_Tow, i16 %Tower_1_Phi_13_0_Tow, i16 %Tower_1_Phi_12_0_Tow, i16 %Tower_1_Phi_15_0_Tow, i16 %Tower_1_Phi_14_0_Tow, i16 %Tower_1_Phi_17_0_Tow, i16 %Tower_1_Phi_16_0_Tow, i16 %Tower_1_Phi_19_0_Tow, i16 %Tower_1_Phi_18_0_Tow, i16 %Tower_1_Phi_21_0_Tow, i16 %Tower_1_Phi_20_0_Tow, i16 %Tower_1_Phi_23_0_Tow, i16 %Tower_1_Phi_22_0_Tow, i16 %regionPhi_0_assign_1, i16 %Tower_1_Phi_24_0_reg, i16 %regionPhi_2_assign_6, i16 %regionPhi_1_assign_6, i16 %regionPhi_4_assign_6, i16 %regionPhi_3_assign_6)
+
+
+ <State 8>: 8.72ns
+ST_8: call_ret6 (668)  [4/5] 8.72ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:539  %call_ret6 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic4(i16 %p_s, i16 %p_1, i16 %p_2, i16 %p_3, i16 %p_4, i16 %p_5, i16 %p_6, i16 %p_7, i16 %p_8, i16 %p_9, i16 %p_10, i16 %p_11, i16 %p_12, i16 %p_13, i16 %p_14, i16 %p_15, i16 %p_16, i16 %p_17, i16 %p_18, i16 %p_19, i16 %p_20, i16 %p_21, i16 %p_22, i16 %p_23, i16 %p_24, i16 %p_25, i16 %p_26, i16 %p_27, i16 %p_29, i16 %p_28, i16 %Tower_1_Eta_1_0_Towe, i16 %Tower_1_Eta_0_0_Towe, i16 %Tower_1_Eta_3_0_Towe, i16 %Tower_1_Eta_2_0_Towe, i16 %Tower_1_Eta_5_0_Towe, i16 %Tower_1_Eta_4_0_Towe, i16 %Tower_1_Eta_7_0_Towe, i16 %Tower_1_Eta_6_0_Towe, i16 %Tower_1_Eta_9_0_Towe, i16 %Tower_1_Eta_8_0_Towe, i16 %Tower_1_Eta_11_0_Tow, i16 %Tower_1_Eta_10_0_Tow, i16 %Tower_1_Eta_13_0_Tow, i16 %Tower_1_Eta_12_0_Tow, i16 %Tower_1_Eta_15_0_Tow, i16 %Tower_1_Eta_14_0_Tow, i16 %Tower_1_Eta_17_0_Tow, i16 %Tower_1_Eta_16_0_Tow, i16 %Tower_1_Eta_19_0_Tow, i16 %Tower_1_Eta_18_0_Tow, i16 %Tower_1_Eta_21_0_Tow, i16 %Tower_1_Eta_20_0_Tow, i16 %Tower_1_Eta_23_0_Tow, i16 %Tower_1_Eta_22_0_Tow, i16 %tmp_371_Tower_1_Eta_s, i16 %Tower_1_Eta_24_0_tmp, i16 %tmp_373_tmp_s, i16 %tmp_372_tmp_s, i16 %tmp_375_tmp_s, i16 %tmp_374_tmp_s, i16 %Tower_1_Phi_1_0_Towe, i16 %Tower_1_Phi_0_0_Towe, i16 %Tower_1_Phi_3_0_Towe, i16 %Tower_1_Phi_2_0_Towe, i16 %Tower_1_Phi_5_0_Towe, i16 %Tower_1_Phi_4_0_Towe, i16 %Tower_1_Phi_7_0_Towe, i16 %Tower_1_Phi_6_0_Towe, i16 %Tower_1_Phi_9_0_Towe, i16 %Tower_1_Phi_8_0_Towe, i16 %Tower_1_Phi_11_0_Tow, i16 %Tower_1_Phi_10_0_Tow, i16 %Tower_1_Phi_13_0_Tow, i16 %Tower_1_Phi_12_0_Tow, i16 %Tower_1_Phi_15_0_Tow, i16 %Tower_1_Phi_14_0_Tow, i16 %Tower_1_Phi_17_0_Tow, i16 %Tower_1_Phi_16_0_Tow, i16 %Tower_1_Phi_19_0_Tow, i16 %Tower_1_Phi_18_0_Tow, i16 %Tower_1_Phi_21_0_Tow, i16 %Tower_1_Phi_20_0_Tow, i16 %Tower_1_Phi_23_0_Tow, i16 %Tower_1_Phi_22_0_Tow, i16 %regionPhi_0_assign_1, i16 %Tower_1_Phi_24_0_reg, i16 %regionPhi_2_assign_6, i16 %regionPhi_1_assign_6, i16 %regionPhi_4_assign_6, i16 %regionPhi_3_assign_6)
+
+
+ <State 9>: 8.72ns
+ST_9: call_ret6 (668)  [3/5] 8.72ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:539  %call_ret6 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic4(i16 %p_s, i16 %p_1, i16 %p_2, i16 %p_3, i16 %p_4, i16 %p_5, i16 %p_6, i16 %p_7, i16 %p_8, i16 %p_9, i16 %p_10, i16 %p_11, i16 %p_12, i16 %p_13, i16 %p_14, i16 %p_15, i16 %p_16, i16 %p_17, i16 %p_18, i16 %p_19, i16 %p_20, i16 %p_21, i16 %p_22, i16 %p_23, i16 %p_24, i16 %p_25, i16 %p_26, i16 %p_27, i16 %p_29, i16 %p_28, i16 %Tower_1_Eta_1_0_Towe, i16 %Tower_1_Eta_0_0_Towe, i16 %Tower_1_Eta_3_0_Towe, i16 %Tower_1_Eta_2_0_Towe, i16 %Tower_1_Eta_5_0_Towe, i16 %Tower_1_Eta_4_0_Towe, i16 %Tower_1_Eta_7_0_Towe, i16 %Tower_1_Eta_6_0_Towe, i16 %Tower_1_Eta_9_0_Towe, i16 %Tower_1_Eta_8_0_Towe, i16 %Tower_1_Eta_11_0_Tow, i16 %Tower_1_Eta_10_0_Tow, i16 %Tower_1_Eta_13_0_Tow, i16 %Tower_1_Eta_12_0_Tow, i16 %Tower_1_Eta_15_0_Tow, i16 %Tower_1_Eta_14_0_Tow, i16 %Tower_1_Eta_17_0_Tow, i16 %Tower_1_Eta_16_0_Tow, i16 %Tower_1_Eta_19_0_Tow, i16 %Tower_1_Eta_18_0_Tow, i16 %Tower_1_Eta_21_0_Tow, i16 %Tower_1_Eta_20_0_Tow, i16 %Tower_1_Eta_23_0_Tow, i16 %Tower_1_Eta_22_0_Tow, i16 %tmp_371_Tower_1_Eta_s, i16 %Tower_1_Eta_24_0_tmp, i16 %tmp_373_tmp_s, i16 %tmp_372_tmp_s, i16 %tmp_375_tmp_s, i16 %tmp_374_tmp_s, i16 %Tower_1_Phi_1_0_Towe, i16 %Tower_1_Phi_0_0_Towe, i16 %Tower_1_Phi_3_0_Towe, i16 %Tower_1_Phi_2_0_Towe, i16 %Tower_1_Phi_5_0_Towe, i16 %Tower_1_Phi_4_0_Towe, i16 %Tower_1_Phi_7_0_Towe, i16 %Tower_1_Phi_6_0_Towe, i16 %Tower_1_Phi_9_0_Towe, i16 %Tower_1_Phi_8_0_Towe, i16 %Tower_1_Phi_11_0_Tow, i16 %Tower_1_Phi_10_0_Tow, i16 %Tower_1_Phi_13_0_Tow, i16 %Tower_1_Phi_12_0_Tow, i16 %Tower_1_Phi_15_0_Tow, i16 %Tower_1_Phi_14_0_Tow, i16 %Tower_1_Phi_17_0_Tow, i16 %Tower_1_Phi_16_0_Tow, i16 %Tower_1_Phi_19_0_Tow, i16 %Tower_1_Phi_18_0_Tow, i16 %Tower_1_Phi_21_0_Tow, i16 %Tower_1_Phi_20_0_Tow, i16 %Tower_1_Phi_23_0_Tow, i16 %Tower_1_Phi_22_0_Tow, i16 %regionPhi_0_assign_1, i16 %Tower_1_Phi_24_0_reg, i16 %regionPhi_2_assign_6, i16 %regionPhi_1_assign_6, i16 %regionPhi_4_assign_6, i16 %regionPhi_3_assign_6)
+
+
+ <State 10>: 8.72ns
+ST_10: call_ret6 (668)  [2/5] 8.72ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:539  %call_ret6 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic4(i16 %p_s, i16 %p_1, i16 %p_2, i16 %p_3, i16 %p_4, i16 %p_5, i16 %p_6, i16 %p_7, i16 %p_8, i16 %p_9, i16 %p_10, i16 %p_11, i16 %p_12, i16 %p_13, i16 %p_14, i16 %p_15, i16 %p_16, i16 %p_17, i16 %p_18, i16 %p_19, i16 %p_20, i16 %p_21, i16 %p_22, i16 %p_23, i16 %p_24, i16 %p_25, i16 %p_26, i16 %p_27, i16 %p_29, i16 %p_28, i16 %Tower_1_Eta_1_0_Towe, i16 %Tower_1_Eta_0_0_Towe, i16 %Tower_1_Eta_3_0_Towe, i16 %Tower_1_Eta_2_0_Towe, i16 %Tower_1_Eta_5_0_Towe, i16 %Tower_1_Eta_4_0_Towe, i16 %Tower_1_Eta_7_0_Towe, i16 %Tower_1_Eta_6_0_Towe, i16 %Tower_1_Eta_9_0_Towe, i16 %Tower_1_Eta_8_0_Towe, i16 %Tower_1_Eta_11_0_Tow, i16 %Tower_1_Eta_10_0_Tow, i16 %Tower_1_Eta_13_0_Tow, i16 %Tower_1_Eta_12_0_Tow, i16 %Tower_1_Eta_15_0_Tow, i16 %Tower_1_Eta_14_0_Tow, i16 %Tower_1_Eta_17_0_Tow, i16 %Tower_1_Eta_16_0_Tow, i16 %Tower_1_Eta_19_0_Tow, i16 %Tower_1_Eta_18_0_Tow, i16 %Tower_1_Eta_21_0_Tow, i16 %Tower_1_Eta_20_0_Tow, i16 %Tower_1_Eta_23_0_Tow, i16 %Tower_1_Eta_22_0_Tow, i16 %tmp_371_Tower_1_Eta_s, i16 %Tower_1_Eta_24_0_tmp, i16 %tmp_373_tmp_s, i16 %tmp_372_tmp_s, i16 %tmp_375_tmp_s, i16 %tmp_374_tmp_s, i16 %Tower_1_Phi_1_0_Towe, i16 %Tower_1_Phi_0_0_Towe, i16 %Tower_1_Phi_3_0_Towe, i16 %Tower_1_Phi_2_0_Towe, i16 %Tower_1_Phi_5_0_Towe, i16 %Tower_1_Phi_4_0_Towe, i16 %Tower_1_Phi_7_0_Towe, i16 %Tower_1_Phi_6_0_Towe, i16 %Tower_1_Phi_9_0_Towe, i16 %Tower_1_Phi_8_0_Towe, i16 %Tower_1_Phi_11_0_Tow, i16 %Tower_1_Phi_10_0_Tow, i16 %Tower_1_Phi_13_0_Tow, i16 %Tower_1_Phi_12_0_Tow, i16 %Tower_1_Phi_15_0_Tow, i16 %Tower_1_Phi_14_0_Tow, i16 %Tower_1_Phi_17_0_Tow, i16 %Tower_1_Phi_16_0_Tow, i16 %Tower_1_Phi_19_0_Tow, i16 %Tower_1_Phi_18_0_Tow, i16 %Tower_1_Phi_21_0_Tow, i16 %Tower_1_Phi_20_0_Tow, i16 %Tower_1_Phi_23_0_Tow, i16 %Tower_1_Phi_22_0_Tow, i16 %regionPhi_0_assign_1, i16 %Tower_1_Phi_24_0_reg, i16 %regionPhi_2_assign_6, i16 %regionPhi_1_assign_6, i16 %regionPhi_4_assign_6, i16 %regionPhi_3_assign_6)
+
+
+ <State 11>: 3.55ns
+ST_11: StgValue_437 (129)  [1/1] 0.00ns
+.preheader14.preheader:0  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_16_3), !map !27
+
+ST_11: StgValue_438 (130)  [1/1] 0.00ns
+.preheader14.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_16_2), !map !34
+
+ST_11: StgValue_439 (131)  [1/1] 0.00ns
+.preheader14.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_16_1), !map !40
+
+ST_11: StgValue_440 (132)  [1/1] 0.00ns
+.preheader14.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_16_0), !map !46
+
+ST_11: StgValue_441 (133)  [1/1] 0.00ns
+.preheader14.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_15_3), !map !52
+
+ST_11: StgValue_442 (134)  [1/1] 0.00ns
+.preheader14.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_15_2), !map !58
+
+ST_11: StgValue_443 (135)  [1/1] 0.00ns
+.preheader14.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_15_1), !map !63
+
+ST_11: StgValue_444 (136)  [1/1] 0.00ns
+.preheader14.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_15_0), !map !68
+
+ST_11: StgValue_445 (137)  [1/1] 0.00ns
+.preheader14.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_14_3), !map !73
+
+ST_11: StgValue_446 (138)  [1/1] 0.00ns
+.preheader14.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_14_2), !map !79
+
+ST_11: StgValue_447 (139)  [1/1] 0.00ns
+.preheader14.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_14_1), !map !84
+
+ST_11: StgValue_448 (140)  [1/1] 0.00ns
+.preheader14.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_14_0), !map !89
+
+ST_11: StgValue_449 (141)  [1/1] 0.00ns
+.preheader14.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_13_3), !map !94
+
+ST_11: StgValue_450 (142)  [1/1] 0.00ns
+.preheader14.preheader:13  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_13_2), !map !100
+
+ST_11: StgValue_451 (143)  [1/1] 0.00ns
+.preheader14.preheader:14  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_13_1), !map !105
+
+ST_11: StgValue_452 (144)  [1/1] 0.00ns
+.preheader14.preheader:15  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_13_0), !map !110
+
+ST_11: StgValue_453 (145)  [1/1] 0.00ns
+.preheader14.preheader:16  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_12_3), !map !115
+
+ST_11: StgValue_454 (146)  [1/1] 0.00ns
+.preheader14.preheader:17  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_12_2), !map !121
+
+ST_11: StgValue_455 (147)  [1/1] 0.00ns
+.preheader14.preheader:18  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_12_1), !map !126
+
+ST_11: StgValue_456 (148)  [1/1] 0.00ns
+.preheader14.preheader:19  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_12_0), !map !131
+
+ST_11: StgValue_457 (149)  [1/1] 0.00ns
+.preheader14.preheader:20  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_11_3), !map !136
+
+ST_11: StgValue_458 (150)  [1/1] 0.00ns
+.preheader14.preheader:21  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_11_2), !map !142
+
+ST_11: StgValue_459 (151)  [1/1] 0.00ns
+.preheader14.preheader:22  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_11_1), !map !147
+
+ST_11: StgValue_460 (152)  [1/1] 0.00ns
+.preheader14.preheader:23  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_11_0), !map !152
+
+ST_11: StgValue_461 (153)  [1/1] 0.00ns
+.preheader14.preheader:24  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_10_3), !map !157
+
+ST_11: StgValue_462 (154)  [1/1] 0.00ns
+.preheader14.preheader:25  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_10_2), !map !163
+
+ST_11: StgValue_463 (155)  [1/1] 0.00ns
+.preheader14.preheader:26  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_10_1), !map !168
+
+ST_11: StgValue_464 (156)  [1/1] 0.00ns
+.preheader14.preheader:27  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_10_0), !map !173
+
+ST_11: StgValue_465 (157)  [1/1] 0.00ns
+.preheader14.preheader:28  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_9_3), !map !178
+
+ST_11: StgValue_466 (158)  [1/1] 0.00ns
+.preheader14.preheader:29  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_9_2), !map !184
+
+ST_11: StgValue_467 (159)  [1/1] 0.00ns
+.preheader14.preheader:30  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_9_1), !map !189
+
+ST_11: StgValue_468 (160)  [1/1] 0.00ns
+.preheader14.preheader:31  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_9_0), !map !194
+
+ST_11: StgValue_469 (161)  [1/1] 0.00ns
+.preheader14.preheader:32  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_8_3), !map !199
+
+ST_11: StgValue_470 (162)  [1/1] 0.00ns
+.preheader14.preheader:33  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_8_2), !map !205
+
+ST_11: StgValue_471 (163)  [1/1] 0.00ns
+.preheader14.preheader:34  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_8_1), !map !210
+
+ST_11: StgValue_472 (164)  [1/1] 0.00ns
+.preheader14.preheader:35  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_8_0), !map !215
+
+ST_11: StgValue_473 (165)  [1/1] 0.00ns
+.preheader14.preheader:36  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_7_3), !map !220
+
+ST_11: StgValue_474 (166)  [1/1] 0.00ns
+.preheader14.preheader:37  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_7_2), !map !226
+
+ST_11: StgValue_475 (167)  [1/1] 0.00ns
+.preheader14.preheader:38  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_7_1), !map !231
+
+ST_11: StgValue_476 (168)  [1/1] 0.00ns
+.preheader14.preheader:39  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_7_0), !map !236
+
+ST_11: StgValue_477 (169)  [1/1] 0.00ns
+.preheader14.preheader:40  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_6_3), !map !241
+
+ST_11: StgValue_478 (170)  [1/1] 0.00ns
+.preheader14.preheader:41  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_6_2), !map !247
+
+ST_11: StgValue_479 (171)  [1/1] 0.00ns
+.preheader14.preheader:42  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_6_1), !map !252
+
+ST_11: StgValue_480 (172)  [1/1] 0.00ns
+.preheader14.preheader:43  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_6_0), !map !257
+
+ST_11: StgValue_481 (173)  [1/1] 0.00ns
+.preheader14.preheader:44  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_5_3), !map !262
+
+ST_11: StgValue_482 (174)  [1/1] 0.00ns
+.preheader14.preheader:45  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_5_2), !map !268
+
+ST_11: StgValue_483 (175)  [1/1] 0.00ns
+.preheader14.preheader:46  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_5_1), !map !273
+
+ST_11: StgValue_484 (176)  [1/1] 0.00ns
+.preheader14.preheader:47  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_5_0), !map !278
+
+ST_11: StgValue_485 (177)  [1/1] 0.00ns
+.preheader14.preheader:48  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_4_3), !map !283
+
+ST_11: StgValue_486 (178)  [1/1] 0.00ns
+.preheader14.preheader:49  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_4_2), !map !289
+
+ST_11: StgValue_487 (179)  [1/1] 0.00ns
+.preheader14.preheader:50  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_4_1), !map !294
+
+ST_11: StgValue_488 (180)  [1/1] 0.00ns
+.preheader14.preheader:51  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_4_0), !map !299
+
+ST_11: StgValue_489 (181)  [1/1] 0.00ns
+.preheader14.preheader:52  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_3_3), !map !304
+
+ST_11: StgValue_490 (182)  [1/1] 0.00ns
+.preheader14.preheader:53  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_3_2), !map !309
+
+ST_11: StgValue_491 (183)  [1/1] 0.00ns
+.preheader14.preheader:54  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_3_1), !map !314
+
+ST_11: StgValue_492 (184)  [1/1] 0.00ns
+.preheader14.preheader:55  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_3_0), !map !319
+
+ST_11: StgValue_493 (185)  [1/1] 0.00ns
+.preheader14.preheader:56  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_2_3), !map !324
+
+ST_11: StgValue_494 (186)  [1/1] 0.00ns
+.preheader14.preheader:57  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_2_2), !map !329
+
+ST_11: StgValue_495 (187)  [1/1] 0.00ns
+.preheader14.preheader:58  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_2_1), !map !334
+
+ST_11: StgValue_496 (188)  [1/1] 0.00ns
+.preheader14.preheader:59  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_2_0), !map !339
+
+ST_11: StgValue_497 (189)  [1/1] 0.00ns
+.preheader14.preheader:60  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_1_3), !map !344
+
+ST_11: StgValue_498 (190)  [1/1] 0.00ns
+.preheader14.preheader:61  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_1_2), !map !349
+
+ST_11: StgValue_499 (191)  [1/1] 0.00ns
+.preheader14.preheader:62  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_1_1), !map !354
+
+ST_11: StgValue_500 (192)  [1/1] 0.00ns
+.preheader14.preheader:63  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_1_0), !map !359
+
+ST_11: StgValue_501 (193)  [1/1] 0.00ns
+.preheader14.preheader:64  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_0_3), !map !364
+
+ST_11: StgValue_502 (194)  [1/1] 0.00ns
+.preheader14.preheader:65  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_0_2), !map !369
+
+ST_11: StgValue_503 (195)  [1/1] 0.00ns
+.preheader14.preheader:66  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_0_1), !map !374
+
+ST_11: StgValue_504 (196)  [1/1] 0.00ns
+.preheader14.preheader:67  call void (...)* @_ssdm_op_SpecBitsMap(i16* %towerET_0_0), !map !379
+
+ST_11: StgValue_505 (197)  [1/1] 0.00ns
+.preheader14.preheader:68  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_29), !map !384
+
+ST_11: StgValue_506 (198)  [1/1] 0.00ns
+.preheader14.preheader:69  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_28), !map !390
+
+ST_11: StgValue_507 (199)  [1/1] 0.00ns
+.preheader14.preheader:70  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_27), !map !396
+
+ST_11: StgValue_508 (200)  [1/1] 0.00ns
+.preheader14.preheader:71  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_26), !map !402
+
+ST_11: StgValue_509 (201)  [1/1] 0.00ns
+.preheader14.preheader:72  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_25), !map !408
+
+ST_11: StgValue_510 (202)  [1/1] 0.00ns
+.preheader14.preheader:73  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_24), !map !414
+
+ST_11: StgValue_511 (203)  [1/1] 0.00ns
+.preheader14.preheader:74  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_23), !map !420
+
+ST_11: StgValue_512 (204)  [1/1] 0.00ns
+.preheader14.preheader:75  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_22), !map !426
+
+ST_11: StgValue_513 (205)  [1/1] 0.00ns
+.preheader14.preheader:76  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_21), !map !432
+
+ST_11: StgValue_514 (206)  [1/1] 0.00ns
+.preheader14.preheader:77  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_20), !map !438
+
+ST_11: StgValue_515 (207)  [1/1] 0.00ns
+.preheader14.preheader:78  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_19), !map !444
+
+ST_11: StgValue_516 (208)  [1/1] 0.00ns
+.preheader14.preheader:79  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_18), !map !450
+
+ST_11: StgValue_517 (209)  [1/1] 0.00ns
+.preheader14.preheader:80  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_17), !map !456
+
+ST_11: StgValue_518 (210)  [1/1] 0.00ns
+.preheader14.preheader:81  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_16), !map !462
+
+ST_11: StgValue_519 (211)  [1/1] 0.00ns
+.preheader14.preheader:82  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_15), !map !467
+
+ST_11: StgValue_520 (212)  [1/1] 0.00ns
+.preheader14.preheader:83  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_14), !map !472
+
+ST_11: StgValue_521 (213)  [1/1] 0.00ns
+.preheader14.preheader:84  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_13), !map !477
+
+ST_11: StgValue_522 (214)  [1/1] 0.00ns
+.preheader14.preheader:85  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_12), !map !482
+
+ST_11: StgValue_523 (215)  [1/1] 0.00ns
+.preheader14.preheader:86  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_11), !map !487
+
+ST_11: StgValue_524 (216)  [1/1] 0.00ns
+.preheader14.preheader:87  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_10), !map !492
+
+ST_11: StgValue_525 (217)  [1/1] 0.00ns
+.preheader14.preheader:88  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_9), !map !497
+
+ST_11: StgValue_526 (218)  [1/1] 0.00ns
+.preheader14.preheader:89  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_8), !map !502
+
+ST_11: StgValue_527 (219)  [1/1] 0.00ns
+.preheader14.preheader:90  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_7), !map !507
+
+ST_11: StgValue_528 (220)  [1/1] 0.00ns
+.preheader14.preheader:91  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_6), !map !512
+
+ST_11: StgValue_529 (221)  [1/1] 0.00ns
+.preheader14.preheader:92  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_5), !map !517
+
+ST_11: StgValue_530 (222)  [1/1] 0.00ns
+.preheader14.preheader:93  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_4), !map !522
+
+ST_11: StgValue_531 (223)  [1/1] 0.00ns
+.preheader14.preheader:94  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_3), !map !527
+
+ST_11: StgValue_532 (224)  [1/1] 0.00ns
+.preheader14.preheader:95  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_2), !map !532
+
+ST_11: StgValue_533 (225)  [1/1] 0.00ns
+.preheader14.preheader:96  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_1), !map !537
+
+ST_11: StgValue_534 (226)  [1/1] 0.00ns
+.preheader14.preheader:97  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerPhi_0), !map !542
+
+ST_11: StgValue_535 (227)  [1/1] 0.00ns
+.preheader14.preheader:98  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_29), !map !547
+
+ST_11: StgValue_536 (228)  [1/1] 0.00ns
+.preheader14.preheader:99  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_28), !map !551
+
+ST_11: StgValue_537 (229)  [1/1] 0.00ns
+.preheader14.preheader:100  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_27), !map !555
+
+ST_11: StgValue_538 (230)  [1/1] 0.00ns
+.preheader14.preheader:101  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_26), !map !559
+
+ST_11: StgValue_539 (231)  [1/1] 0.00ns
+.preheader14.preheader:102  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_25), !map !563
+
+ST_11: StgValue_540 (232)  [1/1] 0.00ns
+.preheader14.preheader:103  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_24), !map !567
+
+ST_11: StgValue_541 (233)  [1/1] 0.00ns
+.preheader14.preheader:104  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_23), !map !571
+
+ST_11: StgValue_542 (234)  [1/1] 0.00ns
+.preheader14.preheader:105  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_22), !map !575
+
+ST_11: StgValue_543 (235)  [1/1] 0.00ns
+.preheader14.preheader:106  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_21), !map !579
+
+ST_11: StgValue_544 (236)  [1/1] 0.00ns
+.preheader14.preheader:107  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_20), !map !583
+
+ST_11: StgValue_545 (237)  [1/1] 0.00ns
+.preheader14.preheader:108  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_19), !map !587
+
+ST_11: StgValue_546 (238)  [1/1] 0.00ns
+.preheader14.preheader:109  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_18), !map !591
+
+ST_11: StgValue_547 (239)  [1/1] 0.00ns
+.preheader14.preheader:110  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_17), !map !595
+
+ST_11: StgValue_548 (240)  [1/1] 0.00ns
+.preheader14.preheader:111  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_16), !map !599
+
+ST_11: StgValue_549 (241)  [1/1] 0.00ns
+.preheader14.preheader:112  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_15), !map !603
+
+ST_11: StgValue_550 (242)  [1/1] 0.00ns
+.preheader14.preheader:113  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_14), !map !607
+
+ST_11: StgValue_551 (243)  [1/1] 0.00ns
+.preheader14.preheader:114  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_13), !map !611
+
+ST_11: StgValue_552 (244)  [1/1] 0.00ns
+.preheader14.preheader:115  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_12), !map !615
+
+ST_11: StgValue_553 (245)  [1/1] 0.00ns
+.preheader14.preheader:116  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_11), !map !619
+
+ST_11: StgValue_554 (246)  [1/1] 0.00ns
+.preheader14.preheader:117  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_10), !map !623
+
+ST_11: StgValue_555 (247)  [1/1] 0.00ns
+.preheader14.preheader:118  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_9), !map !627
+
+ST_11: StgValue_556 (248)  [1/1] 0.00ns
+.preheader14.preheader:119  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_8), !map !631
+
+ST_11: StgValue_557 (249)  [1/1] 0.00ns
+.preheader14.preheader:120  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_7), !map !635
+
+ST_11: StgValue_558 (250)  [1/1] 0.00ns
+.preheader14.preheader:121  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_6), !map !639
+
+ST_11: StgValue_559 (251)  [1/1] 0.00ns
+.preheader14.preheader:122  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_5), !map !643
+
+ST_11: StgValue_560 (252)  [1/1] 0.00ns
+.preheader14.preheader:123  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_4), !map !647
+
+ST_11: StgValue_561 (253)  [1/1] 0.00ns
+.preheader14.preheader:124  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_3), !map !651
+
+ST_11: StgValue_562 (254)  [1/1] 0.00ns
+.preheader14.preheader:125  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_2), !map !655
+
+ST_11: StgValue_563 (255)  [1/1] 0.00ns
+.preheader14.preheader:126  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_1), !map !659
+
+ST_11: StgValue_564 (256)  [1/1] 0.00ns
+.preheader14.preheader:127  call void (...)* @_ssdm_op_SpecBitsMap(i16* %TowerEta_0), !map !663
+
+ST_11: StgValue_565 (257)  [1/1] 0.00ns
+.preheader14.preheader:128  call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @TowerPeaks_str) nounwind
+
+ST_11: StgValue_566 (258)  [1/1] 0.00ns  loc: HCALTower.cpp:1335
+.preheader14.preheader:129  call void (...)* @_ssdm_op_SpecPipeline(i32 6, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_11: call_ret6 (668)  [1/5] 3.55ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:539  %call_ret6 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @bitonic4(i16 %p_s, i16 %p_1, i16 %p_2, i16 %p_3, i16 %p_4, i16 %p_5, i16 %p_6, i16 %p_7, i16 %p_8, i16 %p_9, i16 %p_10, i16 %p_11, i16 %p_12, i16 %p_13, i16 %p_14, i16 %p_15, i16 %p_16, i16 %p_17, i16 %p_18, i16 %p_19, i16 %p_20, i16 %p_21, i16 %p_22, i16 %p_23, i16 %p_24, i16 %p_25, i16 %p_26, i16 %p_27, i16 %p_29, i16 %p_28, i16 %Tower_1_Eta_1_0_Towe, i16 %Tower_1_Eta_0_0_Towe, i16 %Tower_1_Eta_3_0_Towe, i16 %Tower_1_Eta_2_0_Towe, i16 %Tower_1_Eta_5_0_Towe, i16 %Tower_1_Eta_4_0_Towe, i16 %Tower_1_Eta_7_0_Towe, i16 %Tower_1_Eta_6_0_Towe, i16 %Tower_1_Eta_9_0_Towe, i16 %Tower_1_Eta_8_0_Towe, i16 %Tower_1_Eta_11_0_Tow, i16 %Tower_1_Eta_10_0_Tow, i16 %Tower_1_Eta_13_0_Tow, i16 %Tower_1_Eta_12_0_Tow, i16 %Tower_1_Eta_15_0_Tow, i16 %Tower_1_Eta_14_0_Tow, i16 %Tower_1_Eta_17_0_Tow, i16 %Tower_1_Eta_16_0_Tow, i16 %Tower_1_Eta_19_0_Tow, i16 %Tower_1_Eta_18_0_Tow, i16 %Tower_1_Eta_21_0_Tow, i16 %Tower_1_Eta_20_0_Tow, i16 %Tower_1_Eta_23_0_Tow, i16 %Tower_1_Eta_22_0_Tow, i16 %tmp_371_Tower_1_Eta_s, i16 %Tower_1_Eta_24_0_tmp, i16 %tmp_373_tmp_s, i16 %tmp_372_tmp_s, i16 %tmp_375_tmp_s, i16 %tmp_374_tmp_s, i16 %Tower_1_Phi_1_0_Towe, i16 %Tower_1_Phi_0_0_Towe, i16 %Tower_1_Phi_3_0_Towe, i16 %Tower_1_Phi_2_0_Towe, i16 %Tower_1_Phi_5_0_Towe, i16 %Tower_1_Phi_4_0_Towe, i16 %Tower_1_Phi_7_0_Towe, i16 %Tower_1_Phi_6_0_Towe, i16 %Tower_1_Phi_9_0_Towe, i16 %Tower_1_Phi_8_0_Towe, i16 %Tower_1_Phi_11_0_Tow, i16 %Tower_1_Phi_10_0_Tow, i16 %Tower_1_Phi_13_0_Tow, i16 %Tower_1_Phi_12_0_Tow, i16 %Tower_1_Phi_15_0_Tow, i16 %Tower_1_Phi_14_0_Tow, i16 %Tower_1_Phi_17_0_Tow, i16 %Tower_1_Phi_16_0_Tow, i16 %Tower_1_Phi_19_0_Tow, i16 %Tower_1_Phi_18_0_Tow, i16 %Tower_1_Phi_21_0_Tow, i16 %Tower_1_Phi_20_0_Tow, i16 %Tower_1_Phi_23_0_Tow, i16 %Tower_1_Phi_22_0_Tow, i16 %regionPhi_0_assign_1, i16 %Tower_1_Phi_24_0_reg, i16 %regionPhi_2_assign_6, i16 %regionPhi_1_assign_6, i16 %regionPhi_4_assign_6, i16 %regionPhi_3_assign_6)
+
+ST_11: ClusterEta2_0_1 (669)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:540  %ClusterEta2_0_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 0
+
+ST_11: ClusterEta2_1_1 (670)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:541  %ClusterEta2_1_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 1
+
+ST_11: ClusterEta2_2_1 (671)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:542  %ClusterEta2_2_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 2
+
+ST_11: ClusterEta2_3_1 (672)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:543  %ClusterEta2_3_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 3
+
+ST_11: ClusterEta2_4_1 (673)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:544  %ClusterEta2_4_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 4
+
+ST_11: ClusterEta2_5_1 (674)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:545  %ClusterEta2_5_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 5
+
+ST_11: ClusterEta2_6_1 (675)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:546  %ClusterEta2_6_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 6
+
+ST_11: ClusterEta2_7_1 (676)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:547  %ClusterEta2_7_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 7
+
+ST_11: ClusterEta2_8_1 (677)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:548  %ClusterEta2_8_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 8
+
+ST_11: ClusterEta2_9_1 (678)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:549  %ClusterEta2_9_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 9
+
+ST_11: ClusterEta2_10_1 (679)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:550  %ClusterEta2_10_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 10
+
+ST_11: ClusterEta2_11_1 (680)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:551  %ClusterEta2_11_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 11
+
+ST_11: ClusterEta2_12_1 (681)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:552  %ClusterEta2_12_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 12
+
+ST_11: ClusterEta2_13_1 (682)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:553  %ClusterEta2_13_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 13
+
+ST_11: ClusterEta2_14_1 (683)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:554  %ClusterEta2_14_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 14
+
+ST_11: ClusterEta2_15_1 (684)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:555  %ClusterEta2_15_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 15
+
+ST_11: ClusterEta2_16_1 (685)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:556  %ClusterEta2_16_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 16
+
+ST_11: ClusterEta2_17_1 (686)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:557  %ClusterEta2_17_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 17
+
+ST_11: ClusterEta2_18_1 (687)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:558  %ClusterEta2_18_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 18
+
+ST_11: ClusterEta2_19_1 (688)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:559  %ClusterEta2_19_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 19
+
+ST_11: ClusterEta2_20_1 (689)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:560  %ClusterEta2_20_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 20
+
+ST_11: ClusterEta2_21_1 (690)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:561  %ClusterEta2_21_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 21
+
+ST_11: ClusterEta2_22_1 (691)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:562  %ClusterEta2_22_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 22
+
+ST_11: ClusterEta2_23_1 (692)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:563  %ClusterEta2_23_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 23
+
+ST_11: ClusterEta2_24 (693)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:564  %ClusterEta2_24 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 24
+
+ST_11: ClusterEta2_25_1 (694)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:565  %ClusterEta2_25_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 25
+
+ST_11: ClusterEta2_26 (695)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:566  %ClusterEta2_26 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 26
+
+ST_11: ClusterEta2_27_1 (696)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:567  %ClusterEta2_27_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 27
+
+ST_11: ClusterEta2_28 (697)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:568  %ClusterEta2_28 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 28
+
+ST_11: ClusterEta2_29_1 (698)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:569  %ClusterEta2_29_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 29
+
+ST_11: ClusterPhi2_0_1 (699)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:570  %ClusterPhi2_0_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 30
+
+ST_11: ClusterPhi2_1_1 (700)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:571  %ClusterPhi2_1_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 31
+
+ST_11: ClusterPhi2_2_1 (701)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:572  %ClusterPhi2_2_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 32
+
+ST_11: ClusterPhi2_3_1 (702)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:573  %ClusterPhi2_3_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 33
+
+ST_11: ClusterPhi2_4_1 (703)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:574  %ClusterPhi2_4_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 34
+
+ST_11: ClusterPhi2_5_1 (704)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:575  %ClusterPhi2_5_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 35
+
+ST_11: ClusterPhi2_6_1 (705)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:576  %ClusterPhi2_6_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 36
+
+ST_11: ClusterPhi2_7_1 (706)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:577  %ClusterPhi2_7_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 37
+
+ST_11: ClusterPhi2_8_1 (707)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:578  %ClusterPhi2_8_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 38
+
+ST_11: ClusterPhi2_9_1 (708)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:579  %ClusterPhi2_9_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 39
+
+ST_11: ClusterPhi2_10_1 (709)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:580  %ClusterPhi2_10_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 40
+
+ST_11: ClusterPhi2_11_1 (710)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:581  %ClusterPhi2_11_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 41
+
+ST_11: ClusterPhi2_12_1 (711)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:582  %ClusterPhi2_12_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 42
+
+ST_11: ClusterPhi2_13_1 (712)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:583  %ClusterPhi2_13_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 43
+
+ST_11: ClusterPhi2_14_1 (713)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:584  %ClusterPhi2_14_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 44
+
+ST_11: ClusterPhi2_15_1 (714)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:585  %ClusterPhi2_15_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 45
+
+ST_11: ClusterPhi2_16_1 (715)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:586  %ClusterPhi2_16_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 46
+
+ST_11: ClusterPhi2_17_1 (716)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:587  %ClusterPhi2_17_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 47
+
+ST_11: ClusterPhi2_18_1 (717)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:588  %ClusterPhi2_18_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 48
+
+ST_11: ClusterPhi2_19_1 (718)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:589  %ClusterPhi2_19_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 49
+
+ST_11: ClusterPhi2_20_1 (719)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:590  %ClusterPhi2_20_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 50
+
+ST_11: ClusterPhi2_21_1 (720)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:591  %ClusterPhi2_21_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 51
+
+ST_11: ClusterPhi2_22_1 (721)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:592  %ClusterPhi2_22_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 52
+
+ST_11: ClusterPhi2_23_1 (722)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:593  %ClusterPhi2_23_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 53
+
+ST_11: ClusterPhi2_24_1 (723)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:594  %ClusterPhi2_24_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 54
+
+ST_11: ClusterPhi2_25_1 (724)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:595  %ClusterPhi2_25_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 55
+
+ST_11: ClusterPhi2_26_1 (725)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:596  %ClusterPhi2_26_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 56
+
+ST_11: ClusterPhi2_27_1 (726)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:597  %ClusterPhi2_27_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 57
+
+ST_11: ClusterPhi2_28_1 (727)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:598  %ClusterPhi2_28_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 58
+
+ST_11: ClusterPhi2_29_1 (728)  [1/1] 0.00ns  loc: HCALTower.cpp:1477
+.preheader14.preheader:599  %ClusterPhi2_29_1 = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret6, 59
+
+ST_11: StgValue_628 (729)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:600  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_0, i16 %ClusterEta2_0_1)
+
+ST_11: StgValue_629 (730)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:601  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_0, i16 %ClusterPhi2_0_1)
+
+ST_11: StgValue_630 (731)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:602  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_1, i16 %ClusterEta2_1_1)
+
+ST_11: StgValue_631 (732)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:603  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_1, i16 %ClusterPhi2_1_1)
+
+ST_11: StgValue_632 (733)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:604  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_2, i16 %ClusterEta2_2_1)
+
+ST_11: StgValue_633 (734)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:605  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_2, i16 %ClusterPhi2_2_1)
+
+ST_11: StgValue_634 (735)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:606  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_3, i16 %ClusterEta2_3_1)
+
+ST_11: StgValue_635 (736)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:607  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_3, i16 %ClusterPhi2_3_1)
+
+ST_11: StgValue_636 (737)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:608  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_4, i16 %ClusterEta2_4_1)
+
+ST_11: StgValue_637 (738)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:609  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_4, i16 %ClusterPhi2_4_1)
+
+ST_11: StgValue_638 (739)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:610  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_5, i16 %ClusterEta2_5_1)
+
+ST_11: StgValue_639 (740)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:611  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_5, i16 %ClusterPhi2_5_1)
+
+ST_11: StgValue_640 (741)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:612  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_6, i16 %ClusterEta2_6_1)
+
+ST_11: StgValue_641 (742)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:613  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_6, i16 %ClusterPhi2_6_1)
+
+ST_11: StgValue_642 (743)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:614  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_7, i16 %ClusterEta2_7_1)
+
+ST_11: StgValue_643 (744)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:615  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_7, i16 %ClusterPhi2_7_1)
+
+ST_11: StgValue_644 (745)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:616  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_8, i16 %ClusterEta2_8_1)
+
+ST_11: StgValue_645 (746)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:617  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_8, i16 %ClusterPhi2_8_1)
+
+ST_11: StgValue_646 (747)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:618  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_9, i16 %ClusterEta2_9_1)
+
+ST_11: StgValue_647 (748)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:619  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_9, i16 %ClusterPhi2_9_1)
+
+ST_11: StgValue_648 (749)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:620  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_10, i16 %ClusterEta2_10_1)
+
+ST_11: StgValue_649 (750)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:621  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_10, i16 %ClusterPhi2_10_1)
+
+ST_11: StgValue_650 (751)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:622  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_11, i16 %ClusterEta2_11_1)
+
+ST_11: StgValue_651 (752)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:623  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_11, i16 %ClusterPhi2_11_1)
+
+ST_11: StgValue_652 (753)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:624  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_12, i16 %ClusterEta2_12_1)
+
+ST_11: StgValue_653 (754)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:625  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_12, i16 %ClusterPhi2_12_1)
+
+ST_11: StgValue_654 (755)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:626  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_13, i16 %ClusterEta2_13_1)
+
+ST_11: StgValue_655 (756)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:627  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_13, i16 %ClusterPhi2_13_1)
+
+ST_11: StgValue_656 (757)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:628  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_14, i16 %ClusterEta2_14_1)
+
+ST_11: StgValue_657 (758)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:629  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_14, i16 %ClusterPhi2_14_1)
+
+ST_11: StgValue_658 (759)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:630  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_15, i16 %ClusterEta2_15_1)
+
+ST_11: StgValue_659 (760)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:631  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_15, i16 %ClusterPhi2_15_1)
+
+ST_11: StgValue_660 (761)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:632  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_16, i16 %ClusterEta2_16_1)
+
+ST_11: StgValue_661 (762)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:633  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_16, i16 %ClusterPhi2_16_1)
+
+ST_11: StgValue_662 (763)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:634  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_17, i16 %ClusterEta2_17_1)
+
+ST_11: StgValue_663 (764)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:635  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_17, i16 %ClusterPhi2_17_1)
+
+ST_11: StgValue_664 (765)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:636  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_18, i16 %ClusterEta2_18_1)
+
+ST_11: StgValue_665 (766)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:637  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_18, i16 %ClusterPhi2_18_1)
+
+ST_11: StgValue_666 (767)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:638  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_19, i16 %ClusterEta2_19_1)
+
+ST_11: StgValue_667 (768)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:639  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_19, i16 %ClusterPhi2_19_1)
+
+ST_11: StgValue_668 (769)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:640  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_20, i16 %ClusterEta2_20_1)
+
+ST_11: StgValue_669 (770)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:641  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_20, i16 %ClusterPhi2_20_1)
+
+ST_11: StgValue_670 (771)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:642  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_21, i16 %ClusterEta2_21_1)
+
+ST_11: StgValue_671 (772)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:643  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_21, i16 %ClusterPhi2_21_1)
+
+ST_11: StgValue_672 (773)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:644  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_22, i16 %ClusterEta2_22_1)
+
+ST_11: StgValue_673 (774)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:645  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_22, i16 %ClusterPhi2_22_1)
+
+ST_11: StgValue_674 (775)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:646  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_23, i16 %ClusterEta2_23_1)
+
+ST_11: StgValue_675 (776)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:647  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_23, i16 %ClusterPhi2_23_1)
+
+ST_11: StgValue_676 (777)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:648  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_24, i16 %ClusterEta2_24)
+
+ST_11: StgValue_677 (778)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:649  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_24, i16 %ClusterPhi2_24_1)
+
+ST_11: StgValue_678 (779)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:650  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_25, i16 %ClusterEta2_25_1)
+
+ST_11: StgValue_679 (780)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:651  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_25, i16 %ClusterPhi2_25_1)
+
+ST_11: StgValue_680 (781)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:652  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_26, i16 %ClusterEta2_26)
+
+ST_11: StgValue_681 (782)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:653  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_26, i16 %ClusterPhi2_26_1)
+
+ST_11: StgValue_682 (783)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:654  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_27, i16 %ClusterEta2_27_1)
+
+ST_11: StgValue_683 (784)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:655  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_27, i16 %ClusterPhi2_27_1)
+
+ST_11: StgValue_684 (785)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:656  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_28, i16 %ClusterEta2_28)
+
+ST_11: StgValue_685 (786)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:657  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_28, i16 %ClusterPhi2_28_1)
+
+ST_11: StgValue_686 (787)  [1/1] 0.00ns  loc: HCALTower.cpp:1482
+.preheader14.preheader:658  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerEta_29, i16 %ClusterEta2_29_1)
+
+ST_11: StgValue_687 (788)  [1/1] 0.00ns  loc: HCALTower.cpp:1483
+.preheader14.preheader:659  call void @_ssdm_op_Write.ap_auto.i16P(i16* %TowerPhi_29, i16 %ClusterPhi2_29_1)
+
+ST_11: StgValue_688 (789)  [1/1] 0.00ns  loc: HCALTower.cpp:1486
+.preheader14.preheader:660  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.36ns
+The critical path consists of the following:
+	wire read on port 'towerET_0_0' (HCALTower.cpp:1383) [259]  (0 ns)
+	'call' operation ('call_ret1', HCALTower.cpp:1387) to 'getTowerPeaks3x4' [271]  (4.36 ns)
+
+ <State 2>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('call_ret1', HCALTower.cpp:1387) to 'getTowerPeaks3x4' [271]  (8.75 ns)
+
+ <State 3>: 7.3ns
+The critical path consists of the following:
+	'call' operation ('call_ret1', HCALTower.cpp:1387) to 'getTowerPeaks3x4' [271]  (7.3 ns)
+
+ <State 4>: 4.36ns
+The critical path consists of the following:
+	wire read on port 'towerET_9_0' (HCALTower.cpp:1383) [348]  (0 ns)
+	'call' operation ('call_ret4', HCALTower.cpp:1387) to 'getTowerPeaks3x4' [360]  (4.36 ns)
+
+ <State 5>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('call_ret4', HCALTower.cpp:1387) to 'getTowerPeaks3x4' [360]  (8.75 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	'call' operation ('call_ret4', HCALTower.cpp:1387) to 'getTowerPeaks3x4' [360]  (7.3 ns)
+
+ <State 7>: 8.18ns
+The critical path consists of the following:
+	'add' operation ('Tower_1_Eta_load_5_t', HCALTower.cpp:1387) [463]  (1.27 ns)
+	'mux' operation ('ClusterDeposits2[4]', HCALTower.cpp:1383) [466]  (2.2 ns)
+	'icmp' operation ('tmp_389_1', HCALTower.cpp:1449) [577]  (1.29 ns)
+	'select' operation ('Tower_1_Phi_4_0_Towe', HCALTower.cpp:1449) [578]  (0.71 ns)
+	'call' operation ('call_ret6', HCALTower.cpp:1477) to 'bitonic4' [668]  (2.71 ns)
+
+ <State 8>: 8.72ns
+The critical path consists of the following:
+	'call' operation ('call_ret6', HCALTower.cpp:1477) to 'bitonic4' [668]  (8.72 ns)
+
+ <State 9>: 8.72ns
+The critical path consists of the following:
+	'call' operation ('call_ret6', HCALTower.cpp:1477) to 'bitonic4' [668]  (8.72 ns)
+
+ <State 10>: 8.72ns
+The critical path consists of the following:
+	'call' operation ('call_ret6', HCALTower.cpp:1477) to 'bitonic4' [668]  (8.72 ns)
+
+ <State 11>: 3.55ns
+The critical path consists of the following:
+	'call' operation ('call_ret6', HCALTower.cpp:1477) to 'bitonic4' [668]  (3.55 ns)
+	wire write on port 'TowerEta_26' (HCALTower.cpp:1482) [781]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

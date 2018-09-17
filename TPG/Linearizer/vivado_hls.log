@@ -1,0 +1,15 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.4/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'psiddire' on host 'pcminn34.cern.ch' (Linux_x86_64 version 2.6.32-754.2.1.el6.x86_64) on Mon Sep 17 15:39:07 CEST 2018
+INFO: [HLS 200-10] On os "Scientific Linux CERN SLC release 6.10 (Carbon)"
+INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/Linearizer'
+INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/Linearizer/Linearizer.prj'.
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/Linearizer/Linearizer.prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7vx690tffg1927-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+Using: #define uint10_t uint16_t
+Test succeeded
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

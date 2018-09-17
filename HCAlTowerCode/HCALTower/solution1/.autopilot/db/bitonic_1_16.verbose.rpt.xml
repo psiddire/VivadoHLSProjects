@@ -1,0 +1,225 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'bitonic_1_16'" level="0">
+<item name = "Date">Mon Aug 20 17:22:24 2018
+</item>
+<item name = "Version">2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)</item>
+<item name = "Project">HCALTower</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.30, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 470</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, -, -</column>
+<specialColumn name="Available">2940, 3600, 866400, 433200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_102_1_fu_738_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_107_1_fu_768_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_112_1_fu_852_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_112_2_fu_906_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_6_fu_414_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_7_fu_630_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_89_4_fu_294_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_89_5_fu_324_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_89_6_fu_354_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_89_7_fu_384_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_8_fu_684_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_93_1_fu_468_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_93_2_fu_522_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_93_3_fu_576_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_9_fu_798_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="Cluster_1_Deposits12_4_fu_698_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits2_2_fu_636_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits2_s_fu_536_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits3_2_fu_690_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits3_s_fu_590_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits4_s_fu_420_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits5_fu_482_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits5_s_fu_474_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits6_2_fu_744_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits6_s_fu_528_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits7_2_fu_774_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits7_s_fu_582_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits_1_9_fu_644_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Deposits_fu_428_p3">select, 0, 0, 16, 1, 16</column>
+<column name="Cluster_1_Eta16_0_Cl_fu_498_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta16_1_Cl_fu_714_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta16_2_Cl_fu_804_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta17_0_Cl_fu_552_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta17_1_Cl_fu_652_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta17_2_Cl_fu_870_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta18_0_Cl_fu_606_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta18_1_Cl_fu_706_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta18_2_Cl_fu_858_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta19_0_Cl_fu_436_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta2025_0_s_fu_490_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta2025_2_s_fu_912_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta21_0_Cl_fu_544_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta21_1_Cl_fu_752_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta22_0_Cl_fu_598_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta22_1_Cl_fu_782_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta_0_Clus_fu_444_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta_1_Clus_fu_660_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Eta_2_Clus_fu_816_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi31_0_Cl_fu_514_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi31_1_Cl_fu_730_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi31_2_Cl_fu_828_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi32_0_Cl_fu_568_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi32_1_Cl_fu_668_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi32_2_Cl_fu_894_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi33_0_Cl_fu_622_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi33_1_Cl_fu_722_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi33_2_Cl_fu_882_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi34_0_Cl_fu_452_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi35_0_Cl_fu_506_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi35_2_Cl_fu_924_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi36_0_Cl_fu_560_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi36_1_Cl_fu_760_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi3744_0_s_fu_614_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi3744_1_s_fu_790_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi_0_Clus_fu_460_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi_1_Clus_fu_676_p3">select, 0, 0, 2, 1, 2</column>
+<column name="Cluster_1_Phi_2_Clus_fu_840_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read12_read4_fu_300_p3">select, 0, 0, 16, 1, 16</column>
+<column name="p_read13_read5_fu_330_p3">select, 0, 0, 16, 1, 16</column>
+<column name="p_read14_read6_fu_360_p3">select, 0, 0, 16, 1, 16</column>
+<column name="p_read15_read7_fu_390_p3">select, 0, 0, 16, 1, 16</column>
+<column name="p_read28_read_fu_308_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read29_read_fu_338_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read30_read_fu_368_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read31_read_fu_398_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read44_read_fu_316_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read45_read_fu_346_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read46_read_fu_376_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_read47_read_fu_406_p3">select, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="Cluster_1_Deposits_0">in, 16, ap_none, Cluster_1_Deposits_0, scalar</column>
+<column name="Cluster_1_Deposits_1">in, 16, ap_none, Cluster_1_Deposits_1, scalar</column>
+<column name="Cluster_1_Deposits_2">in, 16, ap_none, Cluster_1_Deposits_2, scalar</column>
+<column name="Cluster_1_Deposits_3">in, 16, ap_none, Cluster_1_Deposits_3, scalar</column>
+<column name="Cluster_1_Deposits_4">in, 16, ap_none, Cluster_1_Deposits_4, scalar</column>
+<column name="Cluster_1_Deposits_5">in, 16, ap_none, Cluster_1_Deposits_5, scalar</column>
+<column name="Cluster_1_Deposits_6">in, 16, ap_none, Cluster_1_Deposits_6, scalar</column>
+<column name="Cluster_1_Deposits_7">in, 16, ap_none, Cluster_1_Deposits_7, scalar</column>
+<column name="Cluster_1_Deposits_1_12">in, 16, ap_none, Cluster_1_Deposits_1_12, scalar</column>
+<column name="Cluster_1_Deposits_1_13">in, 16, ap_none, Cluster_1_Deposits_1_13, scalar</column>
+<column name="Cluster_1_Deposits_1_14">in, 16, ap_none, Cluster_1_Deposits_1_14, scalar</column>
+<column name="Cluster_1_Deposits_1_15">in, 16, ap_none, Cluster_1_Deposits_1_15, scalar</column>
+<column name="Cluster_1_Eta_0_rea">in, 2, ap_none, Cluster_1_Eta_0_rea, scalar</column>
+<column name="Cluster_1_Eta_1_rea">in, 2, ap_none, Cluster_1_Eta_1_rea, scalar</column>
+<column name="Cluster_1_Eta_2_rea">in, 2, ap_none, Cluster_1_Eta_2_rea, scalar</column>
+<column name="Cluster_1_Eta_3_rea">in, 2, ap_none, Cluster_1_Eta_3_rea, scalar</column>
+<column name="Cluster_1_Eta_4_rea">in, 2, ap_none, Cluster_1_Eta_4_rea, scalar</column>
+<column name="Cluster_1_Eta_5_rea">in, 2, ap_none, Cluster_1_Eta_5_rea, scalar</column>
+<column name="Cluster_1_Eta_6_rea">in, 2, ap_none, Cluster_1_Eta_6_rea, scalar</column>
+<column name="Cluster_1_Eta_7_rea">in, 2, ap_none, Cluster_1_Eta_7_rea, scalar</column>
+<column name="Cluster_1_Eta_12_re">in, 2, ap_none, Cluster_1_Eta_12_re, scalar</column>
+<column name="Cluster_1_Eta_13_re">in, 2, ap_none, Cluster_1_Eta_13_re, scalar</column>
+<column name="Cluster_1_Eta_14_re">in, 2, ap_none, Cluster_1_Eta_14_re, scalar</column>
+<column name="Cluster_1_Eta_15_re">in, 2, ap_none, Cluster_1_Eta_15_re, scalar</column>
+<column name="Cluster_1_Phi_0_rea">in, 2, ap_none, Cluster_1_Phi_0_rea, scalar</column>
+<column name="Cluster_1_Phi_1_rea">in, 2, ap_none, Cluster_1_Phi_1_rea, scalar</column>
+<column name="Cluster_1_Phi_2_rea">in, 2, ap_none, Cluster_1_Phi_2_rea, scalar</column>
+<column name="Cluster_1_Phi_3_rea">in, 2, ap_none, Cluster_1_Phi_3_rea, scalar</column>
+<column name="Cluster_1_Phi_4_rea">in, 2, ap_none, Cluster_1_Phi_4_rea, scalar</column>
+<column name="Cluster_1_Phi_5_rea">in, 2, ap_none, Cluster_1_Phi_5_rea, scalar</column>
+<column name="Cluster_1_Phi_6_rea">in, 2, ap_none, Cluster_1_Phi_6_rea, scalar</column>
+<column name="Cluster_1_Phi_7_rea">in, 2, ap_none, Cluster_1_Phi_7_rea, scalar</column>
+<column name="Cluster_1_Phi_12_re">in, 2, ap_none, Cluster_1_Phi_12_re, scalar</column>
+<column name="Cluster_1_Phi_13_re">in, 2, ap_none, Cluster_1_Phi_13_re, scalar</column>
+<column name="Cluster_1_Phi_14_re">in, 2, ap_none, Cluster_1_Phi_14_re, scalar</column>
+<column name="Cluster_1_Phi_15_re">in, 2, ap_none, Cluster_1_Phi_15_re, scalar</column>
+<column name="ap_return_0">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_1">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_2">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_3">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_4">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_5">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_6">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_7">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_8">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+<column name="ap_return_9">out, 16, ap_ctrl_hs, bitonic_1_16, return value</column>
+</table>
+</item>
+</section>
+</profile>

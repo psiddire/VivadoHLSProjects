@@ -1,0 +1,7 @@
+Running: xsim.dir/TowerPeaks/xsimk -simmode gui -wdb TowerPeaks.wdb -simrunnum 0 -socket 55467
+Design successfully loaded
+Design Loading Memory Usage: 46628 KB (Peak: 47980 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 130376 KB (Peak: 187948 KB)
+Simulation CPU Usage: 30 ms

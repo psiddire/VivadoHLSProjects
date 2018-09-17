@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2016.4
+Project:             MakeHT
+Solution:            solution1
+Device target:       xc7vx690tffg1927-2
+Report date:         Tue Aug 21 12:42:50 CEST 2018
+
+#=== Post-Implementation Resource usage ===
+SLICE:         5333
+LUT:          16912
+FF:           10629
+DSP:              0
+BRAM:            41
+SRL:           1724
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    3.866
+CP achieved post-implemetation:    9.029
+Timing met

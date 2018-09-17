@@ -1,0 +1,12 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+vhdl xil_defaultlib "TowerPeaks.autotb.vhd"
+vhdl xil_defaultlib "bitonic_1_16.vhd"
+vhdl xil_defaultlib "bitonic_1_8.vhd"
+vhdl xil_defaultlib "getTowerPeaks3x4.vhd"
+vhdl xil_defaultlib "bitonic32.vhd"
+vhdl xil_defaultlib "bitonic16.vhd"
+vhdl xil_defaultlib "bitonic8.vhd"
+vhdl xil_defaultlib "bitonic4.vhd"
+vhdl xil_defaultlib "TowerPeaks.vhd"
+vhdl xil_defaultlib "TowerPeaks_mux_68bkb.vhd"
+

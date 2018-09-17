@@ -1,0 +1,1328 @@
+
+
+================================================================
+== Vivado HLS Report for 'MakeHT'
+================================================================
+* Date:           Wed Aug 22 18:04:08 2018
+
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
+* Project:        MakeHT
+* Solution:       solution2
+* Product family: virtex7
+* Target device:  xc7vx690tffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.69|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   79|   79|   80|   80| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 2, States = { 1 2 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 2.69ns
+ST_1: StgValue_3 (824)  [2/2] 2.69ns
+codeRepl:402  call fastcc void @Block_codeRepl84651_(i16* %rgnET_0, i16* %rgnET_1, i16* %rgnET_2, i16* %rgnET_3, i16* %rgnET_4, i16* %rgnET_5, i16* %rgnET_6, i16* %rgnET_7, i16* %rgnET_8, i16* %rgnET_9, i16* %rgnET_10, i16* %rgnET_11, i16* %rgnET_12, i16* %rgnET_13, i16* %rgnET_14, i16* %rgnET_15, i16* %rgnET_16, i16* %rgnET_17, i16* %rgnET_18, i16* %rgnET_19, i16* %rgnET_20, i16* %rgnET_21, i16* %rgnET_22, i16* %rgnET_23, i16* %rgnET_24, i16* %rgnET_25, i16* %rgnET_26, i16* %rgnET_27, i16* %rgnET_28, i16* %rgnET_29, i16* %rgnET_30, i16* %rgnET_31, i16* %rgnET_32, i16* %rgnET_33, i16* %rgnET_34, i16* %rgnET_35, i16* %rgnET_36, i16* %rgnET_37, i16* %rgnET_38, i16* %rgnET_39, i16* %rgnET_40, i16* %rgnET_41, i16* %rgnET_42, i16* %rgnET_43, i16* %rgnET_44, i16* %rgnET_45, i16* %rgnET_46, i16* %rgnET_47, i16* %rgnET_48, i16* %rgnET_49, i16* %rgnET_50, i16* %rgnET_51, i16* %rgnET_52, i16* %rgnET_53, i16* %rgnET_54, i16* %rgnET_55, i16* %rgnET_56, i16* %rgnET_57, i16* %rgnET_58, i16* %rgnET_59, i16* %rgnET_60, i16* %rgnET_61, i16* %rgnET_62, i16* %rgnET_63, i16* %rgnET_64, i16* %rgnET_65, i16* %rgnET_66, i16* %rgnET_67, i16* %rgnET_68, i16* %rgnET_69, i16* %rgnET_70, i16* %rgnET_71, i16* %rgnET_72, i16* %rgnET_73, i16* %rgnET_74, i16* %rgnET_75, i16* %rgnET_76, i16* %rgnET_77, i16* %rgnET_78, i16* %rgnET_79, i16* %rgnET_80, i16* %rgnET_81, i16* %rgnET_82, i16* %rgnET_83, i16* %rgnET_84, i16* %rgnET_85, i16* %rgnET_86, i16* %rgnET_87, i16* %rgnET_88, i16* %rgnET_89, i16* %rgnET_90, i16* %rgnET_91, i16* %rgnET_92, i16* %rgnET_93, i16* %rgnET_94, i16* %rgnET_95, i16* %rgnET_96, i16* %rgnET_97, i16* %rgnET_98, i16* %rgnET_99, i16* %rgnET_100, i16* %rgnET_101, i16* %rgnET_102, i16* %rgnET_103, i16* %rgnET_104, i16* %rgnET_105, i16* %rgnET_106, i16* %rgnET_107, i16* %rgnET_108, i16* %rgnET_109, i16* %rgnET_110, i16* %rgnET_111, i16* %rgnET_112, i16* %rgnET_113, i16* %rgnET_114, i16* %rgnET_115, i16* %rgnET_116, i16* %rgnET_117, i16* %rgnET_118, i16* %rgnET_119, i16* %rgnET_120, i16* %rgnET_121, i16* %rgnET_122, i16* %rgnET_123, i16* %rgnET_124, i16* %rgnET_125, i16* %rgnET_126, i16* %rgnET_127, i16* %rgnET_128, i16* %rgnET_129, i16* %rgnET_130, i16* %rgnET_131, i16* %rgnET_132, i16* %rgnET_133, i16* %rgnET_134, i16* %rgnET_135, i16* %rgnET_136, i16* %rgnET_137, i16* %rgnET_138, i16* %rgnET_139, i16* %rgnET_140, i16* %rgnET_141, i16* %rgnET_142, i16* %rgnET_143, i16* %rgnET_144, i16* %rgnET_145, i16* %rgnET_146, i16* %rgnET_147, i16* %rgnET_148, i16* %rgnET_149, i16* %rgnET_150, i16* %rgnET_151, i16* %rgnET_152, i16* %rgnET_153, i16* %rgnET_154, i16* %rgnET_155, i16* %rgnET_156, i16* %rgnET_157, i16* %rgnET_158, i16* %rgnET_159, i16* %rgnET_160, i16* %rgnET_161, i16* %rgnET_162, i16* %rgnET_163, i16* %rgnET_164, i16* %rgnET_165, i16* %rgnET_166, i16* %rgnET_167, i16* %rgnET_168, i16* %rgnET_169, i16* %rgnET_170, i16* %rgnET_171, i16* %rgnET_172, i16* %rgnET_173, i16* %rgnET_174, i16* %rgnET_175, i16* %rgnET_176, i16* %rgnET_177, i16* %rgnET_178, i16* %rgnET_179, i16* %rgnET_180, i16* %rgnET_181, i16* %rgnET_182, i16* %rgnET_183, i16* %rgnET_184, i16* %rgnET_185, i16* %rgnET_186, i16* %rgnET_187, i16* %rgnET_188, i16* %rgnET_189, i16* %rgnET_190, i16* %rgnET_191, i16* %rgnET_192, i16* %rgnET_193, i16* %rgnET_194, i16* %rgnET_195, i16* %rgnET_196, i16* %rgnET_197, i16* %rgnET_198, i16* %rgnET_199, i16* %rgnET_200, i16* %rgnET_201, i16* %rgnET_202, i16* %rgnET_203, i16* %rgnET_204, i16* %rgnET_205, i16* %rgnET_206, i16* %rgnET_207, i16* %rgnET_208, i16* %rgnET_209, i16* %rgnET_210, i16* %rgnET_211, i16* %rgnET_212, i16* %rgnET_213, i16* %rgnET_214, i16* %rgnET_215, i16* %rgnET_216, i16* %rgnET_217, i16* %rgnET_218, i16* %rgnET_219, i16* %rgnET_220, i16* %rgnET_221, i16* %rgnET_222, i16* %rgnET_223, i16* %rgnET_224, i16* %rgnET_225, i16* %rgnET_226, i16* %rgnET_227, i16* %rgnET_228, i16* %rgnET_229, i16* %rgnET_230, i16* %rgnET_231, i16* %rgnET_232, i16* %rgnET_233, i16* %rgnET_234, i16* %rgnET_235, i16* %rgnET_236, i16* %rgnET_237, i16* %rgnET_238, i16* %rgnET_239, i16* %rgnET_240, i16* %rgnET_241, i16* %rgnET_242, i16* %rgnET_243, i16* %rgnET_244, i16* %rgnET_245, i16* %rgnET_246, i16* %rgnET_247, i16* %rgnET_248, i16* %rgnET_249, i16* %rgnET_250, i16* %rgnET_251, i16* %hfET_0, i16* %hfET_1, i16* %hfET_2, i16* %hfET_3, i16* %hfET_4, i16* %hfET_5, i16* %hfET_6, i16* %hfET_7, i16* %hfET_8, i16* %hfET_9, i16* %hfET_10, i16* %hfET_11, i16* %hfET_12, i16* %hfET_13, i16* %hfET_14, i16* %hfET_15, i16* %hfET_16, i16* %hfET_17, i16* %hfET_18, i16* %hfET_19, i16* %hfET_20, i16* %hfET_21, i16* %hfET_22, i16* %hfET_23, i16* %hfET_24, i16* %hfET_25, i16* %hfET_26, i16* %hfET_27, i16* %hfET_28, i16* %hfET_29, i16* %hfET_30, i16* %hfET_31, i16* %hfET_32, i16* %hfET_33, i16* %hfET_34, i16* %hfET_35, i16* %hfET_36, i16* %hfET_37, i16* %hfET_38, i16* %hfET_39, i16* %hfET_40, i16* %hfET_41, i16* %hfET_42, i16* %hfET_43, i16* %hfET_44, i16* %hfET_45, i16* %hfET_46, i16* %hfET_47, i16* %hfET_48, i16* %hfET_49, i16* %hfET_50, i16* %hfET_51, i16* %hfET_52, i16* %hfET_53, i16* %hfET_54, i16* %hfET_55, i16* %hfET_56, i16* %hfET_57, i16* %hfET_58, i16* %hfET_59, i16* %hfET_60, i16* %hfET_61, i16* %hfET_62, i16* %hfET_63, i16* %hfET_64, i16* %hfET_65, i16* %hfET_66, i16* %hfET_67, i16* %hfET_68, i16* %hfET_69, i16* %hfET_70, i16* %hfET_71, i16* %hfET_72, i16* %hfET_73, i16* %hfET_74, i16* %hfET_75, i16* %hfET_76, i16* %hfET_77, i16* %hfET_78, i16* %hfET_79, i16* %hfET_80, i16* %hfET_81, i16* %hfET_82, i16* %hfET_83, i16* %hfET_84, i16* %hfET_85, i16* %hfET_86, i16* %hfET_87, i16* %hfET_88, i16* %hfET_89, i16* %hfET_90, i16* %hfET_91, i16* %hfET_92, i16* %hfET_93, i16* %hfET_94, i16* %hfET_95, i16* %hfET_96, i16* %hfET_97, i16* %hfET_98, i16* %hfET_99, i16* %hfET_100, i16* %hfET_101, i16* %hfET_102, i16* %hfET_103, i16* %hfET_104, i16* %hfET_105, i16* %hfET_106, i16* %hfET_107, i16* %hfET_108, i16* %hfET_109, i16* %hfET_110, i16* %hfET_111, i16* %hfET_112, i16* %hfET_113, i16* %hfET_114, i16* %hfET_115, i16* %hfET_116, i16* %hfET_117, i16* %hfET_118, i16* %hfET_119, i16* %hfET_120, i16* %hfET_121, i16* %hfET_122, i16* %hfET_123, i16* %hfET_124, i16* %hfET_125, i16* %hfET_126, i16* %hfET_127, i16* %hfET_128, i16* %hfET_129, i16* %hfET_130, i16* %hfET_131, i16* %hfET_132, i16* %hfET_133, i16* %hfET_134, i16* %hfET_135, i16* %hfET_136, i16* %hfET_137, i16* %hfET_138, i16* %hfET_139, i16* %hfET_140, i16* %hfET_141, i16* %hfET_142, i16* %hfET_143, i16* %HT_0, i16* %HT_1, i16* %HT_2)
+
+
+ <State 2>: 8.43ns
+ST_2: StgValue_4 (422)  [1/1] 0.00ns  loc: MakeHT.cc:6
+codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
+
+ST_2: StgValue_5 (423)  [1/1] 0.00ns
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i16* %HT_2), !map !20
+
+ST_2: StgValue_6 (424)  [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap(i16* %HT_1), !map !26
+
+ST_2: StgValue_7 (425)  [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i16* %HT_0), !map !32
+
+ST_2: StgValue_8 (426)  [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_143), !map !38
+
+ST_2: StgValue_9 (427)  [1/1] 0.00ns
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_142), !map !44
+
+ST_2: StgValue_10 (428)  [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_141), !map !50
+
+ST_2: StgValue_11 (429)  [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_140), !map !56
+
+ST_2: StgValue_12 (430)  [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_139), !map !62
+
+ST_2: StgValue_13 (431)  [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_138), !map !68
+
+ST_2: StgValue_14 (432)  [1/1] 0.00ns
+codeRepl:10  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_137), !map !74
+
+ST_2: StgValue_15 (433)  [1/1] 0.00ns
+codeRepl:11  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_136), !map !80
+
+ST_2: StgValue_16 (434)  [1/1] 0.00ns
+codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_135), !map !86
+
+ST_2: StgValue_17 (435)  [1/1] 0.00ns
+codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_134), !map !92
+
+ST_2: StgValue_18 (436)  [1/1] 0.00ns
+codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_133), !map !98
+
+ST_2: StgValue_19 (437)  [1/1] 0.00ns
+codeRepl:15  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_132), !map !104
+
+ST_2: StgValue_20 (438)  [1/1] 0.00ns
+codeRepl:16  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_131), !map !110
+
+ST_2: StgValue_21 (439)  [1/1] 0.00ns
+codeRepl:17  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_130), !map !116
+
+ST_2: StgValue_22 (440)  [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_129), !map !122
+
+ST_2: StgValue_23 (441)  [1/1] 0.00ns
+codeRepl:19  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_128), !map !128
+
+ST_2: StgValue_24 (442)  [1/1] 0.00ns
+codeRepl:20  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_127), !map !134
+
+ST_2: StgValue_25 (443)  [1/1] 0.00ns
+codeRepl:21  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_126), !map !140
+
+ST_2: StgValue_26 (444)  [1/1] 0.00ns
+codeRepl:22  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_125), !map !146
+
+ST_2: StgValue_27 (445)  [1/1] 0.00ns
+codeRepl:23  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_124), !map !152
+
+ST_2: StgValue_28 (446)  [1/1] 0.00ns
+codeRepl:24  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_123), !map !158
+
+ST_2: StgValue_29 (447)  [1/1] 0.00ns
+codeRepl:25  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_122), !map !164
+
+ST_2: StgValue_30 (448)  [1/1] 0.00ns
+codeRepl:26  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_121), !map !170
+
+ST_2: StgValue_31 (449)  [1/1] 0.00ns
+codeRepl:27  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_120), !map !176
+
+ST_2: StgValue_32 (450)  [1/1] 0.00ns
+codeRepl:28  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_119), !map !182
+
+ST_2: StgValue_33 (451)  [1/1] 0.00ns
+codeRepl:29  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_118), !map !188
+
+ST_2: StgValue_34 (452)  [1/1] 0.00ns
+codeRepl:30  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_117), !map !194
+
+ST_2: StgValue_35 (453)  [1/1] 0.00ns
+codeRepl:31  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_116), !map !200
+
+ST_2: StgValue_36 (454)  [1/1] 0.00ns
+codeRepl:32  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_115), !map !206
+
+ST_2: StgValue_37 (455)  [1/1] 0.00ns
+codeRepl:33  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_114), !map !212
+
+ST_2: StgValue_38 (456)  [1/1] 0.00ns
+codeRepl:34  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_113), !map !218
+
+ST_2: StgValue_39 (457)  [1/1] 0.00ns
+codeRepl:35  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_112), !map !224
+
+ST_2: StgValue_40 (458)  [1/1] 0.00ns
+codeRepl:36  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_111), !map !230
+
+ST_2: StgValue_41 (459)  [1/1] 0.00ns
+codeRepl:37  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_110), !map !236
+
+ST_2: StgValue_42 (460)  [1/1] 0.00ns
+codeRepl:38  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_109), !map !242
+
+ST_2: StgValue_43 (461)  [1/1] 0.00ns
+codeRepl:39  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_108), !map !248
+
+ST_2: StgValue_44 (462)  [1/1] 0.00ns
+codeRepl:40  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_107), !map !254
+
+ST_2: StgValue_45 (463)  [1/1] 0.00ns
+codeRepl:41  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_106), !map !260
+
+ST_2: StgValue_46 (464)  [1/1] 0.00ns
+codeRepl:42  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_105), !map !266
+
+ST_2: StgValue_47 (465)  [1/1] 0.00ns
+codeRepl:43  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_104), !map !272
+
+ST_2: StgValue_48 (466)  [1/1] 0.00ns
+codeRepl:44  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_103), !map !278
+
+ST_2: StgValue_49 (467)  [1/1] 0.00ns
+codeRepl:45  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_102), !map !284
+
+ST_2: StgValue_50 (468)  [1/1] 0.00ns
+codeRepl:46  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_101), !map !290
+
+ST_2: StgValue_51 (469)  [1/1] 0.00ns
+codeRepl:47  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_100), !map !296
+
+ST_2: StgValue_52 (470)  [1/1] 0.00ns
+codeRepl:48  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_99), !map !302
+
+ST_2: StgValue_53 (471)  [1/1] 0.00ns
+codeRepl:49  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_98), !map !308
+
+ST_2: StgValue_54 (472)  [1/1] 0.00ns
+codeRepl:50  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_97), !map !314
+
+ST_2: StgValue_55 (473)  [1/1] 0.00ns
+codeRepl:51  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_96), !map !320
+
+ST_2: StgValue_56 (474)  [1/1] 0.00ns
+codeRepl:52  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_95), !map !326
+
+ST_2: StgValue_57 (475)  [1/1] 0.00ns
+codeRepl:53  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_94), !map !332
+
+ST_2: StgValue_58 (476)  [1/1] 0.00ns
+codeRepl:54  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_93), !map !338
+
+ST_2: StgValue_59 (477)  [1/1] 0.00ns
+codeRepl:55  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_92), !map !344
+
+ST_2: StgValue_60 (478)  [1/1] 0.00ns
+codeRepl:56  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_91), !map !350
+
+ST_2: StgValue_61 (479)  [1/1] 0.00ns
+codeRepl:57  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_90), !map !356
+
+ST_2: StgValue_62 (480)  [1/1] 0.00ns
+codeRepl:58  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_89), !map !362
+
+ST_2: StgValue_63 (481)  [1/1] 0.00ns
+codeRepl:59  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_88), !map !368
+
+ST_2: StgValue_64 (482)  [1/1] 0.00ns
+codeRepl:60  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_87), !map !374
+
+ST_2: StgValue_65 (483)  [1/1] 0.00ns
+codeRepl:61  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_86), !map !380
+
+ST_2: StgValue_66 (484)  [1/1] 0.00ns
+codeRepl:62  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_85), !map !386
+
+ST_2: StgValue_67 (485)  [1/1] 0.00ns
+codeRepl:63  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_84), !map !392
+
+ST_2: StgValue_68 (486)  [1/1] 0.00ns
+codeRepl:64  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_83), !map !398
+
+ST_2: StgValue_69 (487)  [1/1] 0.00ns
+codeRepl:65  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_82), !map !404
+
+ST_2: StgValue_70 (488)  [1/1] 0.00ns
+codeRepl:66  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_81), !map !410
+
+ST_2: StgValue_71 (489)  [1/1] 0.00ns
+codeRepl:67  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_80), !map !416
+
+ST_2: StgValue_72 (490)  [1/1] 0.00ns
+codeRepl:68  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_79), !map !422
+
+ST_2: StgValue_73 (491)  [1/1] 0.00ns
+codeRepl:69  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_78), !map !428
+
+ST_2: StgValue_74 (492)  [1/1] 0.00ns
+codeRepl:70  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_77), !map !434
+
+ST_2: StgValue_75 (493)  [1/1] 0.00ns
+codeRepl:71  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_76), !map !440
+
+ST_2: StgValue_76 (494)  [1/1] 0.00ns
+codeRepl:72  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_75), !map !446
+
+ST_2: StgValue_77 (495)  [1/1] 0.00ns
+codeRepl:73  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_74), !map !452
+
+ST_2: StgValue_78 (496)  [1/1] 0.00ns
+codeRepl:74  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_73), !map !458
+
+ST_2: StgValue_79 (497)  [1/1] 0.00ns
+codeRepl:75  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_72), !map !464
+
+ST_2: StgValue_80 (498)  [1/1] 0.00ns
+codeRepl:76  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_71), !map !470
+
+ST_2: StgValue_81 (499)  [1/1] 0.00ns
+codeRepl:77  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_70), !map !476
+
+ST_2: StgValue_82 (500)  [1/1] 0.00ns
+codeRepl:78  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_69), !map !482
+
+ST_2: StgValue_83 (501)  [1/1] 0.00ns
+codeRepl:79  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_68), !map !488
+
+ST_2: StgValue_84 (502)  [1/1] 0.00ns
+codeRepl:80  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_67), !map !494
+
+ST_2: StgValue_85 (503)  [1/1] 0.00ns
+codeRepl:81  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_66), !map !500
+
+ST_2: StgValue_86 (504)  [1/1] 0.00ns
+codeRepl:82  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_65), !map !506
+
+ST_2: StgValue_87 (505)  [1/1] 0.00ns
+codeRepl:83  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_64), !map !512
+
+ST_2: StgValue_88 (506)  [1/1] 0.00ns
+codeRepl:84  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_63), !map !518
+
+ST_2: StgValue_89 (507)  [1/1] 0.00ns
+codeRepl:85  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_62), !map !524
+
+ST_2: StgValue_90 (508)  [1/1] 0.00ns
+codeRepl:86  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_61), !map !530
+
+ST_2: StgValue_91 (509)  [1/1] 0.00ns
+codeRepl:87  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_60), !map !536
+
+ST_2: StgValue_92 (510)  [1/1] 0.00ns
+codeRepl:88  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_59), !map !542
+
+ST_2: StgValue_93 (511)  [1/1] 0.00ns
+codeRepl:89  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_58), !map !548
+
+ST_2: StgValue_94 (512)  [1/1] 0.00ns
+codeRepl:90  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_57), !map !554
+
+ST_2: StgValue_95 (513)  [1/1] 0.00ns
+codeRepl:91  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_56), !map !560
+
+ST_2: StgValue_96 (514)  [1/1] 0.00ns
+codeRepl:92  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_55), !map !566
+
+ST_2: StgValue_97 (515)  [1/1] 0.00ns
+codeRepl:93  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_54), !map !572
+
+ST_2: StgValue_98 (516)  [1/1] 0.00ns
+codeRepl:94  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_53), !map !578
+
+ST_2: StgValue_99 (517)  [1/1] 0.00ns
+codeRepl:95  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_52), !map !584
+
+ST_2: StgValue_100 (518)  [1/1] 0.00ns
+codeRepl:96  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_51), !map !590
+
+ST_2: StgValue_101 (519)  [1/1] 0.00ns
+codeRepl:97  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_50), !map !596
+
+ST_2: StgValue_102 (520)  [1/1] 0.00ns
+codeRepl:98  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_49), !map !602
+
+ST_2: StgValue_103 (521)  [1/1] 0.00ns
+codeRepl:99  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_48), !map !608
+
+ST_2: StgValue_104 (522)  [1/1] 0.00ns
+codeRepl:100  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_47), !map !614
+
+ST_2: StgValue_105 (523)  [1/1] 0.00ns
+codeRepl:101  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_46), !map !620
+
+ST_2: StgValue_106 (524)  [1/1] 0.00ns
+codeRepl:102  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_45), !map !626
+
+ST_2: StgValue_107 (525)  [1/1] 0.00ns
+codeRepl:103  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_44), !map !632
+
+ST_2: StgValue_108 (526)  [1/1] 0.00ns
+codeRepl:104  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_43), !map !638
+
+ST_2: StgValue_109 (527)  [1/1] 0.00ns
+codeRepl:105  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_42), !map !644
+
+ST_2: StgValue_110 (528)  [1/1] 0.00ns
+codeRepl:106  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_41), !map !650
+
+ST_2: StgValue_111 (529)  [1/1] 0.00ns
+codeRepl:107  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_40), !map !656
+
+ST_2: StgValue_112 (530)  [1/1] 0.00ns
+codeRepl:108  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_39), !map !662
+
+ST_2: StgValue_113 (531)  [1/1] 0.00ns
+codeRepl:109  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_38), !map !668
+
+ST_2: StgValue_114 (532)  [1/1] 0.00ns
+codeRepl:110  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_37), !map !674
+
+ST_2: StgValue_115 (533)  [1/1] 0.00ns
+codeRepl:111  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_36), !map !680
+
+ST_2: StgValue_116 (534)  [1/1] 0.00ns
+codeRepl:112  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_35), !map !686
+
+ST_2: StgValue_117 (535)  [1/1] 0.00ns
+codeRepl:113  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_34), !map !692
+
+ST_2: StgValue_118 (536)  [1/1] 0.00ns
+codeRepl:114  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_33), !map !698
+
+ST_2: StgValue_119 (537)  [1/1] 0.00ns
+codeRepl:115  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_32), !map !704
+
+ST_2: StgValue_120 (538)  [1/1] 0.00ns
+codeRepl:116  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_31), !map !710
+
+ST_2: StgValue_121 (539)  [1/1] 0.00ns
+codeRepl:117  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_30), !map !716
+
+ST_2: StgValue_122 (540)  [1/1] 0.00ns
+codeRepl:118  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_29), !map !722
+
+ST_2: StgValue_123 (541)  [1/1] 0.00ns
+codeRepl:119  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_28), !map !728
+
+ST_2: StgValue_124 (542)  [1/1] 0.00ns
+codeRepl:120  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_27), !map !734
+
+ST_2: StgValue_125 (543)  [1/1] 0.00ns
+codeRepl:121  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_26), !map !740
+
+ST_2: StgValue_126 (544)  [1/1] 0.00ns
+codeRepl:122  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_25), !map !746
+
+ST_2: StgValue_127 (545)  [1/1] 0.00ns
+codeRepl:123  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_24), !map !752
+
+ST_2: StgValue_128 (546)  [1/1] 0.00ns
+codeRepl:124  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_23), !map !758
+
+ST_2: StgValue_129 (547)  [1/1] 0.00ns
+codeRepl:125  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_22), !map !764
+
+ST_2: StgValue_130 (548)  [1/1] 0.00ns
+codeRepl:126  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_21), !map !770
+
+ST_2: StgValue_131 (549)  [1/1] 0.00ns
+codeRepl:127  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_20), !map !776
+
+ST_2: StgValue_132 (550)  [1/1] 0.00ns
+codeRepl:128  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_19), !map !782
+
+ST_2: StgValue_133 (551)  [1/1] 0.00ns
+codeRepl:129  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_18), !map !788
+
+ST_2: StgValue_134 (552)  [1/1] 0.00ns
+codeRepl:130  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_17), !map !794
+
+ST_2: StgValue_135 (553)  [1/1] 0.00ns
+codeRepl:131  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_16), !map !800
+
+ST_2: StgValue_136 (554)  [1/1] 0.00ns
+codeRepl:132  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_15), !map !806
+
+ST_2: StgValue_137 (555)  [1/1] 0.00ns
+codeRepl:133  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_14), !map !812
+
+ST_2: StgValue_138 (556)  [1/1] 0.00ns
+codeRepl:134  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_13), !map !818
+
+ST_2: StgValue_139 (557)  [1/1] 0.00ns
+codeRepl:135  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_12), !map !824
+
+ST_2: StgValue_140 (558)  [1/1] 0.00ns
+codeRepl:136  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_11), !map !830
+
+ST_2: StgValue_141 (559)  [1/1] 0.00ns
+codeRepl:137  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_10), !map !836
+
+ST_2: StgValue_142 (560)  [1/1] 0.00ns
+codeRepl:138  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_9), !map !842
+
+ST_2: StgValue_143 (561)  [1/1] 0.00ns
+codeRepl:139  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_8), !map !848
+
+ST_2: StgValue_144 (562)  [1/1] 0.00ns
+codeRepl:140  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_7), !map !854
+
+ST_2: StgValue_145 (563)  [1/1] 0.00ns
+codeRepl:141  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_6), !map !860
+
+ST_2: StgValue_146 (564)  [1/1] 0.00ns
+codeRepl:142  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_5), !map !866
+
+ST_2: StgValue_147 (565)  [1/1] 0.00ns
+codeRepl:143  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_4), !map !872
+
+ST_2: StgValue_148 (566)  [1/1] 0.00ns
+codeRepl:144  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_3), !map !878
+
+ST_2: StgValue_149 (567)  [1/1] 0.00ns
+codeRepl:145  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_2), !map !884
+
+ST_2: StgValue_150 (568)  [1/1] 0.00ns
+codeRepl:146  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_1), !map !888
+
+ST_2: StgValue_151 (569)  [1/1] 0.00ns
+codeRepl:147  call void (...)* @_ssdm_op_SpecBitsMap(i16* %hfET_0), !map !892
+
+ST_2: StgValue_152 (570)  [1/1] 0.00ns
+codeRepl:148  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_251), !map !896
+
+ST_2: StgValue_153 (571)  [1/1] 0.00ns
+codeRepl:149  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_250), !map !902
+
+ST_2: StgValue_154 (572)  [1/1] 0.00ns
+codeRepl:150  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_249), !map !908
+
+ST_2: StgValue_155 (573)  [1/1] 0.00ns
+codeRepl:151  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_248), !map !914
+
+ST_2: StgValue_156 (574)  [1/1] 0.00ns
+codeRepl:152  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_247), !map !920
+
+ST_2: StgValue_157 (575)  [1/1] 0.00ns
+codeRepl:153  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_246), !map !926
+
+ST_2: StgValue_158 (576)  [1/1] 0.00ns
+codeRepl:154  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_245), !map !932
+
+ST_2: StgValue_159 (577)  [1/1] 0.00ns
+codeRepl:155  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_244), !map !938
+
+ST_2: StgValue_160 (578)  [1/1] 0.00ns
+codeRepl:156  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_243), !map !944
+
+ST_2: StgValue_161 (579)  [1/1] 0.00ns
+codeRepl:157  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_242), !map !950
+
+ST_2: StgValue_162 (580)  [1/1] 0.00ns
+codeRepl:158  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_241), !map !956
+
+ST_2: StgValue_163 (581)  [1/1] 0.00ns
+codeRepl:159  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_240), !map !962
+
+ST_2: StgValue_164 (582)  [1/1] 0.00ns
+codeRepl:160  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_239), !map !968
+
+ST_2: StgValue_165 (583)  [1/1] 0.00ns
+codeRepl:161  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_238), !map !974
+
+ST_2: StgValue_166 (584)  [1/1] 0.00ns
+codeRepl:162  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_237), !map !980
+
+ST_2: StgValue_167 (585)  [1/1] 0.00ns
+codeRepl:163  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_236), !map !986
+
+ST_2: StgValue_168 (586)  [1/1] 0.00ns
+codeRepl:164  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_235), !map !992
+
+ST_2: StgValue_169 (587)  [1/1] 0.00ns
+codeRepl:165  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_234), !map !998
+
+ST_2: StgValue_170 (588)  [1/1] 0.00ns
+codeRepl:166  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_233), !map !1004
+
+ST_2: StgValue_171 (589)  [1/1] 0.00ns
+codeRepl:167  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_232), !map !1010
+
+ST_2: StgValue_172 (590)  [1/1] 0.00ns
+codeRepl:168  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_231), !map !1016
+
+ST_2: StgValue_173 (591)  [1/1] 0.00ns
+codeRepl:169  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_230), !map !1022
+
+ST_2: StgValue_174 (592)  [1/1] 0.00ns
+codeRepl:170  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_229), !map !1028
+
+ST_2: StgValue_175 (593)  [1/1] 0.00ns
+codeRepl:171  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_228), !map !1034
+
+ST_2: StgValue_176 (594)  [1/1] 0.00ns
+codeRepl:172  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_227), !map !1040
+
+ST_2: StgValue_177 (595)  [1/1] 0.00ns
+codeRepl:173  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_226), !map !1046
+
+ST_2: StgValue_178 (596)  [1/1] 0.00ns
+codeRepl:174  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_225), !map !1052
+
+ST_2: StgValue_179 (597)  [1/1] 0.00ns
+codeRepl:175  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_224), !map !1058
+
+ST_2: StgValue_180 (598)  [1/1] 0.00ns
+codeRepl:176  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_223), !map !1064
+
+ST_2: StgValue_181 (599)  [1/1] 0.00ns
+codeRepl:177  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_222), !map !1070
+
+ST_2: StgValue_182 (600)  [1/1] 0.00ns
+codeRepl:178  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_221), !map !1076
+
+ST_2: StgValue_183 (601)  [1/1] 0.00ns
+codeRepl:179  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_220), !map !1082
+
+ST_2: StgValue_184 (602)  [1/1] 0.00ns
+codeRepl:180  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_219), !map !1088
+
+ST_2: StgValue_185 (603)  [1/1] 0.00ns
+codeRepl:181  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_218), !map !1094
+
+ST_2: StgValue_186 (604)  [1/1] 0.00ns
+codeRepl:182  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_217), !map !1100
+
+ST_2: StgValue_187 (605)  [1/1] 0.00ns
+codeRepl:183  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_216), !map !1106
+
+ST_2: StgValue_188 (606)  [1/1] 0.00ns
+codeRepl:184  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_215), !map !1112
+
+ST_2: StgValue_189 (607)  [1/1] 0.00ns
+codeRepl:185  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_214), !map !1118
+
+ST_2: StgValue_190 (608)  [1/1] 0.00ns
+codeRepl:186  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_213), !map !1124
+
+ST_2: StgValue_191 (609)  [1/1] 0.00ns
+codeRepl:187  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_212), !map !1130
+
+ST_2: StgValue_192 (610)  [1/1] 0.00ns
+codeRepl:188  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_211), !map !1136
+
+ST_2: StgValue_193 (611)  [1/1] 0.00ns
+codeRepl:189  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_210), !map !1142
+
+ST_2: StgValue_194 (612)  [1/1] 0.00ns
+codeRepl:190  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_209), !map !1148
+
+ST_2: StgValue_195 (613)  [1/1] 0.00ns
+codeRepl:191  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_208), !map !1154
+
+ST_2: StgValue_196 (614)  [1/1] 0.00ns
+codeRepl:192  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_207), !map !1160
+
+ST_2: StgValue_197 (615)  [1/1] 0.00ns
+codeRepl:193  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_206), !map !1166
+
+ST_2: StgValue_198 (616)  [1/1] 0.00ns
+codeRepl:194  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_205), !map !1172
+
+ST_2: StgValue_199 (617)  [1/1] 0.00ns
+codeRepl:195  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_204), !map !1178
+
+ST_2: StgValue_200 (618)  [1/1] 0.00ns
+codeRepl:196  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_203), !map !1184
+
+ST_2: StgValue_201 (619)  [1/1] 0.00ns
+codeRepl:197  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_202), !map !1190
+
+ST_2: StgValue_202 (620)  [1/1] 0.00ns
+codeRepl:198  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_201), !map !1196
+
+ST_2: StgValue_203 (621)  [1/1] 0.00ns
+codeRepl:199  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_200), !map !1202
+
+ST_2: StgValue_204 (622)  [1/1] 0.00ns
+codeRepl:200  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_199), !map !1208
+
+ST_2: StgValue_205 (623)  [1/1] 0.00ns
+codeRepl:201  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_198), !map !1214
+
+ST_2: StgValue_206 (624)  [1/1] 0.00ns
+codeRepl:202  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_197), !map !1220
+
+ST_2: StgValue_207 (625)  [1/1] 0.00ns
+codeRepl:203  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_196), !map !1226
+
+ST_2: StgValue_208 (626)  [1/1] 0.00ns
+codeRepl:204  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_195), !map !1232
+
+ST_2: StgValue_209 (627)  [1/1] 0.00ns
+codeRepl:205  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_194), !map !1238
+
+ST_2: StgValue_210 (628)  [1/1] 0.00ns
+codeRepl:206  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_193), !map !1244
+
+ST_2: StgValue_211 (629)  [1/1] 0.00ns
+codeRepl:207  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_192), !map !1250
+
+ST_2: StgValue_212 (630)  [1/1] 0.00ns
+codeRepl:208  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_191), !map !1256
+
+ST_2: StgValue_213 (631)  [1/1] 0.00ns
+codeRepl:209  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_190), !map !1262
+
+ST_2: StgValue_214 (632)  [1/1] 0.00ns
+codeRepl:210  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_189), !map !1268
+
+ST_2: StgValue_215 (633)  [1/1] 0.00ns
+codeRepl:211  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_188), !map !1274
+
+ST_2: StgValue_216 (634)  [1/1] 0.00ns
+codeRepl:212  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_187), !map !1280
+
+ST_2: StgValue_217 (635)  [1/1] 0.00ns
+codeRepl:213  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_186), !map !1286
+
+ST_2: StgValue_218 (636)  [1/1] 0.00ns
+codeRepl:214  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_185), !map !1292
+
+ST_2: StgValue_219 (637)  [1/1] 0.00ns
+codeRepl:215  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_184), !map !1298
+
+ST_2: StgValue_220 (638)  [1/1] 0.00ns
+codeRepl:216  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_183), !map !1304
+
+ST_2: StgValue_221 (639)  [1/1] 0.00ns
+codeRepl:217  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_182), !map !1310
+
+ST_2: StgValue_222 (640)  [1/1] 0.00ns
+codeRepl:218  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_181), !map !1316
+
+ST_2: StgValue_223 (641)  [1/1] 0.00ns
+codeRepl:219  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_180), !map !1322
+
+ST_2: StgValue_224 (642)  [1/1] 0.00ns
+codeRepl:220  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_179), !map !1328
+
+ST_2: StgValue_225 (643)  [1/1] 0.00ns
+codeRepl:221  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_178), !map !1334
+
+ST_2: StgValue_226 (644)  [1/1] 0.00ns
+codeRepl:222  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_177), !map !1340
+
+ST_2: StgValue_227 (645)  [1/1] 0.00ns
+codeRepl:223  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_176), !map !1346
+
+ST_2: StgValue_228 (646)  [1/1] 0.00ns
+codeRepl:224  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_175), !map !1352
+
+ST_2: StgValue_229 (647)  [1/1] 0.00ns
+codeRepl:225  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_174), !map !1358
+
+ST_2: StgValue_230 (648)  [1/1] 0.00ns
+codeRepl:226  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_173), !map !1364
+
+ST_2: StgValue_231 (649)  [1/1] 0.00ns
+codeRepl:227  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_172), !map !1370
+
+ST_2: StgValue_232 (650)  [1/1] 0.00ns
+codeRepl:228  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_171), !map !1376
+
+ST_2: StgValue_233 (651)  [1/1] 0.00ns
+codeRepl:229  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_170), !map !1382
+
+ST_2: StgValue_234 (652)  [1/1] 0.00ns
+codeRepl:230  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_169), !map !1388
+
+ST_2: StgValue_235 (653)  [1/1] 0.00ns
+codeRepl:231  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_168), !map !1394
+
+ST_2: StgValue_236 (654)  [1/1] 0.00ns
+codeRepl:232  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_167), !map !1400
+
+ST_2: StgValue_237 (655)  [1/1] 0.00ns
+codeRepl:233  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_166), !map !1406
+
+ST_2: StgValue_238 (656)  [1/1] 0.00ns
+codeRepl:234  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_165), !map !1412
+
+ST_2: StgValue_239 (657)  [1/1] 0.00ns
+codeRepl:235  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_164), !map !1418
+
+ST_2: StgValue_240 (658)  [1/1] 0.00ns
+codeRepl:236  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_163), !map !1424
+
+ST_2: StgValue_241 (659)  [1/1] 0.00ns
+codeRepl:237  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_162), !map !1430
+
+ST_2: StgValue_242 (660)  [1/1] 0.00ns
+codeRepl:238  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_161), !map !1436
+
+ST_2: StgValue_243 (661)  [1/1] 0.00ns
+codeRepl:239  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_160), !map !1442
+
+ST_2: StgValue_244 (662)  [1/1] 0.00ns
+codeRepl:240  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_159), !map !1448
+
+ST_2: StgValue_245 (663)  [1/1] 0.00ns
+codeRepl:241  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_158), !map !1454
+
+ST_2: StgValue_246 (664)  [1/1] 0.00ns
+codeRepl:242  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_157), !map !1460
+
+ST_2: StgValue_247 (665)  [1/1] 0.00ns
+codeRepl:243  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_156), !map !1466
+
+ST_2: StgValue_248 (666)  [1/1] 0.00ns
+codeRepl:244  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_155), !map !1472
+
+ST_2: StgValue_249 (667)  [1/1] 0.00ns
+codeRepl:245  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_154), !map !1478
+
+ST_2: StgValue_250 (668)  [1/1] 0.00ns
+codeRepl:246  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_153), !map !1484
+
+ST_2: StgValue_251 (669)  [1/1] 0.00ns
+codeRepl:247  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_152), !map !1490
+
+ST_2: StgValue_252 (670)  [1/1] 0.00ns
+codeRepl:248  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_151), !map !1496
+
+ST_2: StgValue_253 (671)  [1/1] 0.00ns
+codeRepl:249  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_150), !map !1502
+
+ST_2: StgValue_254 (672)  [1/1] 0.00ns
+codeRepl:250  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_149), !map !1508
+
+ST_2: StgValue_255 (673)  [1/1] 0.00ns
+codeRepl:251  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_148), !map !1514
+
+ST_2: StgValue_256 (674)  [1/1] 0.00ns
+codeRepl:252  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_147), !map !1520
+
+ST_2: StgValue_257 (675)  [1/1] 0.00ns
+codeRepl:253  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_146), !map !1526
+
+ST_2: StgValue_258 (676)  [1/1] 0.00ns
+codeRepl:254  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_145), !map !1532
+
+ST_2: StgValue_259 (677)  [1/1] 0.00ns
+codeRepl:255  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_144), !map !1538
+
+ST_2: StgValue_260 (678)  [1/1] 0.00ns
+codeRepl:256  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_143), !map !1544
+
+ST_2: StgValue_261 (679)  [1/1] 0.00ns
+codeRepl:257  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_142), !map !1548
+
+ST_2: StgValue_262 (680)  [1/1] 0.00ns
+codeRepl:258  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_141), !map !1552
+
+ST_2: StgValue_263 (681)  [1/1] 0.00ns
+codeRepl:259  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_140), !map !1556
+
+ST_2: StgValue_264 (682)  [1/1] 0.00ns
+codeRepl:260  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_139), !map !1560
+
+ST_2: StgValue_265 (683)  [1/1] 0.00ns
+codeRepl:261  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_138), !map !1564
+
+ST_2: StgValue_266 (684)  [1/1] 0.00ns
+codeRepl:262  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_137), !map !1568
+
+ST_2: StgValue_267 (685)  [1/1] 0.00ns
+codeRepl:263  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_136), !map !1572
+
+ST_2: StgValue_268 (686)  [1/1] 0.00ns
+codeRepl:264  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_135), !map !1576
+
+ST_2: StgValue_269 (687)  [1/1] 0.00ns
+codeRepl:265  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_134), !map !1580
+
+ST_2: StgValue_270 (688)  [1/1] 0.00ns
+codeRepl:266  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_133), !map !1584
+
+ST_2: StgValue_271 (689)  [1/1] 0.00ns
+codeRepl:267  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_132), !map !1588
+
+ST_2: StgValue_272 (690)  [1/1] 0.00ns
+codeRepl:268  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_131), !map !1592
+
+ST_2: StgValue_273 (691)  [1/1] 0.00ns
+codeRepl:269  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_130), !map !1596
+
+ST_2: StgValue_274 (692)  [1/1] 0.00ns
+codeRepl:270  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_129), !map !1600
+
+ST_2: StgValue_275 (693)  [1/1] 0.00ns
+codeRepl:271  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_128), !map !1604
+
+ST_2: StgValue_276 (694)  [1/1] 0.00ns
+codeRepl:272  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_127), !map !1608
+
+ST_2: StgValue_277 (695)  [1/1] 0.00ns
+codeRepl:273  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_126), !map !1612
+
+ST_2: StgValue_278 (696)  [1/1] 0.00ns
+codeRepl:274  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_125), !map !1616
+
+ST_2: StgValue_279 (697)  [1/1] 0.00ns
+codeRepl:275  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_124), !map !1620
+
+ST_2: StgValue_280 (698)  [1/1] 0.00ns
+codeRepl:276  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_123), !map !1624
+
+ST_2: StgValue_281 (699)  [1/1] 0.00ns
+codeRepl:277  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_122), !map !1628
+
+ST_2: StgValue_282 (700)  [1/1] 0.00ns
+codeRepl:278  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_121), !map !1632
+
+ST_2: StgValue_283 (701)  [1/1] 0.00ns
+codeRepl:279  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_120), !map !1636
+
+ST_2: StgValue_284 (702)  [1/1] 0.00ns
+codeRepl:280  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_119), !map !1640
+
+ST_2: StgValue_285 (703)  [1/1] 0.00ns
+codeRepl:281  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_118), !map !1644
+
+ST_2: StgValue_286 (704)  [1/1] 0.00ns
+codeRepl:282  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_117), !map !1648
+
+ST_2: StgValue_287 (705)  [1/1] 0.00ns
+codeRepl:283  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_116), !map !1652
+
+ST_2: StgValue_288 (706)  [1/1] 0.00ns
+codeRepl:284  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_115), !map !1656
+
+ST_2: StgValue_289 (707)  [1/1] 0.00ns
+codeRepl:285  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_114), !map !1660
+
+ST_2: StgValue_290 (708)  [1/1] 0.00ns
+codeRepl:286  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_113), !map !1664
+
+ST_2: StgValue_291 (709)  [1/1] 0.00ns
+codeRepl:287  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_112), !map !1668
+
+ST_2: StgValue_292 (710)  [1/1] 0.00ns
+codeRepl:288  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_111), !map !1672
+
+ST_2: StgValue_293 (711)  [1/1] 0.00ns
+codeRepl:289  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_110), !map !1676
+
+ST_2: StgValue_294 (712)  [1/1] 0.00ns
+codeRepl:290  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_109), !map !1680
+
+ST_2: StgValue_295 (713)  [1/1] 0.00ns
+codeRepl:291  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_108), !map !1684
+
+ST_2: StgValue_296 (714)  [1/1] 0.00ns
+codeRepl:292  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_107), !map !1688
+
+ST_2: StgValue_297 (715)  [1/1] 0.00ns
+codeRepl:293  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_106), !map !1692
+
+ST_2: StgValue_298 (716)  [1/1] 0.00ns
+codeRepl:294  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_105), !map !1696
+
+ST_2: StgValue_299 (717)  [1/1] 0.00ns
+codeRepl:295  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_104), !map !1700
+
+ST_2: StgValue_300 (718)  [1/1] 0.00ns
+codeRepl:296  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_103), !map !1704
+
+ST_2: StgValue_301 (719)  [1/1] 0.00ns
+codeRepl:297  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_102), !map !1708
+
+ST_2: StgValue_302 (720)  [1/1] 0.00ns
+codeRepl:298  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_101), !map !1712
+
+ST_2: StgValue_303 (721)  [1/1] 0.00ns
+codeRepl:299  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_100), !map !1716
+
+ST_2: StgValue_304 (722)  [1/1] 0.00ns
+codeRepl:300  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_99), !map !1720
+
+ST_2: StgValue_305 (723)  [1/1] 0.00ns
+codeRepl:301  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_98), !map !1724
+
+ST_2: StgValue_306 (724)  [1/1] 0.00ns
+codeRepl:302  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_97), !map !1728
+
+ST_2: StgValue_307 (725)  [1/1] 0.00ns
+codeRepl:303  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_96), !map !1732
+
+ST_2: StgValue_308 (726)  [1/1] 0.00ns
+codeRepl:304  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_95), !map !1736
+
+ST_2: StgValue_309 (727)  [1/1] 0.00ns
+codeRepl:305  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_94), !map !1740
+
+ST_2: StgValue_310 (728)  [1/1] 0.00ns
+codeRepl:306  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_93), !map !1744
+
+ST_2: StgValue_311 (729)  [1/1] 0.00ns
+codeRepl:307  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_92), !map !1748
+
+ST_2: StgValue_312 (730)  [1/1] 0.00ns
+codeRepl:308  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_91), !map !1752
+
+ST_2: StgValue_313 (731)  [1/1] 0.00ns
+codeRepl:309  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_90), !map !1756
+
+ST_2: StgValue_314 (732)  [1/1] 0.00ns
+codeRepl:310  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_89), !map !1760
+
+ST_2: StgValue_315 (733)  [1/1] 0.00ns
+codeRepl:311  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_88), !map !1764
+
+ST_2: StgValue_316 (734)  [1/1] 0.00ns
+codeRepl:312  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_87), !map !1768
+
+ST_2: StgValue_317 (735)  [1/1] 0.00ns
+codeRepl:313  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_86), !map !1772
+
+ST_2: StgValue_318 (736)  [1/1] 0.00ns
+codeRepl:314  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_85), !map !1776
+
+ST_2: StgValue_319 (737)  [1/1] 0.00ns
+codeRepl:315  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_84), !map !1780
+
+ST_2: StgValue_320 (738)  [1/1] 0.00ns
+codeRepl:316  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_83), !map !1784
+
+ST_2: StgValue_321 (739)  [1/1] 0.00ns
+codeRepl:317  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_82), !map !1788
+
+ST_2: StgValue_322 (740)  [1/1] 0.00ns
+codeRepl:318  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_81), !map !1792
+
+ST_2: StgValue_323 (741)  [1/1] 0.00ns
+codeRepl:319  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_80), !map !1796
+
+ST_2: StgValue_324 (742)  [1/1] 0.00ns
+codeRepl:320  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_79), !map !1800
+
+ST_2: StgValue_325 (743)  [1/1] 0.00ns
+codeRepl:321  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_78), !map !1804
+
+ST_2: StgValue_326 (744)  [1/1] 0.00ns
+codeRepl:322  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_77), !map !1808
+
+ST_2: StgValue_327 (745)  [1/1] 0.00ns
+codeRepl:323  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_76), !map !1812
+
+ST_2: StgValue_328 (746)  [1/1] 0.00ns
+codeRepl:324  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_75), !map !1816
+
+ST_2: StgValue_329 (747)  [1/1] 0.00ns
+codeRepl:325  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_74), !map !1820
+
+ST_2: StgValue_330 (748)  [1/1] 0.00ns
+codeRepl:326  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_73), !map !1824
+
+ST_2: StgValue_331 (749)  [1/1] 0.00ns
+codeRepl:327  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_72), !map !1828
+
+ST_2: StgValue_332 (750)  [1/1] 0.00ns
+codeRepl:328  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_71), !map !1832
+
+ST_2: StgValue_333 (751)  [1/1] 0.00ns
+codeRepl:329  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_70), !map !1836
+
+ST_2: StgValue_334 (752)  [1/1] 0.00ns
+codeRepl:330  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_69), !map !1840
+
+ST_2: StgValue_335 (753)  [1/1] 0.00ns
+codeRepl:331  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_68), !map !1844
+
+ST_2: StgValue_336 (754)  [1/1] 0.00ns
+codeRepl:332  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_67), !map !1848
+
+ST_2: StgValue_337 (755)  [1/1] 0.00ns
+codeRepl:333  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_66), !map !1852
+
+ST_2: StgValue_338 (756)  [1/1] 0.00ns
+codeRepl:334  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_65), !map !1856
+
+ST_2: StgValue_339 (757)  [1/1] 0.00ns
+codeRepl:335  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_64), !map !1860
+
+ST_2: StgValue_340 (758)  [1/1] 0.00ns
+codeRepl:336  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_63), !map !1864
+
+ST_2: StgValue_341 (759)  [1/1] 0.00ns
+codeRepl:337  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_62), !map !1868
+
+ST_2: StgValue_342 (760)  [1/1] 0.00ns
+codeRepl:338  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_61), !map !1872
+
+ST_2: StgValue_343 (761)  [1/1] 0.00ns
+codeRepl:339  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_60), !map !1876
+
+ST_2: StgValue_344 (762)  [1/1] 0.00ns
+codeRepl:340  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_59), !map !1880
+
+ST_2: StgValue_345 (763)  [1/1] 0.00ns
+codeRepl:341  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_58), !map !1884
+
+ST_2: StgValue_346 (764)  [1/1] 0.00ns
+codeRepl:342  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_57), !map !1888
+
+ST_2: StgValue_347 (765)  [1/1] 0.00ns
+codeRepl:343  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_56), !map !1892
+
+ST_2: StgValue_348 (766)  [1/1] 0.00ns
+codeRepl:344  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_55), !map !1896
+
+ST_2: StgValue_349 (767)  [1/1] 0.00ns
+codeRepl:345  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_54), !map !1900
+
+ST_2: StgValue_350 (768)  [1/1] 0.00ns
+codeRepl:346  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_53), !map !1904
+
+ST_2: StgValue_351 (769)  [1/1] 0.00ns
+codeRepl:347  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_52), !map !1908
+
+ST_2: StgValue_352 (770)  [1/1] 0.00ns
+codeRepl:348  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_51), !map !1912
+
+ST_2: StgValue_353 (771)  [1/1] 0.00ns
+codeRepl:349  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_50), !map !1916
+
+ST_2: StgValue_354 (772)  [1/1] 0.00ns
+codeRepl:350  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_49), !map !1920
+
+ST_2: StgValue_355 (773)  [1/1] 0.00ns
+codeRepl:351  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_48), !map !1924
+
+ST_2: StgValue_356 (774)  [1/1] 0.00ns
+codeRepl:352  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_47), !map !1928
+
+ST_2: StgValue_357 (775)  [1/1] 0.00ns
+codeRepl:353  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_46), !map !1932
+
+ST_2: StgValue_358 (776)  [1/1] 0.00ns
+codeRepl:354  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_45), !map !1936
+
+ST_2: StgValue_359 (777)  [1/1] 0.00ns
+codeRepl:355  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_44), !map !1940
+
+ST_2: StgValue_360 (778)  [1/1] 0.00ns
+codeRepl:356  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_43), !map !1944
+
+ST_2: StgValue_361 (779)  [1/1] 0.00ns
+codeRepl:357  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_42), !map !1948
+
+ST_2: StgValue_362 (780)  [1/1] 0.00ns
+codeRepl:358  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_41), !map !1952
+
+ST_2: StgValue_363 (781)  [1/1] 0.00ns
+codeRepl:359  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_40), !map !1956
+
+ST_2: StgValue_364 (782)  [1/1] 0.00ns
+codeRepl:360  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_39), !map !1960
+
+ST_2: StgValue_365 (783)  [1/1] 0.00ns
+codeRepl:361  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_38), !map !1964
+
+ST_2: StgValue_366 (784)  [1/1] 0.00ns
+codeRepl:362  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_37), !map !1968
+
+ST_2: StgValue_367 (785)  [1/1] 0.00ns
+codeRepl:363  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_36), !map !1972
+
+ST_2: StgValue_368 (786)  [1/1] 0.00ns
+codeRepl:364  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_35), !map !1976
+
+ST_2: StgValue_369 (787)  [1/1] 0.00ns
+codeRepl:365  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_34), !map !1980
+
+ST_2: StgValue_370 (788)  [1/1] 0.00ns
+codeRepl:366  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_33), !map !1984
+
+ST_2: StgValue_371 (789)  [1/1] 0.00ns
+codeRepl:367  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_32), !map !1988
+
+ST_2: StgValue_372 (790)  [1/1] 0.00ns
+codeRepl:368  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_31), !map !1992
+
+ST_2: StgValue_373 (791)  [1/1] 0.00ns
+codeRepl:369  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_30), !map !1996
+
+ST_2: StgValue_374 (792)  [1/1] 0.00ns
+codeRepl:370  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_29), !map !2000
+
+ST_2: StgValue_375 (793)  [1/1] 0.00ns
+codeRepl:371  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_28), !map !2004
+
+ST_2: StgValue_376 (794)  [1/1] 0.00ns
+codeRepl:372  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_27), !map !2008
+
+ST_2: StgValue_377 (795)  [1/1] 0.00ns
+codeRepl:373  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_26), !map !2012
+
+ST_2: StgValue_378 (796)  [1/1] 0.00ns
+codeRepl:374  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_25), !map !2016
+
+ST_2: StgValue_379 (797)  [1/1] 0.00ns
+codeRepl:375  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_24), !map !2020
+
+ST_2: StgValue_380 (798)  [1/1] 0.00ns
+codeRepl:376  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_23), !map !2024
+
+ST_2: StgValue_381 (799)  [1/1] 0.00ns
+codeRepl:377  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_22), !map !2028
+
+ST_2: StgValue_382 (800)  [1/1] 0.00ns
+codeRepl:378  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_21), !map !2032
+
+ST_2: StgValue_383 (801)  [1/1] 0.00ns
+codeRepl:379  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_20), !map !2036
+
+ST_2: StgValue_384 (802)  [1/1] 0.00ns
+codeRepl:380  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_19), !map !2040
+
+ST_2: StgValue_385 (803)  [1/1] 0.00ns
+codeRepl:381  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_18), !map !2044
+
+ST_2: StgValue_386 (804)  [1/1] 0.00ns
+codeRepl:382  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_17), !map !2048
+
+ST_2: StgValue_387 (805)  [1/1] 0.00ns
+codeRepl:383  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_16), !map !2052
+
+ST_2: StgValue_388 (806)  [1/1] 0.00ns
+codeRepl:384  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_15), !map !2056
+
+ST_2: StgValue_389 (807)  [1/1] 0.00ns
+codeRepl:385  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_14), !map !2060
+
+ST_2: StgValue_390 (808)  [1/1] 0.00ns
+codeRepl:386  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_13), !map !2064
+
+ST_2: StgValue_391 (809)  [1/1] 0.00ns
+codeRepl:387  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_12), !map !2068
+
+ST_2: StgValue_392 (810)  [1/1] 0.00ns
+codeRepl:388  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_11), !map !2072
+
+ST_2: StgValue_393 (811)  [1/1] 0.00ns
+codeRepl:389  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_10), !map !2076
+
+ST_2: StgValue_394 (812)  [1/1] 0.00ns
+codeRepl:390  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_9), !map !2080
+
+ST_2: StgValue_395 (813)  [1/1] 0.00ns
+codeRepl:391  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_8), !map !2084
+
+ST_2: StgValue_396 (814)  [1/1] 0.00ns
+codeRepl:392  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_7), !map !2088
+
+ST_2: StgValue_397 (815)  [1/1] 0.00ns
+codeRepl:393  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_6), !map !2092
+
+ST_2: StgValue_398 (816)  [1/1] 0.00ns
+codeRepl:394  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_5), !map !2096
+
+ST_2: StgValue_399 (817)  [1/1] 0.00ns
+codeRepl:395  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_4), !map !2100
+
+ST_2: StgValue_400 (818)  [1/1] 0.00ns
+codeRepl:396  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_3), !map !2104
+
+ST_2: StgValue_401 (819)  [1/1] 0.00ns
+codeRepl:397  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_2), !map !2108
+
+ST_2: StgValue_402 (820)  [1/1] 0.00ns
+codeRepl:398  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_1), !map !2112
+
+ST_2: StgValue_403 (821)  [1/1] 0.00ns
+codeRepl:399  call void (...)* @_ssdm_op_SpecBitsMap(i16* %rgnET_0), !map !2116
+
+ST_2: StgValue_404 (822)  [1/1] 0.00ns
+codeRepl:400  call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @MakeHT_str) nounwind
+
+ST_2: StgValue_405 (823)  [1/1] 0.00ns
+codeRepl:401  call void (...)* @_ssdm_op_SpecInterface(i16* %HT_0, i16* %HT_1, i16* %HT_2, [8 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_2: StgValue_406 (824)  [1/2] 8.43ns
+codeRepl:402  call fastcc void @Block_codeRepl84651_(i16* %rgnET_0, i16* %rgnET_1, i16* %rgnET_2, i16* %rgnET_3, i16* %rgnET_4, i16* %rgnET_5, i16* %rgnET_6, i16* %rgnET_7, i16* %rgnET_8, i16* %rgnET_9, i16* %rgnET_10, i16* %rgnET_11, i16* %rgnET_12, i16* %rgnET_13, i16* %rgnET_14, i16* %rgnET_15, i16* %rgnET_16, i16* %rgnET_17, i16* %rgnET_18, i16* %rgnET_19, i16* %rgnET_20, i16* %rgnET_21, i16* %rgnET_22, i16* %rgnET_23, i16* %rgnET_24, i16* %rgnET_25, i16* %rgnET_26, i16* %rgnET_27, i16* %rgnET_28, i16* %rgnET_29, i16* %rgnET_30, i16* %rgnET_31, i16* %rgnET_32, i16* %rgnET_33, i16* %rgnET_34, i16* %rgnET_35, i16* %rgnET_36, i16* %rgnET_37, i16* %rgnET_38, i16* %rgnET_39, i16* %rgnET_40, i16* %rgnET_41, i16* %rgnET_42, i16* %rgnET_43, i16* %rgnET_44, i16* %rgnET_45, i16* %rgnET_46, i16* %rgnET_47, i16* %rgnET_48, i16* %rgnET_49, i16* %rgnET_50, i16* %rgnET_51, i16* %rgnET_52, i16* %rgnET_53, i16* %rgnET_54, i16* %rgnET_55, i16* %rgnET_56, i16* %rgnET_57, i16* %rgnET_58, i16* %rgnET_59, i16* %rgnET_60, i16* %rgnET_61, i16* %rgnET_62, i16* %rgnET_63, i16* %rgnET_64, i16* %rgnET_65, i16* %rgnET_66, i16* %rgnET_67, i16* %rgnET_68, i16* %rgnET_69, i16* %rgnET_70, i16* %rgnET_71, i16* %rgnET_72, i16* %rgnET_73, i16* %rgnET_74, i16* %rgnET_75, i16* %rgnET_76, i16* %rgnET_77, i16* %rgnET_78, i16* %rgnET_79, i16* %rgnET_80, i16* %rgnET_81, i16* %rgnET_82, i16* %rgnET_83, i16* %rgnET_84, i16* %rgnET_85, i16* %rgnET_86, i16* %rgnET_87, i16* %rgnET_88, i16* %rgnET_89, i16* %rgnET_90, i16* %rgnET_91, i16* %rgnET_92, i16* %rgnET_93, i16* %rgnET_94, i16* %rgnET_95, i16* %rgnET_96, i16* %rgnET_97, i16* %rgnET_98, i16* %rgnET_99, i16* %rgnET_100, i16* %rgnET_101, i16* %rgnET_102, i16* %rgnET_103, i16* %rgnET_104, i16* %rgnET_105, i16* %rgnET_106, i16* %rgnET_107, i16* %rgnET_108, i16* %rgnET_109, i16* %rgnET_110, i16* %rgnET_111, i16* %rgnET_112, i16* %rgnET_113, i16* %rgnET_114, i16* %rgnET_115, i16* %rgnET_116, i16* %rgnET_117, i16* %rgnET_118, i16* %rgnET_119, i16* %rgnET_120, i16* %rgnET_121, i16* %rgnET_122, i16* %rgnET_123, i16* %rgnET_124, i16* %rgnET_125, i16* %rgnET_126, i16* %rgnET_127, i16* %rgnET_128, i16* %rgnET_129, i16* %rgnET_130, i16* %rgnET_131, i16* %rgnET_132, i16* %rgnET_133, i16* %rgnET_134, i16* %rgnET_135, i16* %rgnET_136, i16* %rgnET_137, i16* %rgnET_138, i16* %rgnET_139, i16* %rgnET_140, i16* %rgnET_141, i16* %rgnET_142, i16* %rgnET_143, i16* %rgnET_144, i16* %rgnET_145, i16* %rgnET_146, i16* %rgnET_147, i16* %rgnET_148, i16* %rgnET_149, i16* %rgnET_150, i16* %rgnET_151, i16* %rgnET_152, i16* %rgnET_153, i16* %rgnET_154, i16* %rgnET_155, i16* %rgnET_156, i16* %rgnET_157, i16* %rgnET_158, i16* %rgnET_159, i16* %rgnET_160, i16* %rgnET_161, i16* %rgnET_162, i16* %rgnET_163, i16* %rgnET_164, i16* %rgnET_165, i16* %rgnET_166, i16* %rgnET_167, i16* %rgnET_168, i16* %rgnET_169, i16* %rgnET_170, i16* %rgnET_171, i16* %rgnET_172, i16* %rgnET_173, i16* %rgnET_174, i16* %rgnET_175, i16* %rgnET_176, i16* %rgnET_177, i16* %rgnET_178, i16* %rgnET_179, i16* %rgnET_180, i16* %rgnET_181, i16* %rgnET_182, i16* %rgnET_183, i16* %rgnET_184, i16* %rgnET_185, i16* %rgnET_186, i16* %rgnET_187, i16* %rgnET_188, i16* %rgnET_189, i16* %rgnET_190, i16* %rgnET_191, i16* %rgnET_192, i16* %rgnET_193, i16* %rgnET_194, i16* %rgnET_195, i16* %rgnET_196, i16* %rgnET_197, i16* %rgnET_198, i16* %rgnET_199, i16* %rgnET_200, i16* %rgnET_201, i16* %rgnET_202, i16* %rgnET_203, i16* %rgnET_204, i16* %rgnET_205, i16* %rgnET_206, i16* %rgnET_207, i16* %rgnET_208, i16* %rgnET_209, i16* %rgnET_210, i16* %rgnET_211, i16* %rgnET_212, i16* %rgnET_213, i16* %rgnET_214, i16* %rgnET_215, i16* %rgnET_216, i16* %rgnET_217, i16* %rgnET_218, i16* %rgnET_219, i16* %rgnET_220, i16* %rgnET_221, i16* %rgnET_222, i16* %rgnET_223, i16* %rgnET_224, i16* %rgnET_225, i16* %rgnET_226, i16* %rgnET_227, i16* %rgnET_228, i16* %rgnET_229, i16* %rgnET_230, i16* %rgnET_231, i16* %rgnET_232, i16* %rgnET_233, i16* %rgnET_234, i16* %rgnET_235, i16* %rgnET_236, i16* %rgnET_237, i16* %rgnET_238, i16* %rgnET_239, i16* %rgnET_240, i16* %rgnET_241, i16* %rgnET_242, i16* %rgnET_243, i16* %rgnET_244, i16* %rgnET_245, i16* %rgnET_246, i16* %rgnET_247, i16* %rgnET_248, i16* %rgnET_249, i16* %rgnET_250, i16* %rgnET_251, i16* %hfET_0, i16* %hfET_1, i16* %hfET_2, i16* %hfET_3, i16* %hfET_4, i16* %hfET_5, i16* %hfET_6, i16* %hfET_7, i16* %hfET_8, i16* %hfET_9, i16* %hfET_10, i16* %hfET_11, i16* %hfET_12, i16* %hfET_13, i16* %hfET_14, i16* %hfET_15, i16* %hfET_16, i16* %hfET_17, i16* %hfET_18, i16* %hfET_19, i16* %hfET_20, i16* %hfET_21, i16* %hfET_22, i16* %hfET_23, i16* %hfET_24, i16* %hfET_25, i16* %hfET_26, i16* %hfET_27, i16* %hfET_28, i16* %hfET_29, i16* %hfET_30, i16* %hfET_31, i16* %hfET_32, i16* %hfET_33, i16* %hfET_34, i16* %hfET_35, i16* %hfET_36, i16* %hfET_37, i16* %hfET_38, i16* %hfET_39, i16* %hfET_40, i16* %hfET_41, i16* %hfET_42, i16* %hfET_43, i16* %hfET_44, i16* %hfET_45, i16* %hfET_46, i16* %hfET_47, i16* %hfET_48, i16* %hfET_49, i16* %hfET_50, i16* %hfET_51, i16* %hfET_52, i16* %hfET_53, i16* %hfET_54, i16* %hfET_55, i16* %hfET_56, i16* %hfET_57, i16* %hfET_58, i16* %hfET_59, i16* %hfET_60, i16* %hfET_61, i16* %hfET_62, i16* %hfET_63, i16* %hfET_64, i16* %hfET_65, i16* %hfET_66, i16* %hfET_67, i16* %hfET_68, i16* %hfET_69, i16* %hfET_70, i16* %hfET_71, i16* %hfET_72, i16* %hfET_73, i16* %hfET_74, i16* %hfET_75, i16* %hfET_76, i16* %hfET_77, i16* %hfET_78, i16* %hfET_79, i16* %hfET_80, i16* %hfET_81, i16* %hfET_82, i16* %hfET_83, i16* %hfET_84, i16* %hfET_85, i16* %hfET_86, i16* %hfET_87, i16* %hfET_88, i16* %hfET_89, i16* %hfET_90, i16* %hfET_91, i16* %hfET_92, i16* %hfET_93, i16* %hfET_94, i16* %hfET_95, i16* %hfET_96, i16* %hfET_97, i16* %hfET_98, i16* %hfET_99, i16* %hfET_100, i16* %hfET_101, i16* %hfET_102, i16* %hfET_103, i16* %hfET_104, i16* %hfET_105, i16* %hfET_106, i16* %hfET_107, i16* %hfET_108, i16* %hfET_109, i16* %hfET_110, i16* %hfET_111, i16* %hfET_112, i16* %hfET_113, i16* %hfET_114, i16* %hfET_115, i16* %hfET_116, i16* %hfET_117, i16* %hfET_118, i16* %hfET_119, i16* %hfET_120, i16* %hfET_121, i16* %hfET_122, i16* %hfET_123, i16* %hfET_124, i16* %hfET_125, i16* %hfET_126, i16* %hfET_127, i16* %hfET_128, i16* %hfET_129, i16* %hfET_130, i16* %hfET_131, i16* %hfET_132, i16* %hfET_133, i16* %hfET_134, i16* %hfET_135, i16* %hfET_136, i16* %hfET_137, i16* %hfET_138, i16* %hfET_139, i16* %hfET_140, i16* %hfET_141, i16* %hfET_142, i16* %hfET_143, i16* %HT_0, i16* %HT_1, i16* %HT_2)
+
+ST_2: StgValue_407 (825)  [1/1] 0.00ns  loc: MakeHT.cc:37
+codeRepl:403  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.69ns
+The critical path consists of the following:
+	'call' operation to 'Block_codeRepl84651_' [824]  (2.69 ns)
+
+ <State 2>: 8.43ns
+The critical path consists of the following:
+	'call' operation to 'Block_codeRepl84651_' [824]  (8.43 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

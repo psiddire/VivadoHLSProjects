@@ -1,0 +1,297 @@
+
+
+================================================================
+== Vivado HLS Report for 'getTowerPeaks3x4'
+================================================================
+* Date:           Mon Aug 20 17:22:24 2018
+
+* Version:        2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)
+* Project:        HCALTower
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690tffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.72|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    2|    2|    3|    3| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------+-------------+-----+-----+-----+-----+----------+
+        |                        |             |  Latency  |  Interval | Pipeline |
+        |        Instance        |    Module   | min | max | min | max |   Type   |
+        +------------------------+-------------+-----+-----+-----+-----+----------+
+        |grp_bitonic_1_8_fu_120  |bitonic_1_8  |    1|    1|    2|    2| function |
+        +------------------------+-------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|     816|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|     242|    1247|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       1|
+|Register         |        -|      -|     208|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|     450|    2064|
++-----------------+---------+-------+--------+--------+
+|Available        |     2940|   3600|  866400|  433200|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    +------------------------+-------------+---------+-------+-----+------+
+    |        Instance        |    Module   | BRAM_18K| DSP48E|  FF |  LUT |
+    +------------------------+-------------+---------+-------+-----+------+
+    |grp_bitonic_1_8_fu_120  |bitonic_1_8  |        0|      0|  242|  1247|
+    +------------------------+-------------+---------+-------+-----+------+
+    |Total                   |             |        0|      0|  242|  1247|
+    +------------------------+-------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------------------+----------+-------+---+----+------------+------------+
+    |                 Variable Name                 | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------------+----------+-------+---+----+------------+------------+
+    |p_read34_i_fu_451_p2                           |    and   |      0|  0|   1|           1|           1|
+    |p_read35_i_fu_489_p2                           |    and   |      0|  0|   1|           1|           1|
+    |p_read8_i_fu_499_p2                            |    and   |      0|  0|   1|           1|           1|
+    |p_read_i_fu_460_p2                             |    and   |      0|  0|   1|           1|           1|
+    |tmp_11_1_fu_204_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_11_2_fu_248_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_16_1_fu_226_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_16_2_fu_270_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_1_fu_182_p2                                |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_55_1_i_fu_298_p2                           |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_55_i_fu_292_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_59_1_i_fu_310_p2                           |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_59_i_fu_304_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_63_1_i_fu_322_p2                           |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_63_i_fu_316_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_72_1_i_fu_717_p2                           |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_72_i_fu_657_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_77_1_i_fu_837_p2                           |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_77_i_fu_777_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_82_1_i_fu_957_p2                           |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_82_i_fu_897_p2                             |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_s_fu_160_p2                                |   icmp   |      0|  0|   6|          16|          16|
+    |Cluster_1_Deposits_0_fu_174_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_1_1_fu_276_p3               |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_1_2_fu_284_p3               |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_1_fu_166_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_2_fu_196_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_3_fu_188_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_4_fu_218_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_5_fu_210_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_6_fu_240_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_7_fu_232_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_8_fu_262_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Deposits_9_fu_254_p3                 |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Eta_10_re_fu_420_p3                  |  select  |      0|  0|   3|           1|           3|
+    |Cluster_1_Eta_11_re_fu_413_p3                  |  select  |      0|  0|   3|           1|           1|
+    |Cluster_1_Eta_2_rea_fu_347_p3                  |  select  |      0|  0|   3|           1|           1|
+    |Cluster_1_Eta_3_rea_fu_340_p3                  |  select  |      0|  0|   3|           1|           3|
+    |Cluster_1_Eta_4_rea_fu_366_p3                  |  select  |      0|  0|   3|           1|           3|
+    |Cluster_1_Eta_5_rea_fu_359_p3                  |  select  |      0|  0|   3|           1|           1|
+    |Cluster_1_Eta_8_rea_fu_392_p3                  |  select  |      0|  0|   3|           1|           1|
+    |Cluster_1_Eta_9_rea_fu_385_p3                  |  select  |      0|  0|   3|           1|           3|
+    |Cluster_1_Phi_8_rea_fu_399_p3                  |  select  |      0|  0|   3|           1|           2|
+    |Cluster_1_Phi_9_rea_fu_406_p3                  |  select  |      0|  0|   3|           1|           3|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_0    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_1    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_1_3  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_1_4  |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_2    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_3    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_4    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_5    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_6    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_7    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_8    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Deposits_9    |  select  |      0|  0|  16|           1|          16|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_0_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_10_re     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_11_re     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_1_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_2_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_3_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_4_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_5_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_6_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_7_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_8_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Eta_9_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_0_rea     |  select  |      0|  0|   1|           1|           1|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_10_re     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_11_re     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_1_rea     |  select  |      0|  0|   1|           1|           1|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_2_rea     |  select  |      0|  0|   1|           1|           1|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_3_rea     |  select  |      0|  0|   1|           1|           1|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_4_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_5_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_6_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_7_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_8_rea     |  select  |      0|  0|   2|           1|           2|
+    |grp_bitonic_1_8_fu_120_Cluster_1_Phi_9_rea     |  select  |      0|  0|   2|           1|           2|
+    |p_16_i_fu_536_p3                               |  select  |      0|  0|   3|           1|           1|
+    |p_17_i_fu_567_p3                               |  select  |      0|  0|   3|           1|           3|
+    |p_18_i_fu_574_p3                               |  select  |      0|  0|   3|           1|           1|
+    |p_i_fu_529_p3                                  |  select  |      0|  0|   3|           1|           3|
+    |p_read10_i_fu_643_p3                           |  select  |      0|  0|   2|           1|           2|
+    |p_read10_read8_i_fu_581_p3                     |  select  |      0|  0|  16|           1|          16|
+    |p_read11_read9_i_fu_619_p3                     |  select  |      0|  0|  16|           1|          16|
+    |p_read16_read_i_fu_444_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read17_read_i_fu_482_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read18_read_i_fu_437_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read19_read_i_fu_475_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read1_read3_i_fu_470_p3                      |  select  |      0|  0|  16|           1|          16|
+    |p_read20_read_i_fu_522_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read21_read_i_fu_560_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read22_read_i_fu_515_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read23_read_i_fu_553_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read24_read_i_fu_598_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read25_read_i_fu_636_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read26_read_i_fu_591_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read27_read_i_fu_629_p3                      |  select  |      0|  0|   2|           1|           2|
+    |p_read2_read_i_fu_427_p3                       |  select  |      0|  0|  16|           1|          16|
+    |p_read3_read1_i_fu_465_p3                      |  select  |      0|  0|  16|           1|          16|
+    |p_read40_i_fu_612_p3                           |  select  |      0|  0|   2|           1|           2|
+    |p_read41_i_fu_650_p3                           |  select  |      0|  0|   2|           1|           2|
+    |p_read4_read6_i_fu_510_p3                      |  select  |      0|  0|  16|           1|          16|
+    |p_read5_read7_i_fu_548_p3                      |  select  |      0|  0|  16|           1|          16|
+    |p_read6_read4_i_fu_505_p3                      |  select  |      0|  0|  16|           1|          16|
+    |p_read7_read5_i_fu_543_p3                      |  select  |      0|  0|  16|           1|          16|
+    |p_read8_read_i_fu_586_p3                       |  select  |      0|  0|  16|           1|          16|
+    |p_read9_i_fu_605_p3                            |  select  |      0|  0|   2|           1|           2|
+    |p_read9_read_i_fu_624_p3                       |  select  |      0|  0|  16|           1|          16|
+    |p_read_read2_i_fu_432_p3                       |  select  |      0|  0|  16|           1|          16|
+    |Cluster_1_Eta_1_rea_fu_328_p2                  |    xor   |      0|  0|   2|           1|           2|
+    |Cluster_1_Eta_7_rea_fu_373_p2                  |    xor   |      0|  0|   2|           1|           2|
+    |Cluster_1_Phi_3_rea_fu_354_p2                  |    xor   |      0|  0|   2|           1|           2|
+    |not_tmp_55_1_i_fu_494_p2                       |    xor   |      0|  0|   2|           1|           2|
+    |not_tmp_55_i_fu_455_p2                         |    xor   |      0|  0|   2|           1|           2|
+    +-----------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                          |          |      0|  0| 816|         387|         983|
+    +-----------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |   1|          4|    1|          4|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |   1|          4|    1|          4|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |Cluster_1_Deposits_0_reg_1029           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_1_1_reg_1118         |  16|   0|   16|          0|
+    |Cluster_1_Deposits_1_2_reg_1124         |  16|   0|   16|          0|
+    |Cluster_1_Deposits_1_reg_1023           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_2_reg_1050           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_3_reg_1044           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_4_reg_1068           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_5_reg_1062           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_6_reg_1086           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_7_reg_1080           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_8_reg_1106           |  16|   0|   16|          0|
+    |Cluster_1_Deposits_9_reg_1100           |  16|   0|   16|          0|
+    |ap_CS_fsm                               |   3|   0|    3|          0|
+    |ap_reg_grp_bitonic_1_8_fu_120_ap_start  |   1|   0|    1|          0|
+    |tmp_11_1_reg_1056                       |   1|   0|    1|          0|
+    |tmp_11_2_reg_1092                       |   1|   0|    1|          0|
+    |tmp_16_1_reg_1074                       |   1|   0|    1|          0|
+    |tmp_16_2_reg_1112                       |   1|   0|    1|          0|
+    |tmp_1_reg_1035                          |   1|   0|    1|          0|
+    |tmp_55_1_i_reg_1140                     |   1|   0|    1|          0|
+    |tmp_55_i_reg_1130                       |   1|   0|    1|          0|
+    |tmp_59_1_i_reg_1160                     |   1|   0|    1|          0|
+    |tmp_59_i_reg_1150                       |   1|   0|    1|          0|
+    |tmp_63_1_i_reg_1180                     |   1|   0|    1|          0|
+    |tmp_63_i_reg_1170                       |   1|   0|    1|          0|
+    |tmp_s_reg_1017                          |   1|   0|    1|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   | 208|   0|  208|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+--------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++--------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk              |  in |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_rst              |  in |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_start            |  in |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_done             | out |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_idle             | out |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_ready            | out |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_0         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_1         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_2         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_3         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_4         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_5         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_6         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_7         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_8         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_return_9         | out |   16| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|ap_ce               |  in |    1| ap_ctrl_hs |  getTowerPeaks3x4  | return value |
+|towerETRegions_0_0  |  in |   16|   ap_none  | towerETRegions_0_0 |    scalar    |
+|towerETRegions_0_1  |  in |   16|   ap_none  | towerETRegions_0_1 |    scalar    |
+|towerETRegions_0_2  |  in |   16|   ap_none  | towerETRegions_0_2 |    scalar    |
+|towerETRegions_0_3  |  in |   16|   ap_none  | towerETRegions_0_3 |    scalar    |
+|towerETRegions_1_0  |  in |   16|   ap_none  | towerETRegions_1_0 |    scalar    |
+|towerETRegions_1_1  |  in |   16|   ap_none  | towerETRegions_1_1 |    scalar    |
+|towerETRegions_1_2  |  in |   16|   ap_none  | towerETRegions_1_2 |    scalar    |
+|towerETRegions_1_3  |  in |   16|   ap_none  | towerETRegions_1_3 |    scalar    |
+|towerETRegions_2_0  |  in |   16|   ap_none  | towerETRegions_2_0 |    scalar    |
+|towerETRegions_2_1  |  in |   16|   ap_none  | towerETRegions_2_1 |    scalar    |
+|towerETRegions_2_2  |  in |   16|   ap_none  | towerETRegions_2_2 |    scalar    |
+|towerETRegions_2_3  |  in |   16|   ap_none  | towerETRegions_2_3 |    scalar    |
++--------------------+-----+-----+------------+--------------------+--------------+
+
