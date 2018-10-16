@@ -1,0 +1,120 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'TPG'" level="0">
+<item name = "Date">Tue Oct 16 15:44:29 2018
+</item>
+<item name = "Version">2016.3 (Build 1682563 on Mon Oct 10 19:41:59 MDT 2016)</item>
+<item name = "Project">NTPG</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintexu</item>
+<item name = "Target device">xcku115-flvb2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.25, 5.39, 0.78</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">6, 6, 4, 4, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_LinFil_fu_13826">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13840">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13854">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13868">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13882">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13896">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13910">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13924">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13938">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13952">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13966">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13980">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_13994">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14008">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14022">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14036">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14050">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14064">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14078">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14092">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14106">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14120">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14134">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14148">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14162">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14176">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14190">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14204">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14218">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14232">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14246">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14260">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14274">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14288">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14302">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14316">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14330">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14344">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14358">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14372">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14386">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14400">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14414">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14428">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14442">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14456">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14470">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14484">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14498">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14512">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14526">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14540">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14554">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14568">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14582">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14596">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14610">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14624">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14638">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14652">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14666">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14680">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14694">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14708">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14722">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14736">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14750">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14764">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14778">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14792">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14806">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14820">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14834">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14848">LinFil, 3, 3, 1, 1, function</column>
+<column name="grp_LinFil_fu_14862">LinFil, 3, 3, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

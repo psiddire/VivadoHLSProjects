@@ -13,5 +13,5 @@ create_clock -period 10 -name default
 #source "./MakeHT/solution1/directives.tcl"
 csim_design -compiler gcc
 csynth_design
-cosim_design -rtl vhdl
+cosim_design
 export_design -flow impl -rtl vhdl -format ip_catalog

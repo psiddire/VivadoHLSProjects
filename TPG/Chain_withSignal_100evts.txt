@@ -1,0 +1,1183 @@
+EcalTPG =================> Treating event  1, Number of EB digis 861
+201 201 199 364 1206 1538 1390 1104 837 629 
+1 201 106 5 183
+1 201 106 5 183
+1 199 106 5 183
+1 364 106 5 183
+3 1206 192 1 137
+3 1538 192 1 137
+3 1390 192 1 137
+3 1104 192 1 137
+3 837 192 1 137
+3 629 192 1 137
+output of linearizer 
+135 135 132 368 17364 23050 20515 15618 11045 7483 
+output of filter 
+0 0 0 6572 16996 22921 11851 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  2, Number of EB digis 956
+199 197 198 297 871 1100 1002 810 630 490 
+1 199 116 5 173
+1 197 116 5 173
+1 198 116 5 173
+1 297 116 5 173
+3 871 192 1 129
+3 1100 192 1 129
+3 1002 192 1 129
+3 810 192 1 129
+3 630 192 1 129
+3 490 192 1 129
+output of linearizer 
+112 109 110 244 10948 14641 13061 9965 7062 4805 
+output of filter 
+0 0 0 4127 10730 14529 7596 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  3, Number of EB digis 410
+EcalTPG =================> Treating event  4, Number of EB digis 942
+201 202 200 342 974 1221 1106 887 683 526 
+1 201 110 5 186
+1 202 110 5 186
+1 200 110 5 186
+1 342 110 5 186
+3 974 192 1 140
+3 1221 192 1 140
+3 1106 192 1 140
+3 887 192 1 140
+3 683 192 1 140
+3 526 192 1 140
+output of linearizer 
+132 133 130 337 13685 18007 15995 12162 8592 5845 
+output of filter 
+0 0 0 5178 13317 17882 9134 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  5, Number of EB digis 892
+204 207 204 366 1138 1443 1306 1039 791 599 
+1 204 101 6 222
+1 207 101 6 222
+1 204 101 6 222
+1 366 101 6 222
+3 1138 191 2 166
+3 1443 191 2 166
+3 1306 191 2 166
+3 1039 191 2 166
+3 791 191 2 166
+3 599 191 2 166
+output of linearizer 
+89 91 89 229 9825 12989 11568 8798 6225 4233 
+output of filter 
+0 0 0 3715 9584 12908 6646 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  6, Number of EB digis 1044
+200 201 200 314 4046 1046 951 769 601 470 
+1 200 113 6 245
+1 201 113 6 245
+1 200 113 6 245
+1 314 113 6 245
+2 4046 156 5 245
+3 1046 192 2 184
+3 951 192 2 184
+3 769 192 2 184
+3 601 192 2 184
+3 470 192 2 184
+output of linearizer 
+83 84 83 192 7445 9821 8728 6635 4703 3197 
+output of filter 
+0 0 0 2811 7242 9739 4990 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  7, Number of EB digis 305
+EcalTPG =================> Treating event  8, Number of EB digis 952
+202 202 203 401 1385 1772 1598 1262 948 705 
+1 202 104 5 161
+1 202 104 5 161
+1 203 104 5 161
+1 401 104 5 161
+3 1385 192 2 242
+3 1772 192 2 242
+3 1598 192 2 242
+3 1262 192 2 242
+3 948 192 2 242
+3 705 192 2 242
+output of linearizer 
+123 123 124 373 18044 23897 21265 16183 11434 7759 
+output of filter 
+0 0 0 6839 17656 23786 12264 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  9, Number of EB digis 779
+200 201 199 360 1089 1371 1239 988 755 574 
+1 200 112 5 208
+1 201 112 5 208
+1 199 112 5 208
+1 360 112 5 208
+3 1089 192 1 156
+3 1371 192 1 156
+3 1239 192 1 156
+3 988 192 1 156
+3 755 192 1 156
+3 574 192 1 156
+output of linearizer 
+143 144 141 403 17491 22990 20416 15522 10978 7449 
+output of filter 
+0 0 0 6629 17034 22862 11663 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  10, Number of EB digis 910
+201 198 197 293 3477 921 840 686 542 430 
+1 201 117 5 232
+1 198 117 5 232
+1 197 117 5 232
+1 293 117 5 232
+2 3477 158 4 232
+3 921 193 1 174
+3 840 193 1 174
+3 686 193 1 174
+3 542 193 1 174
+3 430 193 1 174
+output of linearizer 
+152 146 145 319 12031 15834 14072 10722 7590 5154 
+output of filter 
+0 0 0 4535 11680 15696 8034 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  11, Number of EB digis 870
+198 199 198 307 860 1078 982 794 617 482 
+1 198 101 5 193
+1 199 101 5 193
+1 198 101 5 193
+1 307 101 5 193
+3 860 191 1 144
+3 1078 191 1 144
+3 982 191 1 144
+3 794 191 1 144
+3 617 191 1 144
+3 482 191 1 144
+output of linearizer 
+146 147 146 310 12042 15966 14238 10854 7668 5238 
+output of filter 
+0 0 0 4537 11733 15829 8196 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  12, Number of EB digis 865
+204 202 199 298 3917 1025 935 758 593 465 
+1 204 97 5 186
+1 202 97 5 186
+1 199 97 5 186
+1 298 97 5 186
+2 3917 148 4 186
+3 1025 191 1 139
+3 935 191 1 139
+3 758 191 1 139
+3 593 191 1 139
+3 465 191 1 139
+output of linearizer 
+155 152 148 292 10953 14490 12927 9851 6984 4760 
+output of filter 
+0 0 0 4113 10644 14359 7422 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  13, Number of EB digis 875
+200 201 203 323 867 1080 981 793 617 482 
+1 200 121 5 242
+1 201 121 5 242
+1 203 121 5 242
+1 323 121 5 242
+3 867 193 1 182
+3 1080 193 1 182
+3 981 193 1 182
+3 793 193 1 182
+3 617 193 1 182
+3 482 193 1 182
+output of linearizer 
+149 151 155 381 15333 20179 17927 13650 9646 6574 
+output of filter 
+0 0 0 5804 14918 20032 10244 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  14, Number of EB digis 963
+201 202 199 334 1038 1316 1194 955 732 559 
+1 201 111 5 181
+1 202 111 5 181
+1 199 111 5 181
+1 334 111 5 181
+3 1038 192 1 136
+3 1316 192 1 136
+3 1194 192 1 136
+3 955 192 1 136
+3 732 192 1 136
+3 559 192 1 136
+output of linearizer 
+127 128 124 315 14382 19108 17034 12971 9180 6239 
+output of filter 
+0 0 0 5434 14069 18994 9847 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  15, Number of EB digis 806
+203 205 204 341 1006 1267 1149 920 708 542 
+1 203 111 6 210
+1 205 111 6 210
+1 204 111 6 210
+1 341 111 6 210
+3 1006 192 2 157
+3 1267 192 2 157
+3 1149 192 2 157
+3 920 192 2 157
+3 708 192 2 157
+3 542 192 2 157
+output of linearizer 
+75 77 76 188 7987 10548 9390 7143 5063 3434 
+output of filter 
+0 0 0 3019 7784 10480 5389 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  16, Number of EB digis 148
+EcalTPG =================> Treating event  17, Number of EB digis 153
+EcalTPG =================> Treating event  18, Number of EB digis 152
+EcalTPG =================> Treating event  19, Number of EB digis 785
+201 200 200 357 1052 1323 1197 956 732 559 
+1 201 111 5 183
+1 200 111 5 183
+1 200 111 5 183
+1 357 111 5 183
+3 1052 192 1 137
+3 1323 192 1 137
+3 1197 192 1 137
+3 956 192 1 137
+3 732 192 1 137
+3 559 192 1 137
+output of linearizer 
+128 127 127 351 14727 19368 17210 13083 9247 6284 
+output of filter 
+0 0 0 5581 14341 19251 9832 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  20, Number of EB digis 152
+EcalTPG =================> Treating event  21, Number of EB digis 859
+200 200 198 361 1270 1629 1474 1167 881 659 
+1 200 108 5 146
+1 200 108 5 146
+1 198 108 5 146
+1 361 108 5 146
+3 1270 192 2 219
+3 1629 192 2 219
+3 1474 192 2 219
+3 1167 192 2 219
+3 881 192 2 219
+3 659 192 2 219
+output of linearizer 
+104 104 102 288 14755 19668 17547 13345 9430 6392 
+output of filter 
+0 0 0 5581 14478 19578 10188 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  22, Number of EB digis 657
+206 206 206 395 1455 1877 1695 1336 1001 741 
+1 206 118 6 223
+1 206 118 6 223
+1 206 118 6 223
+1 395 118 6 223
+3 1455 193 2 167
+3 1877 193 2 167
+3 1695 193 2 167
+3 1336 193 2 167
+3 1001 193 2 167
+3 741 193 2 167
+output of linearizer 
+76 76 76 241 13172 17576 15677 11930 8433 5719 
+output of filter 
+0 0 0 4989 12946 17509 9120 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  23, Number of EB digis 152
+EcalTPG =================> Treating event  24, Number of EB digis 971
+206 205 202 491 1792 2297 2061 1612 1195 870 
+1 206 110 6 229
+1 205 110 6 229
+1 202 110 6 229
+1 491 110 6 229
+3 1792 192 2 171
+3 2297 192 2 171
+3 2061 192 2 171
+3 1612 192 2 171
+3 1195 192 2 171
+3 870 192 2 171
+output of linearizer 
+85 84 82 340 17100 22497 19974 15176 10719 7246 
+output of filter 
+0 0 0 6502 16710 22428 11445 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  25, Number of EB digis 857
+202 200 200 396 1216 1531 1379 1094 830 624 
+1 202 118 5 157
+1 200 118 5 157
+1 200 118 5 157
+1 396 118 5 157
+3 1216 193 2 235
+3 1531 193 2 235
+3 1379 193 2 235
+3 1094 193 2 235
+3 830 193 2 235
+3 624 193 2 235
+output of linearizer 
+103 100 100 340 15025 19651 17419 13233 9355 6330 
+output of filter 
+0 0 0 5710 14619 19563 9902 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  26, Number of EB digis 157
+EcalTPG =================> Treating event  27, Number of EB digis 988
+200 200 199 466 1484 1874 1681 1322 990 731 
+1 200 97 6 254
+1 200 97 6 254
+1 199 97 6 254
+1 466 97 6 254
+3 1484 191 2 191
+3 1874 191 2 191
+3 1681 191 2 191
+3 1322 191 2 191
+3 990 191 2 191
+3 731 191 2 191
+output of linearizer 
+102 102 101 366 15435 20090 17786 13501 9538 6446 
+output of filter 
+0 0 0 5876 14986 20000 10051 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  28, Number of EB digis 773
+202 201 199 597 2415 3124 2796 2170 1588 1135 
+1 202 84 6 154
+1 201 84 6 154
+1 199 84 6 154
+1 597 84 6 154
+3 2415 190 3 231
+3 3124 190 3 231
+3 2796 190 3 231
+3 2170 190 3 231
+3 1588 190 3 231
+3 1135 190 3 231
+output of linearizer 
+70 70 69 308 16061 21179 18812 14293 10091 6821 
+output of filter 
+0 0 0 6109 15720 21119 10807 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  29, Number of EB digis 175
+EcalTPG =================> Treating event  30, Number of EB digis 956
+198 200 197 509 1831 2339 2095 1637 1211 881 
+1 198 102 6 194
+1 200 102 6 194
+1 197 102 6 194
+1 509 102 6 194
+3 1831 191 2 146
+3 2339 191 2 146
+3 2095 191 2 146
+3 1637 191 2 146
+3 1211 191 2 146
+3 881 191 2 146
+output of linearizer 
+72 74 71 308 14965 19600 17374 13194 9307 6296 
+output of filter 
+0 0 0 5695 14594 19540 9904 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  31, Number of EB digis 158
+EcalTPG =================> Treating event  32, Number of EB digis 168
+EcalTPG =================> Treating event  33, Number of EB digis 187
+EcalTPG =================> Treating event  34, Number of EB digis 161
+EcalTPG =================> Treating event  35, Number of EB digis 181
+EcalTPG =================> Treating event  36, Number of EB digis 172
+EcalTPG =================> Treating event  37, Number of EB digis 959
+203 201 198 533 2007 2580 2311 1802 1328 961 
+1 203 100 6 192
+1 201 100 6 192
+1 198 100 6 192
+1 533 100 6 192
+3 2007 191 2 144
+3 2580 191 2 144
+3 2311 191 2 144
+3 1802 191 2 144
+3 1328 191 2 144
+3 961 191 2 144
+output of linearizer 
+77 75 73 324 16344 21501 19080 14499 10233 6930 
+output of filter 
+0 0 0 6217 15976 21435 10931 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  38, Number of EB digis 173
+EcalTPG =================> Treating event  39, Number of EB digis 180
+EcalTPG =================> Treating event  40, Number of EB digis 963
+203 202 201 410 1306 1652 1487 1176 888 663 
+1 203 102 5 180
+1 202 102 5 180
+1 201 102 5 180
+1 410 102 5 180
+3 1306 191 1 135
+3 1652 191 1 135
+3 1487 191 1 135
+3 1176 191 1 135
+3 888 191 1 135
+3 663 191 1 135
+output of linearizer 
+142 140 139 433 18815 24654 21870 16621 11761 7965 
+output of filter 
+0 0 0 7141 18310 24529 12454 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  41, Number of EB digis 746
+199 201 198 361 1153 1461 1320 1050 798 603 
+1 199 107 5 177
+1 201 107 5 177
+1 198 107 5 177
+1 361 107 5 177
+3 1153 192 1 132
+3 1461 192 1 132
+3 1320 192 1 132
+3 1050 192 1 132
+3 798 192 1 132
+3 603 192 1 132
+output of linearizer 
+127 129 125 351 15856 20938 18612 14157 9999 6781 
+output of filter 
+0 0 0 6004 15476 20821 10687 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  42, Number of EB digis 875
+197 197 199 314 853 1065 968 784 610 477 
+1 197 119 5 140
+1 197 119 5 140
+1 199 119 5 140
+1 314 119 5 140
+3 853 193 2 210
+3 1065 193 2 210
+3 968 193 2 210
+3 784 193 2 210
+3 610 193 2 210
+3 477 193 2 210
+output of linearizer 
+85 85 87 213 8662 11445 10171 7756 5473 3727 
+output of filter 
+0 0 0 3277 8443 11356 5837 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  43, Number of EB digis 959
+204 203 200 390 1498 1941 1754 1381 1033 762 
+1 204 112 5 157
+1 203 112 5 157
+1 200 112 5 157
+1 390 112 5 157
+3 1498 192 2 235
+3 1941 192 2 235
+3 1754 192 2 235
+3 1381 192 2 235
+3 1033 192 2 235
+3 762 192 2 235
+output of linearizer 
+112 111 107 340 19181 25688 22941 17463 12352 8371 
+output of filter 
+0 0 0 7258 18886 25592 13400 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  44, Number of EB digis 180
+EcalTPG =================> Treating event  45, Number of EB digis 151
+EcalTPG =================> Treating event  46, Number of EB digis 962
+199 199 200 535 2185 2835 2543 1979 1453 1044 
+1 199 89 6 203
+1 199 89 6 203
+1 200 89 6 203
+1 535 89 6 203
+3 2185 190 2 152
+3 2835 190 2 152
+3 2543 190 2 152
+3 1979 190 2 152
+3 1453 190 2 152
+3 1044 190 2 152
+output of linearizer 
+87 87 88 353 18952 25127 22353 16995 11998 8113 
+output of filter 
+0 0 0 7202 18591 25046 12917 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  47, Number of EB digis 184
+EcalTPG =================> Treating event  48, Number of EB digis 924
+202 200 201 477 1949 2529 2274 1775 1310 947 
+1 202 103 6 195
+1 200 103 6 195
+1 201 103 6 195
+1 477 103 6 195
+3 1949 191 2 147
+3 2529 191 2 147
+3 2274 191 2 147
+3 1775 191 2 147
+3 1310 191 2 147
+3 947 191 2 147
+output of linearizer 
+75 73 74 284 16151 21480 19137 14553 10280 6945 
+output of filter 
+0 0 0 6128 15866 21419 11103 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  49, Number of EB digis 178
+EcalTPG =================> Treating event  50, Number of EB digis 156
+EcalTPG =================> Treating event  51, Number of EB digis 971
+203 201 203 334 868 1076 976 789 615 480 
+1 203 102 5 174
+1 201 102 5 174
+1 203 102 5 174
+1 334 102 5 174
+3 868 191 1 131
+3 1076 191 1 131
+3 976 191 1 131
+3 789 191 1 131
+3 615 191 1 131
+3 480 191 1 131
+output of linearizer 
+137 134 137 315 11085 14491 12854 9792 6943 4732 
+output of filter 
+0 0 0 4190 10730 14359 7279 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  52, Number of EB digis 819
+198 197 197 343 1139 1453 1316 1048 798 603 
+1 198 111 5 207
+1 197 111 5 207
+1 197 111 5 207
+1 343 111 5 207
+3 1139 192 1 156
+3 1453 192 1 156
+3 1316 192 1 156
+3 1048 192 1 156
+3 798 192 1 156
+3 603 192 1 156
+output of linearizer 
+140 139 139 375 18466 24589 21918 16692 11817 8014 
+output of filter 
+0 0 0 6983 18101 24460 12712 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  53, Number of EB digis 979
+199 201 200 364 1084 1363 1232 982 750 571 
+1 199 98 5 173
+1 201 98 5 173
+1 200 98 5 173
+1 364 98 5 173
+3 1084 191 1 130
+3 1363 191 1 130
+3 1232 191 1 130
+3 982 191 1 130
+3 750 191 1 130
+3 571 191 1 130
+output of linearizer 
+136 139 137 359 14511 19045 16916 12853 9083 6175 
+output of filter 
+0 0 0 5494 14104 18919 9635 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  54, Number of EB digis 881
+197 196 199 442 1597 2047 1841 1445 1076 790 
+1 197 105 5 131
+1 196 105 5 131
+1 199 105 5 131
+1 442 105 5 131
+3 1597 192 2 196
+3 2047 192 2 196
+3 1841 192 2 196
+3 1445 192 2 196
+3 1076 192 2 196
+3 790 192 2 196
+output of linearizer 
+94 93 96 344 17211 22723 20200 15349 10829 7325 
+output of filter 
+0 0 0 6540 16837 22640 11612 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  55, Number of EB digis 935
+205 203 202 457 1664 2136 1920 1505 1120 820 
+1 205 78 5 134
+1 203 78 5 134
+1 202 78 5 134
+1 457 78 5 134
+3 1664 189 2 201
+3 2136 189 2 201
+3 1920 189 2 201
+3 1505 189 2 201
+3 1120 189 2 201
+3 820 189 2 201
+output of linearizer 
+132 130 129 396 18529 24459 21745 16532 11695 7926 
+output of filter 
+0 0 0 7024 18100 24343 12488 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  56, Number of EB digis 978
+201 200 199 328 947 1189 1079 867 670 516 
+1 201 103 5 133
+1 200 103 5 133
+1 199 103 5 133
+1 328 103 5 133
+3 947 191 2 200
+3 1189 191 2 200
+3 1079 191 2 200
+3 867 191 2 200
+3 670 191 2 200
+3 516 191 2 200
+output of linearizer 
+101 100 99 233 9450 12475 11100 8450 5987 4062 
+output of filter 
+0 0 0 3567 9201 12382 6362 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  57, Number of EB digis 982
+200 202 201 330 946 1188 1078 867 670 517 
+1 200 107 6 223
+1 202 107 6 223
+1 201 107 6 223
+1 330 107 6 223
+3 946 192 2 167
+3 1188 192 2 167
+3 1078 192 2 167
+3 867 192 2 167
+3 670 192 2 167
+3 517 192 2 167
+output of linearizer 
+81 82 81 194 7869 10395 9247 7045 4989 3392 
+output of filter 
+0 0 0 2972 7665 10316 5304 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  58, Number of EB digis 947
+204 196 195 484 1914 2475 2223 1736 1282 929 
+1 204 112 6 208
+1 196 112 6 208
+1 195 112 6 208
+1 484 112 6 208
+3 1914 192 2 156
+3 2475 192 2 156
+3 2223 192 2 156
+3 1736 192 2 156
+3 1282 192 2 156
+3 929 192 2 156
+output of linearizer 
+74 68 67 302 16789 22259 19802 15054 10627 7185 
+output of filter 
+0 0 0 6377 16478 22199 11448 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  59, Number of EB digis 889
+199 197 195 363 1221 1557 1407 1116 846 634 
+1 199 94 5 173
+1 197 94 5 173
+1 195 94 5 173
+1 363 94 5 173
+3 1221 191 1 130
+3 1557 191 1 130
+3 1407 191 1 130
+3 1116 191 1 130
+3 846 191 1 130
+3 634 191 1 130
+output of linearizer 
+141 139 136 363 16737 22197 19760 15031 10643 7198 
+output of filter 
+0 0 0 6328 16365 22069 11397 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  60, Number of EB digis 983
+201 200 200 395 1217 1535 1383 1097 832 626 
+1 201 114 5 172
+1 200 114 5 172
+1 200 114 5 172
+1 395 114 5 172
+3 1217 192 1 129
+3 1535 192 1 129
+3 1383 192 1 129
+3 1097 192 1 129
+3 832 192 1 129
+3 626 192 1 129
+output of linearizer 
+116 115 115 377 16528 21655 19204 14593 10320 6998 
+output of filter 
+0 0 0 6279 16091 21550 10934 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  61, Number of EB digis 165
+EcalTPG =================> Treating event  62, Number of EB digis 163
+EcalTPG =================> Treating event  63, Number of EB digis 923
+202 202 202 377 1175 1486 1342 1067 810 611 
+1 202 109 5 197
+1 202 109 5 197
+1 202 109 5 197
+1 377 109 5 197
+3 1175 192 1 148
+3 1486 192 1 148
+3 1342 192 1 148
+3 1067 192 1 148
+3 810 192 1 148
+3 611 192 1 148
+output of linearizer 
+143 143 143 412 18185 23939 21275 16187 11433 7751 
+output of filter 
+0 0 0 6893 17728 23812 12182 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  64, Number of EB digis 963
+203 200 201 332 852 1052 955 773 603 471 
+1 203 99 5 190
+1 200 99 5 190
+1 201 99 5 190
+1 332 99 5 190
+3 852 191 1 143
+3 1052 191 1 143
+3 955 191 1 143
+3 773 191 1 143
+3 603 191 1 143
+3 471 191 1 143
+output of linearizer 
+154 149 151 345 11815 15390 13656 10403 7364 5005 
+output of filter 
+0 0 0 4465 11412 15254 7705 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  65, Number of EB digis 388
+EcalTPG =================> Treating event  66, Number of EB digis 165
+EcalTPG =================> Treating event  67, Number of EB digis 164
+EcalTPG =================> Treating event  68, Number of EB digis 173
+EcalTPG =================> Treating event  69, Number of EB digis 156
+EcalTPG =================> Treating event  70, Number of EB digis 169
+EcalTPG =================> Treating event  71, Number of EB digis 755
+204 202 200 520 1922 2464 2208 1723 1273 923 
+1 204 125 6 233
+1 202 125 6 233
+1 200 125 6 233
+1 520 125 6 233
+3 1922 193 2 175
+3 2464 193 2 175
+3 2208 193 2 175
+3 1723 193 2 175
+3 1273 193 2 175
+3 923 193 2 175
+output of linearizer 
+71 70 68 359 18910 24839 22039 16734 11812 7984 
+output of filter 
+0 0 0 7202 18484 24786 12615 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  72, Number of EB digis 856
+204 201 203 341 1064 1349 1222 977 747 569 
+1 204 113 5 133
+1 201 113 5 133
+1 203 113 5 133
+1 341 113 5 133
+3 1064 192 2 200
+3 1349 192 2 200
+3 1222 192 2 200
+3 977 192 2 200
+3 747 192 2 200
+3 569 192 2 200
+output of linearizer 
+94 91 93 236 10900 14462 12875 9812 6937 4712 
+output of filter 
+0 0 0 4121 10658 14375 7436 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  73, Number of EB digis 980
+204 205 203 405 1298 1644 1480 1172 884 661 
+1 204 119 5 158
+1 205 119 5 158
+1 203 119 5 158
+1 405 119 5 158
+3 1298 193 2 237
+3 1644 193 2 237
+3 1480 193 2 237
+3 1172 193 2 237
+3 884 193 2 237
+3 661 193 2 237
+output of linearizer 
+104 106 103 353 16367 21492 19063 14501 10235 6932 
+output of filter 
+0 0 0 6215 15957 21397 10893 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  74, Number of EB digis 999
+198 196 197 349 1096 1389 1256 1002 765 581 
+1 198 101 5 191
+1 196 101 5 191
+1 197 101 5 191
+1 349 101 5 191
+3 1096 191 1 143
+3 1389 191 1 143
+3 1256 191 1 143
+3 1002 191 1 143
+3 765 191 1 143
+3 581 191 1 143
+output of linearizer 
+144 141 143 370 16176 21414 19036 14496 10260 6971 
+output of filter 
+0 0 0 6121 15798 21270 10953 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  75, Number of EB digis 272
+EcalTPG =================> Treating event  76, Number of EB digis 166
+EcalTPG =================> Treating event  77, Number of EB digis 177
+EcalTPG =================> Treating event  78, Number of EB digis 795
+205 204 203 479 1734 2222 1996 1562 1159 846 
+1 205 122 6 232
+1 204 122 6 232
+1 203 122 6 232
+1 479 122 6 232
+3 1734 193 2 174
+3 2222 193 2 174
+3 1996 193 2 174
+3 1562 193 2 174
+3 1159 193 2 174
+3 846 193 2 174
+output of linearizer 
+75 74 73 323 16758 22065 19607 14887 10505 7101 
+output of filter 
+0 0 0 6374 16389 22009 11248 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  79, Number of EB digis 906
+202 201 199 351 1088 1375 1243 992 758 576 
+1 202 113 5 215
+1 201 113 5 215
+1 199 113 5 215
+1 351 113 5 215
+3 1088 192 1 161
+3 1375 192 1 161
+3 1243 192 1 161
+3 992 192 1 161
+3 758 192 1 161
+3 576 192 1 161
+output of linearizer 
+149 147 144 399 18032 23807 21151 16100 11390 7728 
+output of filter 
+0 0 0 6826 17598 23670 12146 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  80, Number of EB digis 1003
+200 202 200 394 1357 1734 1564 1235 929 692 
+1 200 109 5 139
+1 202 109 5 139
+1 200 109 5 139
+1 394 109 5 139
+3 1357 192 2 208
+3 1734 192 2 208
+3 1564 192 2 208
+3 1235 192 2 208
+3 929 192 2 208
+3 692 192 2 208
+output of linearizer 
+98 100 98 309 15145 20046 17836 13559 9581 6500 
+output of filter 
+0 0 0 5741 14818 19958 10277 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  81, Number of EB digis 1161
+203 198 199 437 1672 2158 1943 1524 1133 829 
+1 203 114 6 224
+1 198 114 6 224
+1 199 114 6 224
+1 437 114 6 224
+3 1672 192 2 168
+3 2158 192 2 168
+3 1943 192 2 168
+3 1524 192 2 168
+3 1133 192 2 168
+3 829 192 2 168
+output of linearizer 
+77 73 74 282 15540 20643 18385 13986 9880 6688 
+output of filter 
+0 0 0 5897 15255 20580 10651 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  82, Number of EB digis 172
+EcalTPG =================> Treating event  83, Number of EB digis 178
+EcalTPG =================> Treating event  84, Number of EB digis 1048
+204 203 202 368 1118 1409 1273 1015 774 587 
+1 204 110 5 149
+1 203 110 5 149
+1 202 110 5 149
+1 368 110 5 149
+3 1118 192 2 224
+3 1409 192 2 224
+3 1273 192 2 224
+3 1015 192 2 224
+3 774 192 2 224
+3 587 192 2 224
+output of linearizer 
+109 108 107 300 12964 17038 15134 11522 8148 5530 
+output of filter 
+0 0 0 4910 12623 16942 8650 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  85, Number of EB digis 175
+EcalTPG =================> Treating event  86, Number of EB digis 431
+EcalTPG =================> Treating event  87, Number of EB digis 995
+201 203 201 516 1760 2238 2003 1567 1162 848 
+1 201 111 6 237
+1 203 111 6 237
+1 201 111 6 237
+1 516 111 6 237
+3 1760 192 2 178
+3 2238 192 2 178
+3 2003 192 2 178
+3 1567 192 2 178
+3 1162 192 2 178
+3 848 192 2 178
+output of linearizer 
+83 85 83 374 17444 22761 20147 15296 10791 7298 
+output of filter 
+0 0 0 6648 16983 22688 11433 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  88, Number of EB digis 769
+198 200 197 499 2163 2823 2538 1977 1453 1044 
+1 198 102 6 188
+1 200 102 6 188
+1 197 102 6 188
+1 499 102 6 188
+3 2163 191 2 141
+3 2823 191 2 141
+3 2538 191 2 141
+3 1977 191 2 141
+3 1453 191 2 141
+3 1044 191 2 141
+output of linearizer 
+70 71 69 291 17378 23194 20682 15739 11121 7517 
+output of filter 
+0 0 0 6594 17108 23134 12049 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  89, Number of EB digis 845
+200 205 203 423 1447 1846 1662 1309 981 726 
+1 200 103 6 208
+1 205 103 6 208
+1 203 103 6 208
+1 423 103 6 208
+3 1447 191 2 156
+3 1846 191 2 156
+3 1662 191 2 156
+3 1309 191 2 156
+3 981 191 2 156
+3 726 191 2 156
+output of linearizer 
+78 82 81 260 12246 16136 14342 10900 7702 5216 
+output of filter 
+0 0 0 4648 11955 16065 8222 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  90, Number of EB digis 918
+201 200 199 311 3940 1023 930 754 591 464 
+1 201 105 5 199
+1 200 105 5 199
+1 199 105 5 199
+1 311 105 5 199
+2 3940 152 4 199
+3 1023 192 1 149
+3 930 192 1 149
+3 754 192 1 149
+3 591 192 1 149
+3 464 192 1 149
+output of linearizer 
+149 147 146 320 11778 15477 13745 10467 7431 5066 
+output of filter 
+0 0 0 4442 11424 15336 7829 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  91, Number of EB digis 178
+EcalTPG =================> Treating event  92, Number of EB digis 883
+201 203 200 330 889 1104 1001 808 628 488 
+1 201 114 6 252
+1 203 114 6 252
+1 200 114 6 252
+1 330 114 6 252
+3 889 192 2 189
+3 1104 192 2 189
+3 1001 192 2 189
+3 808 192 2 189
+3 628 192 2 189
+3 488 192 2 189
+output of linearizer 
+85 87 84 212 8233 10773 9556 7276 5150 3496 
+output of filter 
+0 0 0 3114 7984 10695 5426 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  93, Number of EB digis 951
+199 196 195 343 1142 1457 1319 1050 800 604 
+1 199 115 5 205
+1 196 115 5 205
+1 195 115 5 205
+1 343 115 5 205
+3 1142 192 1 154
+3 1457 192 1 154
+3 1319 192 1 154
+3 1050 192 1 154
+3 800 192 1 154
+3 604 192 1 154
+output of linearizer 
+134 129 128 365 18287 24351 21694 16516 11704 7931 
+output of filter 
+0 0 0 6918 17936 24229 12581 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  94, Number of EB digis 975
+200 198 197 326 1007 1274 1156 927 712 545 
+1 200 118 6 244
+1 198 118 6 244
+1 197 118 6 244
+1 326 118 6 244
+3 1007 193 2 183
+3 1274 193 2 183
+3 1156 193 2 183
+3 927 193 2 183
+3 712 193 2 183
+3 545 193 2 183
+output of linearizer 
+78 76 75 198 9310 12363 11014 8395 5936 4026 
+output of filter 
+0 0 0 3518 9109 12293 6368 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 
+EcalTPG =================> Treating event  95, Number of EB digis 185
+EcalTPG =================> Treating event  96, Number of EB digis 225
+EcalTPG =================> Treating event  97, Number of EB digis 153
+EcalTPG =================> Treating event  98, Number of EB digis 174
+EcalTPG =================> Treating event  99, Number of EB digis 181
+EcalTPG =================> Treating event  100, Number of EB digis 1076
+204 198 200 441 1593 2044 1838 1443 1076 790 
+1 204 105 6 206
+1 198 105 6 206
+1 200 105 6 206
+1 441 105 6 206
+3 1593 192 2 155
+3 2044 192 2 155
+3 1838 192 2 155
+3 1443 192 2 155
+3 1076 192 2 155
+3 790 192 2 155
+output of linearizer 
+79 74 76 270 13572 17941 15945 12119 8563 5793 
+output of filter 
+0 0 0 5152 13283 17871 9177 0 0 0 
+output of peakfinder 
+0 0 0 0 0 1 0 0 0 0 
+output of formatter 
+ 0  0  0  0  0  4095  0  0  0  0 

@@ -2,15 +2,17 @@
 #include <stdio.h>
 #include "TPG.h"
 
-void TPG(uint16_t data_input[NXtl * NSamples], uint32_t lincoeff[NXtl * NSamples][3], uint32_t trigger_data_output[NXtl * NSamples], int32_t filter_output[NXtl * NSamples], int params[5], bool peak_finder_output[NXtl * NSamples]) {
+void TPG(uint16_t data_input[NXtl * NSamples], uint32_t lincoeff[NXtl * NSamples][3], uint32_t trigger_data_output[NXtl * NSamples], int32_t filter_output[NXtl * NSamples], int params[5], bool peak_finder_output[NXtl * NSamples], int16_t strip_format_output[NXtl * NSamples]) {
 #pragma HLS INTERFACE ap_none port=trigger_data_output
 #pragma HLS INTERFACE ap_none port=filter_output
 #pragma HLS INTERFACE ap_none port=peak_finder_output
 #pragma HLS ARRAY_PARTITION variable=data_input complete dim=0
-#pragma HLS ARRAY_PARTITION variable=lincoeff complete dim=0
+#pragma HLS ARRAY_PARTITION variable=lincoeff block factor=1000
 #pragma HLS ARRAY_PARTITION variable=trigger_data_output complete dim=0
 #pragma HLS ARRAY_PARTITION variable=filter_output complete dim=0
+#pragma HLS ARRAY_PARTITION variable=params complete dim=0
 #pragma HLS ARRAY_PARTITION variable=peak_finder_output complete dim=0
+#pragma HLS ARRAY_PARTITION variable=strip_format_output complete dim=0
 
   Linearizer(data_input, lincoeff, trigger_data_output);
   
@@ -18,11 +20,12 @@ void TPG(uint16_t data_input[NXtl * NSamples], uint32_t lincoeff[NXtl * NSamples
   
   PeakFinder(filter_output, peak_finder_output);
 
+  StripFormat(filter_output, peak_finder_output, strip_format_output);
+
 }
 
 
 void Linearizer(uint16_t data_input[NXtl * NSamples], uint32_t lincoeff[NXtl * NSamples][3], uint32_t trigger_data_output[NXtl * NSamples]) {
-
   uint16_t correctedADC = 0;
   uint16_t uncorrectedADC = 0;
   uint16_t base = 0;
@@ -76,7 +79,6 @@ void AmpFilter(uint32_t trigger_data_output[NXtl * NSamples], int32_t filter_out
   int buffer[5];
   int weights[5];
   int i, j;
-  
 
   for (i = 0; i < 5; i++){
 #pragma HLS UNROLL
@@ -100,12 +102,14 @@ void AmpFilter(uint32_t trigger_data_output[NXtl * NSamples], int32_t filter_out
     }
     else{
       for(j = 0; j < 4; j++){
+#pragma HLS UNROLL
         buffer[j] = buffer[j+1];
       }
       buffer[4] = trigger_data_output[i];
     }
     processedOutput = 0;
     for(j = 0; j < 5; j++){
+#pragma HLS UNROLL
       processedOutput += (weights[j] * buffer[j]) >> shift;
     }
     if (processedOutput < 0) processedOutput = 0;
@@ -126,7 +130,8 @@ void AmpFilter(uint32_t trigger_data_output[NXtl * NSamples], int32_t filter_out
 
 
 void PeakFinder(int32_t filter_output[NXtl * NSamples], bool peak_finder_output[NXtl * NSamples]) {
-
+#pragma HLS ARRAY_PARTITION variable=filter_output complete dim=0
+#pragma HLS ARRAY_PARTITION variable=peak_finder_output complete dim=0
   int inputsAlreadyIn = 0;
   int buffer[3];
   int i, j;
@@ -148,7 +153,10 @@ void PeakFinder(int32_t filter_output[NXtl * NSamples], bool peak_finder_output[
       inputsAlreadyIn++;
     }
     else{
-      for (j = 0; j < 2; j++) buffer[j] = buffer[j+1];
+      for (j = 0; j < 2; j++){
+#pragma HLS UNROLL
+    	  buffer[j] = buffer[j+1];
+      }
       buffer[2] = filter_output[i];
     }
     if (buffer[1] > buffer[0] && buffer[1] > buffer[2]) peak_finder_output[i-1] = 1;
@@ -158,3 +166,22 @@ void PeakFinder(int32_t filter_output[NXtl * NSamples], bool peak_finder_output[
 }
 
 
+void StripFormat(int32_t filter_output[NXtl * NSamples], bool peak_finder_output[NXtl * NSamples], int16_t strip_format_output[NXtl * NSamples]) {
+
+  int i;
+  int16_t processedOutput = 0;
+  int shift = 0;
+
+  for (i = 0; i < NXtl * NSamples; i++){
+#pragma HLS UNROLL
+	  if (peak_finder_output[i]==1){
+      processedOutput = filter_output[i] >> shift;
+      if (processedOutput > 0XFFF) processedOutput = 0XFFF;
+      strip_format_output[i] = processedOutput;
+    }
+    else{
+      strip_format_output[i] = 0;
+    }
+  }
+
+}

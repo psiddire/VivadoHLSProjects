@@ -1,0 +1,39 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'psiddire' on host 'pcminn34.cern.ch' (Linux_x86_64 version 2.6.32-754.3.5.el6.x86_64) on Sun Oct 07 12:56:27 CEST 2018
+INFO: [HLS 200-10] On os "Scientific Linux CERN SLC release 6.10 (Carbon)"
+INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG'
+INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/TPG'.
+INFO: [HLS 200-10] Adding design file 'TPG.cc' to the project
+INFO: [HLS 200-10] Adding test bench file 'TestTPG.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/TPG/solution3'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7vx690tffg1927-2'
+INFO: [HLS 200-10] Analyzing design file 'TPG.cc' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 319.156 ; gain = 16.715 ; free physical = 29961 ; free virtual = 36837
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 319.156 ; gain = 16.715 ; free physical = 29959 ; free virtual = 36836
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 319.172 ; gain = 16.730 ; free physical = 29956 ; free virtual = 36835
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'StripFormat' into 'TPG' (TPG.cc:23) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 319.172 ; gain = 16.730 ; free physical = 29955 ; free virtual = 36835
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:175) in function 'StripFormat' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:139) in function 'PeakFinder' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (TPG.cc:143) in function 'PeakFinder' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1' (TPG.cc:156) in function 'PeakFinder' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:83) in function 'AmpFilter' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (TPG.cc:88) in function 'AmpFilter' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1' (TPG.cc:104) in function 'AmpFilter' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.2' (TPG.cc:111) in function 'AmpFilter' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (TPG.cc:119) in function 'AmpFilter' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:38) in function 'Linearizer' completely.
+INFO: [XFORM 203-102] Partitioning array 'buffer' (TPG.cc:79) automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights' (TPG.cc:80) automatically.
+INFO: [XFORM 203-102] Partitioning array 'buffer' (TPG.cc:136) automatically.
+INFO: [XFORM 203-101] Partitioning array 'data_input' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lincoeff' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'trigger_data_output' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'filter_output' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'params' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'peak_finder_output' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'strip_format_output' (TPG.cc:5) in dimension 1 completely.

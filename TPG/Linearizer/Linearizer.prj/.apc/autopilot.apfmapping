@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="Linearizer.cc" path="/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/Linearizer/Linearizer.cc"/>
-  </source>
-  <testbench>
-    <originFiles name="TestLinearizer.cpp" path="/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/Linearizer/TestLinearizer.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>

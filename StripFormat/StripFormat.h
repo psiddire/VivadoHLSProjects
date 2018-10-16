@@ -1,7 +1,9 @@
 #ifndef StripFormat_h
 #define StripFormat_h
 
-#define NXtl 300
+#define NXtl 1
+#define NSamples 10
+#define NEvents 57
 
 #include <stdint.h>
 #ifdef Vivado
