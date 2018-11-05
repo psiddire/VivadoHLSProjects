@@ -1,0 +1,414 @@
+
+
+================================================================
+== Vivado HLS Report for 'LinFil'
+================================================================
+* Date:           Mon Oct 22 19:11:42 2018
+
+* Version:        2016.3 (Build 1682563 on Mon Oct 10 19:41:59 MDT 2016)
+* Project:        NTPG
+* Solution:       solution2
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.25|      5.33|        0.78|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    4|    4|    4|    4|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+* FSM state operations: 
+
+ <State 1>: 2.05ns
+ST_1: lincoeff_read (9)  [1/1] 0.00ns
+._crit_edge_ifconv:0  %lincoeff_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %lincoeff)
+
+ST_1: tmp_2 (13)  [1/1] 0.00ns  loc: TPG.cc:41
+._crit_edge_ifconv:4  %tmp_2 = trunc i32 %lincoeff_read to i24
+
+ST_1: tmp_4 (14)  [1/1] 0.00ns  loc: TPG.cc:41
+._crit_edge_ifconv:5  %tmp_4 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %lincoeff_read, i32 16, i32 23)
+
+ST_1: icmp (15)  [1/1] 1.34ns  loc: TPG.cc:41
+._crit_edge_ifconv:6  %icmp = icmp eq i8 %tmp_4, 0
+
+ST_1: tmp_3 (16)  [1/1] 0.71ns  loc: TPG.cc:41
+._crit_edge_ifconv:7  %tmp_3 = select i1 %icmp, i24 0, i24 %tmp_2
+
+ST_1: base (17)  [1/1] 0.00ns  loc: TPG.cc:43
+._crit_edge_ifconv:8  %base = trunc i24 %tmp_3 to i12
+
+ST_1: shiftlin (19)  [1/1] 0.00ns  loc: TPG.cc:44
+._crit_edge_ifconv:10  %shiftlin = call i4 @_ssdm_op_PartSelect.i4.i24.i32.i32(i24 %tmp_3, i32 12, i32 15)
+
+ST_1: mult (20)  [1/1] 0.00ns  loc: TPG.cc:45
+._crit_edge_ifconv:11  %mult = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %tmp_3, i32 16, i32 23)
+
+
+ <State 2>: 5.09ns
+ST_2: data_int_read (10)  [1/1] 0.00ns
+._crit_edge_ifconv:1  %data_int_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %data_int)
+
+ST_2: uncorrectedADC (11)  [1/1] 0.00ns  loc: TPG.cc:40
+._crit_edge_ifconv:2  %uncorrectedADC = trunc i16 %data_int_read to i12
+
+ST_2: uncorrectedADC_cast (12)  [1/1] 0.00ns  loc: TPG.cc:40
+._crit_edge_ifconv:3  %uncorrectedADC_cast = zext i12 %uncorrectedADC to i13
+
+ST_2: base_cast (18)  [1/1] 0.00ns  loc: TPG.cc:43
+._crit_edge_ifconv:9  %base_cast = zext i12 %base to i13
+
+ST_2: correctedADC (21)  [1/1] 0.00ns  loc: TPG.cc:46
+._crit_edge_ifconv:12  %correctedADC = sub i13 %uncorrectedADC_cast, %base_cast
+
+ST_2: tmp_cast (22)  [1/1] 0.00ns  loc: TPG.cc:48
+._crit_edge_ifconv:13  %tmp_cast = sext i13 %correctedADC to i21
+
+ST_2: tmp_1_cast (23)  [1/1] 0.00ns  loc: TPG.cc:48
+._crit_edge_ifconv:14  %tmp_1_cast = zext i8 %mult to i21
+
+ST_2: prod (24)  [1/1] 5.09ns  loc: TPG.cc:48
+._crit_edge_ifconv:15  %prod = mul i21 %tmp_1_cast, %tmp_cast
+
+
+ <State 3>: 5.09ns
+ST_3: tmp_4_cast (25)  [1/1] 0.00ns  loc: TPG.cc:49
+._crit_edge_ifconv:16  %tmp_4_cast = zext i4 %shiftlin to i5
+
+ST_3: tmp_7 (26)  [1/1] 0.43ns  loc: TPG.cc:49
+._crit_edge_ifconv:17  %tmp_7 = add i5 2, %tmp_4_cast
+
+ST_3: tmp_7_cast (27)  [1/1] 0.00ns  loc: TPG.cc:49
+._crit_edge_ifconv:18  %tmp_7_cast = zext i5 %tmp_7 to i21
+
+ST_3: linearizerOutput (28)  [1/1] 2.00ns  loc: TPG.cc:49
+._crit_edge_ifconv:19  %linearizerOutput = ashr i21 %prod, %tmp_7_cast
+
+ST_3: m (29)  [1/1] 0.00ns  loc: TPG.cc:51
+._crit_edge_ifconv:20  %m = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %r_3_shift_reg)
+
+ST_3: r_2_shift_reg_read (31)  [1/1] 0.00ns
+._crit_edge_ifconv:22  %r_2_shift_reg_read = call i21 @_ssdm_op_Read.ap_auto.i21P(i21* %r_2_shift_reg)
+
+ST_3: extLd (32)  [1/1] 0.00ns
+._crit_edge_ifconv:23  %extLd = sext i21 %r_2_shift_reg_read to i32
+
+ST_3: StgValue_29 (33)  [1/1] 0.00ns  loc: TPG.cc:55
+._crit_edge_ifconv:24  call void @_ssdm_op_Write.ap_auto.i32P(i32* %r_3_shift_reg, i32 %extLd)
+
+ST_3: tmp_8 (45)  [1/1] 0.00ns  loc: TPG.cc:58
+._crit_edge_ifconv:36  %tmp_8 = shl i32 %m, 5
+
+ST_3: p_neg (46)  [1/1] 1.37ns  loc: TPG.cc:58
+._crit_edge_ifconv:37  %p_neg = sub i32 0, %tmp_8
+
+ST_3: tmp_9 (47)  [1/1] 0.00ns  loc: TPG.cc:58
+._crit_edge_ifconv:38  %tmp_9 = shl i32 %m, 2
+
+ST_3: pro (48)  [1/1] 1.37ns  loc: TPG.cc:58
+._crit_edge_ifconv:39  %pro = sub i32 %p_neg, %tmp_9
+
+ST_3: tmp_300 (49)  [1/1] 0.00ns  loc: TPG.cc:59
+._crit_edge_ifconv:40  %tmp_300 = call i26 @_ssdm_op_PartSelect.i26.i32.i32.i32(i32 %pro, i32 6, i32 31)
+
+ST_3: pro_1 (51)  [1/1] 5.09ns  loc: TPG.cc:63
+._crit_edge_ifconv:42  %pro_1 = mul i32 -35, %extLd
+
+ST_3: tmp_16 (61)  [1/1] 0.00ns  loc: TPG.cc:49
+._crit_edge_ifconv:52  %tmp_16 = trunc i21 %linearizerOutput to i19
+
+ST_3: p_shl3 (62)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:53  %p_shl3 = call i24 @_ssdm_op_BitConcatenate.i24.i19.i5(i19 %tmp_16, i5 0)
+
+ST_3: p_shl3_cast (63)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:54  %p_shl3_cast = sext i24 %p_shl3 to i25
+
+ST_3: p_shl4 (64)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:55  %p_shl4 = call i22 @_ssdm_op_BitConcatenate.i22.i19.i3(i19 %tmp_16, i3 0)
+
+ST_3: p_shl4_cast (65)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:56  %p_shl4_cast = sext i22 %p_shl4 to i25
+
+ST_3: pro_1_3 (66)  [1/1] 1.48ns  loc: TPG.cc:63
+._crit_edge_ifconv:57  %pro_1_3 = sub i25 %p_shl3_cast, %p_shl4_cast
+
+ST_3: tmp_14 (67)  [1/1] 0.00ns  loc: TPG.cc:64
+._crit_edge_ifconv:58  %tmp_14 = call i19 @_ssdm_op_PartSelect.i19.i25.i32.i32(i25 %pro_1_3, i32 6, i32 24)
+
+
+ <State 4>: 5.33ns
+ST_4: r_1_shift_reg_read (36)  [1/1] 0.00ns
+._crit_edge_ifconv:27  %r_1_shift_reg_read = call i21 @_ssdm_op_Read.ap_auto.i21P(i21* %r_1_shift_reg)
+
+ST_4: StgValue_44 (37)  [1/1] 0.00ns  loc: TPG.cc:55
+._crit_edge_ifconv:28  call void @_ssdm_op_Write.ap_auto.i21P(i21* %r_2_shift_reg, i21 %r_1_shift_reg_read)
+
+ST_4: r_0_shift_reg_read (40)  [1/1] 0.00ns
+._crit_edge_ifconv:31  %r_0_shift_reg_read = call i21 @_ssdm_op_Read.ap_auto.i21P(i21* %r_0_shift_reg)
+
+ST_4: extLd_cast (41)  [1/1] 0.00ns  loc: TPG.cc:55
+._crit_edge_ifconv:32  %extLd_cast = sext i21 %r_0_shift_reg_read to i27
+
+ST_4: StgValue_47 (42)  [1/1] 0.00ns  loc: TPG.cc:55
+._crit_edge_ifconv:33  call void @_ssdm_op_Write.ap_auto.i21P(i21* %r_1_shift_reg, i21 %r_0_shift_reg_read)
+
+ST_4: StgValue_48 (44)  [1/1] 0.00ns  loc: TPG.cc:57
+._crit_edge_ifconv:35  call void @_ssdm_op_Write.ap_auto.i21P(i21* %r_0_shift_reg, i21 %linearizerOutput)
+
+ST_4: mul_4_cast (50)  [1/1] 0.00ns  loc: TPG.cc:59
+._crit_edge_ifconv:41  %mul_4_cast = sext i26 %tmp_300 to i28
+
+ST_4: tmp_301 (52)  [1/1] 0.00ns  loc: TPG.cc:64
+._crit_edge_ifconv:43  %tmp_301 = call i26 @_ssdm_op_PartSelect.i26.i32.i32.i32(i32 %pro_1, i32 6, i32 31)
+
+ST_4: mul_cast (53)  [1/1] 0.00ns  loc: TPG.cc:64
+._crit_edge_ifconv:44  %mul_cast = sext i26 %tmp_301 to i27
+
+ST_4: tmp_10 (54)  [1/1] 0.00ns  loc: TPG.cc:64
+._crit_edge_ifconv:45  %tmp_10 = call i19 @_ssdm_op_PartSelect.i19.i21.i32.i32(i21 %r_1_shift_reg_read, i32 2, i32 20)
+
+ST_4: mul_1_cast (55)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:46  %mul_1_cast = sext i19 %tmp_10 to i27
+
+ST_4: tmp_5 (56)  [1/1] 0.00ns
+._crit_edge_ifconv:47  %tmp_5 = call i26 @_ssdm_op_BitConcatenate.i26.i21.i5(i21 %r_0_shift_reg_read, i5 0)
+
+ST_4: p_shl2_cast (57)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:48  %p_shl2_cast = sext i26 %tmp_5 to i27
+
+ST_4: pro_1_2 (58)  [1/1] 1.54ns  loc: TPG.cc:63
+._crit_edge_ifconv:49  %pro_1_2 = sub i27 %p_shl2_cast, %extLd_cast
+
+ST_4: tmp_13 (59)  [1/1] 0.00ns  loc: TPG.cc:64
+._crit_edge_ifconv:50  %tmp_13 = call i21 @_ssdm_op_PartSelect.i21.i27.i32.i32(i27 %pro_1_2, i32 6, i32 26)
+
+ST_4: mul_cast_36 (60)  [1/1] 0.00ns  loc: TPG.cc:63
+._crit_edge_ifconv:51  %mul_cast_36 = sext i21 %tmp_13 to i27
+
+ST_4: mul_3_cast (68)  [1/1] 0.00ns  loc: TPG.cc:65
+._crit_edge_ifconv:59  %mul_3_cast = sext i19 %tmp_14 to i27
+
+ST_4: tmp4 (69)  [1/1] 1.48ns  loc: TPG.cc:65
+._crit_edge_ifconv:60  %tmp4 = add i27 %mul_cast_36, %mul_1_cast
+
+ST_4: tmp4_cast (70)  [1/1] 0.00ns  loc: TPG.cc:65
+._crit_edge_ifconv:61  %tmp4_cast = sext i27 %tmp4 to i29
+
+ST_4: tmp6 (71)  [1/1] 1.54ns  loc: TPG.cc:65
+._crit_edge_ifconv:62  %tmp6 = add i27 %mul_3_cast, %mul_cast
+
+ST_4: tmp6_cast (72)  [1/1] 0.00ns  loc: TPG.cc:65
+._crit_edge_ifconv:63  %tmp6_cast = sext i27 %tmp6 to i28
+
+ST_4: tmp5 (73)  [1/1] 1.54ns  loc: TPG.cc:65
+._crit_edge_ifconv:64  %tmp5 = add i28 %mul_4_cast, %tmp6_cast
+
+ST_4: tmp5_cast (74)  [1/1] 0.00ns  loc: TPG.cc:65
+._crit_edge_ifconv:65  %tmp5_cast = sext i28 %tmp5 to i29
+
+ST_4: tmp_15 (75)  [1/1] 0.00ns  loc: TPG.cc:65
+._crit_edge_ifconv:66  %tmp_15 = sext i27 %tmp4 to i28
+
+ST_4: acc_1_3 (76)  [1/1] 1.54ns  loc: TPG.cc:65
+._crit_edge_ifconv:67  %acc_1_3 = add i29 %tmp4_cast, %tmp5_cast
+
+ST_4: acc_1_3_cast (77)  [1/1] 1.54ns  loc: TPG.cc:65
+._crit_edge_ifconv:68  %acc_1_3_cast = add i28 %tmp5, %tmp_15
+
+ST_4: tmp_17 (78)  [1/1] 0.00ns  loc: TPG.cc:68
+._crit_edge_ifconv:69  %tmp_17 = call i1 @_ssdm_op_BitSelect.i1.i29.i32(i29 %acc_1_3, i32 28)
+
+ST_4: p_acc (79)  [1/1] 0.71ns  loc: TPG.cc:68
+._crit_edge_ifconv:70  %p_acc = select i1 %tmp_17, i28 0, i28 %acc_1_3_cast
+
+ST_4: tmp_18 (80)  [1/1] 0.00ns  loc: TPG.cc:68
+._crit_edge_ifconv:71  %tmp_18 = trunc i28 %p_acc to i18
+
+ST_4: tmp_19 (81)  [1/1] 0.00ns  loc: TPG.cc:69
+._crit_edge_ifconv:72  %tmp_19 = call i10 @_ssdm_op_PartSelect.i10.i28.i32.i32(i28 %p_acc, i32 18, i32 27)
+
+
+ <State 5>: 4.03ns
+ST_5: tmp (30)  [1/1] 0.00ns  loc: TPG.cc:52
+._crit_edge_ifconv:21  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
+
+ST_5: empty (34)  [1/1] 0.00ns  loc: TPG.cc:56
+._crit_edge_ifconv:25  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)
+
+ST_5: tmp_s (35)  [1/1] 0.00ns  loc: TPG.cc:52
+._crit_edge_ifconv:26  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
+
+ST_5: empty_34 (38)  [1/1] 0.00ns  loc: TPG.cc:56
+._crit_edge_ifconv:29  %empty_34 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp_s)
+
+ST_5: tmp_299 (39)  [1/1] 0.00ns  loc: TPG.cc:52
+._crit_edge_ifconv:30  %tmp_299 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
+
+ST_5: empty_35 (43)  [1/1] 0.00ns  loc: TPG.cc:56
+._crit_edge_ifconv:34  %empty_35 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp_299)
+
+ST_5: icmp6 (82)  [1/1] 1.32ns  loc: TPG.cc:69
+._crit_edge_ifconv:73  %icmp6 = icmp ne i10 %tmp_19, 0
+
+ST_5: o_filOut (83)  [1/1] 0.71ns  loc: TPG.cc:69
+._crit_edge_ifconv:74  %o_filOut = select i1 %icmp6, i18 -1, i18 %tmp_18
+
+ST_5: o_filOut_cast (84)  [1/1] 0.00ns  loc: TPG.cc:69
+._crit_edge_ifconv:75  %o_filOut_cast = zext i18 %o_filOut to i32
+
+ST_5: r_0_peak_reg_read (85)  [1/1] 0.00ns
+._crit_edge_ifconv:76  %r_0_peak_reg_read = call i18 @_ssdm_op_Read.ap_auto.i18P(i18* %r_0_peak_reg)
+
+ST_5: tmp_11 (86)  [1/1] 1.29ns  loc: TPG.cc:72
+._crit_edge_ifconv:77  %tmp_11 = icmp ugt i18 %r_0_peak_reg_read, %o_filOut
+
+ST_5: r_1_peak_reg_read (87)  [1/1] 0.00ns
+._crit_edge_ifconv:78  %r_1_peak_reg_read = call i18 @_ssdm_op_Read.ap_auto.i18P(i18* %r_1_peak_reg)
+
+ST_5: tmp_12 (88)  [1/1] 1.29ns  loc: TPG.cc:72
+._crit_edge_ifconv:79  %tmp_12 = icmp ugt i18 %r_0_peak_reg_read, %r_1_peak_reg_read
+
+ST_5: agg_result_peakOut_w (89)  [1/1] 0.71ns  loc: TPG.cc:72
+._crit_edge_ifconv:80  %agg_result_peakOut_w = and i1 %tmp_11, %tmp_12
+
+ST_5: tmp_302 (90)  [1/1] 0.00ns  loc: TPG.cc:75
+._crit_edge_ifconv:81  %tmp_302 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str6)
+
+ST_5: StgValue_88 (91)  [1/1] 0.00ns  loc: TPG.cc:78
+._crit_edge_ifconv:82  call void @_ssdm_op_Write.ap_auto.i18P(i18* %r_1_peak_reg, i18 %r_0_peak_reg_read)
+
+ST_5: empty_37 (92)  [1/1] 0.00ns  loc: TPG.cc:79
+._crit_edge_ifconv:83  %empty_37 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp_302)
+
+ST_5: StgValue_90 (93)  [1/1] 0.00ns  loc: TPG.cc:80
+._crit_edge_ifconv:84  call void @_ssdm_op_Write.ap_auto.i18P(i18* %r_0_peak_reg, i18 %o_filOut)
+
+ST_5: mrv (94)  [1/1] 0.00ns  loc: TPG.cc:81
+._crit_edge_ifconv:85  %mrv = insertvalue { i32, i1 } undef, i32 %o_filOut_cast, 0
+
+ST_5: mrv_1 (95)  [1/1] 0.00ns  loc: TPG.cc:81
+._crit_edge_ifconv:86  %mrv_1 = insertvalue { i32, i1 } %mrv, i1 %agg_result_peakOut_w, 1
+
+ST_5: StgValue_93 (96)  [1/1] 0.00ns  loc: TPG.cc:81
+._crit_edge_ifconv:87  ret { i32, i1 } %mrv_1
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.25ns, clock uncertainty: 0.781ns.
+
+ <State 1>: 2.05ns
+The critical path consists of the following:
+	wire read on port 'lincoeff' [9]  (0 ns)
+	'icmp' operation ('icmp', TPG.cc:41) [15]  (1.34 ns)
+	'select' operation ('tmp_3', TPG.cc:41) [16]  (0.71 ns)
+
+ <State 2>: 5.09ns
+The critical path consists of the following:
+	wire read on port 'data_int' [10]  (0 ns)
+	'sub' operation ('correctedADC', TPG.cc:46) [21]  (0 ns)
+	'mul' operation ('prod', TPG.cc:48) [24]  (5.09 ns)
+
+ <State 3>: 5.09ns
+The critical path consists of the following:
+	wire read on port 'r_2_shift_reg' [31]  (0 ns)
+	'mul' operation ('pro_1', TPG.cc:63) [51]  (5.09 ns)
+
+ <State 4>: 5.33ns
+The critical path consists of the following:
+	'add' operation ('tmp6', TPG.cc:65) [71]  (1.54 ns)
+	'add' operation ('tmp5', TPG.cc:65) [73]  (1.54 ns)
+	'add' operation ('acc_1_3_cast', TPG.cc:65) [77]  (1.54 ns)
+	'select' operation ('p_acc', TPG.cc:68) [79]  (0.71 ns)
+
+ <State 5>: 4.03ns
+The critical path consists of the following:
+	'icmp' operation ('icmp6', TPG.cc:69) [82]  (1.32 ns)
+	'select' operation ('o.filOut', TPG.cc:69) [83]  (0.71 ns)
+	'icmp' operation ('tmp_11', TPG.cc:72) [86]  (1.29 ns)
+	'and' operation ('agg.result.peakOut', TPG.cc:72) [89]  (0.71 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

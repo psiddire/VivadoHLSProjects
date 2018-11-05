@@ -5,7 +5,7 @@
 </directive>
 <directive functionLabel="" functionName="TPG" label="">
 <pragma name="ARRAY_PARTITION">
-<option name="variable" positionalBoolean="4" value="data_input"/>
+<option name="variable" positionalBoolean="4" value="in"/>
 <option name="complete" positionalBoolean="type" value=""/>
 <option name="dim" value="0"/>
 </pragma>
@@ -19,21 +19,7 @@
 </directive>
 <directive functionLabel="" functionName="TPG" label="">
 <pragma name="ARRAY_PARTITION">
-<option name="variable" positionalBoolean="4" value="sh_reg"/>
-<option name="complete" positionalBoolean="type" value=""/>
-<option name="dim" value="0"/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="TPG" label="">
-<pragma name="ARRAY_PARTITION">
-<option name="variable" positionalBoolean="4" value="pk_reg"/>
-<option name="complete" positionalBoolean="type" value=""/>
-<option name="dim" value="0"/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="TPG" label="">
-<pragma name="ARRAY_PARTITION">
-<option name="variable" positionalBoolean="4" value="lincoeff"/>
+<option name="variable" positionalBoolean="4" value="reg"/>
 <option name="complete" positionalBoolean="type" value=""/>
 <option name="dim" value="0"/>
 </pragma>
@@ -42,17 +28,13 @@
 <pragma name="UNROLL"/>
 </directive>
 <directive functionLabel="" functionName="LinFil" label="">
-<pragma name="ARRAY_PARTITION">
-<option name="variable" positionalBoolean="4" value="shift_reg"/>
-<option name="complete" positionalBoolean="type" value=""/>
-<option name="dim" value="0"/>
-</pragma>
+<pragma name="UNROLL"/>
 </directive>
 <directive functionLabel="" functionName="LinFil" label="">
-<pragma name="ARRAY_PARTITION">
-<option name="variable" positionalBoolean="4" value="peak_reg"/>
-<option name="complete" positionalBoolean="type" value=""/>
-<option name="dim" value="0"/>
+<pragma name="DEPENDENCE">
+<option name="variable" value="r.shift_reg"/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
 </pragma>
 </directive>
 <directive functionLabel="" functionName="LinFil" label="">
@@ -60,6 +42,13 @@
 </directive>
 <directive functionLabel="" functionName="LinFil" label="">
 <pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="LinFil" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="r.peak_reg"/>
+<option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
 </directive>
 </sourceFile>
 </AutoPilot:ProjectResources>

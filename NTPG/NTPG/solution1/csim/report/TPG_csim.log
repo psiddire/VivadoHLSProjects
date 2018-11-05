@@ -1,7 +1,15 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../TestTPG.cpp in debug mode
-   Compiling ../../../../TPG.cc in debug mode
-   Generating csim.exe
-INFO: [SIM 1] CSim file generation done with 0 errors.
+In file included from ../../../../TestTPG.cpp:6:0:
+../../../../TPG.h:45:27: error: a brace-enclosed initializer is not allowed here before '{' token
+../../../../TPG.h:45:38: error: ISO C++ forbids initialization of member 'shift_reg' [-fpermissive]
+../../../../TPG.h:45:38: error: making 'shift_reg' static [-fpermissive]
+../../../../TPG.h:45:38: error: invalid in-class initialization of static data member of non-integral type 'uint32_t [4] {aka unsigned int [4]}'
+../../../../TPG.h:46:26: error: a brace-enclosed initializer is not allowed here before '{' token
+../../../../TPG.h:46:31: error: ISO C++ forbids initialization of member 'peak_reg' [-fpermissive]
+../../../../TPG.h:46:31: error: making 'peak_reg' static [-fpermissive]
+../../../../TPG.h:46:31: error: invalid in-class initialization of static data member of non-integral type 'uint32_t [2] {aka unsigned int [2]}'
+make: *** [csim.mk:73: obj/TestTPG.o] Error 1
+CRITICAL WARNING: [SIM 100] CSim file generation failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************

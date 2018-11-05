@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vivado HLS Report for 'LinFil'
+================================================================
+* Date:           Mon Oct 22 19:11:58 2018
+
+* Version:        2016.3 (Build 1682563 on Mon Oct 10 19:41:59 MDT 2016)
+* Project:        NTPG
+* Solution:       solution2
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.25|      5.33|        0.78|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    4|    4|    4|    4|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  |
++---------------------+---------+-------+---------+--------+
+|DSP                  |        -|      2|        -|       -|
+|Expression           |        -|      -|        0|     375|
+|FIFO                 |        -|      -|        -|       -|
+|Instance             |        -|      -|        -|       -|
+|Memory               |        -|      -|        -|       -|
+|Multiplexer          |        -|      -|        -|      20|
+|Register             |        -|      -|      195|       -|
++---------------------+---------+-------+---------+--------+
+|Total                |        0|      2|      195|     395|
++---------------------+---------+-------+---------+--------+
+|Available SLR        |     2160|   2760|   663360|  331680|
++---------------------+---------+-------+---------+--------+
+|Utilization SLR (%)  |        0|   ~0  |    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+|Available            |     4320|   5520|  1326720|  663360|
++---------------------+---------+-------+---------+--------+
+|Utilization (%)      |        0|   ~0  |    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    +-------------------------+----------------------+----------------+
+    |         Instance        |        Module        |   Expression   |
+    +-------------------------+----------------------+----------------+
+    |TPG_am_submul_12nbkb_U1  |TPG_am_submul_12nbkb  | i0 * (i1 - i2) |
+    |TPG_mul_mul_7s_21cud_U2  |TPG_mul_mul_7s_21cud  |     i0 * i1    |
+    +-------------------------+----------------------+----------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |acc_1_3_cast_fu_483_p2          |     +    |      0|  0|  28|          28|          28|
+    |acc_1_3_fu_477_p2               |     +    |      0|  0|  29|          29|          29|
+    |tmp4_fu_443_p2                  |     +    |      0|  0|  27|          27|          27|
+    |tmp5_fu_463_p2                  |     +    |      0|  0|  28|          28|          28|
+    |tmp6_fu_453_p2                  |     +    |      0|  0|  27|          27|          27|
+    |tmp_7_fu_276_p2                 |     +    |      0|  0|   5|           2|           5|
+    |p_neg_fu_302_p2                 |     -    |      0|  0|  16|           1|          32|
+    |pro_1_2_fu_420_p2               |     -    |      0|  0|  27|          27|          27|
+    |pro_1_3_fu_358_p2               |     -    |      0|  0|  25|          25|          25|
+    |pro_fu_314_p2                   |     -    |      0|  0|  16|          32|          32|
+    |agg_result_peakOut_w_fu_548_p2  |    and   |      0|  0|   1|           1|           1|
+    |linearizerOutput_fu_286_p2      |   ashr   |      0|  0|  55|          21|          21|
+    |icmp6_fu_519_p2                 |   icmp   |      0|  0|   4|          10|           1|
+    |icmp_fu_221_p2                  |   icmp   |      0|  0|   3|           8|           1|
+    |tmp_11_fu_536_p2                |   icmp   |      0|  0|   7|          18|          18|
+    |tmp_12_fu_542_p2                |   icmp   |      0|  0|   7|          18|          18|
+    |o_filOut_fu_524_p3              |  select  |      0|  0|  18|           1|           2|
+    |p_acc_fu_497_p3                 |  select  |      0|  0|  28|           1|           1|
+    |tmp_3_fu_227_p3                 |  select  |      0|  0|  24|           1|           1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |Total                           |          |      0|  0| 375|         305|         324|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_NS_fsm    |   1|          6|    1|          6|
+    |ap_return_0  |  18|          2|   18|         36|
+    |ap_return_1  |   1|          2|    1|          2|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |  20|         10|   20|         44|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                 |   5|   0|    5|          0|
+    |ap_return_0_preg          |  18|   0|   32|         14|
+    |ap_return_1_preg          |   1|   0|    1|          0|
+    |base_reg_580              |  12|   0|   12|          0|
+    |linearizerOutput_reg_600  |  21|   0|   21|          0|
+    |mult_reg_590              |   8|   0|    8|          0|
+    |pro_1_reg_610             |  32|   0|   32|          0|
+    |prod_reg_595              |  21|   0|   21|          0|
+    |shiftlin_reg_585          |   4|   0|    4|          0|
+    |tmp_14_reg_615            |  19|   0|   19|          0|
+    |tmp_18_reg_620            |  18|   0|   18|          0|
+    |tmp_19_reg_625            |  10|   0|   10|          0|
+    |tmp_300_reg_605           |  26|   0|   26|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 195|   0|  209|         14|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+---------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object |    C Type    |
++------------------------+-----+-----+------------+---------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs |     LinFil    | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs |     LinFil    | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |     LinFil    | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |     LinFil    | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |     LinFil    | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |     LinFil    | return value |
+|ap_return_0             | out |   32| ap_ctrl_hs |     LinFil    | return value |
+|ap_return_1             | out |    1| ap_ctrl_hs |     LinFil    | return value |
+|data_int                |  in |   16|   ap_none  |    data_int   |    scalar    |
+|lincoeff                |  in |   32|   ap_none  |    lincoeff   |    scalar    |
+|r_0_shift_reg_i         |  in |   21|   ap_ovld  | r_0_shift_reg |    pointer   |
+|r_0_shift_reg_o         | out |   21|   ap_ovld  | r_0_shift_reg |    pointer   |
+|r_0_shift_reg_o_ap_vld  | out |    1|   ap_ovld  | r_0_shift_reg |    pointer   |
+|r_1_shift_reg_i         |  in |   21|   ap_ovld  | r_1_shift_reg |    pointer   |
+|r_1_shift_reg_o         | out |   21|   ap_ovld  | r_1_shift_reg |    pointer   |
+|r_1_shift_reg_o_ap_vld  | out |    1|   ap_ovld  | r_1_shift_reg |    pointer   |
+|r_2_shift_reg_i         |  in |   21|   ap_ovld  | r_2_shift_reg |    pointer   |
+|r_2_shift_reg_o         | out |   21|   ap_ovld  | r_2_shift_reg |    pointer   |
+|r_2_shift_reg_o_ap_vld  | out |    1|   ap_ovld  | r_2_shift_reg |    pointer   |
+|r_3_shift_reg_i         |  in |   32|   ap_ovld  | r_3_shift_reg |    pointer   |
+|r_3_shift_reg_o         | out |   32|   ap_ovld  | r_3_shift_reg |    pointer   |
+|r_3_shift_reg_o_ap_vld  | out |    1|   ap_ovld  | r_3_shift_reg |    pointer   |
+|r_0_peak_reg_i          |  in |   18|   ap_ovld  |  r_0_peak_reg |    pointer   |
+|r_0_peak_reg_o          | out |   18|   ap_ovld  |  r_0_peak_reg |    pointer   |
+|r_0_peak_reg_o_ap_vld   | out |    1|   ap_ovld  |  r_0_peak_reg |    pointer   |
+|r_1_peak_reg_i          |  in |   18|   ap_ovld  |  r_1_peak_reg |    pointer   |
+|r_1_peak_reg_o          | out |   18|   ap_ovld  |  r_1_peak_reg |    pointer   |
+|r_1_peak_reg_o_ap_vld   | out |    1|   ap_ovld  |  r_1_peak_reg |    pointer   |
++------------------------+-----+-----+------------+---------------+--------------+
+

@@ -9,9 +9,9 @@ add_files TPG.cc
 add_files -tb TestTPG.cpp -cflags "-DHW_COSIM"
 open_solution "solution1"
 set_part {xcku115-flvb2104-2-e} -tool vivado
-create_clock -period 6.25 -name default
+create_clock -period 25 -name default
 #source "./NTPG/solution1/directives.tcl"
 csim_design -compiler gcc
 csynth_design
-cosim_design
+cosim_design -trace_level all -rtl vhdl
 export_design -rtl vhdl -format ip_catalog

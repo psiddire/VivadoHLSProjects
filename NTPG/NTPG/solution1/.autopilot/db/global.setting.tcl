@@ -1,13 +1,13 @@
 
 set TopModule "TPG"
-set ClockPeriod "6.250000"
+set ClockPeriod "25.000000"
 set ClockList {ap_clk}
 set multiClockList {}
 set PortClockMap {}
 set CombLogicFlag 0
 set PipelineFlag 1
 set DataflowTaskPipelineFlag  1
-set TrivialPipelineFlag 0
+set TrivialPipelineFlag 1
 set noPortSwitchingFlag 0
 set FloatingPointFlag 0
 set FftOrFirFlag 0

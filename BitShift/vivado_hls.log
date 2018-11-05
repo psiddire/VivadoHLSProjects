@@ -1,0 +1,17 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'psiddire' on host 'pcminn34.cern.ch' (Linux_x86_64 version 2.6.32-754.3.5.el6.x86_64) on Thu Oct 18 19:39:15 CEST 2018
+INFO: [HLS 200-10] On os "Scientific Linux CERN SLC release 6.10 (Carbon)"
+INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/BitShift'
+INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/BitShift/BitShift'.
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/BitShift/BitShift/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/opt/Xilinx/Vivado_HLS/2016.3/common/technology/xilinx/Defense-grade Kintex UltraScale FPGAs/Defense-grade Kintex UltraScale FPGAs.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Defense-grade Kintex UltraScale FPGAs/Defense-grade Kintex UltraScale FPGAs'.
+INFO: [HLS 200-10] Setting target device to 'xqku115-rlf1924-2-i'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../Test.cpp in debug mode
+   Compiling ../../../../BitShift.cc in debug mode
+   Generating csim.exe
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
