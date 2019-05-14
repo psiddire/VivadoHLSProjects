@@ -1,39 +1,81 @@
-INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'psiddire' on host 'pcminn34.cern.ch' (Linux_x86_64 version 2.6.32-754.3.5.el6.x86_64) on Sun Oct 07 12:56:27 CEST 2018
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2016.4/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'psiddire' on host 'pcminn34.cern.ch' (Linux_x86_64 version 2.6.32-754.11.1.el6.x86_64) on Mon May 13 12:01:56 CEST 2019
 INFO: [HLS 200-10] On os "Scientific Linux CERN SLC release 6.10 (Carbon)"
 INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG'
 INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/TPG'.
 INFO: [HLS 200-10] Adding design file 'TPG.cc' to the project
 INFO: [HLS 200-10] Adding test bench file 'TestTPG.cpp' to the project
-INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/TPG/solution3'.
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/TPG/TPG/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.25ns.
 INFO: [HLS 200-10] Setting target device to 'xc7vx690tffg1927-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.25ns.
 INFO: [HLS 200-10] Analyzing design file 'TPG.cc' ... 
 INFO: [HLS 200-10] Validating synthesis directives ...
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 319.156 ; gain = 16.715 ; free physical = 29961 ; free virtual = 36837
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 319.156 ; gain = 16.715 ; free physical = 29959 ; free virtual = 36836
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 319.164 ; gain = 16.715 ; free physical = 3801 ; free virtual = 36500
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 319.164 ; gain = 16.715 ; free physical = 3800 ; free virtual = 36500
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 319.172 ; gain = 16.730 ; free physical = 29956 ; free virtual = 36835
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:13) in function 'TPG(inPut*, outPut*)' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (TPG.cc:90) in function 'LinFil(unsigned short, unsigned int, registers&, short)' completely.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 319.191 ; gain = 16.742 ; free physical = 3798 ; free virtual = 36499
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'StripFormat' into 'TPG' (TPG.cc:23) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 319.172 ; gain = 16.730 ; free physical = 29955 ; free virtual = 36835
-INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:175) in function 'StripFormat' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:139) in function 'PeakFinder' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (TPG.cc:143) in function 'PeakFinder' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1' (TPG.cc:156) in function 'PeakFinder' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:83) in function 'AmpFilter' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (TPG.cc:88) in function 'AmpFilter' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1' (TPG.cc:104) in function 'AmpFilter' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-2.2' (TPG.cc:111) in function 'AmpFilter' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-3' (TPG.cc:119) in function 'AmpFilter' completely.
-INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:38) in function 'Linearizer' completely.
-INFO: [XFORM 203-102] Partitioning array 'buffer' (TPG.cc:79) automatically.
-INFO: [XFORM 203-102] Partitioning array 'weights' (TPG.cc:80) automatically.
-INFO: [XFORM 203-102] Partitioning array 'buffer' (TPG.cc:136) automatically.
-INFO: [XFORM 203-101] Partitioning array 'data_input' (TPG.cc:5) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'lincoeff' (TPG.cc:5) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'trigger_data_output' (TPG.cc:5) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'filter_output' (TPG.cc:5) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'params' (TPG.cc:5) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'peak_finder_output' (TPG.cc:5) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'strip_format_output' (TPG.cc:5) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 319.191 ; gain = 16.742 ; free physical = 3798 ; free virtual = 36498
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (TPG.cc:56) in function 'LinFil' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2' (TPG.cc:65) in function 'LinFil' completely.
+INFO: [XFORM 203-101] Partitioning array 'in.data_input' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'in.lincoeff' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out.filOut' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out.peakOut' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out.peakAmp' (TPG.cc:5) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'reg.shift_reg'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'reg.peak_reg'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'reg.shift_reg.0'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'reg.peak_reg.0'  in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'LinFil' into 'TPG' (TPG.cc:15) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (TPG.cc:17:1) in function 'TPG'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'TPG' (TPG.cc:5)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 3779 ; free virtual = 36479
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.0.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.0.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.0.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.peak_reg.0.0'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 3787 ; free virtual = 36488
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'TPG' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'TPG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.34 seconds; current allocated memory: 0.203 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 0.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'TPG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'TPG/in_0_data_input' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TPG/in_0_lincoeff' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TPG/out_0_filOut' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TPG/out_0_peakOut' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TPG/out_0_peakAmp' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'TPG' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'reg_peak_reg_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'reg_peak_reg_0_1' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'TPG_am_submul_12ns_12ns_8ns_21_1' to 'TPG_am_submul_12nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'TPG_mul_mul_7s_21s_32_1' to 'TPG_mul_mul_7s_21cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'TPG_am_submul_12nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'TPG_mul_mul_7s_21cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'TPG'.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 0.203 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 447.160 ; gain = 144.711 ; free physical = 3778 ; free virtual = 36481
+INFO: [SYSC 207-301] Generating SystemC RTL for TPG.
+INFO: [VHDL 208-304] Generating VHDL RTL for TPG.
+INFO: [VLOG 209-307] Generating Verilog RTL for TPG.
+INFO: [HLS 200-112] Total elapsed time: 3.73 seconds; peak allocated memory: 0.203 MB.

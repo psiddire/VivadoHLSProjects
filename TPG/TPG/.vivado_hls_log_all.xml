@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_peak_reg_0_1' is power-on initialization." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.627+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_peak_reg_0_0' is power-on initialization." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.621+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_0' is power-on initialization." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.615+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_1' is power-on initialization." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.609+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_2' is power-on initialization." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.606+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_0_3' is power-on initialization." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.602+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.peak_reg.0.0'." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.477+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.0.0'." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.428+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.0.0'." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.422+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.0.0'." projectName="TPG" solutionName="solution1" date="2019-05-13T12:01:58.416+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

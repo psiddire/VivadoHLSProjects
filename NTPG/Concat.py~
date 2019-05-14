@@ -1,6 +1,0 @@
-filenames = ['inputfile1.txt', 'inputfile2.txt', 'inputfile3.txt', 'inputfile4.txt', 'inputfile5.txt', 'inputfile6.txt', 'inputfile7.txt', 'inputfile8.txt', 'inputfile9.txt', 'inputfile10.txt']
-with open('infile.txt', 'w') as outfile:
-    for fname in filenames:
-        with open(fname) as infile:
-            for line in infile:
-                outfile.write(line)

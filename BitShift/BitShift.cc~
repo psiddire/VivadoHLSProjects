@@ -1,8 +1,0 @@
-#include <stdint.h>
-#include <stdio.h>
-#include <ap_int.h>
-
-void BitShift(ap_int<8> a[2], ap_int<8> b[2]){
-  b[0] = a[0] >> 1;
-  b[1] = a[1] >> 1;
-}

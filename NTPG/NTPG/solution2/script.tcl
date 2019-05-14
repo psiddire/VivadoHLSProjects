@@ -8,7 +8,7 @@ set_top TPG
 add_files TPG.cc
 add_files -tb TestTPG.cpp -cflags "-DHW_COSIM"
 open_solution "solution2"
-set_part {xcku115-flvb2104-2-e}
+set_part {xcku115-flvb2104-2-e} -tool vivado
 create_clock -period 6.25 -name default
 #source "./NTPG/solution2/directives.tcl"
 csim_design -compiler gcc

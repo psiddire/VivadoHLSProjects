@@ -1,8 +1,0 @@
-i = 1;
-with open('inputfile9.txt', 'w') as inf:
-    f = open('inputfile.txt')
-    for line in f.readlines():
-        if (i%10 == 9):
-            inf.write(line)
-        i = i + 1
-

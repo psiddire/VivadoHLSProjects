@@ -1,0 +1,170 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'TPG'" level="0">
+<item name = "Date">Mon May 13 12:01:58 2019
+</item>
+<item name = "Version">2016.4 (Build 1733598 on Wed Dec 14 22:59:20 MST 2016)</item>
+<item name = "Project">TPG</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">6.25</item>
+<item name = "Clock uncertainty (ns)">0.78</item>
+<item name = "Estimated clock period (ns)">5.42</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4, 4, 5, 5, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 2, -, -</column>
+<column name="Expression">-, -, 0, 407</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 1</column>
+<column name="Register">-, -, 307, -</column>
+<specialColumn name="Available">2940, 3600, 866400, 433200</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="TPG_am_submul_12nbkb_U1">TPG_am_submul_12nbkb, i0 * (i1 - i2)</column>
+<column name="TPG_mul_mul_7s_21cud_U2">TPG_mul_mul_7s_21cud, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="acc_1_3_i_cast_fu_481_p2">+, 0, 0, 28, 28, 28</column>
+<column name="acc_1_3_i_fu_475_p2">+, 0, 0, 29, 29, 29</column>
+<column name="tmp2_fu_441_p2">+, 0, 0, 27, 27, 27</column>
+<column name="tmp3_fu_461_p2">+, 0, 0, 28, 28, 28</column>
+<column name="tmp4_fu_451_p2">+, 0, 0, 27, 27, 27</column>
+<column name="tmp_8_i_fu_236_p2">+, 0, 0, 5, 2, 5</column>
+<column name="p_neg_i_fu_275_p2">-, 0, 0, 16, 1, 32</column>
+<column name="pro_1_2_i_fu_418_p2">-, 0, 0, 27, 27, 27</column>
+<column name="pro_1_3_i_fu_331_p2">-, 0, 0, 25, 25, 25</column>
+<column name="pro_fu_287_p2">-, 0, 0, 16, 32, 32</column>
+<column name="out_0_peakOut">and, 0, 0, 1, 1, 1</column>
+<column name="linearizerOutput_fu_246_p2">ashr, 0, 0, 55, 21, 21</column>
+<column name="icmp1_fu_517_p2">icmp, 0, 0, 4, 10, 1</column>
+<column name="icmp2_fu_571_p2">icmp, 0, 0, 3, 6, 1</column>
+<column name="icmp3_fu_609_p2">icmp, 0, 0, 3, 6, 1</column>
+<column name="icmp_fu_181_p2">icmp, 0, 0, 3, 8, 1</column>
+<column name="tmp_19_i_fu_538_p2">icmp, 0, 0, 7, 18, 18</column>
+<column name="tmp_20_i_fu_548_p2">icmp, 0, 0, 7, 18, 18</column>
+<column name="o_filOut_fu_522_p3">select, 0, 0, 18, 1, 2</column>
+<column name="p_acc_i_fu_495_p3">select, 0, 0, 28, 1, 1</column>
+<column name="tmpPeak_2_fu_615_p3">select, 0, 0, 10, 1, 2</column>
+<column name="tmpPeak_fu_587_p3">select, 0, 0, 16, 1, 10</column>
+<column name="tmp_1_fu_187_p3">select, 0, 0, 24, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 6, 1, 6</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="base_reg_654">12, 0, 12, 0</column>
+<column name="linearizerOutput_reg_674">21, 0, 21, 0</column>
+<column name="mult_reg_664">8, 0, 8, 0</column>
+<column name="pro_1_i_reg_684">32, 0, 32, 0</column>
+<column name="prod_reg_669">21, 0, 21, 0</column>
+<column name="reg_peak_reg_0_0">18, 0, 18, 0</column>
+<column name="reg_peak_reg_0_1">18, 0, 18, 0</column>
+<column name="reg_shift_reg_0_0">21, 0, 21, 0</column>
+<column name="reg_shift_reg_0_1">21, 0, 21, 0</column>
+<column name="reg_shift_reg_0_2">21, 0, 21, 0</column>
+<column name="reg_shift_reg_0_3">32, 0, 32, 0</column>
+<column name="shiftlin_reg_659">4, 0, 4, 0</column>
+<column name="tmp_13_i_reg_679">26, 0, 26, 0</column>
+<column name="tmp_15_reg_694">18, 0, 18, 0</column>
+<column name="tmp_16_reg_699">10, 0, 10, 0</column>
+<column name="tmp_5_reg_689">19, 0, 19, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, TPG, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, TPG, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, TPG, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, TPG, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, TPG, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, TPG, return value</column>
+<column name="in_0_data_input">in, 16, ap_none, in_0_data_input, pointer</column>
+<column name="in_0_lincoeff">in, 32, ap_none, in_0_lincoeff, pointer</column>
+<column name="out_0_filOut">out, 32, ap_vld, out_0_filOut, pointer</column>
+<column name="out_0_filOut_ap_vld">out, 1, ap_vld, out_0_filOut, pointer</column>
+<column name="out_0_peakOut">out, 1, ap_vld, out_0_peakOut, pointer</column>
+<column name="out_0_peakOut_ap_vld">out, 1, ap_vld, out_0_peakOut, pointer</column>
+<column name="out_0_peakAmp">out, 16, ap_vld, out_0_peakAmp, pointer</column>
+<column name="out_0_peakAmp_ap_vld">out, 1, ap_vld, out_0_peakAmp, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">5.42</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp_15_i', TPG.cc:68->TPG.cc:15">partselect, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'mul_i_cast', TPG.cc:68->TPG.cc:15">sext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp4', TPG.cc:69->TPG.cc:15">add, 1.57, 1.57, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp4_cast', TPG.cc:69->TPG.cc:15">sext, 0.00, 1.57, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp3', TPG.cc:69->TPG.cc:15">add, 1.57, 3.14, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'acc_1_3_i_cast', TPG.cc:69->TPG.cc:15">add, 1.57, 4.71, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'p_acc_i', TPG.cc:72->TPG.cc:15">select, 0.71, 5.42, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

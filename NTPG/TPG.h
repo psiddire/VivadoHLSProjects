@@ -1,8 +1,8 @@
 #ifndef TPG_h
 #define TPG_h
 
-#define NXtl 300
-#define NEvents 10
+#define NXtl 1
+#define NEvents 570
 //#define Vivado 1
 
 #include <stdint.h>
@@ -11,6 +11,7 @@
 #define uint4_t ap_uint<4>
 #define uint12_t ap_uint<12>
 #define uint14_t ap_uint<14>
+#define uint16_t ap_uint<16>
 #define uint18_t ap_uint<18>
 #define uint24_t ap_uint<24>
 #define int7_t ap_int<7>
@@ -22,6 +23,7 @@
 #define uint4_t uint8_t
 #define uint12_t uint16_t
 #define uint14_t uint16_t
+#define uint16_t uint16_t
 #define uint18_t uint32_t
 #define uint24_t uint32_t
 #define int7_t int8_t
@@ -36,6 +38,7 @@
 struct outPut {
   uint18_t filOut;
   bool peakOut;
+  uint16_t peakAmp;
 };
 
 struct inPut {

@@ -33,9 +33,12 @@ outPut LinFil(uint14_t data_int, uint24_t lincoeff, registers &r, short i){
   int25_t pro = 0;
   int19_t acc = 0;
   int7_t weight[5] = {24, 31, 16, -35, -36};
+  int19_t ampPeak = 0;
+  uint12_t tmpPeak = 0;
   outPut o;
   o.peakOut = false;
 
+  // Linearizer
   if (data_int > 0X3FFF) fprintf(stderr, "ERROR IN INPUT SAMPLE");
   uncorrectedADC = data_int & 0XFFF;
   if (((lincoeff & 0XFF0000) >> 16) == 0) coeff = 0;
@@ -48,6 +51,7 @@ outPut LinFil(uint14_t data_int, uint24_t lincoeff, registers &r, short i){
   prod = correctedADC * mult;
   linearizerOutput = prod >> (shiftlin + 2);
 
+  // Amplitude Filter
   m = r.shift_reg[3];
   for (j = 3; j >= 1; j--){
 #pragma HLS UNROLL
@@ -69,8 +73,19 @@ outPut LinFil(uint14_t data_int, uint24_t lincoeff, registers &r, short i){
   if (filterOutput > 0X3FFFF) filterOutput = 0X3FFFF;
   o.filOut = filterOutput;
 
+  // Peak Finder
   if (r.peak_reg[0] > filterOutput && r.peak_reg[0] > r.peak_reg[1]){
   	o.peakOut = true;
+	// TCP Format
+	ampPeak = r.peak_reg[0];
+	if (ampPeak > 0XFFF){
+	  ampPeak = 0XFFF;
+	}
+	tmpPeak = ampPeak >> 2;
+	if (tmpPeak > 0X3FF){
+          tmpPeak = 0X3FF;
+        }
+	o.peakAmp = tmpPeak;
   }
   for (k = 1; k > 0; k--){
 #pragma HLS UNROLL

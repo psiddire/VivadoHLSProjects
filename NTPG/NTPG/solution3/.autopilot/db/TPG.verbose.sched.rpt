@@ -1,0 +1,420 @@
+
+
+================================================================
+== Vivado HLS Report for 'TPG'
+================================================================
+* Date:           Thu Dec  6 20:13:41 2018
+
+* Version:        2016.3 (Build 1682563 on Mon Oct 10 19:41:59 MDT 2016)
+* Project:        NTPG
+* Solution:       solution3
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.25|      5.09|        0.78|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    4|    4|    5|    5|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+* FSM state operations: 
+
+ <State 1>: 2.05ns
+ST_1: in_0_lincoeff_V_rea (17)  [1/1] 0.00ns  loc: TPG.cc:15
+.preheader.preheader:6  %in_0_lincoeff_V_rea = call i24 @_ssdm_op_Read.ap_auto.i24P(i24* %in_0_lincoeff_V)
+
+ST_1: tmp_10 (19)  [1/1] 0.00ns  loc: TPG.cc:41->TPG.cc:15
+.preheader.preheader:8  %tmp_10 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %in_0_lincoeff_V_rea, i32 16, i32 23)
+
+ST_1: icmp (20)  [1/1] 1.34ns  loc: TPG.cc:41->TPG.cc:15
+.preheader.preheader:9  %icmp = icmp eq i8 %tmp_10, 0
+
+ST_1: p_lincoeff_V_i (21)  [1/1] 0.71ns  loc: TPG.cc:41->TPG.cc:15
+.preheader.preheader:10  %p_lincoeff_V_i = select i1 %icmp, i24 0, i24 %in_0_lincoeff_V_rea
+
+ST_1: base_V (22)  [1/1] 0.00ns  loc: TPG.cc:43->TPG.cc:15
+.preheader.preheader:11  %base_V = trunc i24 %p_lincoeff_V_i to i12
+
+ST_1: shiftlin_V (23)  [1/1] 0.00ns  loc: TPG.cc:44->TPG.cc:15
+.preheader.preheader:12  %shiftlin_V = call i4 @_ssdm_op_PartSelect.i4.i24.i32.i32(i24 %p_lincoeff_V_i, i32 12, i32 15)
+
+ST_1: mult (24)  [1/1] 0.00ns  loc: TPG.cc:45->TPG.cc:15
+.preheader.preheader:13  %mult = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %p_lincoeff_V_i, i32 16, i32 23)
+
+
+ <State 2>: 5.09ns
+ST_2: in_0_data_input_V_r (16)  [1/1] 0.00ns  loc: TPG.cc:15
+.preheader.preheader:5  %in_0_data_input_V_r = call i14 @_ssdm_op_Read.ap_auto.i14P(i14* %in_0_data_input_V)
+
+ST_2: uncorrectedADC_V (18)  [1/1] 0.00ns  loc: TPG.cc:40->TPG.cc:15
+.preheader.preheader:7  %uncorrectedADC_V = trunc i14 %in_0_data_input_V_r to i12
+
+ST_2: lhs_V (25)  [1/1] 0.00ns  loc: TPG.cc:46->TPG.cc:15
+.preheader.preheader:14  %lhs_V = zext i12 %uncorrectedADC_V to i13
+
+ST_2: rhs_V (26)  [1/1] 0.00ns  loc: TPG.cc:46->TPG.cc:15
+.preheader.preheader:15  %rhs_V = zext i12 %base_V to i13
+
+ST_2: r_V (27)  [1/1] 0.00ns  loc: TPG.cc:46->TPG.cc:15
+.preheader.preheader:16  %r_V = sub i13 %lhs_V, %rhs_V
+
+ST_2: lhs_V_1 (28)  [1/1] 0.00ns  loc: TPG.cc:48->TPG.cc:15
+.preheader.preheader:17  %lhs_V_1 = sext i13 %r_V to i21
+
+ST_2: rhs_V_1 (29)  [1/1] 0.00ns  loc: TPG.cc:48->TPG.cc:15
+.preheader.preheader:18  %rhs_V_1 = zext i8 %mult to i21
+
+ST_2: r_V_1 (30)  [1/1] 5.09ns  loc: TPG.cc:48->TPG.cc:15
+.preheader.preheader:19  %r_V_1 = mul i21 %lhs_V_1, %rhs_V_1
+
+
+ <State 3>: 5.09ns
+ST_3: tmp_3_i_cast8 (31)  [1/1] 0.00ns  loc: TPG.cc:49->TPG.cc:15
+.preheader.preheader:20  %tmp_3_i_cast8 = zext i4 %shiftlin_V to i5
+
+ST_3: tmp_1_i (32)  [1/1] 0.43ns  loc: TPG.cc:49->TPG.cc:15
+.preheader.preheader:21  %tmp_1_i = add i5 2, %tmp_3_i_cast8
+
+ST_3: tmp_1_i_cast (33)  [1/1] 0.00ns  loc: TPG.cc:49->TPG.cc:15
+.preheader.preheader:22  %tmp_1_i_cast = zext i5 %tmp_1_i to i21
+
+ST_3: tmp_2_i (34)  [1/1] 2.00ns  loc: TPG.cc:49->TPG.cc:15
+.preheader.preheader:23  %tmp_2_i = ashr i21 %r_V_1, %tmp_1_i_cast
+
+ST_3: linearizerOutput_V (35)  [1/1] 0.00ns  loc: TPG.cc:49->TPG.cc:15
+.preheader.preheader:24  %linearizerOutput_V = trunc i21 %tmp_2_i to i18
+
+ST_3: m_V (36)  [1/1] 0.00ns  loc: TPG.cc:51->TPG.cc:15
+.preheader.preheader:25  %m_V = load i18* @reg_shift_reg_V_0_3, align 4
+
+ST_3: reg_shift_reg_V_0_2_s (38)  [1/1] 0.00ns  loc: TPG.cc:55->TPG.cc:15
+.preheader.preheader:27  %reg_shift_reg_V_0_2_s = load i18* @reg_shift_reg_V_0_2, align 4
+
+ST_3: StgValue_28 (39)  [1/1] 0.00ns  loc: TPG.cc:55->TPG.cc:15
+.preheader.preheader:28  store i18 %reg_shift_reg_V_0_2_s, i18* @reg_shift_reg_V_0_3, align 4
+
+ST_3: p_shl_i (50)  [1/1] 0.00ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:39  %p_shl_i = call i23 @_ssdm_op_BitConcatenate.i23.i18.i5(i18 %m_V, i5 0)
+
+ST_3: p_shl_i_cast (51)  [1/1] 0.00ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:40  %p_shl_i_cast = zext i23 %p_shl_i to i24
+
+ST_3: p_neg_i (52)  [1/1] 1.48ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:41  %p_neg_i = sub i24 0, %p_shl_i_cast
+
+ST_3: p_neg_i_cast (53)  [1/1] 0.00ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:42  %p_neg_i_cast = sext i24 %p_neg_i to i25
+
+ST_3: p_shl1_i (54)  [1/1] 0.00ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:43  %p_shl1_i = call i20 @_ssdm_op_BitConcatenate.i20.i18.i2(i18 %m_V, i2 0)
+
+ST_3: p_shl1_i_cast (55)  [1/1] 0.00ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:44  %p_shl1_i_cast = zext i20 %p_shl1_i to i25
+
+ST_3: r_V_2 (56)  [1/1] 1.48ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:45  %r_V_2 = sub i25 %p_neg_i_cast, %p_shl1_i_cast
+
+ST_3: tmp_13_i (57)  [1/1] 0.00ns  loc: TPG.cc:59->TPG.cc:15
+.preheader.preheader:46  %tmp_13_i = call i19 @_ssdm_op_PartSelect.i19.i25.i32.i32(i25 %r_V_2, i32 6, i32 24)
+
+ST_3: lhs_V_4_i (58)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:47  %lhs_V_4_i = zext i18 %reg_shift_reg_V_0_2_s to i25
+
+ST_3: r_V_4_i (59)  [1/1] 5.09ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:48  %r_V_4_i = mul i25 -35, %lhs_V_4_i
+
+ST_3: p_shl6_i (70)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15 (grouped into LUT with out node r_V_4_3_i)
+.preheader.preheader:59  %p_shl6_i = call i23 @_ssdm_op_BitConcatenate.i23.i18.i5(i18 %linearizerOutput_V, i5 0)
+
+ST_3: p_shl6_i_cast (71)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15 (grouped into LUT with out node r_V_4_3_i)
+.preheader.preheader:60  %p_shl6_i_cast = zext i23 %p_shl6_i to i24
+
+ST_3: tmp_13 (72)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15 (grouped into LUT with out node r_V_4_3_i)
+.preheader.preheader:61  %tmp_13 = shl i21 %tmp_2_i, 3
+
+ST_3: p_shl7_i_cast (73)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15 (grouped into LUT with out node r_V_4_3_i)
+.preheader.preheader:62  %p_shl7_i_cast = zext i21 %tmp_13 to i24
+
+ST_3: r_V_4_3_i (74)  [1/1] 1.48ns  loc: TPG.cc:63->TPG.cc:15 (out node of the LUT)
+.preheader.preheader:63  %r_V_4_3_i = sub i24 %p_shl6_i_cast, %p_shl7_i_cast
+
+ST_3: tmp_4 (75)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:64  %tmp_4 = call i18 @_ssdm_op_PartSelect.i18.i24.i32.i32(i24 %r_V_4_3_i, i32 6, i32 23)
+
+ST_3: tmp_7 (80)  [1/1] 0.00ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:69  %tmp_7 = call i18 @_ssdm_op_PartSelect.i18.i25.i32.i32(i25 %r_V_2, i32 6, i32 23)
+
+
+ <State 4>: 4.89ns
+ST_4: reg_shift_reg_V_0_1_s (42)  [1/1] 0.00ns  loc: TPG.cc:55->TPG.cc:15
+.preheader.preheader:31  %reg_shift_reg_V_0_1_s = load i18* @reg_shift_reg_V_0_1, align 4
+
+ST_4: StgValue_47 (43)  [1/1] 0.00ns  loc: TPG.cc:55->TPG.cc:15
+.preheader.preheader:32  store i18 %reg_shift_reg_V_0_1_s, i18* @reg_shift_reg_V_0_2, align 4
+
+ST_4: reg_shift_reg_V_0_0_s (46)  [1/1] 0.00ns  loc: TPG.cc:55->TPG.cc:15
+.preheader.preheader:35  %reg_shift_reg_V_0_0_s = load i18* @reg_shift_reg_V_0_0, align 4
+
+ST_4: StgValue_49 (47)  [1/1] 0.00ns  loc: TPG.cc:55->TPG.cc:15
+.preheader.preheader:36  store i18 %reg_shift_reg_V_0_0_s, i18* @reg_shift_reg_V_0_1, align 4
+
+ST_4: StgValue_50 (49)  [1/1] 0.00ns  loc: TPG.cc:57->TPG.cc:15
+.preheader.preheader:38  store i18 %linearizerOutput_V, i18* @reg_shift_reg_V_0_0, align 4
+
+ST_4: mul_V_i (60)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:49  %mul_V_i = call i19 @_ssdm_op_PartSelect.i19.i25.i32.i32(i25 %r_V_4_i, i32 6, i32 24)
+
+ST_4: tmp_19_1_i (61)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:50  %tmp_19_1_i = call i16 @_ssdm_op_PartSelect.i16.i18.i32.i32(i18 %reg_shift_reg_V_0_1_s, i32 2, i32 17)
+
+ST_4: tmp (62)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:51  %tmp = zext i16 %tmp_19_1_i to i18
+
+ST_4: tmp_19_1_i_cast (63)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:52  %tmp_19_1_i_cast = zext i16 %tmp_19_1_i to i19
+
+ST_4: lhs_V_4_2_i_cast6 (64)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:53  %lhs_V_4_2_i_cast6 = zext i18 %reg_shift_reg_V_0_0_s to i24
+
+ST_4: p_shl8_i (65)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:54  %p_shl8_i = call i23 @_ssdm_op_BitConcatenate.i23.i18.i5(i18 %reg_shift_reg_V_0_0_s, i5 0)
+
+ST_4: p_shl8_i_cast (66)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:55  %p_shl8_i_cast = zext i23 %p_shl8_i to i24
+
+ST_4: r_V_4_2_i (67)  [1/1] 1.48ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:56  %r_V_4_2_i = sub i24 %p_shl8_i_cast, %lhs_V_4_2_i_cast6
+
+ST_4: tmp_1 (68)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:57  %tmp_1 = call i18 @_ssdm_op_PartSelect.i18.i24.i32.i32(i24 %r_V_4_2_i, i32 6, i32 23)
+
+ST_4: tmp_2 (69)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:58  %tmp_2 = sext i18 %tmp_1 to i19
+
+ST_4: tmp_5 (76)  [1/1] 0.00ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:65  %tmp_5 = sext i18 %tmp_4 to i19
+
+ST_4: tmp2 (77)  [1/1] 1.27ns  loc: TPG.cc:65->TPG.cc:15
+.preheader.preheader:66  %tmp2 = add i19 %tmp_19_1_i_cast, %tmp_2
+
+ST_4: tmp_6 (78)  [1/1] 0.00ns  loc: TPG.cc:63->TPG.cc:15
+.preheader.preheader:67  %tmp_6 = call i18 @_ssdm_op_PartSelect.i18.i25.i32.i32(i25 %r_V_4_i, i32 6, i32 23)
+
+ST_4: tmp4 (79)  [1/1] 1.27ns  loc: TPG.cc:65->TPG.cc:15
+.preheader.preheader:68  %tmp4 = add i19 %mul_V_i, %tmp_5
+
+ST_4: tmp_8 (81)  [1/1] 1.42ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:70  %tmp_8 = add i18 %tmp_4, %tmp_6
+
+ST_4: tmp3 (82)  [1/1] 1.27ns  loc: TPG.cc:65->TPG.cc:15
+.preheader.preheader:71  %tmp3 = add i19 %tmp4, %tmp_13_i
+
+ST_4: tmp_9 (83)  [1/1] 1.27ns  loc: TPG.cc:58->TPG.cc:15
+.preheader.preheader:72  %tmp_9 = add i18 %tmp_7, %tmp_8
+
+ST_4: tmp_s (84)  [1/1] 1.42ns  loc: TPG.cc:64->TPG.cc:15
+.preheader.preheader:73  %tmp_s = add i18 %tmp_1, %tmp
+
+ST_4: addconv_3_i (85)  [1/1] 1.27ns  loc: TPG.cc:65->TPG.cc:15
+.preheader.preheader:74  %addconv_3_i = add i19 %tmp3, %tmp2
+
+ST_4: addconv_3_i_cast (86)  [1/1] 1.27ns  loc: TPG.cc:68->TPG.cc:15
+.preheader.preheader:75  %addconv_3_i_cast = add i18 %tmp_s, %tmp_9
+
+ST_4: tmp_14 (87)  [1/1] 0.00ns  loc: TPG.cc:68->TPG.cc:15
+.preheader.preheader:76  %tmp_14 = call i1 @_ssdm_op_BitSelect.i1.i19.i32(i19 %addconv_3_i, i32 18)
+
+ST_4: o_filOut_V (88)  [1/1] 0.71ns  loc: TPG.cc:68->TPG.cc:15
+.preheader.preheader:77  %o_filOut_V = select i1 %tmp_14, i18 0, i18 %addconv_3_i_cast
+
+
+ <State 5>: 2.00ns
+ST_5: StgValue_73 (11)  [1/1] 0.00ns
+.preheader.preheader:0  call void (...)* @_ssdm_op_SpecBitsMap(i1* %out_0_peakOut), !map !137
+
+ST_5: StgValue_74 (12)  [1/1] 0.00ns
+.preheader.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i18* %out_0_filOut_V), !map !143
+
+ST_5: StgValue_75 (13)  [1/1] 0.00ns
+.preheader.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i24* %in_0_lincoeff_V), !map !147
+
+ST_5: StgValue_76 (14)  [1/1] 0.00ns
+.preheader.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i14* %in_0_data_input_V), !map !151
+
+ST_5: StgValue_77 (15)  [1/1] 0.00ns
+.preheader.preheader:4  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @TPG_str) nounwind
+
+ST_5: tmp_9_i (37)  [1/1] 0.00ns  loc: TPG.cc:52->TPG.cc:15
+.preheader.preheader:26  %tmp_9_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str6)
+
+ST_5: empty (40)  [1/1] 0.00ns  loc: TPG.cc:56->TPG.cc:15
+.preheader.preheader:29  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp_9_i)
+
+ST_5: tmp_10_i (41)  [1/1] 0.00ns  loc: TPG.cc:52->TPG.cc:15
+.preheader.preheader:30  %tmp_10_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str6)
+
+ST_5: empty_23 (44)  [1/1] 0.00ns  loc: TPG.cc:56->TPG.cc:15
+.preheader.preheader:33  %empty_23 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp_10_i)
+
+ST_5: tmp_11_i (45)  [1/1] 0.00ns  loc: TPG.cc:52->TPG.cc:15
+.preheader.preheader:34  %tmp_11_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str6)
+
+ST_5: empty_24 (48)  [1/1] 0.00ns  loc: TPG.cc:56->TPG.cc:15
+.preheader.preheader:37  %empty_24 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp_11_i)
+
+ST_5: reg_peak_reg_V_0_0_l (89)  [1/1] 0.00ns  loc: TPG.cc:72->TPG.cc:15
+.preheader.preheader:78  %reg_peak_reg_V_0_0_l = load i18* @reg_peak_reg_V_0_0, align 4
+
+ST_5: tmp_17_i (90)  [1/1] 1.29ns  loc: TPG.cc:72->TPG.cc:15
+.preheader.preheader:79  %tmp_17_i = icmp ugt i18 %reg_peak_reg_V_0_0_l, %o_filOut_V
+
+ST_5: reg_peak_reg_V_0_1_l (91)  [1/1] 0.00ns  loc: TPG.cc:72->TPG.cc:15
+.preheader.preheader:80  %reg_peak_reg_V_0_1_l = load i18* @reg_peak_reg_V_0_1, align 4
+
+ST_5: tmp_18_i (92)  [1/1] 1.29ns  loc: TPG.cc:72->TPG.cc:15
+.preheader.preheader:81  %tmp_18_i = icmp ugt i18 %reg_peak_reg_V_0_0_l, %reg_peak_reg_V_0_1_l
+
+ST_5: agg_result_peakOut_w (93)  [1/1] 0.71ns  loc: TPG.cc:72->TPG.cc:15
+.preheader.preheader:82  %agg_result_peakOut_w = and i1 %tmp_17_i, %tmp_18_i
+
+ST_5: tmp_20_i (94)  [1/1] 0.00ns  loc: TPG.cc:75->TPG.cc:15
+.preheader.preheader:83  %tmp_20_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str8)
+
+ST_5: StgValue_90 (95)  [1/1] 0.00ns  loc: TPG.cc:78->TPG.cc:15
+.preheader.preheader:84  store i18 %reg_peak_reg_V_0_0_l, i18* @reg_peak_reg_V_0_1, align 4
+
+ST_5: empty_25 (96)  [1/1] 0.00ns  loc: TPG.cc:79->TPG.cc:15
+.preheader.preheader:85  %empty_25 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str8, i32 %tmp_20_i)
+
+ST_5: StgValue_92 (97)  [1/1] 0.00ns  loc: TPG.cc:80->TPG.cc:15
+.preheader.preheader:86  store i18 %o_filOut_V, i18* @reg_peak_reg_V_0_0, align 4
+
+ST_5: StgValue_93 (98)  [1/1] 0.00ns  loc: ./TPG.h:36->TPG.cc:15
+.preheader.preheader:87  call void @_ssdm_op_Write.ap_auto.i18P(i18* %out_0_filOut_V, i18 %o_filOut_V)
+
+ST_5: StgValue_94 (99)  [1/1] 0.00ns  loc: ./TPG.h:36->TPG.cc:15
+.preheader.preheader:88  call void @_ssdm_op_Write.ap_auto.i1P(i1* %out_0_peakOut, i1 %agg_result_peakOut_w)
+
+ST_5: StgValue_95 (100)  [1/1] 0.00ns  loc: TPG.cc:17
+.preheader.preheader:89  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.25ns, clock uncertainty: 0.781ns.
+
+ <State 1>: 2.05ns
+The critical path consists of the following:
+	wire read on port 'in_0_lincoeff_V' (TPG.cc:15) [17]  (0 ns)
+	'icmp' operation ('icmp', TPG.cc:41->TPG.cc:15) [20]  (1.34 ns)
+	'select' operation ('p_lincoeff_V_i', TPG.cc:41->TPG.cc:15) [21]  (0.71 ns)
+
+ <State 2>: 5.09ns
+The critical path consists of the following:
+	wire read on port 'in_0_data_input_V' (TPG.cc:15) [16]  (0 ns)
+	'sub' operation ('r.V', TPG.cc:46->TPG.cc:15) [27]  (0 ns)
+	'mul' operation ('r.V', TPG.cc:48->TPG.cc:15) [30]  (5.09 ns)
+
+ <State 3>: 5.09ns
+The critical path consists of the following:
+	'load' operation ('reg_shift_reg_V_0_2_s', TPG.cc:55->TPG.cc:15) on static variable 'reg_shift_reg_V_0_2' [38]  (0 ns)
+	'mul' operation ('r_V_4_i', TPG.cc:63->TPG.cc:15) [59]  (5.09 ns)
+
+ <State 4>: 4.89ns
+The critical path consists of the following:
+	'load' operation ('reg_shift_reg_V_0_0_s', TPG.cc:55->TPG.cc:15) on static variable 'reg_shift_reg_V_0_0' [46]  (0 ns)
+	'sub' operation ('r_V_4_2_i', TPG.cc:63->TPG.cc:15) [67]  (1.48 ns)
+	'add' operation ('tmp_s', TPG.cc:64->TPG.cc:15) [84]  (1.42 ns)
+	'add' operation ('addconv_3_i_cast', TPG.cc:68->TPG.cc:15) [86]  (1.27 ns)
+	'select' operation ('o.filOut.V', TPG.cc:68->TPG.cc:15) [88]  (0.71 ns)
+
+ <State 5>: 2ns
+The critical path consists of the following:
+	'load' operation ('reg_peak_reg_V_0_0_l', TPG.cc:72->TPG.cc:15) on static variable 'reg_peak_reg_V_0_0' [89]  (0 ns)
+	'icmp' operation ('tmp_17_i', TPG.cc:72->TPG.cc:15) [90]  (1.29 ns)
+	'and' operation ('agg.result.peakOut', TPG.cc:72->TPG.cc:15) [93]  (0.71 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

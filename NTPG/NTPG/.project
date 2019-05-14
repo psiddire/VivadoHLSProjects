@@ -37,11 +37,6 @@
 			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/TPG.h</name>
-			<type>1</type>
-			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/TPG.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution1/.tcls</location>
@@ -50,6 +45,11 @@
 			<name>solution2/constraints</name>
 			<type>2</type>
 			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution2/.tcls</location>
+		</link>
+		<link>
+			<name>solution3/constraints</name>
+			<type>2</type>
+			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/.tcls</location>
 		</link>
 		<link>
 			<name>source/TPG.cc</name>
@@ -90,6 +90,21 @@
 			<name>solution2/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution2/script.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/solution3.directive</location>
+		</link>
+		<link>
+			<name>solution3/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

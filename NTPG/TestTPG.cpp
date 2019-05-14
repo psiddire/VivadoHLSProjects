@@ -25,7 +25,7 @@ bool makeTestData(int argc, char** argv, uint14_t data_input[NXtl], uint24_t lin
     while(!f.eof()){
       if (i >= NXtl*event && i < NXtl*(event+1)){
 	for(j = 0; j < NXtl; j++) {
-	    f >> std::hex >> data_input[j] >> lincoeff[i];
+	    f >> std::hex >> data_input[j] >> lincoeff[j];
 	    i++;
 	}
       }
@@ -73,7 +73,8 @@ int main(int argc, char **argv) {
     TPG(in, out);
 
     for(i = 0; i < NXtl; i++) {
-	printf("%d, Input: %d, Filter Output: %d, Peak Finder: %d \n", i, data_input[i], out[i].filOut, out[i].peakOut);
+      //printf("%d, Input: %d, Filter Output: %d, Peak Finder: %d \n", i, data_input[i], out[i].filOut, out[i].peakOut);
+      printf("%d \n", out[i].filOut);
     }
   }
   

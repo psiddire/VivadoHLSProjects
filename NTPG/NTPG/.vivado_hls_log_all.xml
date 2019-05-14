@@ -6,12 +6,26 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [HLS 200-70] Part 'xcku115' is not installed.&#xA;command 'ap_source' returned error code&#xA;    while executing&#xA;&quot;source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="NTPG" solutionName="solution3" date="2019-05-13T11:55:58.787+0200"/>
+        <logs message="ERROR: [HLS 200-70] Part 'xcku115' is not installed.&#xA;command 'ap_source' returned error code&#xA;    while executing&#xA;&quot;source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="NTPG" solutionName="solution3" date="2019-05-13T10:55:04.748+0200"/>
+        <logs message="ERROR: [HLS 200-70] Part 'xcku115' is not installed.&#xA;command 'ap_source' returned error code&#xA;    while executing&#xA;&quot;source /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /afs/cern.ch/user/p/psiddire/CMSSW_10_2_2/src/VivadoHLSProjects/NTPG/NTPG/solution3/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="NTPG" solutionName="solution3" date="2019-05-13T10:54:48.001+0200"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_peak_reg_V_0_1' is power-on initialization." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.443+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_peak_reg_V_0_0' is power-on initialization." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.382+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_V_0_0' is power-on initialization." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.321+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_V_0_1' is power-on initialization." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.255+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_V_0_2' is power-on initialization." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.190+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_V_0_3' is power-on initialization." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.108+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.peak_reg.V.0.0'." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:42.003+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.V.0.0'." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:41.938+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.V.0.0'." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:41.867+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'reg.shift_reg.V.0.0'." projectName="NTPG" solutionName="solution3" date="2018-12-06T20:13:41.757+0100" type="Warning"/>
         <logs message="WARNING: [RTGEN 206-101] Register 'reg_peak_reg_299_1' is power-on initialization." projectName="NTPG" solutionName="solution2" date="2018-10-22T19:15:25.816+0200" type="Warning"/>
         <logs message="WARNING: [RTGEN 206-101] Register 'reg_peak_reg_299_0' is power-on initialization." projectName="NTPG" solutionName="solution2" date="2018-10-22T19:13:27.426+0200" type="Warning"/>
         <logs message="WARNING: [RTGEN 206-101] Register 'reg_shift_reg_299_3' is power-on initialization." projectName="NTPG" solutionName="solution2" date="2018-10-22T19:13:27.368+0200" type="Warning"/>

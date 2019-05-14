@@ -1,6 +1,0 @@
-with open('inputfileNew.txt', 'w') as inf:
-    f = open('inputfile.txt')
-    for line in f.readlines():
-        word = line.split()
-        inf.write(word[0])
-        inf.write(', ')
