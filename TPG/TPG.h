@@ -1,9 +1,9 @@
 #ifndef TPG_h
 #define TPG_h
 
-#define NXtl 1
-#define NEvents 570
-//#define Vivado 1
+#define NXtl 1 //Also tested with 300 crystals
+#define NEvents 570 //This is only for testing on the test bench
+//#define Vivado 1 //Uncomment for synthesis
 
 #include <stdint.h>
 #ifdef Vivado
@@ -36,19 +36,19 @@
 #include "LUTs.h"
 
 struct outPut {
-  uint18_t filOut;
-  bool peakOut;
-  uint16_t peakAmp;
+  uint18_t filOut; //Amplitude Filter Output
+  bool peakOut; //Peak Finder Output
+  uint16_t peakAmp; //Amplitude of the Peak
 };
 
 struct inPut {
-  uint14_t data_input;
-  uint24_t lincoeff;
+  uint14_t data_input; //Digi Information
+  uint24_t lincoeff; //Linearizer Coefficient Information
 };
 
 struct registers {
-  uint18_t shift_reg[4];
-  uint18_t peak_reg[2];
+  uint18_t shift_reg[4]; //4-stage Shift Register for Amplitude Filter
+  uint18_t peak_reg[2]; //2-stage Shift Register for Peak Finder
 };
 
 void TPG(inPut in[NXtl], outPut out[NXtl]);
