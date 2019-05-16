@@ -32,26 +32,27 @@ outPut LinFil(uint14_t data_int, uint24_t lincoeff, registers &r, short i){
   int19_t mul = 0;
   int25_t pro = 0;
   int19_t acc = 0;
-  int7_t weight[5] = {24, 31, 16, -35, -36};
+  int7_t weight[5] = {24, 31, 16, -35, -36}; //Filter Weights
   int19_t ampPeak = 0;
   uint12_t tmpPeak = 0;
   outPut o;
   o.peakOut = false;
 
   // Linearizer
-  if (data_int > 0X3FFF) fprintf(stderr, "ERROR IN INPUT SAMPLE");
-  uncorrectedADC = data_int & 0XFFF;
-  if (((lincoeff & 0XFF0000) >> 16) == 0) coeff = 0;
+  if (data_int > 0X3FFF) fprintf(stderr, "ERROR IN INPUT SAMPLE"); //Digi Input
+  uncorrectedADC = data_int & 0XFFF; //12 bits is the Digi information, last 2 bits is gain information
+  if (((lincoeff & 0XFF0000) >> 16) == 0) coeff = 0; //Linearization Coefficients 
   else coeff = lincoeff;
-  base = coeff & 0XFFF;
-  shiftlin = (coeff & 0XF000) >> 12;
-  mult = (coeff & 0XFF0000) >> 16;
-  correctedADC = (uncorrectedADC - base);
-  if (correctedADC < 0) linearizerOutput = shiftlin << 12;
-  prod = correctedADC * mult;
-  linearizerOutput = prod >> (shiftlin + 2);
+  base = coeff & 0XFFF; //Pedestal
+  shiftlin = (coeff & 0XF000) >> 12; //Shift Value
+  mult = (coeff & 0XFF0000) >> 16; //Multiplication value
+  correctedADC = (uncorrectedADC - base); // Subtract Pedestal
+  if (correctedADC < 0) linearizerOutput = shiftlin << 12; 
+  prod = correctedADC * mult; 
+  linearizerOutput = prod >> (shiftlin + 2); //Linearization Step Output
 
   // Amplitude Filter
+  // 4 Stage TAP
   m = r.shift_reg[3];
   for (j = 3; j >= 1; j--){
 #pragma HLS UNROLL
@@ -71,12 +72,12 @@ outPut LinFil(uint14_t data_int, uint24_t lincoeff, registers &r, short i){
   filterOutput = acc;
   if (filterOutput < 0) filterOutput = 0;
   if (filterOutput > 0X3FFFF) filterOutput = 0X3FFFF;
-o.filOut = filterOutput;
+o.filOut = filterOutput; //Amplitude Filter Output
 
   // Peak Finder
   if (r.peak_reg[0] > filterOutput && r.peak_reg[0] > r.peak_reg[1]){
-  	o.peakOut = true;
-	// TCP Format
+  	o.peakOut = true; //Peak Found
+	// Trigger Primitive Format 16 bits(6 bits timing information, 10 bits amplitude information) 
 	ampPeak = r.peak_reg[0];
 	if (ampPeak > 0XFFF){
 	  ampPeak = 0XFFF;
